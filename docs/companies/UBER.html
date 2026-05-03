@@ -167,7 +167,7 @@
       <div><div class="muted small">Confidence</div><div class="kpi">0.75</div></div>
       <div><div class="muted small">Dispersion</div><div class="kpi">22.82</div></div>
       <div><div class="muted small">Source status</div><div><span class="pill pill-extracted_not_validated">extracted_not_validated</span></div></div>
-      <div><div class="muted small">Sensitivity sets</div><div class="kpi">0</div></div>
+      <div><div class="muted small">Sensitivity sets</div><div class="kpi">1</div></div>
     </div>
     <div class="valuation-method-grid section">
       <div class="valuation-method-card">
@@ -190,6 +190,29 @@
           <div class="small mono">range: [124.65114124432701, 126.72546442158749]</div>
         </div>
     </div>
+    <div class="section inside-split">
+      <h2>Sensitivities</h2>
+      
+        <div class="sensitivity-note small muted">Anchored sensitivity from current DCF/Gordon assumptions. Base output 103.9 at WACC 9.0% and terminal growth 2.5%.</div>
+        <div class="sensitivity-oneway-grid">
+          <div>
+            <h3>WACC sensitivity</h3>
+            <div class="sensitivity-chip-grid"><div class="sensitivity-chip"><span>7.0%</span><strong>150.1</strong></div><div class="sensitivity-chip"><span>8.0%</span><strong>122.8</strong></div><div class="sensitivity-chip"><span>9.0%</span><strong>103.9</strong></div><div class="sensitivity-chip"><span>10.0%</span><strong>90.1</strong></div><div class="sensitivity-chip"><span>11.0%</span><strong>79.5</strong></div></div>
+          </div>
+          <div>
+            <h3>Terminal growth sensitivity</h3>
+            <div class="sensitivity-chip-grid"><div class="sensitivity-chip"><span>0.5%</span><strong>79.5</strong></div><div class="sensitivity-chip"><span>1.5%</span><strong>90.1</strong></div><div class="sensitivity-chip"><span>2.5%</span><strong>103.9</strong></div><div class="sensitivity-chip"><span>3.5%</span><strong>122.8</strong></div><div class="sensitivity-chip"><span>4.5%</span><strong>150.1</strong></div></div>
+          </div>
+        </div>
+        <div class="section inside-split">
+          <h3>WACC × Terminal growth</h3>
+          <table>
+            <thead><tr><th>g \ WACC</th><th>7.0%</th><th>8.0%</th><th>9.0%</th><th>10.0%</th><th>11.0%</th></tr></thead>
+            <tbody><tr><td>0.5%</td><td>103.9</td><td>90.1</td><td>79.5</td><td>71.1</td><td>64.3</td></tr><tr><td>1.5%</td><td>122.8</td><td>103.9</td><td>90.1</td><td>79.5</td><td>71.1</td></tr><tr><td>2.5%</td><td>150.1</td><td>122.8</td><td>103.9</td><td>90.1</td><td>79.5</td></tr><tr><td>3.5%</td><td>193.0</td><td>150.1</td><td>122.8</td><td>103.9</td><td>90.1</td></tr><tr><td>4.5%</td><td>270.2</td><td>193.0</td><td>150.1</td><td>122.8</td><td>103.9</td></tr></tbody>
+          </table>
+        </div>
+        
+    </div>
     <div class="split inside-split">
       <div>
         <h2>Scenario frame</h2>
@@ -200,7 +223,7 @@
         <ul class="list small">
           <li>Observed vs derived vs analyst judgment: [not yet explicit enough]</li>
           <li>Normalization layer: guardrail_added</li>
-          <li>Sensitivity tables: [not yet populated]</li>
+          <li>Sensitivity tables: present</li>
         </ul>
       </div>
     </div>
