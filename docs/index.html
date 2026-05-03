@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Financial Dashboard v1</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="wrap">
+<div class="topbar"><div><h1>Financial Dashboard v1</h1><div class="muted">Portfolio overview and company drill-down</div></div><div class="muted small">Local HTML build</div></div>
+<div class="grid section">
+  <div class="card"><div class="muted small">Companies</div><div class="kpi">6</div></div>
+  <div class="card"><div class="muted small">Covered</div><div class="kpi">4</div></div>
+  <div class="card"><div class="muted small">Need review</div><div class="kpi">5</div></div>
+  <div class="card"><div class="muted small">High priority</div><div class="kpi">1</div></div>
+</div>
+<div class="section">
+  <table>
+    <thead>
+      <tr><th>Ticker</th><th>Coverage</th><th>Latest period</th><th>Latest filing</th><th>Filing delta</th><th>Data delta</th><th>Decision</th><th>Valuation</th><th>Flags</th><th>Warnings</th></tr>
+    </thead>
+    <tbody><tr>
+<td><a href="companies/DVN.html">DVN</a></td>
+<td><span class="pill pill-covered">covered</span></td>
+<td class="mono">10-Q | 2025-09-30</td>
+<td>2025-11-06</td>
+<td>False</td>
+<td>False</td>
+<td><span class="pill pill-ignore">ignore</span></td>
+<td><span class="pill pill-bootstrapped_from_model">bootstrapped_from_model</span></td>
+<td class="small">[none]</td>
+<td class="small">missing thesis_short, missing risks</td>
+</tr><tr>
+<td><a href="companies/MSFT.html">MSFT</a></td>
+<td><span class="pill pill-covered">covered</span></td>
+<td class="mono">10-Q | 2026-03-31</td>
+<td>2026-04-29</td>
+<td>True</td>
+<td>False</td>
+<td><span class="pill pill-review">review</span></td>
+<td><span class="pill pill-prefilled">prefilled</span></td>
+<td class="small">filing_delta, net_debt_relatively_small_vs_latest_period_revenue</td>
+<td class="small">missing thesis_short, missing risks</td>
+</tr><tr>
+<td><a href="companies/NFLX.html">NFLX</a></td>
+<td><span class="pill pill-covered">covered</span></td>
+<td class="mono">10-Q | 2026-03-31</td>
+<td>2026-04-17</td>
+<td>True</td>
+<td>True</td>
+<td><span class="pill pill-high_priority">high_priority</span></td>
+<td><span class="pill pill-prefilled">prefilled</span></td>
+<td class="small">filing_delta, data_delta</td>
+<td class="small">missing thesis_short, missing risks</td>
+</tr><tr>
+<td><a href="companies/NVO.html">NVO</a></td>
+<td><span class="pill pill-pending_issuer_strategy">pending_issuer_strategy</span></td>
+<td class="mono">None | None</td>
+<td>None</td>
+<td>False</td>
+<td>False</td>
+<td><span class="pill pill-review">review</span></td>
+<td><span class="pill pill-null">null</span></td>
+<td class="small">[none]</td>
+<td class="small">coverage_status=pending_issuer_strategy, extraction_quality=blocked</td>
+</tr><tr>
+<td><a href="companies/RACE.html">RACE</a></td>
+<td><span class="pill pill-pending_identity_resolution">pending_identity_resolution</span></td>
+<td class="mono">None | None</td>
+<td>None</td>
+<td>False</td>
+<td>False</td>
+<td><span class="pill pill-review">review</span></td>
+<td><span class="pill pill-null">null</span></td>
+<td class="small">[none]</td>
+<td class="small">coverage_status=pending_identity_resolution, extraction_quality=blocked</td>
+</tr><tr>
+<td><a href="companies/UBER.html">UBER</a></td>
+<td><span class="pill pill-covered">covered</span></td>
+<td class="mono">10-Q | 2025-09-30</td>
+<td>2025-11-04</td>
+<td>True</td>
+<td>False</td>
+<td><span class="pill pill-review">review</span></td>
+<td><span class="pill pill-prefilled">prefilled</span></td>
+<td class="small">filing_delta, reported_net_margin_far_from_operating_margin, reported_net_income_likely_contains_non_operating_noise</td>
+<td class="small">[none]</td>
+</tr></tbody>
+  </table>
+</div>
+</div>
+</body>
+</html>
