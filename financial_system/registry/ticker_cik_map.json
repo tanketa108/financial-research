@@ -1,0 +1,69 @@
+{
+  "UBER": {
+    "ticker": "UBER",
+    "name": "Uber Technologies, Inc.",
+    "cik": "0001543151",
+    "status": "resolved",
+    "issuer_type": "domestic",
+    "sec_entity_name": "Uber Technologies, Inc.",
+    "last_verified_at": "2026-05-01T10:50:00Z",
+    "notes": []
+  },
+  "RACE": {
+    "ticker": "RACE",
+    "name": "Ferrari N.V.",
+    "cik": null,
+    "status": "needs_review",
+    "issuer_type": "unknown",
+    "sec_entity_name": null,
+    "last_verified_at": "2026-05-01T10:50:00Z",
+    "notes": [
+      "SEC ticker->CIK source returned 403 from VPS; entity path requires manual or alternate validation"
+    ]
+  },
+  "NVO": {
+    "ticker": "NVO",
+    "name": "Novo Nordisk A/S",
+    "cik": null,
+    "status": "needs_review",
+    "issuer_type": "foreign_issuer",
+    "sec_entity_name": null,
+    "last_verified_at": "2026-05-01T10:50:00Z",
+    "notes": [
+      "Foreign issuer / ADR path needs explicit validation"
+    ]
+  },
+  "NFLX": {
+    "ticker": "NFLX",
+    "name": "Netflix, Inc.",
+    "cik": "0001065280",
+    "status": "resolved",
+    "issuer_type": "domestic",
+    "sec_entity_name": "Netflix, Inc.",
+    "last_verified_at": "2026-05-01T10:50:00Z",
+    "notes": []
+  },
+  "MSFT": {
+    "ticker": "MSFT",
+    "name": "Microsoft Corporation",
+    "cik": "0000789019",
+    "status": "resolved",
+    "issuer_type": "domestic",
+    "sec_entity_name": "Microsoft Corporation",
+    "last_verified_at": "2026-05-01T10:50:00Z",
+    "notes": []
+  },
+  "DVN": {
+    "ticker": "DVN",
+    "name": "Devon Energy Corporation",
+    "cik": "0001090012",
+    "status": "resolved",
+    "issuer_type": "domestic",
+    "sec_entity_name": "DEVON ENERGY CORP/DE",
+    "last_verified_at": "2026-05-03T17:26:00Z",
+    "notes": [
+      "Added into active set through analyst model ingestion / Layer 2 bootstrap.",
+      "Promoted to full covered name after SEC identity resolution."
+    ]
+  }
+}

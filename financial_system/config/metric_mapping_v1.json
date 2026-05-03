@@ -1,0 +1,45 @@
+{
+  "revenue": {
+    "expected_unit": "USD",
+    "candidate_tags": [
+      "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "SalesRevenueNet",
+      "Revenues"
+    ]
+  },
+  "operating_income": {
+    "expected_unit": "USD",
+    "candidate_tags": [
+      "OperatingIncomeLoss"
+    ]
+  },
+  "net_income": {
+    "expected_unit": "USD",
+    "candidate_tags": [
+      "NetIncomeLoss",
+      "ProfitLoss"
+    ]
+  },
+  "diluted_eps": {
+    "expected_unit": "USD/share",
+    "candidate_tags": [
+      "EarningsPerShareDiluted"
+    ]
+  },
+  "cash_and_equivalents": {
+    "expected_unit": "USD",
+    "candidate_tags": [
+      "CashAndCashEquivalentsAtCarryingValue"
+    ]
+  },
+  "total_debt": {
+    "expected_unit": "USD",
+    "candidate_tags": [
+      "LongTermDebtAndFinanceLeaseObligations",
+      "LongTermDebtNoncurrent",
+      "LongTermDebt",
+      "DebtInstrumentFaceAmount",
+      "LongTermDebtFairValue"
+    ]
+  }
+}

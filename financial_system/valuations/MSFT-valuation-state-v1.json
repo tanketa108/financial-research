@@ -1,0 +1,769 @@
+{
+  "ticker": "MSFT",
+  "name": "MSFT",
+  "status": "prefilled",
+  "latest_period": {
+    "form_type": "10-Q",
+    "filing_date": "2026-04-29",
+    "report_date": "2026-03-31",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3"
+  },
+  "historical_base": {
+    "latest_revenue": 82886000000,
+    "latest_operating_income": 38398000000,
+    "latest_net_income": 31778000000,
+    "latest_diluted_eps": 4.27,
+    "latest_cash_and_equivalents": 32105000000,
+    "latest_total_debt": 31423000000,
+    "revenue_history": [
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-07-30",
+        "end": "2024-06-30",
+        "value": 245122000000,
+        "frame": "CY2024"
+      },
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2026,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-10-29",
+        "end": "2024-09-30",
+        "value": 65585000000,
+        "frame": "CY2024Q3"
+      },
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2026,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2026-01-28",
+        "end": "2024-12-31",
+        "value": 69632000000,
+        "frame": "CY2024Q4"
+      },
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2025-03-31",
+        "value": 70066000000,
+        "frame": "CY2025Q1"
+      },
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-07-30",
+        "end": "2025-06-30",
+        "value": 281724000000,
+        "frame": "CY2025"
+      },
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2026,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-10-29",
+        "end": "2025-09-30",
+        "value": 77673000000,
+        "frame": "CY2025Q3"
+      },
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2026,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2026-01-28",
+        "end": "2025-12-31",
+        "value": 81273000000,
+        "frame": "CY2025Q4"
+      },
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2026-03-31",
+        "value": 82886000000,
+        "frame": "CY2026Q1"
+      }
+    ],
+    "operating_income_history": [
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-07-30",
+        "end": "2024-06-30",
+        "value": 109433000000,
+        "frame": "CY2024"
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2026,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-10-29",
+        "end": "2024-09-30",
+        "value": 30552000000,
+        "frame": "CY2024Q3"
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2026,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2026-01-28",
+        "end": "2024-12-31",
+        "value": 31653000000,
+        "frame": "CY2024Q4"
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2025-03-31",
+        "value": 32000000000,
+        "frame": "CY2025Q1"
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-07-30",
+        "end": "2025-06-30",
+        "value": 128528000000,
+        "frame": "CY2025"
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2026,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-10-29",
+        "end": "2025-09-30",
+        "value": 37961000000,
+        "frame": "CY2025Q3"
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2026,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2026-01-28",
+        "end": "2025-12-31",
+        "value": 38275000000,
+        "frame": "CY2025Q4"
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2026-03-31",
+        "value": 38398000000,
+        "frame": "CY2026Q1"
+      }
+    ],
+    "net_income_history": [
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-07-30",
+        "end": "2024-06-30",
+        "value": 88136000000,
+        "frame": "CY2024"
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2026,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-10-29",
+        "end": "2024-09-30",
+        "value": 24667000000,
+        "frame": "CY2024Q3"
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2026,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2026-01-28",
+        "end": "2024-12-31",
+        "value": 24108000000,
+        "frame": "CY2024Q4"
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2025-03-31",
+        "value": 25824000000,
+        "frame": "CY2025Q1"
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-07-30",
+        "end": "2025-06-30",
+        "value": 101832000000,
+        "frame": "CY2025"
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2026,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-10-29",
+        "end": "2025-09-30",
+        "value": 27747000000,
+        "frame": "CY2025Q3"
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2026,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2026-01-28",
+        "end": "2025-12-31",
+        "value": 38458000000,
+        "frame": "CY2025Q4"
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2026-03-31",
+        "value": 31778000000,
+        "frame": "CY2026Q1"
+      }
+    ],
+    "diluted_eps_history": [
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-07-30",
+        "end": "2024-06-30",
+        "value": 11.8,
+        "frame": "CY2024"
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2026,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-10-29",
+        "end": "2024-09-30",
+        "value": 3.3,
+        "frame": "CY2024Q3"
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2026,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2026-01-28",
+        "end": "2024-12-31",
+        "value": 3.23,
+        "frame": "CY2024Q4"
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2025-03-31",
+        "value": 3.46,
+        "frame": "CY2025Q1"
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-07-30",
+        "end": "2025-06-30",
+        "value": 13.64,
+        "frame": "CY2025"
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2026,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-10-29",
+        "end": "2025-09-30",
+        "value": 3.72,
+        "frame": "CY2025Q3"
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2026,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2026-01-28",
+        "end": "2025-12-31",
+        "value": 5.16,
+        "frame": "CY2025Q4"
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2026-03-31",
+        "value": 4.27,
+        "frame": "CY2026Q1"
+      }
+    ],
+    "cash_history": [
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-07-30",
+        "end": "2024-06-30",
+        "value": 18315000000,
+        "frame": "CY2024Q2I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2024-10-30",
+        "end": "2024-09-30",
+        "value": 20840000000,
+        "frame": "CY2024Q3I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2025-01-29",
+        "end": "2024-12-31",
+        "value": 17482000000,
+        "frame": "CY2024Q4I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2025-04-30",
+        "end": "2025-03-31",
+        "value": 28828000000,
+        "frame": "CY2025Q1I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2025-06-30",
+        "value": 30242000000,
+        "frame": "CY2025Q2I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2026,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-10-29",
+        "end": "2025-09-30",
+        "value": 28849000000,
+        "frame": "CY2025Q3I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2026,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2026-01-28",
+        "end": "2025-12-31",
+        "value": 24296000000,
+        "frame": "CY2025Q4I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2026-03-31",
+        "value": 32105000000,
+        "frame": "CY2026Q1I"
+      }
+    ],
+    "debt_history": [
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2025-07-30",
+        "end": "2024-06-30",
+        "value": 42688000000,
+        "frame": "CY2024Q2I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2025,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2024-10-30",
+        "end": "2024-09-30",
+        "value": 42868000000,
+        "frame": "CY2024Q3I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2025,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2025-01-29",
+        "end": "2024-12-31",
+        "value": 39722000000,
+        "frame": "CY2024Q4I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2025,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2025-04-30",
+        "end": "2025-03-31",
+        "value": 39882000000,
+        "frame": "CY2025Q1I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2025-06-30",
+        "value": 40152000000,
+        "frame": "CY2025Q2I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2026,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-10-29",
+        "end": "2025-09-30",
+        "value": 35376000000,
+        "frame": "CY2025Q3I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2026,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2026-01-28",
+        "end": "2025-12-31",
+        "value": 35425000000,
+        "frame": "CY2025Q4I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2026,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2026-04-29",
+        "end": "2026-03-31",
+        "value": 31423000000,
+        "frame": "CY2026Q1I"
+      }
+    ],
+    "share_count_history": [],
+    "fcf_history": [],
+    "capex_history": [],
+    "latest_share_count": 7429000000
+  },
+  "thesis": {
+    "thesis_short": null,
+    "current_stance": null,
+    "what_would_change_my_mind": null,
+    "input_owner": "analyst"
+  },
+  "segments": [
+    {
+      "name": "Productivity & Business Processes",
+      "importance": null,
+      "growth_view": null,
+      "margin_view": null,
+      "notes": null,
+      "input_owner": "hybrid"
+    },
+    {
+      "name": "Intelligent Cloud",
+      "importance": null,
+      "growth_view": null,
+      "margin_view": null,
+      "notes": null,
+      "input_owner": "hybrid"
+    },
+    {
+      "name": "More Personal Computing",
+      "importance": null,
+      "growth_view": null,
+      "margin_view": null,
+      "notes": null,
+      "input_owner": "hybrid"
+    }
+  ],
+  "drivers": [
+    "Azure / cloud growth",
+    "Operating margin durability",
+    "Capital allocation quality",
+    "AI monetization path",
+    "Productivity / enterprise mix"
+  ],
+  "quality": {
+    "dupont": {
+      "net_margin": 0.3833940593103781,
+      "asset_turnover": null,
+      "financial_leverage": null
+    },
+    "roic": {
+      "historical": null,
+      "expected": null,
+      "incremental": null
+    },
+    "wacc": null,
+    "eva_spread": null,
+    "input_owner": "hybrid",
+    "operating_margin": 0.46326279468185216,
+    "net_margin": 0.3833940593103781,
+    "notes": [
+      "Basic margin metrics prefilled mechanically",
+      "ROIC/WACC still require deeper balance-sheet and analyst normalization work"
+    ],
+    "reported_vs_normalized_status": "guardrail_added"
+  },
+  "debt": {
+    "total_debt": 31423000000,
+    "cash": 32105000000,
+    "net_debt": -682000000,
+    "interest_burden": {
+      "tag": "InterestExpense",
+      "value": 2935000000,
+      "end": "2024-06-30",
+      "filed": "2024-07-30",
+      "form": "10-K",
+      "fy": 2024,
+      "fp": "FY"
+    },
+    "maturities": [],
+    "refinancing_risk": null,
+    "input_owner": "hybrid"
+  },
+  "cash_conversion": {
+    "working_capital": {
+      "receivables": {
+        "tag": "AccountsReceivableNetCurrent",
+        "value": 60041000000,
+        "end": "2026-03-31",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fy": 2026,
+        "fp": "Q3"
+      },
+      "payables": {
+        "tag": "AccountsPayableCurrent",
+        "value": 37513000000,
+        "end": "2026-03-31",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fy": 2026,
+        "fp": "Q3"
+      },
+      "inventories": {
+        "tag": "InventoryNet",
+        "value": 1219000000,
+        "end": "2026-03-31",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fy": 2026,
+        "fp": "Q3"
+      }
+    },
+    "ccc": {
+      "dso": 264.39887315107495,
+      "dpo": 165.1936997804213,
+      "dio": 5.368035615182299,
+      "ccc": 104.57320898583595
+    },
+    "profit_to_cash_bridge": {
+      "ebit_or_ebitda": null,
+      "cash_taxes": null,
+      "capex": {
+        "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "value": 30876000000,
+        "end": "2026-03-31",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fy": 2026,
+        "fp": "Q3"
+      },
+      "working_capital_impact": null,
+      "fcf_conversion": null,
+      "depreciation": null
+    },
+    "input_owner": "hybrid"
+  },
+  "capital_allocation": {
+    "buybacks": null,
+    "dividends": null,
+    "sbc": {
+      "tag": "ShareBasedCompensation",
+      "value": 3081000000,
+      "end": "2026-03-31",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fy": 2026,
+      "fp": "Q3"
+    },
+    "diluted_share_count_evolution": {
+      "tag": "CommonStockSharesOutstanding",
+      "value": 7429000000,
+      "end": "2026-03-31",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fy": 2026,
+      "fp": "Q3"
+    },
+    "m_and_a": null,
+    "notes": null,
+    "input_owner": "hybrid"
+  },
+  "comparables": {
+    "peer_set": [],
+    "notes": null,
+    "input_owner": "analyst"
+  },
+  "valuation_methods": {
+    "dcf": {
+      "status": "not_filled",
+      "assumptions": {},
+      "output": null,
+      "range": null,
+      "input_owner": "hybrid"
+    },
+    "gordon": {
+      "status": "not_filled",
+      "assumptions": {},
+      "output": null,
+      "range": null,
+      "input_owner": "hybrid"
+    },
+    "terminal_multiple": {
+      "status": "not_filled",
+      "assumptions": {},
+      "output": null,
+      "range": null,
+      "input_owner": "hybrid"
+    },
+    "aggregate": {
+      "central_reference": null,
+      "range": null,
+      "dispersion": null
+    }
+  },
+  "sensitivities": {
+    "one_way": [],
+    "two_way_tables": [],
+    "input_owner": "hybrid"
+  },
+  "scenarios": [
+    {
+      "name": "AI productivity upside",
+      "description": "AI monetization deepens enterprise lock-in and pricing power.",
+      "business_model_implication": "Higher quality growth and sustained margin strength.",
+      "key_assumptions": [],
+      "valuation_implication": null,
+      "input_owner": "analyst"
+    },
+    {
+      "name": "Base durable compounder",
+      "description": "Core franchises continue compounding with strong enterprise economics.",
+      "business_model_implication": "High-quality but more normalized valuation path.",
+      "key_assumptions": [],
+      "valuation_implication": null,
+      "input_owner": "analyst"
+    }
+  ],
+  "catalysts": [],
+  "risks": [],
+  "qualitative_notes": {
+    "moat": null,
+    "fragilities": null,
+    "management_quality": null,
+    "industry_structure": null,
+    "knowledge_links": [],
+    "input_owner": "analyst"
+  },
+  "system_context": {
+    "thesis_monitor_decision": "review",
+    "coverage_status": "covered",
+    "extraction_quality": "validated"
+  },
+  "normalization": {
+    "reported": {
+      "revenue": 82886000000,
+      "operating_income": 38398000000,
+      "net_income": 31778000000,
+      "operating_margin": 0.46326279468185216,
+      "net_margin": 0.3833940593103781
+    },
+    "operating_reference": {
+      "revenue": 82886000000,
+      "operating_income": 38398000000,
+      "operating_margin": 0.46326279468185216,
+      "net_debt": -682000000,
+      "analyst_normalized_earnings": null,
+      "analyst_normalized_margin": null
+    },
+    "flags": [
+      "net_debt_relatively_small_vs_latest_period_revenue"
+    ],
+    "notes": [
+      "Reported metrics are kept separate from operating-reference metrics.",
+      "Net income and net margin may be noisy for valuation unless analyst-normalized.",
+      "This layer is only a guardrail, not a substitute for analyst judgment."
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+
+# Secrets / local machine
+.env
+*.key
+*.pem
+*.token
+
+# Derived / noisy registries
+financial_system/registry/*previous.json
+financial_system/registry/filing_registry.json
+financial_system/registry/extracted_financials_registry.json
+financial_system/registry/data_deltas.json
+financial_system/registry/filing_deltas.json
+
+# Noisy mechanical outputs
+financial_system/outputs/*.json
+financial_system/outputs/phase2_packets/*.json
+financial_system/outputs/phase2_packets/*.md
+
+# Local dashboard serving/runtime leftovers
+financial_dashboard/output/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

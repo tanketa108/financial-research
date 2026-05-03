@@ -1,0 +1,276 @@
+{
+  "DVN": {
+    "ticker": "DVN",
+    "coverage_status": "covered",
+    "extraction_quality": "validated",
+    "latest_period": {
+      "form_type": "10-Q",
+      "filing_date": "2025-11-06",
+      "report_date": "2025-09-30",
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3"
+    },
+    "filing_delta": {
+      "changed": false,
+      "new_filing_types": [],
+      "changes": []
+    },
+    "data_delta": {
+      "changed": false,
+      "metric_changes": []
+    },
+    "preliminary_priority": "ignore",
+    "notes": []
+  },
+  "MSFT": {
+    "ticker": "MSFT",
+    "coverage_status": "covered",
+    "extraction_quality": "validated",
+    "latest_period": {
+      "form_type": "10-Q",
+      "filing_date": "2026-04-29",
+      "report_date": "2026-03-31",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3"
+    },
+    "filing_delta": {
+      "changed": true,
+      "new_filing_types": [
+        "10-K",
+        "8-K"
+      ],
+      "changes": [
+        {
+          "kind": "latest_10k_updated",
+          "old_accession": "0000950170-25-105877",
+          "new_accession": "0000950170-25-100235"
+        },
+        {
+          "kind": "new_8k_detected",
+          "new_accessions": [
+            "0001193125-25-256310",
+            "0001193125-25-311196",
+            "0001193125-26-027198",
+            "0001193125-26-191457"
+          ]
+        }
+      ]
+    },
+    "data_delta": {
+      "changed": false,
+      "metric_changes": []
+    },
+    "preliminary_priority": "review",
+    "notes": []
+  },
+  "NFLX": {
+    "ticker": "NFLX",
+    "coverage_status": "covered",
+    "extraction_quality": "validated",
+    "latest_period": {
+      "form_type": "10-Q",
+      "filing_date": "2026-04-17",
+      "report_date": "2026-03-31",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1"
+    },
+    "filing_delta": {
+      "changed": true,
+      "new_filing_types": [
+        "10-Q",
+        "10-K",
+        "8-K"
+      ],
+      "changes": [
+        {
+          "kind": "latest_10q_updated",
+          "old_accession": "0001065280-25-000275",
+          "new_accession": "0001065280-26-000138"
+        },
+        {
+          "kind": "latest_10k_updated",
+          "old_accession": "0001065280-25-000044",
+          "new_accession": "0001065280-26-000034"
+        },
+        {
+          "kind": "new_8k_detected",
+          "new_accessions": [
+            "0001065280-26-000033",
+            "0001065280-26-000137",
+            "0001065280-26-000139",
+            "0001193125-26-015951",
+            "0001193125-26-082247"
+          ]
+        }
+      ]
+    },
+    "data_delta": {
+      "changed": true,
+      "metric_changes": [
+        {
+          "metric": "revenue",
+          "kinds": [
+            "value_changed"
+          ],
+          "old_value": 11510307000,
+          "new_value": 12249757000,
+          "delta": 739450000,
+          "delta_pct": 0.06424242203096756,
+          "old_status": "ok",
+          "new_status": "ok",
+          "unit": "USD",
+          "priority": "review"
+        },
+        {
+          "metric": "operating_income",
+          "kinds": [
+            "value_changed"
+          ],
+          "old_value": 3248247000,
+          "new_value": 3956997000,
+          "delta": 708750000,
+          "delta_pct": 0.21819461389481773,
+          "old_status": "ok",
+          "new_status": "ok",
+          "unit": "USD",
+          "priority": "high_priority"
+        },
+        {
+          "metric": "net_income",
+          "kinds": [
+            "value_changed"
+          ],
+          "old_value": 2546916000,
+          "new_value": 5282791000,
+          "delta": 2735875000,
+          "delta_pct": 1.0741912964542215,
+          "old_status": "ok",
+          "new_status": "ok",
+          "unit": "USD",
+          "priority": "high_priority"
+        },
+        {
+          "metric": "diluted_eps",
+          "kinds": [
+            "value_changed"
+          ],
+          "old_value": 5.87,
+          "new_value": 1.23,
+          "delta": -4.640000000000001,
+          "delta_pct": -0.7904599659284498,
+          "old_status": "ok",
+          "new_status": "ok",
+          "unit": "USD/share",
+          "priority": "high_priority"
+        },
+        {
+          "metric": "cash_and_equivalents",
+          "kinds": [
+            "value_changed"
+          ],
+          "old_value": 9287287000,
+          "new_value": 12259772000,
+          "delta": 2972485000,
+          "delta_pct": 0.3200595609891242,
+          "old_status": "ok",
+          "new_status": "ok",
+          "unit": "USD",
+          "priority": "investigate"
+        },
+        {
+          "metric": "total_debt",
+          "kinds": [
+            "value_changed"
+          ],
+          "old_value": 14463020000,
+          "new_value": 13361331000,
+          "delta": -1101689000,
+          "delta_pct": -0.07617281867825669,
+          "old_status": "ok",
+          "new_status": "ok",
+          "unit": "USD",
+          "priority": "ignore"
+        }
+      ]
+    },
+    "preliminary_priority": "high_priority",
+    "notes": []
+  },
+  "NVO": {
+    "ticker": "NVO",
+    "coverage_status": "pending_issuer_strategy",
+    "extraction_quality": "blocked",
+    "latest_period": null,
+    "filing_delta": {
+      "changed": false,
+      "new_filing_types": [],
+      "changes": []
+    },
+    "data_delta": {
+      "changed": false,
+      "metric_changes": []
+    },
+    "preliminary_priority": "ignore",
+    "notes": [
+      "Control sample; foreign issuer/ADR path needs validation"
+    ]
+  },
+  "RACE": {
+    "ticker": "RACE",
+    "coverage_status": "pending_identity_resolution",
+    "extraction_quality": "blocked",
+    "latest_period": null,
+    "filing_delta": {
+      "changed": false,
+      "new_filing_types": [],
+      "changes": []
+    },
+    "data_delta": {
+      "changed": false,
+      "metric_changes": []
+    },
+    "preliminary_priority": "ignore",
+    "notes": [
+      "Control sample; needs CIK/SEC path validation"
+    ]
+  },
+  "UBER": {
+    "ticker": "UBER",
+    "coverage_status": "covered",
+    "extraction_quality": "validated",
+    "latest_period": {
+      "form_type": "10-Q",
+      "filing_date": "2025-11-04",
+      "report_date": "2025-09-30",
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3"
+    },
+    "filing_delta": {
+      "changed": true,
+      "new_filing_types": [
+        "10-K",
+        "8-K"
+      ],
+      "changes": [
+        {
+          "kind": "latest_10k_updated",
+          "old_accession": "0001543151-25-000004",
+          "new_accession": "0001543151-26-000015"
+        },
+        {
+          "kind": "new_8k_detected",
+          "new_accessions": [
+            "0001552781-25-000287",
+            "0001552781-26-000043"
+          ]
+        }
+      ]
+    },
+    "data_delta": {
+      "changed": false,
+      "metric_changes": []
+    },
+    "preliminary_priority": "review",
+    "notes": []
+  }
+}
