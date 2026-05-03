@@ -77,12 +77,49 @@
     </div>
   </div>
   <div class="card panel panel-valuation">
-    <h2>Valuation Snapshot</h2>
-    <div class="grid compact-grid">
+    <h2>Valuation Workspace</h2>
+    <div class="grid compact-grid valuation-top-grid">
       <div><div class="muted small">Central reference</div><div class="kpi">117.05</div></div>
       <div><div class="muted small">Range</div><div class="small mono">[103.90790947172226, 126.72546442158749]</div></div>
       <div><div class="muted small">Confidence</div><div class="kpi">0.75</div></div>
+      <div><div class="muted small">Dispersion</div><div class="kpi">22.82</div></div>
       <div><div class="muted small">Source status</div><div><span class="pill pill-extracted_not_validated">extracted_not_validated</span></div></div>
+      <div><div class="muted small">Sensitivity sets</div><div class="kpi">0</div></div>
+    </div>
+    <div class="valuation-method-grid section">
+      <div class="valuation-method-card">
+          <div class="muted small">DCF</div>
+          <div class="kpi">103.91</div>
+          <div class="small">status: model_extracted</div>
+          <div class="small">confidence: 0.65</div>
+          <div class="small mono">range: [103.90790947172226, 124.65114124432701]</div>
+        </div><div class="valuation-method-card">
+          <div class="muted small">Gordon</div>
+          <div class="kpi">103.91</div>
+          <div class="small">status: model_extracted</div>
+          <div class="small">confidence: 0.90</div>
+          <div class="small mono">range: [103.90790947172226, 103.90790947172226]</div>
+        </div><div class="valuation-method-card">
+          <div class="muted small">Terminal multiple</div>
+          <div class="kpi">126.73</div>
+          <div class="small">status: model_extracted</div>
+          <div class="small">confidence: 0.75</div>
+          <div class="small mono">range: [124.65114124432701, 126.72546442158749]</div>
+        </div>
+    </div>
+    <div class="split inside-split">
+      <div>
+        <h2>Scenario frame</h2>
+        <ul class="list small"><li><strong>Network wins / AV integrated into existing network</strong>: Se preserva el modelo asset-light y aumenta la calidad del negocio por mayor eficiencia de red.</li><li><strong>AV ecosystem owns the customer relationship</strong>: Compresión del poder de negociación y menor captura de valor económico por parte de Uber.</li><li><strong>Vertical integration / asset-heavy Uber</strong>: El negocio gana intensidad de capital y pierde parte de su calidad económica.</li></ul>
+      </div>
+      <div>
+        <h2>Current valuation gaps</h2>
+        <ul class="list small">
+          <li>Observed vs derived vs analyst judgment: [not yet explicit enough]</li>
+          <li>Normalization layer: guardrail_added</li>
+          <li>Sensitivity tables: [not yet populated]</li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="card panel panel-conversion">
