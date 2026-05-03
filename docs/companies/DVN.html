@@ -8,16 +8,17 @@
 </head>
 <body>
   <div class="wrap">
-<div class="topbar"><div><h1>DVN</h1><div class="muted">Company dashboard v1</div></div><div><a href="../index.html">← Portfolio</a></div></div>
-<div class="grid">
-  <div class="card"><div class="muted small">Coverage</div><div><span class="pill pill-covered">covered</span></div></div>
-  <div class="card"><div class="muted small">Decision</div><div><span class="pill pill-ignore">ignore</span></div></div>
-  <div class="card"><div class="muted small">Valuation status</div><div><span class="pill pill-bootstrapped_from_model">bootstrapped_from_model</span></div></div>
-  <div class="card"><div class="muted small">Latest period</div><div class="small mono">10-Q | 2025-09-30</div></div>
+<div class="topbar workspace-header"><div><h1>DVN</h1><div class="muted">Investment terminal workspace v1</div></div><div><a href="../index.html">← Portfolio</a></div></div>
+<div class="status-rail section">
+  <div class="status-card"><div class="muted small">Coverage</div><div><span class="pill pill-covered">covered</span></div></div>
+  <div class="status-card"><div class="muted small">Decision</div><div><span class="pill pill-ignore">ignore</span></div></div>
+  <div class="status-card"><div class="muted small">Valuation</div><div><span class="pill pill-bootstrapped_from_model">bootstrapped_from_model</span></div></div>
+  <div class="status-card"><div class="muted small">Latest period</div><div class="small mono">10-Q | 2025-09-30</div></div>
+  <div class="status-card"><div class="muted small">Latest filing</div><div class="small mono">2025-11-06</div></div>
 </div>
-<div class="split section">
-  <div class="card">
-    <h2>Overview</h2>
+<div class="workspace-grid section">
+  <div class="card panel panel-overview">
+    <h2>Overview / Monitor state</h2>
     <ul class="list small">
       <li>Latest filing date: 2025-11-06</li>
       <li>Filing delta changed: False</li>
@@ -27,94 +28,93 @@
     <h2>Monitor reasons</h2>
     <ul class="list small"><li>no relevant filing/data changes in current baseline</li></ul>
   </div>
-  <div class="card">
-    <h2>Warnings / Gaps</h2>
+  <div class="card panel panel-actions">
+    <h2>Warnings / Next actions</h2>
     <ul class="list small"><li class="warning">missing thesis_short</li><li class="warning">missing risks</li><li class="warning">missing catalysts</li></ul>
     <h2>Suggested actions</h2>
     <ul class="list small"><li>write thesis snapshot</li><li>add key risks</li><li>add key catalysts</li></ul>
   </div>
-</div>
-<div class="section card">
-  <h2>Financial Base</h2>
-  <div class="grid">
-    <div><div class="muted small">Revenue</div><div class="kpi">4.3B</div></div>
-    <div><div class="muted small">Operating income</div><div class="kpi">326.0M</div></div>
-    <div><div class="muted small">Net income</div><div class="kpi">687.0M</div></div>
-    <div><div class="muted small">Diluted EPS</div><div class="kpi">1.09</div></div>
-    <div><div class="muted small">Cash</div><div class="kpi">1.2B</div></div>
-    <div><div class="muted small">Total debt</div><div class="kpi">7.4B</div></div>
-  </div>
-</div>
-<div class="section card">
-  <h2>Cash Flow / Conversion</h2>
-  <div class="grid">
-    <div><div class="muted small">DSO (days)</div><div class="kpi">153.86</div></div>
-    <div><div class="muted small">DPO (days)</div><div class="kpi">[missing]</div></div>
-    <div><div class="muted small">DIO (days)</div><div class="kpi">28.85</div></div>
-    <div><div class="muted small">CCC (days)</div><div class="kpi">182.71</div></div>
-    <div><div class="muted small">Capex</div><div class="kpi">474.0M</div></div>
-    <div><div class="muted small">Depreciation</div><div class="kpi">3.6B</div></div>
-  </div>
-</div>
-<div class="section card">
-  <h2>Capital Allocation &amp; Balance Sheet</h2>
-  <div class="grid">
-    <div><div class="muted small">Gross debt</div><div class="kpi">7.4B</div></div>
-    <div><div class="muted small">Cash</div><div class="kpi">1.2B</div></div>
-    <div><div class="muted small">Net debt</div><div class="kpi">6.2B</div></div>
-    <div><div class="muted small">Interest burden</div><div class="kpi">138.0M</div></div>
-    <div><div class="muted small">Interest coverage</div><div class="kpi">2.36x</div></div>
-    <div><div class="muted small">Net debt / revenue</div><div class="kpi">145.0%</div></div>
-    <div><div class="muted small">Share count</div><div class="kpi">622.0M</div></div>
-    <div><div class="muted small">SBC</div><div class="kpi">99.0M</div></div>
-  </div>
-  <div class="split section">
-    <div>
-      <h2>Interpretation</h2>
-      <ul class="list small">
-        <li>Debt is shown here as part of capital allocation quality, not as an isolated accounting block.</li>
-        <li>Interest coverage is a first-pass mechanical ratio: operating income / interest burden.</li>
-        <li>Money units are compacted (B/M/K) to improve scan speed in the terminal.</li>
-        <li>Share count and SBC are included because dilution is part of capital allocation reality.</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Current gaps</h2>
-      <ul class="list small">
-        <li>Maturity ladder: [not yet structured]</li>
-        <li>Refinancing risk: [missing]</li>
-        <li>Dividends / buybacks / M&amp;A: [not yet surfaced]</li>
-      </ul>
+  <div class="card panel panel-financial">
+    <h2>Financial Base</h2>
+    <div class="grid compact-grid">
+      <div><div class="muted small">Revenue</div><div class="kpi">4.3B</div></div>
+      <div><div class="muted small">Operating income</div><div class="kpi">326.0M</div></div>
+      <div><div class="muted small">Net income</div><div class="kpi">687.0M</div></div>
+      <div><div class="muted small">Diluted EPS</div><div class="kpi">1.09</div></div>
+      <div><div class="muted small">Cash</div><div class="kpi">1.2B</div></div>
+      <div><div class="muted small">Total debt</div><div class="kpi">7.4B</div></div>
     </div>
   </div>
-</div>
-<div class="section card">
-  <h2>Key charts</h2>
-  <div class="chart-grid">
-    <div class="mini-chart-card"><h3>Operating income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2016</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green negative" style="width:51%"></div></div><div class="mini-bar-value small">-1.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2016</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:50%"></div></div><div class="mini-bar-value small">1.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2016</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green negative" style="width:100%"></div></div><div class="mini-bar-value small">-2.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2017</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:24%"></div></div><div class="mini-bar-value small">706.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2017</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:18%"></div></div><div class="mini-bar-value small">542.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2017</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:11%"></div></div><div class="mini-bar-value small">326.0M</div></div></div></div>
-    <div class="mini-chart-card"><h3>Net income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:28%"></div></div><div class="mini-bar-value small">812.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:100%"></div></div><div class="mini-bar-value small">2.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:17%"></div></div><div class="mini-bar-value small">494.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:31%"></div></div><div class="mini-bar-value small">899.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:23%"></div></div><div class="mini-bar-value small">687.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:91%"></div></div><div class="mini-bar-value small">2.6B</div></div></div></div>
-    <div class="mini-chart-card"><h3>Share count / dilution</h3><div class="muted small">[missing]</div></div>
-    <div class="mini-chart-card"><h3>Debt history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:100%"></div></div><div class="mini-bar-value small">8.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:94%"></div></div><div class="mini-bar-value small">8.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:94%"></div></div><div class="mini-bar-value small">8.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:94%"></div></div><div class="mini-bar-value small">8.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:83%"></div></div><div class="mini-bar-value small">7.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:83%"></div></div><div class="mini-bar-value small">7.4B</div></div></div></div>
-    <div class="mini-chart-card"><h3>Cash history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:37%"></div></div><div class="mini-bar-value small">645.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:47%"></div></div><div class="mini-bar-value small">811.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:69%"></div></div><div class="mini-bar-value small">1.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100%"></div></div><div class="mini-bar-value small">1.7B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:71%"></div></div><div class="mini-bar-value small">1.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:80%"></div></div><div class="mini-bar-value small">1.4B</div></div></div></div>
+  <div class="card panel panel-balance">
+    <h2>Capital Allocation &amp; Balance Sheet</h2>
+    <div class="grid compact-grid">
+      <div><div class="muted small">Gross debt</div><div class="kpi">7.4B</div></div>
+      <div><div class="muted small">Cash</div><div class="kpi">1.2B</div></div>
+      <div><div class="muted small">Net debt</div><div class="kpi">6.2B</div></div>
+      <div><div class="muted small">Interest burden</div><div class="kpi">138.0M</div></div>
+      <div><div class="muted small">Interest coverage</div><div class="kpi">2.36x</div></div>
+      <div><div class="muted small">Net debt / revenue</div><div class="kpi">145.0%</div></div>
+      <div><div class="muted small">Share count</div><div class="kpi">622.0M</div></div>
+      <div><div class="muted small">SBC</div><div class="kpi">99.0M</div></div>
+    </div>
+    <div class="split section inside-split">
+      <div>
+        <h2>Interpretation</h2>
+        <ul class="list small">
+          <li>Debt is shown here as part of capital allocation quality, not as an isolated accounting block.</li>
+          <li>Interest coverage is a first-pass mechanical ratio: operating income / interest burden.</li>
+          <li>Share count and SBC are included because dilution is part of capital allocation reality.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Current gaps</h2>
+        <ul class="list small">
+          <li>Maturity ladder: [not yet structured]</li>
+          <li>Refinancing risk: [missing]</li>
+          <li>Dividends / buybacks / M&amp;A: [not yet surfaced]</li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
-<div class="section card">
-  <h2>Valuation</h2>
-  <div class="grid">
-    <div><div class="muted small">Central reference</div><div class="kpi">59.81</div></div>
-    <div><div class="muted small">Range</div><div class="small mono">[59.81180136230986, 59.81180136230986]</div></div>
-    <div><div class="muted small">Confidence</div><div class="kpi">0.90</div></div>
-    <div><div class="muted small">Source status</div><div><span class="pill pill-extracted_not_validated">extracted_not_validated</span></div></div>
+  <div class="card panel panel-valuation">
+    <h2>Valuation Snapshot</h2>
+    <div class="grid compact-grid">
+      <div><div class="muted small">Central reference</div><div class="kpi">59.81</div></div>
+      <div><div class="muted small">Range</div><div class="small mono">[59.81180136230986, 59.81180136230986]</div></div>
+      <div><div class="muted small">Confidence</div><div class="kpi">0.90</div></div>
+      <div><div class="muted small">Source status</div><div><span class="pill pill-extracted_not_validated">extracted_not_validated</span></div></div>
+    </div>
   </div>
-</div>
-<div class="section card">
-  <h2>Thesis / Risks / Catalysts</h2>
-  <p><strong>Thesis short:</strong> [missing]</p>
-  <p><strong>Current stance:</strong> [missing]</p>
-  <p><strong>What changes my mind:</strong> [missing]</p>
-  <div class="split">
-    <div><h2>Risks</h2><ul class="list small"><li>[missing]</li></ul></div>
-    <div><h2>Catalysts</h2><ul class="list small"><li>[missing]</li></ul></div>
+  <div class="card panel panel-conversion">
+    <h2>Cash Flow / Conversion</h2>
+    <div class="grid compact-grid">
+      <div><div class="muted small">DSO (days)</div><div class="kpi">153.86</div></div>
+      <div><div class="muted small">DPO (days)</div><div class="kpi">[missing]</div></div>
+      <div><div class="muted small">DIO (days)</div><div class="kpi">28.85</div></div>
+      <div><div class="muted small">CCC (days)</div><div class="kpi">182.71</div></div>
+      <div><div class="muted small">Capex</div><div class="kpi">474.0M</div></div>
+      <div><div class="muted small">Depreciation</div><div class="kpi">3.6B</div></div>
+    </div>
+  </div>
+  <div class="card panel panel-charts">
+    <h2>Key charts</h2>
+    <div class="chart-grid">
+      <div class="mini-chart-card"><h3>Operating income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2016</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green negative" style="width:51%"></div></div><div class="mini-bar-value small">-1.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2016</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:50%"></div></div><div class="mini-bar-value small">1.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2016</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green negative" style="width:100%"></div></div><div class="mini-bar-value small">-2.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2017</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:24%"></div></div><div class="mini-bar-value small">706.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2017</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:18%"></div></div><div class="mini-bar-value small">542.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2017</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:11%"></div></div><div class="mini-bar-value small">326.0M</div></div></div></div>
+      <div class="mini-chart-card"><h3>Net income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:28%"></div></div><div class="mini-bar-value small">812.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:100%"></div></div><div class="mini-bar-value small">2.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:17%"></div></div><div class="mini-bar-value small">494.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:31%"></div></div><div class="mini-bar-value small">899.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:23%"></div></div><div class="mini-bar-value small">687.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:91%"></div></div><div class="mini-bar-value small">2.6B</div></div></div></div>
+      <div class="mini-chart-card"><h3>Share count / dilution</h3><div class="muted small">[missing]</div></div>
+      <div class="mini-chart-card"><h3>Debt history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:100%"></div></div><div class="mini-bar-value small">8.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:94%"></div></div><div class="mini-bar-value small">8.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:94%"></div></div><div class="mini-bar-value small">8.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:94%"></div></div><div class="mini-bar-value small">8.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:83%"></div></div><div class="mini-bar-value small">7.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:83%"></div></div><div class="mini-bar-value small">7.4B</div></div></div></div>
+      <div class="mini-chart-card"><h3>Cash history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:37%"></div></div><div class="mini-bar-value small">645.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:47%"></div></div><div class="mini-bar-value small">811.0M</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:69%"></div></div><div class="mini-bar-value small">1.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100%"></div></div><div class="mini-bar-value small">1.7B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:71%"></div></div><div class="mini-bar-value small">1.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:80%"></div></div><div class="mini-bar-value small">1.4B</div></div></div></div>
+    </div>
+  </div>
+  <div class="card panel panel-thesis">
+    <h2>Thesis / Risks / Catalysts</h2>
+    <p><strong>Thesis short:</strong> [missing]</p>
+    <p><strong>Current stance:</strong> [missing]</p>
+    <p><strong>What changes my mind:</strong> [missing]</p>
+    <div class="split inside-split">
+      <div><h2>Risks</h2><ul class="list small"><li>[missing]</li></ul></div>
+      <div><h2>Catalysts</h2><ul class="list small"><li>[missing]</li></ul></div>
+    </div>
   </div>
 </div>
 </div>
