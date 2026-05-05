@@ -209,29 +209,29 @@
         <div>
           <h3>Model control panel</h3>
           <div class="small muted">Static for now — next step is making these assumptions interactive.</div>
-          <table>
+          <table class="model-table model-table-control">
             <thead><tr><th>Driver</th><th>Base</th><th>Min</th><th>Max</th><th>Confidence</th><th>Editable</th></tr></thead>
-            <tbody><tr><td>Revenue growth stage 1</td><td>[missing]</td><td>[missing]</td><td>[missing]</td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td>Target operating margin</td><td>[missing]</td><td>[missing]</td><td>[missing]</td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td>Tax rate</td><td>[missing]</td><td>[missing]</td><td>[missing]</td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td>Sales to capital</td><td>[missing]x</td><td>[missing]x</td><td>[missing]x</td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td>WACC</td><td>[missing]</td><td>[missing]</td><td>[missing]</td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td>Terminal growth</td><td>[missing]</td><td>[missing]</td><td>[missing]</td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr></tbody>
+            <tbody><tr class="model-row-percent"><td><strong>Revenue growth stage 1</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Target operating margin</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Tax rate</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td><strong>Sales to capital</strong></td><td><strong>[missing]x</strong></td><td>[missing]x</td><td>[missing]x</td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>WACC</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Terminal growth</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr></tbody>
           </table>
         </div>
         <div>
           <h3>FCF build</h3>
           <div class="small muted">FCFF = NOPAT - reinvestment. Tax burden is shown explicitly above.</div>
-          <table>
+          <table class="model-table model-table-fcf">
             <thead><tr><th>Bridge</th><th>[missing]</th></tr></thead>
             <tbody>
-              <tr><td>EBIT</td></tr>
-              <tr><td>Tax burden</td></tr>
-              <tr><td>NOPAT</td></tr>
-              <tr><td>Reinvestment</td></tr>
-              <tr><td>FCFF</td></tr>
+              <tr class="model-row-strong"><td><strong>EBIT</strong></td></tr>
+              <tr class="model-row-tax"><td>Tax burden</td></tr>
+              <tr class="model-row-strong"><td><strong>NOPAT</strong></td></tr>
+              <tr class="model-row-tax"><td>Reinvestment</td></tr>
+              <tr class="model-row-fcff"><td><strong>FCFF</strong></td></tr>
             </tbody>
           </table>
         </div>
       </div>
       <div class="section inside-split">
         <h3>DCF forecast grid</h3>
-        <table>
+        <table class="model-table model-table-forecast">
           <thead><tr><th>Metric / date</th><th>[missing]</th></tr></thead>
           <tbody><tr><td>[missing]</td></tr></tbody>
         </table>
