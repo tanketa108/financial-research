@@ -12,7 +12,7 @@
 <div class="status-rail section">
   <div class="status-card"><div class="muted small">Coverage</div><div><span class="pill pill-covered">covered</span></div></div>
   <div class="status-card"><div class="muted small">Decision</div><div><span class="pill pill-review">review</span></div></div>
-  <div class="status-card"><div class="muted small">Valuation</div><div><span class="pill pill-prefilled">prefilled</span></div></div>
+  <div class="status-card"><div class="muted small">Valuation</div><div><span class="pill pill-dcf_ready">dcf_ready</span></div></div>
   <div class="status-card"><div class="muted small">Latest period</div><div class="small mono">10-Q | 2025-09-30</div></div>
   <div class="status-card"><div class="muted small">Latest filing</div><div class="small mono">2025-11-04</div></div>
 </div>
@@ -35,12 +35,18 @@
     </ul>
     <h2>Monitor reasons</h2>
     <ul class="list small"><li>filing changed without data delta yet</li><li>preliminary priority from materiality rules: review</li></ul>
+    <h2>Research pipeline</h2>
+    <ul class="list small"><li><strong>in_progress</strong> — UBER - valuation workbench v2 · next: add assumptions block and fill missing operating inputs</li></ul>
   </div>
   <div class="card panel panel-actions">
     <h2>Warnings / Next actions</h2>
-    <ul class="list small"><li class="good">No obvious structural warnings</li></ul>
+    <ul class="list small"><li class="warning">missing thesis_short</li><li class="warning">missing risks</li><li class="warning">missing catalysts</li></ul>
     <h2>Suggested actions</h2>
-    <ul class="list small"><li class="good">No immediate action gap</li></ul>
+    <ul class="list small"><li>write thesis snapshot</li><li>add key risks</li><li>add key catalysts</li></ul>
+    <h2>Current hypothesis</h2>
+    <div class="small">The key value of the UBER module is visible sensitivity, not only a point estimate.</div>
+    <h2>Open questions</h2>
+    <ul class="list small"><li>How should assumptions be exposed in the company page?</li><li>Which operational inputs should be extracted next: capex, D&amp;A, working capital, SBC?</li></ul>
   </div>
   <div class="card panel panel-provenance">
     <h2>Provenance / Semantics</h2>
@@ -49,8 +55,8 @@
       <li><strong>Derived</strong>: net debt, interest coverage, net debt / revenue, CCC-style metrics.</li>
       <li><strong>Model-extracted</strong>: workbook-derived valuation methods when present.</li>
       <li><strong>Analyst judgment</strong>: thesis, stance, risks, catalysts, scenario interpretation.</li>
-      <li><strong>Current source status</strong>: extracted_not_validated</li>
-      <li><strong>Normalization status</strong>: guardrail_added</li>
+      <li><strong>Current source status</strong>: dcf_ready</li>
+      <li><strong>Normalization status</strong>: review_needed</li>
     </ul>
   </div>
   <div class="card panel panel-financial">
@@ -71,18 +77,18 @@
           <div><div class="muted small">Cash</div><div class="kpi">8.4B</div></div>
           <div><div class="muted small">Total debt</div><div class="kpi">10.6B</div></div>
           <div><div class="muted small">Net debt</div><div class="kpi">2.2B</div></div>
-          <div><div class="muted small">Receivables</div><div class="kpi">3.8B</div></div>
-          <div><div class="muted small">Payables</div><div class="kpi">1.0B</div></div>
+          <div><div class="muted small">Receivables</div><div class="kpi">[missing]</div></div>
+          <div><div class="muted small">Payables</div><div class="kpi">[missing]</div></div>
           <div><div class="muted small">Inventory</div><div class="kpi">[missing]</div></div>
         </div>
       </div>
       <div class="statement-card">
         <h3>Cash flow snapshot</h3>
         <div class="grid compact-grid">
-          <div><div class="muted small">Capex</div><div class="kpi">336.0M</div></div>
-          <div><div class="muted small">Depreciation</div><div class="kpi">719.0M</div></div>
-          <div><div class="muted small">Interest burden</div><div class="kpi">124.0M</div></div>
-          <div><div class="muted small">SBC</div><div class="kpi">1.8B</div></div>
+          <div><div class="muted small">Capex</div><div class="kpi">[missing]</div></div>
+          <div><div class="muted small">Depreciation</div><div class="kpi">[missing]</div></div>
+          <div><div class="muted small">Interest burden</div><div class="kpi">[missing]</div></div>
+          <div><div class="muted small">SBC</div><div class="kpi">[missing]</div></div>
         </div>
       </div>
     </div>
@@ -94,15 +100,15 @@
       <div>
         <h3>Quarterly</h3>
         <table>
-          <thead><tr><th>Metric</th><th>Q1 2024</th><th>Q2 2024</th><th>Q3 2024</th><th>Q1 2025</th><th>Q2 2025</th><th>Q3 2025</th></tr></thead>
-          <tbody><tr><td>Revenue</td><td>10.1B</td><td>10.7B</td><td>11.2B</td><td>11.5B</td><td>12.7B</td><td>13.5B</td></tr><tr><td>Operating income</td><td>172.0M</td><td>796.0M</td><td>1.1B</td><td>1.2B</td><td>1.4B</td><td>1.1B</td></tr><tr><td>Net income</td><td>-654.0M</td><td>1.0B</td><td>2.6B</td><td>1.8B</td><td>1.4B</td><td>6.6B</td></tr><tr><td>Cash</td><td>5.0B</td><td>4.5B</td><td>6.2B</td><td>5.1B</td><td>6.4B</td><td>8.4B</td></tr><tr><td>Debt</td><td>9.5B</td><td>9.5B</td><td>11.0B</td><td>8.3B</td><td>9.6B</td><td>10.6B</td></tr></tbody>
+          <thead><tr><th>Metric</th></tr></thead>
+          <tbody><tr><td>[missing]</td></tr></tbody>
         </table>
       </div>
       <div>
         <h3>Annual</h3>
         <table>
-          <thead><tr><th>Metric</th><th>FY 2024</th><th>FY 2025</th></tr></thead>
-          <tbody><tr><td>Revenue</td><td>44.0B</td><td>52.0B</td></tr><tr><td>Operating income</td><td>2.8B</td><td>5.6B</td></tr><tr><td>Net income</td><td>9.9B</td><td>10.1B</td></tr><tr><td>Cash</td><td>5.9B</td><td>7.1B</td></tr><tr><td>Debt</td><td>8.3B</td><td>10.5B</td></tr></tbody>
+          <thead><tr><th>Metric</th></tr></thead>
+          <tbody><tr><td>[missing]</td></tr></tbody>
         </table>
       </div>
     </div>
@@ -113,11 +119,11 @@
       <div><div class="muted small">Gross debt</div><div class="kpi">10.6B</div></div>
       <div><div class="muted small">Cash</div><div class="kpi">8.4B</div></div>
       <div><div class="muted small">Net debt</div><div class="kpi">2.2B</div></div>
-      <div><div class="muted small">Interest burden</div><div class="kpi">124.0M</div></div>
-      <div><div class="muted small">Interest coverage</div><div class="kpi">8.98x</div></div>
+      <div><div class="muted small">Interest burden</div><div class="kpi">[missing]</div></div>
+      <div><div class="muted small">Interest coverage</div><div class="kpi">[missing]</div></div>
       <div><div class="muted small">Net debt / revenue</div><div class="kpi">16.2%</div></div>
       <div><div class="muted small">Share count</div><div class="kpi">2.1B</div></div>
-      <div><div class="muted small">SBC</div><div class="kpi">1.8B</div></div>
+      <div><div class="muted small">SBC</div><div class="kpi">[missing]</div></div>
     </div>
     <div class="split section inside-split">
       <div>
@@ -142,87 +148,94 @@
     <h2>Normalization Layer</h2>
     <div class="grid compact-grid">
       <div><div class="muted small">Reported net income</div><div class="kpi">6.6B</div></div>
-      <div><div class="muted small">Reported net margin</div><div class="kpi">49.2%</div></div>
+      <div><div class="muted small">Reported net margin</div><div class="kpi">[missing]</div></div>
       <div><div class="muted small">Operating reference income</div><div class="kpi">1.1B</div></div>
-      <div><div class="muted small">Operating reference margin</div><div class="kpi">8.3%</div></div>
+      <div><div class="muted small">Operating reference margin</div><div class="kpi">[missing]</div></div>
       <div><div class="muted small">Analyst normalized earnings</div><div class="kpi">[missing]</div></div>
       <div><div class="muted small">Analyst normalized margin</div><div class="kpi">[missing]</div></div>
     </div>
     <div class="split inside-split">
       <div>
         <h2>Normalization flags</h2>
-        <ul class="list small"><li class="warning">reported_net_margin_far_from_operating_margin</li><li class="warning">reported_net_income_likely_contains_non_operating_noise</li></ul>
+        <ul class="list small"><li>[none]</li></ul>
       </div>
       <div>
         <h2>Notes</h2>
-        <ul class="list small"><li>Reported metrics are kept separate from operating-reference metrics.</li><li>Net income and net margin may be noisy for valuation unless analyst-normalized.</li><li>This layer is only a guardrail, not a substitute for analyst judgment.</li></ul>
+        <ul class="list small"><li>[none]</li></ul>
       </div>
     </div>
   </div>
   <div class="card panel panel-valuation">
     <h2>Valuation Workspace</h2>
     <div class="grid compact-grid valuation-top-grid">
-      <div><div class="muted small">Central reference</div><div class="kpi">117.05</div></div>
-      <div><div class="muted small">Range</div><div class="small mono">[103.90790947172226, 126.72546442158749]</div></div>
-      <div><div class="muted small">Confidence</div><div class="kpi">0.75</div></div>
-      <div><div class="muted small">Dispersion</div><div class="kpi">22.82</div></div>
-      <div><div class="muted small">Source status</div><div><span class="pill pill-extracted_not_validated">extracted_not_validated</span></div></div>
-      <div><div class="muted small">Sensitivity sets</div><div class="kpi">1</div></div>
+      <div><div class="muted small">Central reference ($/share)</div><div class="kpi">$84.7</div></div>
+      <div><div class="muted small">Range</div><div class="small mono">[pending]</div></div>
+      <div><div class="muted small">Confidence</div><div class="kpi">[missing]</div></div>
+      <div><div class="muted small">Dispersion</div><div class="kpi">[missing]</div></div>
+      <div><div class="muted small">Source status</div><div><span class="pill pill-null">null</span></div></div>
+      <div><div class="muted small">Sensitivity sets</div><div class="kpi">6</div></div>
     </div>
     <div class="valuation-method-grid section">
       <div class="valuation-method-card">
           <div class="muted small">DCF</div>
-          <div class="kpi">103.91</div>
-          <div class="small">status: model_extracted</div>
-          <div class="small">confidence: 0.65</div>
-          <div class="small mono">range: [103.90790947172226, 124.65114124432701]</div>
+          <div class="kpi">$84.7</div>
+          <div class="small">status: ready</div>
+          <div class="small">EV: 182.6B</div>
+          <div class="small">Equity: 180.4B</div>
+          <div class="small mono">range: [pending]</div>
+          <div class="small muted">units: $/share · EV/equity in $</div>
         </div><div class="valuation-method-card">
           <div class="muted small">Gordon</div>
-          <div class="kpi">103.91</div>
-          <div class="small">status: model_extracted</div>
-          <div class="small">confidence: 0.90</div>
-          <div class="small mono">range: [103.90790947172226, 103.90790947172226]</div>
+          <div class="kpi">[missing]</div>
+          <div class="small">status: optional</div>
+          <div class="small">EV: [missing]</div>
+          <div class="small">Equity: [missing]</div>
+          <div class="small mono">range: [pending]</div>
+          <div class="small muted">units: $/share · EV/equity in $</div>
         </div><div class="valuation-method-card">
           <div class="muted small">Terminal multiple</div>
-          <div class="kpi">126.73</div>
-          <div class="small">status: model_extracted</div>
-          <div class="small">confidence: 0.75</div>
-          <div class="small mono">range: [124.65114124432701, 126.72546442158749]</div>
+          <div class="kpi">[missing]</div>
+          <div class="small">status: optional</div>
+          <div class="small">EV: [missing]</div>
+          <div class="small">Equity: [missing]</div>
+          <div class="small mono">range: [pending]</div>
+          <div class="small muted">units: $/share · EV/equity in $</div>
         </div>
+    </div>
+    <div class="section inside-split">
+      <h2>Key assumptions</h2>
+      <table>
+        <thead><tr><th>Assumption</th><th>Value</th><th>Source</th></tr></thead>
+        <tbody><tr><td>WACC</td><td>8.5%</td><td>manual_seed</td></tr><tr><td>Terminal growth</td><td>2.5%</td><td>manual_seed</td></tr><tr><td>Revenue growth stage 1</td><td>15.0%</td><td>manual_seed</td></tr><tr><td>Target operating margin</td><td>18.0%</td><td>manual_seed</td></tr><tr><td>Tax rate</td><td>22.0%</td><td>manual_seed</td></tr><tr><td>Sales to capital</td><td>2.5x</td><td>manual_seed</td></tr></tbody>
+      </table>
     </div>
     <div class="section inside-split">
       <h2>Sensitivities</h2>
       
-        <div class="sensitivity-note small muted">Anchored sensitivity from current DCF/Gordon assumptions. Base output 103.9 at WACC 9.0% and terminal growth 2.5%.</div>
+        <div class="sensitivity-note small muted">Persisted sensitivity set from valuation-state-v2.</div>
         <div class="sensitivity-oneway-grid">
           <div>
             <h3>WACC sensitivity</h3>
-            <div class="sensitivity-chip-grid"><div class="sensitivity-chip"><span>7.0%</span><strong>150.1</strong></div><div class="sensitivity-chip"><span>8.0%</span><strong>122.8</strong></div><div class="sensitivity-chip"><span>9.0%</span><strong>103.9</strong></div><div class="sensitivity-chip"><span>10.0%</span><strong>90.1</strong></div><div class="sensitivity-chip"><span>11.0%</span><strong>79.5</strong></div></div>
+            <div class="sensitivity-chip-grid"><div class="sensitivity-chip"><span>7.5%</span><strong>$104.8</strong></div><div class="sensitivity-chip"><span>8.0%</span><strong>$93.8</strong></div><div class="sensitivity-chip"><span>8.5%</span><strong>$84.7</strong></div><div class="sensitivity-chip"><span>9.0%</span><strong>$77.0</strong></div><div class="sensitivity-chip"><span>9.5%</span><strong>$70.4</strong></div></div>
           </div>
           <div>
             <h3>Terminal growth sensitivity</h3>
-            <div class="sensitivity-chip-grid"><div class="sensitivity-chip"><span>0.5%</span><strong>79.5</strong></div><div class="sensitivity-chip"><span>1.5%</span><strong>90.1</strong></div><div class="sensitivity-chip"><span>2.5%</span><strong>103.9</strong></div><div class="sensitivity-chip"><span>3.5%</span><strong>122.8</strong></div><div class="sensitivity-chip"><span>4.5%</span><strong>150.1</strong></div></div>
+            <div class="sensitivity-chip-grid"><div class="sensitivity-chip"><span>1.5%</span><strong>$75.8</strong></div><div class="sensitivity-chip"><span>2.0%</span><strong>$79.9</strong></div><div class="sensitivity-chip"><span>2.5%</span><strong>$84.7</strong></div><div class="sensitivity-chip"><span>3.0%</span><strong>$90.3</strong></div><div class="sensitivity-chip"><span>3.5%</span><strong>$97.0</strong></div></div>
           </div>
         </div>
-        
-            <div class="section inside-split">
-              <h3>Exit FCF sensitivity</h3>
-              <div class="small muted">Anchored to model 2029E FCF = 17244.</div>
-              <div class="sensitivity-chip-grid"><div class="sensitivity-chip"><span>-19% exit FCF</span><strong>83.1</strong><em>13795</em></div><div class="sensitivity-chip"><span>-9% exit FCF</span><strong>93.5</strong><em>15519</em></div><div class="sensitivity-chip"><span>+0% exit FCF</span><strong>103.9</strong><em>17244</em></div><div class="sensitivity-chip"><span>+10% exit FCF</span><strong>114.3</strong><em>18968</em></div><div class="sensitivity-chip"><span>+19% exit FCF</span><strong>124.7</strong><em>20692</em></div></div>
-            </div>
-            
-        
-            <div class="section inside-split">
-              <h3>Growth path sensitivity</h3>
-              <div class="small muted">Anchored to model average 2025E–2029E growth = 14.4%.</div>
-              <div class="sensitivity-chip-grid"><div class="sensitivity-chip"><span>-3 pts growth</span><strong>94.6</strong><em>11.4%</em></div><div class="sensitivity-chip"><span>-1 pts growth</span><strong>100.8</strong><em>13.4%</em></div><div class="sensitivity-chip"><span>+0 pts growth</span><strong>103.9</strong><em>14.4%</em></div><div class="sensitivity-chip"><span>+1 pts growth</span><strong>107.0</strong><em>15.4%</em></div><div class="sensitivity-chip"><span>+3 pts growth</span><strong>113.3</strong><em>17.4%</em></div></div>
-            </div>
-            
+        <div class="section inside-split">
+          <h3>Bear / Base / Bull</h3>
+          <div class="sensitivity-chip-grid"><div class="sensitivity-chip"><span>bear</span><strong>$57.4</strong></div><div class="sensitivity-chip"><span>base</span><strong>$84.7</strong></div><div class="sensitivity-chip"><span>bull</span><strong>$111.6</strong></div></div>
+        </div>
+        <div class="section inside-split">
+          <h3>Top drivers</h3>
+          <ul class="list small"><li><strong>wacc</strong> — rank 1 | base 8.5%</li><li><strong>terminal_growth</strong> — rank 2 | base 2.5%</li><li><strong>revenue_growth_stage1</strong> — rank 3 | base 15.0%</li><li><strong>sales_to_capital</strong> — rank 4 | base 2.5</li><li><strong>target_operating_margin</strong> — rank 5 | base 18.0%</li></ul>
+        </div>
         <div class="section inside-split">
           <h3>WACC × Terminal growth</h3>
           <table>
-            <thead><tr><th>g \ WACC</th><th>7.0%</th><th>8.0%</th><th>9.0%</th><th>10.0%</th><th>11.0%</th></tr></thead>
-            <tbody><tr><td>0.5%</td><td>103.9</td><td>90.1</td><td>79.5</td><td>71.1</td><td>64.3</td></tr><tr><td>1.5%</td><td>122.8</td><td>103.9</td><td>90.1</td><td>79.5</td><td>71.1</td></tr><tr><td>2.5%</td><td>150.1</td><td>122.8</td><td>103.9</td><td>90.1</td><td>79.5</td></tr><tr><td>3.5%</td><td>193.0</td><td>150.1</td><td>122.8</td><td>103.9</td><td>90.1</td></tr><tr><td>4.5%</td><td>270.2</td><td>193.0</td><td>150.1</td><td>122.8</td><td>103.9</td></tr></tbody>
+            <thead><tr><th>g \ WACC</th><th>7.5%</th><th>8.0%</th><th>8.5%</th><th>9.0%</th><th>9.5%</th></tr></thead>
+            <tbody><tr><td>1.5%</td><td>$91.3</td><td>$82.9</td><td>$75.8</td><td>$69.7</td><td>$64.3</td></tr><tr><td>2.0%</td><td>$97.4</td><td>$87.9</td><td>$79.9</td><td>$73.1</td><td>$67.2</td></tr><tr><td>2.5%</td><td>$104.8</td><td>$93.8</td><td>$84.7</td><td>$77.0</td><td>$70.4</td></tr><tr><td>3.0%</td><td>$113.7</td><td>$100.8</td><td>$90.3</td><td>$81.6</td><td>$74.2</td></tr><tr><td>3.5%</td><td>$124.9</td><td>$109.4</td><td>$97.0</td><td>$86.9</td><td>$78.6</td></tr></tbody>
           </table>
         </div>
         
@@ -230,13 +243,13 @@
     <div class="split inside-split">
       <div>
         <h2>Scenario frame</h2>
-        <ul class="list small"><li><strong>Network wins / AV integrated into existing network</strong>: Se preserva el modelo asset-light y aumenta la calidad del negocio por mayor eficiencia de red.</li><li><strong>AV ecosystem owns the customer relationship</strong>: Compresión del poder de negociación y menor captura de valor económico por parte de Uber.</li><li><strong>Vertical integration / asset-heavy Uber</strong>: El negocio gana intensidad de capital y pierde parte de su calidad económica.</li></ul>
+        <ul class="list small"><li><strong>bear</strong>: Lower growth, lower margin, higher WACC — $57.4</li><li><strong>base</strong>: Seed base case — $84.7</li><li><strong>bull</strong>: Higher growth, higher margin, lower WACC — $111.6</li></ul>
       </div>
       <div>
         <h2>Current valuation gaps</h2>
         <ul class="list small">
           <li>Observed vs derived vs analyst judgment: [not yet explicit enough]</li>
-          <li>Normalization layer: guardrail_added</li>
+          <li>Normalization layer: review_needed</li>
           <li>Sensitivity tables: present</li>
         </ul>
       </div>
@@ -245,34 +258,34 @@
   <div class="card panel panel-conversion">
     <h2>Cash Flow / Conversion</h2>
     <div class="grid compact-grid">
-      <div><div class="muted small">DSO (days)</div><div class="kpi">103.72</div></div>
-      <div><div class="muted small">DPO (days)</div><div class="kpi">27.46</div></div>
+      <div><div class="muted small">DSO (days)</div><div class="kpi">[missing]</div></div>
+      <div><div class="muted small">DPO (days)</div><div class="kpi">[missing]</div></div>
       <div><div class="muted small">DIO (days)</div><div class="kpi">[missing]</div></div>
-      <div><div class="muted small">CCC (days)</div><div class="kpi">76.27</div></div>
-      <div><div class="muted small">Capex</div><div class="kpi">336.0M</div></div>
-      <div><div class="muted small">Depreciation</div><div class="kpi">719.0M</div></div>
+      <div><div class="muted small">CCC (days)</div><div class="kpi">[missing]</div></div>
+      <div><div class="muted small">Capex</div><div class="kpi">[missing]</div></div>
+      <div><div class="muted small">Depreciation</div><div class="kpi">[missing]</div></div>
     </div>
   </div>
   <div class="card panel panel-charts">
     <h2>Key charts</h2>
     <div class="chart-grid">
-      <div class="mini-chart-card"><h3>Operating income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:19%"></div></div><div class="mini-bar-value small">1.1B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:50%"></div></div><div class="mini-bar-value small">2.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:22%"></div></div><div class="mini-bar-value small">1.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:26%"></div></div><div class="mini-bar-value small">1.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:20%"></div></div><div class="mini-bar-value small">1.1B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100%"></div></div><div class="mini-bar-value small">5.6B</div></div></div></div>
-      <div class="mini-chart-card"><h3>Net income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:25%"></div></div><div class="mini-bar-value small">2.6B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:98%"></div></div><div class="mini-bar-value small">9.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:17%"></div></div><div class="mini-bar-value small">1.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:13%"></div></div><div class="mini-bar-value small">1.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:65%"></div></div><div class="mini-bar-value small">6.6B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:100%"></div></div><div class="mini-bar-value small">10.1B</div></div></div></div>
+      <div class="mini-chart-card"><h3>Operating income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">virtual-0000</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:50%"></div></div><div class="mini-bar-value small">2.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">virtual-0001</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100%"></div></div><div class="mini-bar-value small">5.6B</div></div></div></div>
+      <div class="mini-chart-card"><h3>Net income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">virtual-0000</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:65%"></div></div><div class="mini-bar-value small">9.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">virtual-0001</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:100%"></div></div><div class="mini-bar-value small">14.9B</div></div></div></div>
       <div class="mini-chart-card"><h3>Share count / dilution</h3><div class="muted small">[missing]</div></div>
-      <div class="mini-chart-card"><h3>Debt vs cash</h3><div class="mini-chart dual-series-chart"><div class="dual-series-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="dual-series-bars"><div class="dual-bar-group"><span class="dual-bar-name">Debt</span><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:100%"></div></div><span class="dual-bar-value">11.0B</span></div><div class="dual-bar-group"><span class="dual-bar-name">Cash</span><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:55%"></div></div><span class="dual-bar-value">6.2B</span></div></div></div><div class="dual-series-row"><div class="mini-bar-label small mono">FY 2024</div><div class="dual-series-bars"><div class="dual-bar-group"><span class="dual-bar-name">Debt</span><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:75%"></div></div><span class="dual-bar-value">8.3B</span></div><div class="dual-bar-group"><span class="dual-bar-name">Cash</span><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:53%"></div></div><span class="dual-bar-value">5.9B</span></div></div></div><div class="dual-series-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="dual-series-bars"><div class="dual-bar-group"><span class="dual-bar-name">Debt</span><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:76%"></div></div><span class="dual-bar-value">8.3B</span></div><div class="dual-bar-group"><span class="dual-bar-name">Cash</span><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:46%"></div></div><span class="dual-bar-value">5.1B</span></div></div></div><div class="dual-series-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="dual-series-bars"><div class="dual-bar-group"><span class="dual-bar-name">Debt</span><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:87%"></div></div><span class="dual-bar-value">9.6B</span></div><div class="dual-bar-group"><span class="dual-bar-name">Cash</span><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:58%"></div></div><span class="dual-bar-value">6.4B</span></div></div></div><div class="dual-series-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="dual-series-bars"><div class="dual-bar-group"><span class="dual-bar-name">Debt</span><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:96%"></div></div><span class="dual-bar-value">10.6B</span></div><div class="dual-bar-group"><span class="dual-bar-name">Cash</span><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:76%"></div></div><span class="dual-bar-value">8.4B</span></div></div></div><div class="dual-series-row"><div class="mini-bar-label small mono">FY 2025</div><div class="dual-series-bars"><div class="dual-bar-group"><span class="dual-bar-name">Debt</span><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:95%"></div></div><span class="dual-bar-value">10.5B</span></div><div class="dual-bar-group"><span class="dual-bar-name">Cash</span><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:64%"></div></div><span class="dual-bar-value">7.1B</span></div></div></div></div></div>
-      <div class="mini-chart-card"><h3>Net debt trend</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:89%"></div></div><div class="mini-bar-value small">4.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:100%"></div></div><div class="mini-bar-value small">5.0B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:97%"></div></div><div class="mini-bar-value small">4.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:49%"></div></div><div class="mini-bar-value small">2.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:64%"></div></div><div class="mini-bar-value small">3.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:63%"></div></div><div class="mini-bar-value small">3.1B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:44%"></div></div><div class="mini-bar-value small">2.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:68%"></div></div><div class="mini-bar-value small">3.4B</div></div></div></div>
-      <div class="mini-chart-card"><h3>Debt history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:100%"></div></div><div class="mini-bar-value small">11.0B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:75%"></div></div><div class="mini-bar-value small">8.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:76%"></div></div><div class="mini-bar-value small">8.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:87%"></div></div><div class="mini-bar-value small">9.6B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:96%"></div></div><div class="mini-bar-value small">10.6B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:95%"></div></div><div class="mini-bar-value small">10.5B</div></div></div></div>
-      <div class="mini-chart-card"><h3>Cash history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:72%"></div></div><div class="mini-bar-value small">6.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:69%"></div></div><div class="mini-bar-value small">5.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:60%"></div></div><div class="mini-bar-value small">5.1B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:76%"></div></div><div class="mini-bar-value small">6.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100%"></div></div><div class="mini-bar-value small">8.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:84%"></div></div><div class="mini-bar-value small">7.1B</div></div></div></div>
+      <div class="mini-chart-card"><h3>Debt vs cash</h3><div class="muted small">[missing]</div></div>
+      <div class="mini-chart-card"><h3>Net debt trend</h3><div class="muted small">[missing]</div></div>
+      <div class="mini-chart-card"><h3>Debt history</h3><div class="muted small">[missing]</div></div>
+      <div class="mini-chart-card"><h3>Cash history</h3><div class="muted small">[missing]</div></div>
     </div>
   </div>
   <div class="card panel panel-thesis">
     <h2>Thesis / Risks / Catalysts</h2>
-    <p><strong>Thesis short:</strong> Uber está consolidando un sistema operativo global de movilidad y comercio local con efectos de red, adyacencias de alto margen y una vía asset-light hacia la autonomía, lo que debería traducirse en expansión estructural de márgenes y FCF.</p>
-    <p><strong>Current stance:</strong> overweight / positiva con riesgo alto-especulativo</p>
-    <p><strong>What changes my mind:</strong> Una ruptura de la liquidez de red en Mobility, evidencia de que Delivery no sostiene mejora estructural de márgenes, una regulación laboral que destruya de forma material la economía unitaria, o una transición AV donde Uber pierda la relación con el cliente y quede desintermediada por OEMs/AV operators.</p>
+    <p><strong>Thesis short:</strong> [missing]</p>
+    <p><strong>Current stance:</strong> [missing]</p>
+    <p><strong>What changes my mind:</strong> [missing]</p>
     <div class="split inside-split">
-      <div><h2>Risks</h2><ul class="list small"><li>Riesgo regulatorio laboral en EE.UU. y Europa</li><li>Presión competitiva de DoorDash en delivery y Lyft en movilidad</li><li>Que la mejora de margen en Delivery no sea tan estructural como parece</li><li>Desintermediación en un futuro AV dominado por OEMs / operadores AV</li><li>Dependencia excesiva de ganancias no operativas para el net income reportado</li></ul></div>
-      <div><h2>Catalysts</h2><ul class="list small"><li>Expansión de Uber Advertising y prueba de su contribución al EBITDA</li><li>Crecimiento de Uber One y mejora de frecuencia / retención</li><li>Evidencia adicional de FCF estructural y recompras sostenidas</li><li>Nuevas alianzas AV que refuercen el rol de Uber como agregador de demanda</li><li>Mayor racionalidad competitiva en movilidad y delivery</li></ul></div>
+      <div><h2>Risks</h2><ul class="list small"><li>[missing]</li></ul></div>
+      <div><h2>Catalysts</h2><ul class="list small"><li>[missing]</li></ul></div>
     </div>
   </div>
 </div>
