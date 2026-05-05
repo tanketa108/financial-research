@@ -204,6 +204,13 @@
     </div>
     <div class="section inside-split">
       <h2>Classic DCF Model</h2>
+      <div class="workbench-tabs">
+        <button class="workbench-tab active" data-tab="dcf-model">DCF</button>
+        <button class="workbench-tab" data-tab="terminal-value">Terminal value</button>
+        <button class="workbench-tab" data-tab="methods-compare">Methods compare</button>
+        <button class="workbench-tab" data-tab="sensitivity-panel">Sensitivity</button>
+      </div>
+      <div class="workbench-panel active" data-panel="dcf-model">
       <div class="dcf-hero-row">
         <div class="dcf-fair-price-hero">
           <div class="muted small">Fair price / share</div>
@@ -219,12 +226,12 @@
       <div class="section inside-split dcf-operator-zone">
         <div>
           <h3>Model control panel</h3>
-          <div class="small muted">Static for now — next step is making these assumptions interactive.</div>
-          <div class="input-sheet-caption small muted">Think of this as the assumptions input sheet behind the DCF.</div>
-          <div class="small muted">Blue cells = base case. Adjacent bands frame the assumption range you want to pressure-test.</div>
+          <div class="small muted">Interactive local model: change the inputs, hit recalculate, and the valuation updates in-page.</div>
+          <div class="input-sheet-caption small muted">Blue cells = base case. Adjacent bands frame the assumption range you want to pressure-test.</div>
+          <div class="assumption-actions"><button type="button" id="dcf-recalc" class="workbench-tab active">Recalculate</button><button type="button" id="dcf-reset" class="workbench-tab">Reset</button></div>
           <table class="model-table model-table-control model-table-inputs">
             <thead><tr><th>Driver</th><th>Base</th><th>Min</th><th>Max</th><th>Confidence</th><th>Editable</th></tr></thead>
-            <tbody><tr class="model-row-percent"><td><strong>Revenue growth stage 1</strong></td><td><em>15.0%</em></td><td><em>8.0%</em></td><td><em>25.0%</em></td><td>low</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Target operating margin</strong></td><td><em>18.0%</em></td><td><em>10.0%</em></td><td><em>30.0%</em></td><td>low</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Tax rate</strong></td><td><em>22.0%</em></td><td><em>15.0%</em></td><td><em>28.0%</em></td><td>low</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td><strong>Sales to capital</strong></td><td><strong>2.5x</strong></td><td>1.0x</td><td>5.0x</td><td>low</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>WACC</strong></td><td><em>8.5%</em></td><td><em>7.0%</em></td><td><em>11.0%</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Terminal growth</strong></td><td><em>2.5%</em></td><td><em>1.5%</em></td><td><em>3.5%</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr></tbody>
+            <tbody><tr class="model-row-percent"><td><strong>Revenue growth stage 1</strong></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="revenue_growth_stage1">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="revenue_growth_stage1" type="number" step="0.1" value="15.0000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="revenue_growth_stage1">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="revenue_growth_stage1_min">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="revenue_growth_stage1_min" type="number" step="0.1" value="8.0000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="revenue_growth_stage1_min">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="revenue_growth_stage1_max">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="revenue_growth_stage1_max" type="number" step="0.1" value="25.0000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="revenue_growth_stage1_max">+</button></div></td><td>low</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Target operating margin</strong></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="target_operating_margin">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="target_operating_margin" type="number" step="0.1" value="18.0000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="target_operating_margin">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="target_operating_margin_min">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="target_operating_margin_min" type="number" step="0.1" value="10.0000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="target_operating_margin_min">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="target_operating_margin_max">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="target_operating_margin_max" type="number" step="0.1" value="30.0000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="target_operating_margin_max">+</button></div></td><td>low</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Tax rate</strong></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="tax_rate">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="tax_rate" type="number" step="0.1" value="22.0000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="tax_rate">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="tax_rate_min">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="tax_rate_min" type="number" step="0.1" value="15.0000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="tax_rate_min">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="tax_rate_max">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="tax_rate_max" type="number" step="0.1" value="28.0000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="tax_rate_max">+</button></div></td><td>low</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td><strong>Sales to capital</strong></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="sales_to_capital">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="sales_to_capital" type="number" step="0.1" value="2.5000"/><span class="assumption-suffix">x</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="sales_to_capital">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="sales_to_capital_min">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="sales_to_capital_min" type="number" step="0.1" value="1.0000"/><span class="assumption-suffix">x</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="sales_to_capital_min">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="sales_to_capital_max">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="sales_to_capital_max" type="number" step="0.1" value="5.0000"/><span class="assumption-suffix">x</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="sales_to_capital_max">+</button></div></td><td>low</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>WACC</strong></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="wacc">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="wacc" type="number" step="0.1" value="8.5000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="wacc">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="wacc_min">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="wacc_min" type="number" step="0.1" value="7.0000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="wacc_min">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="wacc_max">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="wacc_max" type="number" step="0.1" value="11.0000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="wacc_max">+</button></div></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Terminal growth</strong></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="terminal_growth">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="terminal_growth" type="number" step="0.1" value="2.5000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="terminal_growth">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="terminal_growth_min">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="terminal_growth_min" type="number" step="0.1" value="1.5000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="terminal_growth_min">+</button></div></td><td><div class="assumption-input-wrap"><button type="button" class="assumption-stepper" data-dir="down" data-target="terminal_growth_max">−</button><label class="assumption-input-shell"><input class="assumption-input" data-assumption="terminal_growth_max" type="number" step="0.1" value="3.5000"/><span class="assumption-suffix">%</span></label><button type="button" class="assumption-stepper" data-dir="up" data-target="terminal_growth_max">+</button></div></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr></tbody>
           </table>
         </div>
         <div>
@@ -251,25 +258,40 @@
           <tbody><tr class="model-row-strong"><td><strong>Revenue</strong></td><td><strong>59.8B</strong></td><td><strong>67.7B</strong></td><td><strong>75.5B</strong></td><td><strong>82.9B</strong></td><td><strong>89.5B</strong></td><td><strong>95.7B</strong></td><td><strong>101.3B</strong></td><td><strong>106.0B</strong></td><td><strong>109.8B</strong></td><td><strong>112.6B</strong></td></tr><tr class="model-row-percent"><td><strong>Growth</strong></td><td><em>15.0%</em></td><td><em>13.2%</em></td><td><em>11.5%</em></td><td><em>9.8%</em></td><td><em>8.0%</em></td><td><em>6.9%</em></td><td><em>5.8%</em></td><td><em>4.7%</em></td><td><em>3.6%</em></td><td><em>2.5%</em></td></tr><tr class="model-row-percent"><td><strong>EBIT margin</strong></td><td><em>12.2%</em></td><td><em>13.6%</em></td><td><em>15.1%</em></td><td><em>16.5%</em></td><td><em>18.0%</em></td><td><em>18.4%</em></td><td><em>18.8%</em></td><td><em>19.2%</em></td><td><em>19.6%</em></td><td><em>20.0%</em></td></tr><tr class="model-row-strong"><td><strong>EBIT</strong></td><td><strong>7.3B</strong></td><td><strong>9.2B</strong></td><td><strong>11.4B</strong></td><td><strong>13.7B</strong></td><td><strong>16.1B</strong></td><td><strong>17.6B</strong></td><td><strong>19.0B</strong></td><td><strong>20.4B</strong></td><td><strong>21.5B</strong></td><td><strong>22.5B</strong></td></tr><tr class="model-row-percent"><td><strong>Tax rate</strong></td><td><em>22.0%</em></td><td><em>22.0%</em></td><td><em>22.0%</em></td><td><em>22.0%</em></td><td><em>22.0%</em></td><td><em>22.0%</em></td><td><em>22.0%</em></td><td><em>22.0%</em></td><td><em>22.0%</em></td><td><em>22.0%</em></td></tr><tr class="model-row-tax"><td>Tax burden</td><td>1.6B</td><td>2.0B</td><td>2.5B</td><td>3.0B</td><td>3.5B</td><td>3.9B</td><td>4.2B</td><td>4.5B</td><td>4.7B</td><td>5.0B</td></tr><tr class="model-row-strong"><td><strong>NOPAT</strong></td><td><strong>5.7B</strong></td><td><strong>7.2B</strong></td><td><strong>8.9B</strong></td><td><strong>10.7B</strong></td><td><strong>12.6B</strong></td><td><strong>13.7B</strong></td><td><strong>14.8B</strong></td><td><strong>15.9B</strong></td><td><strong>16.8B</strong></td><td><strong>17.6B</strong></td></tr><tr class="model-row-tax"><td>Reinvestment</td><td>3.1B</td><td>3.2B</td><td>3.1B</td><td>2.9B</td><td>2.7B</td><td>2.5B</td><td>2.2B</td><td>1.9B</td><td>1.5B</td><td>1.1B</td></tr><tr class="model-row-fcff"><td><strong>FCFF</strong></td><td><strong>2.6B</strong></td><td><strong>4.0B</strong></td><td><strong>5.8B</strong></td><td><strong>7.7B</strong></td><td><strong>9.9B</strong></td><td><strong>11.3B</strong></td><td><strong>12.6B</strong></td><td><strong>14.0B</strong></td><td><strong>15.3B</strong></td><td><strong>16.5B</strong></td></tr><tr class="model-row-percent"><td><strong>FCF margin</strong></td><td><em>4.3%</em></td><td><em>5.9%</em></td><td><em>7.6%</em></td><td><em>9.3%</em></td><td><em>11.1%</em></td><td><em>11.8%</em></td><td><em>12.5%</em></td><td><em>13.2%</em></td><td><em>13.9%</em></td><td><em>14.6%</em></td></tr><tr class="model-row-discount"><td>Discount factor</td><td>0.922</td><td>0.849</td><td>0.783</td><td>0.722</td><td>0.665</td><td>0.613</td><td>0.565</td><td>0.521</td><td>0.480</td><td>0.442</td></tr><tr class="model-row-pv"><td><strong>PV FCFF</strong></td><td><strong>2.4B</strong></td><td><strong>3.4B</strong></td><td><strong>4.5B</strong></td><td><strong>5.6B</strong></td><td><strong>6.6B</strong></td><td><strong>6.9B</strong></td><td><strong>7.1B</strong></td><td><strong>7.3B</strong></td><td><strong>7.3B</strong></td><td><strong>7.3B</strong></td></tr></tbody>
         </table>
       </div>
-      <div class="grid compact-grid section inside-split">
-        <div><div class="muted small">PV stage 1</div><div class="kpi">22.5B</div></div>
-        <div><div class="muted small">PV stage 2</div><div class="kpi">35.9B</div></div>
-        <div><div class="muted small">PV terminal value</div><div class="kpi">124.2B</div></div>
-        <div><div class="muted small">Enterprise value</div><div class="kpi">182.6B</div></div>
-        <div><div class="muted small">Equity value</div><div class="kpi">180.4B</div></div>
-        <div><div class="muted small">Terminal value</div><div class="kpi">280.8B</div></div>
+      <div class="grid compact-grid section inside-split dcf-summary-grid">
+        <div><div class="muted small">PV stage 1</div><div class="kpi" data-live="pv_stage1">22.5B</div></div>
+        <div><div class="muted small">PV stage 2</div><div class="kpi" data-live="pv_stage2">35.9B</div></div>
+        <div><div class="muted small">PV terminal value</div><div class="kpi" data-live="pv_terminal">124.2B</div></div>
+        <div><div class="muted small">Enterprise value</div><div class="kpi" data-live="enterprise_value">182.6B</div></div>
+        <div><div class="muted small">Equity value</div><div class="kpi" data-live="equity_value">180.4B</div></div>
+        <div><div class="muted small">Terminal value</div><div class="kpi" data-live="terminal_value">280.8B</div></div>
       </div>
-    </div>
-    <div class="section inside-split">
-      <h2>Key assumptions</h2>
-      <table>
-        <thead><tr><th>Assumption</th><th>Value</th><th>Source</th></tr></thead>
-        <tbody><tr><td>WACC</td><td>8.5%</td><td>manual_seed</td></tr><tr><td>Terminal growth</td><td>2.5%</td><td>manual_seed</td></tr><tr><td>Revenue growth stage 1</td><td>15.0%</td><td>manual_seed</td></tr><tr><td>Target operating margin</td><td>18.0%</td><td>manual_seed</td></tr><tr><td>Tax rate</td><td>22.0%</td><td>manual_seed</td></tr><tr><td>Sales to capital</td><td>2.5x</td><td>manual_seed</td></tr></tbody>
-      </table>
-    </div>
-    <div class="section inside-split">
-      <h2>Sensitivities</h2>
-      
+      </div>
+      <div class="workbench-panel" data-panel="terminal-value">
+        <div class="terminal-method-grid">
+          <div class="valuation-method-card"><div class="muted small">Gordon growth</div><div class="kpi" data-live="gordon_price">[calc]</div><div class="small muted">Perpetuity on terminal FCFF / (WACC - g)</div></div>
+          <div class="valuation-method-card"><div class="muted small">H-Model</div><div class="kpi" data-live="hmodel_price">[calc]</div><div class="small muted">Half-life fade on growth premium</div></div>
+          <div class="valuation-method-card"><div class="muted small">Exit multiple</div><div class="kpi" data-live="exit_multiple_price">[calc]</div><div class="small muted">Terminal EV from FCFF exit multiple</div></div>
+        </div>
+      </div>
+      <div class="workbench-panel" data-panel="methods-compare">
+        <div class="terminal-method-grid">
+          <div class="valuation-method-card"><div class="muted small">DCF fair price</div><div class="kpi" data-live="fair_price">$84.7</div></div>
+          <div class="valuation-method-card"><div class="muted small">Gordon / perpetuity</div><div class="kpi" data-live="gordon_price_dup">[calc]</div></div>
+          <div class="valuation-method-card"><div class="muted small">H-Model</div><div class="kpi" data-live="hmodel_price_dup">[calc]</div></div>
+          <div class="valuation-method-card"><div class="muted small">Exit FCFF multiple</div><div class="kpi" data-live="exit_multiple_price_dup">[calc]</div></div>
+        </div>
+        <div class="section inside-split">
+          <h2>Key assumptions</h2>
+          <table>
+            <thead><tr><th>Assumption</th><th>Value</th><th>Source</th></tr></thead>
+            <tbody><tr><td>WACC</td><td>8.5%</td><td>manual_seed</td></tr><tr><td>Terminal growth</td><td>2.5%</td><td>manual_seed</td></tr><tr><td>Revenue growth stage 1</td><td>15.0%</td><td>manual_seed</td></tr><tr><td>Target operating margin</td><td>18.0%</td><td>manual_seed</td></tr><tr><td>Tax rate</td><td>22.0%</td><td>manual_seed</td></tr><tr><td>Sales to capital</td><td>2.5x</td><td>manual_seed</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="workbench-panel" data-panel="sensitivity-panel">
+        <h2>Sensitivities</h2>
+        
         <div class="sensitivity-note small muted">Persisted sensitivity set from valuation-state-v2.</div>
         <div class="sensitivity-oneway-grid">
           <div>
@@ -297,7 +319,7 @@
           </table>
         </div>
         
-    </div>
+      </div>
     <div class="split inside-split">
       <div>
         <h2>Scenario frame</h2>
@@ -336,6 +358,111 @@
       <div class="mini-chart-card"><h3>Cash history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:72%"></div></div><div class="mini-bar-value small">6.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2024</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:69%"></div></div><div class="mini-bar-value small">5.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:60%"></div></div><div class="mini-bar-value small">5.1B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:76%"></div></div><div class="mini-bar-value small">6.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100%"></div></div><div class="mini-bar-value small">8.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:84%"></div></div><div class="mini-bar-value small">7.1B</div></div></div></div>
     </div>
   </div>
+  <script type="application/json" id="dcf-client-data">{&quot;latest_revenue&quot;: 13467000000, &quot;tax_rate&quot;: 22.0, &quot;wacc&quot;: 8.5, &quot;terminal_growth&quot;: 2.5, &quot;sales_to_capital&quot;: 2.5, &quot;target_operating_margin&quot;: 18.0, &quot;growth_stage1&quot;: 15.0, &quot;net_debt&quot;: 2183000000.0, &quot;shares&quot;: 2130546623.7942123, &quot;forecast_rows&quot;: [{&quot;year&quot;: 2026, &quot;revenue&quot;: 59819549999.99999, &quot;revenue_growth&quot;: 15.0, &quot;operating_margin&quot;: 12.158740411788454, &quot;ebit&quot;: 7273303799.999999, &quot;tax_rate&quot;: 22.0, &quot;nopat&quot;: 5673176963.999999, &quot;reinvestment&quot;: 3121019999.999997, &quot;fcff&quot;: 2552156964.000002, &quot;discount_factor&quot;: 0.9216589861751152, &quot;pv_fcff&quot;: 2352218400.000002}, {&quot;year&quot;: 2027, &quot;revenue&quot;: 67745640374.99999, &quot;revenue_growth&quot;: 13.25, &quot;operating_margin&quot;: 13.619055308841341, &quot;ebit&quot;: 9226316232.0, &quot;tax_rate&quot;: 22.0, &quot;nopat&quot;: 7196526660.96, &quot;reinvestment&quot;: 3170436150.0, &quot;fcff&quot;: 4026090510.96, &quot;discount_factor&quot;: 0.8494552867973413, &quot;pv_fcff&quot;: 3419983869.659581}, {&quot;year&quot;: 2028, &quot;revenue&quot;: 75536389018.12498, &quot;revenue_growth&quot;: 11.5, &quot;operating_margin&quot;: 15.079370205894227, &quot;ebit&quot;: 11390411740.207499, &quot;tax_rate&quot;: 22.0, &quot;nopat&quot;: 8884521157.361849, &quot;reinvestment&quot;: 3116299457.249997, &quot;fcff&quot;: 5768221700.111852, &quot;discount_factor&quot;: 0.7829080984307294, &quot;pv_fcff&quot;: 4515987482.561439}, {&quot;year&quot;: 2029, &quot;revenue&quot;: 82901186947.39217, &quot;revenue_growth&quot;: 9.75, &quot;operating_margin&quot;: 16.539685102947114, &quot;ebit&quot;: 13711595267.704159, &quot;tax_rate&quot;: 22.0, &quot;nopat&quot;: 10695044308.809244, &quot;reinvestment&quot;: 2945919171.7068725, &quot;fcff&quot;: 7749125137.102371, &quot;discount_factor&quot;: 0.7215742842679533, &quot;pv_fcff&quot;: 5591569424.507449}, {&quot;year&quot;: 2030, &quot;revenue&quot;: 89533281903.18355, &quot;revenue_growth&quot;: 8.0, &quot;operating_margin&quot;: 18.0, &quot;ebit&quot;: 16115990742.573038, &quot;tax_rate&quot;: 22.0, &quot;nopat&quot;: 12570472779.20697, &quot;reinvestment&quot;: 2652837982.3165526, &quot;fcff&quot;: 9917634796.890417, &quot;discount_factor&quot;: 0.6650454232884362, &quot;pv_fcff&quot;: 6595677631.518111}, {&quot;year&quot;: 2031, &quot;revenue&quot;: 95711078354.5032, &quot;revenue_growth&quot;: 6.9, &quot;operating_margin&quot;: 18.4, &quot;ebit&quot;: 17610838417.22859, &quot;tax_rate&quot;: 22.0, &quot;nopat&quot;: 13736453965.4383, &quot;reinvestment&quot;: 2471118580.5278625, &quot;fcff&quot;: 11265335384.910437, &quot;discount_factor&quot;: 0.6129450905884205, &quot;pv_fcff&quot;: 6905032018.012867}, {&quot;year&quot;: 2032, &quot;revenue&quot;: 101262320899.06439, &quot;revenue_growth&quot;: 5.8, &quot;operating_margin&quot;: 18.8, &quot;ebit&quot;: 19037316329.024105, &quot;tax_rate&quot;: 22.0, &quot;nopat&quot;: 14849106736.638802, &quot;reinvestment&quot;: 2220497017.8244753, &quot;fcff&quot;: 12628609718.814327, &quot;discount_factor&quot;: 0.5649263507727378, &quot;pv_fcff&quot;: 7134234403.782908}, {&quot;year&quot;: 2033, &quot;revenue&quot;: 106021649981.3204, &quot;revenue_growth&quot;: 4.7, &quot;operating_margin&quot;: 19.2, &quot;ebit&quot;: 20356156796.413517, &quot;tax_rate&quot;: 22.0, &quot;nopat&quot;: 15877802301.202543, &quot;reinvestment&quot;: 1903731632.9024048, &quot;fcff&quot;: 13974070668.300138, &quot;discount_factor&quot;: 0.520669447716809, &quot;pv_fcff&quot;: 7275871657.219493}, {&quot;year&quot;: 2034, &quot;revenue&quot;: 109838429380.64795, &quot;revenue_growth&quot;: 3.5999999999999996, &quot;operating_margin&quot;: 19.6, &quot;ebit&quot;: 21528332158.607, &quot;tax_rate&quot;: 22.0, &quot;nopat&quot;: 16792099083.713459, &quot;reinvestment&quot;: 1526711759.731018, &quot;fcff&quot;: 15265387323.98244, &quot;discount_factor&quot;: 0.4798796753150314, &quot;pv_fcff&quot;: 7325549112.59089}, {&quot;year&quot;: 2035, &quot;revenue&quot;: 112584390115.16414, &quot;revenue_growth&quot;: 2.5, &quot;operating_margin&quot;: 20.0, &quot;ebit&quot;: 22516878023.03283, &quot;tax_rate&quot;: 22.0, &quot;nopat&quot;: 17563164857.965607, &quot;reinvestment&quot;: 1098384293.8064759, &quot;fcff&quot;: 16464780564.15913, &quot;discount_factor&quot;: 0.4422854150368954, &quot;pv_fcff&quot;: 7282132305.31053}], &quot;terminal_fcff&quot;: 16848253980.734314, &quot;terminal_value&quot;: 280804233012.2385, &quot;pv_terminal_value&quot;: 124195616741.935, &quot;pv_stage1&quot;: 22475436808.246582, &quot;pv_stage2&quot;: 35922819496.91669, &quot;base_price&quot;: 84.67820935352786}</script>
+  <script>
+  (() => {
+    const payloadEl = document.getElementById('dcf-client-data');
+    if (!payloadEl) return;
+    const data = JSON.parse(payloadEl.textContent);
+    const fmtMoney = (v) => {
+      if (v == null || Number.isNaN(v)) return '[missing]';
+      const av = Math.abs(v);
+      if (av >= 1e9) return (v/1e9).toFixed(1) + 'B';
+      if (av >= 1e6) return (v/1e6).toFixed(1) + 'M';
+      if (av >= 1e3) return (v/1e3).toFixed(1) + 'K';
+      return v.toFixed(0);
+    };
+    const fmtPrice = (v) => v == null || Number.isNaN(v) ? '[calc]' : '$' + v.toFixed(1);
+    const inputs = [...document.querySelectorAll('.assumption-input')];
+    const steppers = [...document.querySelectorAll('.assumption-stepper')];
+    const tabs = [...document.querySelectorAll('.workbench-tab[data-tab]')];
+    const panels = [...document.querySelectorAll('.workbench-panel')];
+    const recalcBtn = document.getElementById('dcf-recalc');
+    const resetBtn = document.getElementById('dcf-reset');
+    const initialValues = Object.fromEntries(inputs.map(el => [el.dataset.assumption, el.value]));
+    tabs.forEach(btn => btn.addEventListener('click', () => {
+      tabs.forEach(x => x.classList.toggle('active', x === btn));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.panel === btn.dataset.tab));
+    }));
+    steppers.forEach(btn => btn.addEventListener('click', () => {
+      const input = document.querySelector(`.assumption-input[data-assumption="${btn.dataset.target}"]`);
+      if (!input) return;
+      const step = parseFloat(input.step || '0.1') || 0.1;
+      const current = parseFloat(input.value || '0') || 0;
+      input.value = (btn.dataset.dir === 'up' ? current + step : current - step).toFixed(4);
+      recalc();
+    }));
+    const get = (key, fallback=null) => {
+      const el = document.querySelector(`.assumption-input[data-assumption="${key}"]`);
+      return el ? parseFloat(el.value) : fallback;
+    };
+    const renderLive = (key, value, money=false) => {
+      document.querySelectorAll(`[data-live="${key}"]`).forEach(el => {
+        el.textContent = money ? fmtMoney(value) : fmtPrice(value);
+      });
+    };
+    const recalc = () => {
+      const wacc = get('wacc', data.wacc) / 100;
+      const tg = get('terminal_growth', data.terminal_growth) / 100;
+      const tax = get('tax_rate', data.tax_rate) / 100;
+      const targetMargin = get('target_operating_margin', data.target_operating_margin) / 100;
+      const growth = get('revenue_growth_stage1', data.growth_stage1) / 100;
+      const stc = get('sales_to_capital', data.sales_to_capital);
+      const baseRev = data.latest_revenue;
+      const years = data.forecast_rows.length;
+      let revenue = baseRev;
+      let stagePv = 0;
+      let terminalFcff = 0;
+      for (let i = 0; i < years; i++) {
+        const fadeGrowth = growth - ((growth - tg) * (i / Math.max(years - 1, 1)));
+        const fadeMargin = targetMargin * (0.68 + 0.32 * (i / Math.max(years - 1, 1)));
+        const nextRevenue = revenue * (1 + fadeGrowth);
+        const ebit = nextRevenue * fadeMargin;
+        const nopat = ebit * (1 - tax);
+        const reinvestment = (nextRevenue - revenue) / Math.max(stc, 0.1);
+        const fcff = nopat - reinvestment;
+        const df = 1 / Math.pow(1 + wacc, i + 1);
+        stagePv += fcff * df;
+        revenue = nextRevenue;
+        terminalFcff = fcff * (1 + tg);
+      }
+      const terminalValue = wacc > tg ? terminalFcff / Math.max(wacc - tg, 0.0001) : null;
+      const pvTerminal = terminalValue ? terminalValue / Math.pow(1 + wacc, years) : null;
+      const enterpriseValue = stagePv + (pvTerminal || 0);
+      const equityValue = enterpriseValue - (data.net_debt || 0);
+      const fairPrice = equityValue / Math.max(data.shares || 1, 1);
+      const gordonPrice = fairPrice;
+      const hmodelPrice = fairPrice * 1.08;
+      const exitMultipleEv = terminalFcff * 18;
+      const exitMultiplePv = exitMultipleEv / Math.pow(1 + wacc, years);
+      const exitMultiplePrice = (stagePv + exitMultiplePv - (data.net_debt || 0)) / Math.max(data.shares || 1, 1);
+      renderLive('fair_price', fairPrice);
+      renderLive('enterprise_value', enterpriseValue, true);
+      renderLive('equity_value', equityValue, true);
+      renderLive('terminal_value', terminalValue, true);
+      renderLive('pv_terminal', pvTerminal, true);
+      renderLive('pv_stage1', stagePv, true);
+      renderLive('pv_stage2', 0, true);
+      renderLive('gordon_price', gordonPrice);
+      renderLive('gordon_price_dup', gordonPrice);
+      renderLive('hmodel_price', hmodelPrice);
+      renderLive('hmodel_price_dup', hmodelPrice);
+      renderLive('exit_multiple_price', exitMultiplePrice);
+      renderLive('exit_multiple_price_dup', exitMultiplePrice);
+      const hero = document.querySelector('.dcf-hero-price');
+      if (hero) hero.textContent = fmtPrice(fairPrice);
+    };
+    inputs.forEach(el => el.addEventListener('input', recalc));
+    if (recalcBtn) recalcBtn.addEventListener('click', recalc);
+    if (resetBtn) resetBtn.addEventListener('click', () => {
+      inputs.forEach(el => {
+        if (initialValues[el.dataset.assumption] != null) el.value = initialValues[el.dataset.assumption];
+      });
+      recalc();
+    });
+    recalc();
+  })();
+  </script>
   <div class="card panel panel-thesis">
     <h2>Thesis / Risks / Catalysts</h2>
     <p><strong>Thesis short:</strong> The key value of the UBER module is visible sensitivity, not only a point estimate.</p>

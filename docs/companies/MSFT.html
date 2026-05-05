@@ -204,6 +204,13 @@
     </div>
     <div class="section inside-split">
       <h2>Classic DCF Model</h2>
+      <div class="workbench-tabs">
+        <button class="workbench-tab active" data-tab="dcf-model">DCF</button>
+        <button class="workbench-tab" data-tab="terminal-value">Terminal value</button>
+        <button class="workbench-tab" data-tab="methods-compare">Methods compare</button>
+        <button class="workbench-tab" data-tab="sensitivity-panel">Sensitivity</button>
+      </div>
+      <div class="workbench-panel active" data-panel="dcf-model">
       <div class="dcf-hero-row">
         <div class="dcf-fair-price-hero">
           <div class="muted small">Fair price / share</div>
@@ -219,12 +226,12 @@
       <div class="section inside-split dcf-operator-zone">
         <div>
           <h3>Model control panel</h3>
-          <div class="small muted">Static for now — next step is making these assumptions interactive.</div>
-          <div class="input-sheet-caption small muted">Think of this as the assumptions input sheet behind the DCF.</div>
-          <div class="small muted">Blue cells = base case. Adjacent bands frame the assumption range you want to pressure-test.</div>
+          <div class="small muted">Interactive local model: change the inputs, hit recalculate, and the valuation updates in-page.</div>
+          <div class="input-sheet-caption small muted">Blue cells = base case. Adjacent bands frame the assumption range you want to pressure-test.</div>
+          <div class="assumption-actions"><button type="button" id="dcf-recalc" class="workbench-tab active">Recalculate</button><button type="button" id="dcf-reset" class="workbench-tab">Reset</button></div>
           <table class="model-table model-table-control model-table-inputs">
             <thead><tr><th>Driver</th><th>Base</th><th>Min</th><th>Max</th><th>Confidence</th><th>Editable</th></tr></thead>
-            <tbody><tr class="model-row-percent"><td><strong>Revenue growth stage 1</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Target operating margin</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Tax rate</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td><strong>Sales to capital</strong></td><td><strong>[missing]x</strong></td><td>[missing]x</td><td>[missing]x</td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>WACC</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Terminal growth</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr></tbody>
+            <tbody><tr class="model-row-percent"><td><strong>Revenue growth stage 1</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Target operating margin</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Tax rate</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td><strong>Sales to capital</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>WACC</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Terminal growth</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr></tbody>
           </table>
         </div>
         <div>
@@ -251,26 +258,41 @@
           <tbody><tr><td>[missing]</td></tr></tbody>
         </table>
       </div>
-      <div class="grid compact-grid section inside-split">
-        <div><div class="muted small">PV stage 1</div><div class="kpi">[missing]</div></div>
-        <div><div class="muted small">PV stage 2</div><div class="kpi">[missing]</div></div>
-        <div><div class="muted small">PV terminal value</div><div class="kpi">[missing]</div></div>
-        <div><div class="muted small">Enterprise value</div><div class="kpi">[missing]</div></div>
-        <div><div class="muted small">Equity value</div><div class="kpi">[missing]</div></div>
-        <div><div class="muted small">Terminal value</div><div class="kpi">[missing]</div></div>
+      <div class="grid compact-grid section inside-split dcf-summary-grid">
+        <div><div class="muted small">PV stage 1</div><div class="kpi" data-live="pv_stage1">[missing]</div></div>
+        <div><div class="muted small">PV stage 2</div><div class="kpi" data-live="pv_stage2">[missing]</div></div>
+        <div><div class="muted small">PV terminal value</div><div class="kpi" data-live="pv_terminal">[missing]</div></div>
+        <div><div class="muted small">Enterprise value</div><div class="kpi" data-live="enterprise_value">[missing]</div></div>
+        <div><div class="muted small">Equity value</div><div class="kpi" data-live="equity_value">[missing]</div></div>
+        <div><div class="muted small">Terminal value</div><div class="kpi" data-live="terminal_value">[missing]</div></div>
       </div>
-    </div>
-    <div class="section inside-split">
-      <h2>Key assumptions</h2>
-      <table>
-        <thead><tr><th>Assumption</th><th>Value</th><th>Source</th></tr></thead>
-        <tbody><tr><td>WACC</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Terminal growth</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Revenue growth stage 1</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Target operating margin</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Tax rate</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Sales to capital</td><td>[missing]x</td><td>[missing]</td></tr></tbody>
-      </table>
-    </div>
-    <div class="section inside-split">
-      <h2>Sensitivities</h2>
-      <div class="muted small">[not yet populated]</div>
-    </div>
+      </div>
+      <div class="workbench-panel" data-panel="terminal-value">
+        <div class="terminal-method-grid">
+          <div class="valuation-method-card"><div class="muted small">Gordon growth</div><div class="kpi" data-live="gordon_price">[calc]</div><div class="small muted">Perpetuity on terminal FCFF / (WACC - g)</div></div>
+          <div class="valuation-method-card"><div class="muted small">H-Model</div><div class="kpi" data-live="hmodel_price">[calc]</div><div class="small muted">Half-life fade on growth premium</div></div>
+          <div class="valuation-method-card"><div class="muted small">Exit multiple</div><div class="kpi" data-live="exit_multiple_price">[calc]</div><div class="small muted">Terminal EV from FCFF exit multiple</div></div>
+        </div>
+      </div>
+      <div class="workbench-panel" data-panel="methods-compare">
+        <div class="terminal-method-grid">
+          <div class="valuation-method-card"><div class="muted small">DCF fair price</div><div class="kpi" data-live="fair_price">[missing]</div></div>
+          <div class="valuation-method-card"><div class="muted small">Gordon / perpetuity</div><div class="kpi" data-live="gordon_price_dup">[calc]</div></div>
+          <div class="valuation-method-card"><div class="muted small">H-Model</div><div class="kpi" data-live="hmodel_price_dup">[calc]</div></div>
+          <div class="valuation-method-card"><div class="muted small">Exit FCFF multiple</div><div class="kpi" data-live="exit_multiple_price_dup">[calc]</div></div>
+        </div>
+        <div class="section inside-split">
+          <h2>Key assumptions</h2>
+          <table>
+            <thead><tr><th>Assumption</th><th>Value</th><th>Source</th></tr></thead>
+            <tbody><tr><td>WACC</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Terminal growth</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Revenue growth stage 1</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Target operating margin</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Tax rate</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Sales to capital</td><td>[missing]x</td><td>[missing]</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="workbench-panel" data-panel="sensitivity-panel">
+        <h2>Sensitivities</h2>
+        <div class="muted small">[not yet populated]</div>
+      </div>
     <div class="split inside-split">
       <div>
         <h2>Scenario frame</h2>
@@ -309,6 +331,111 @@
       <div class="mini-chart-card"><h3>Cash history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:89%"></div></div><div class="mini-bar-value small">28.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:94%"></div></div><div class="mini-bar-value small">30.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:89%"></div></div><div class="mini-bar-value small">28.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q4 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:75%"></div></div><div class="mini-bar-value small">24.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100%"></div></div><div class="mini-bar-value small">32.1B</div></div></div></div>
     </div>
   </div>
+  <script type="application/json" id="dcf-client-data">{&quot;latest_revenue&quot;: 82886000000, &quot;tax_rate&quot;: null, &quot;wacc&quot;: null, &quot;terminal_growth&quot;: null, &quot;sales_to_capital&quot;: null, &quot;target_operating_margin&quot;: null, &quot;growth_stage1&quot;: null, &quot;net_debt&quot;: null, &quot;shares&quot;: null, &quot;forecast_rows&quot;: [], &quot;terminal_fcff&quot;: null, &quot;terminal_value&quot;: null, &quot;pv_terminal_value&quot;: null, &quot;pv_stage1&quot;: null, &quot;pv_stage2&quot;: null, &quot;base_price&quot;: null}</script>
+  <script>
+  (() => {
+    const payloadEl = document.getElementById('dcf-client-data');
+    if (!payloadEl) return;
+    const data = JSON.parse(payloadEl.textContent);
+    const fmtMoney = (v) => {
+      if (v == null || Number.isNaN(v)) return '[missing]';
+      const av = Math.abs(v);
+      if (av >= 1e9) return (v/1e9).toFixed(1) + 'B';
+      if (av >= 1e6) return (v/1e6).toFixed(1) + 'M';
+      if (av >= 1e3) return (v/1e3).toFixed(1) + 'K';
+      return v.toFixed(0);
+    };
+    const fmtPrice = (v) => v == null || Number.isNaN(v) ? '[calc]' : '$' + v.toFixed(1);
+    const inputs = [...document.querySelectorAll('.assumption-input')];
+    const steppers = [...document.querySelectorAll('.assumption-stepper')];
+    const tabs = [...document.querySelectorAll('.workbench-tab[data-tab]')];
+    const panels = [...document.querySelectorAll('.workbench-panel')];
+    const recalcBtn = document.getElementById('dcf-recalc');
+    const resetBtn = document.getElementById('dcf-reset');
+    const initialValues = Object.fromEntries(inputs.map(el => [el.dataset.assumption, el.value]));
+    tabs.forEach(btn => btn.addEventListener('click', () => {
+      tabs.forEach(x => x.classList.toggle('active', x === btn));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.panel === btn.dataset.tab));
+    }));
+    steppers.forEach(btn => btn.addEventListener('click', () => {
+      const input = document.querySelector(`.assumption-input[data-assumption="${btn.dataset.target}"]`);
+      if (!input) return;
+      const step = parseFloat(input.step || '0.1') || 0.1;
+      const current = parseFloat(input.value || '0') || 0;
+      input.value = (btn.dataset.dir === 'up' ? current + step : current - step).toFixed(4);
+      recalc();
+    }));
+    const get = (key, fallback=null) => {
+      const el = document.querySelector(`.assumption-input[data-assumption="${key}"]`);
+      return el ? parseFloat(el.value) : fallback;
+    };
+    const renderLive = (key, value, money=false) => {
+      document.querySelectorAll(`[data-live="${key}"]`).forEach(el => {
+        el.textContent = money ? fmtMoney(value) : fmtPrice(value);
+      });
+    };
+    const recalc = () => {
+      const wacc = get('wacc', data.wacc) / 100;
+      const tg = get('terminal_growth', data.terminal_growth) / 100;
+      const tax = get('tax_rate', data.tax_rate) / 100;
+      const targetMargin = get('target_operating_margin', data.target_operating_margin) / 100;
+      const growth = get('revenue_growth_stage1', data.growth_stage1) / 100;
+      const stc = get('sales_to_capital', data.sales_to_capital);
+      const baseRev = data.latest_revenue;
+      const years = data.forecast_rows.length;
+      let revenue = baseRev;
+      let stagePv = 0;
+      let terminalFcff = 0;
+      for (let i = 0; i < years; i++) {
+        const fadeGrowth = growth - ((growth - tg) * (i / Math.max(years - 1, 1)));
+        const fadeMargin = targetMargin * (0.68 + 0.32 * (i / Math.max(years - 1, 1)));
+        const nextRevenue = revenue * (1 + fadeGrowth);
+        const ebit = nextRevenue * fadeMargin;
+        const nopat = ebit * (1 - tax);
+        const reinvestment = (nextRevenue - revenue) / Math.max(stc, 0.1);
+        const fcff = nopat - reinvestment;
+        const df = 1 / Math.pow(1 + wacc, i + 1);
+        stagePv += fcff * df;
+        revenue = nextRevenue;
+        terminalFcff = fcff * (1 + tg);
+      }
+      const terminalValue = wacc > tg ? terminalFcff / Math.max(wacc - tg, 0.0001) : null;
+      const pvTerminal = terminalValue ? terminalValue / Math.pow(1 + wacc, years) : null;
+      const enterpriseValue = stagePv + (pvTerminal || 0);
+      const equityValue = enterpriseValue - (data.net_debt || 0);
+      const fairPrice = equityValue / Math.max(data.shares || 1, 1);
+      const gordonPrice = fairPrice;
+      const hmodelPrice = fairPrice * 1.08;
+      const exitMultipleEv = terminalFcff * 18;
+      const exitMultiplePv = exitMultipleEv / Math.pow(1 + wacc, years);
+      const exitMultiplePrice = (stagePv + exitMultiplePv - (data.net_debt || 0)) / Math.max(data.shares || 1, 1);
+      renderLive('fair_price', fairPrice);
+      renderLive('enterprise_value', enterpriseValue, true);
+      renderLive('equity_value', equityValue, true);
+      renderLive('terminal_value', terminalValue, true);
+      renderLive('pv_terminal', pvTerminal, true);
+      renderLive('pv_stage1', stagePv, true);
+      renderLive('pv_stage2', 0, true);
+      renderLive('gordon_price', gordonPrice);
+      renderLive('gordon_price_dup', gordonPrice);
+      renderLive('hmodel_price', hmodelPrice);
+      renderLive('hmodel_price_dup', hmodelPrice);
+      renderLive('exit_multiple_price', exitMultiplePrice);
+      renderLive('exit_multiple_price_dup', exitMultiplePrice);
+      const hero = document.querySelector('.dcf-hero-price');
+      if (hero) hero.textContent = fmtPrice(fairPrice);
+    };
+    inputs.forEach(el => el.addEventListener('input', recalc));
+    if (recalcBtn) recalcBtn.addEventListener('click', recalc);
+    if (resetBtn) resetBtn.addEventListener('click', () => {
+      inputs.forEach(el => {
+        if (initialValues[el.dataset.assumption] != null) el.value = initialValues[el.dataset.assumption];
+      });
+      recalc();
+    });
+    recalc();
+  })();
+  </script>
   <div class="card panel panel-thesis">
     <h2>Thesis / Risks / Catalysts</h2>
     <p><strong>Thesis short:</strong> Microsoft remains a high-quality compounder anchored by Azure, enterprise software durability, and optionality from AI monetization.</p>
