@@ -209,6 +209,10 @@
           <div class="muted small">Fair price / share</div>
           <div class="dcf-hero-price">[missing]</div>
           <div class="small muted">Equity value [missing] · EV [missing]</div>
+          <div class="dcf-hero-subgrid">
+            <div><span class="muted small">Net debt</span><strong>[missing]</strong></div>
+            <div><span class="muted small">Diluted shares</span><strong>[missing]</strong></div>
+          </div>
         </div>
         <div class="grid compact-grid dcf-snapshot-grid"><div class="dcf-mini-card"><div class="muted small">Revenue base</div><div class="kpi">82.9B</div></div><div class="dcf-mini-card"><div class="muted small">WACC</div><div class="kpi"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Terminal growth</div><div class="kpi"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Tax rate</div><div class="kpi"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Sales / capital</div><div class="kpi">[missing]x</div></div><div class="dcf-mini-card"><div class="muted small">Net debt</div><div class="kpi">[missing]</div></div><div class="dcf-mini-card"><div class="muted small">Diluted shares</div><div class="kpi">[missing]</div></div></div>
       </div>
@@ -217,6 +221,7 @@
           <h3>Model control panel</h3>
           <div class="small muted">Static for now — next step is making these assumptions interactive.</div>
           <div class="input-sheet-caption small muted">Think of this as the assumptions input sheet behind the DCF.</div>
+          <div class="small muted">Blue cells = base case. Adjacent bands frame the assumption range you want to pressure-test.</div>
           <table class="model-table model-table-control model-table-inputs">
             <thead><tr><th>Driver</th><th>Base</th><th>Min</th><th>Max</th><th>Confidence</th><th>Editable</th></tr></thead>
             <tbody><tr class="model-row-percent"><td><strong>Revenue growth stage 1</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Target operating margin</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Tax rate</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td><strong>Sales to capital</strong></td><td><strong>[missing]x</strong></td><td>[missing]x</td><td>[missing]x</td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>WACC</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Terminal growth</strong></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td><em>[missing]</em></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr></tbody>
@@ -225,6 +230,7 @@
         <div>
           <h3>FCF build</h3>
           <div class="small muted">Waterfall logic: EBIT → less taxes → NOPAT → less reinvestment → FCFF.</div>
+          <div class="small muted">This is the core cash-generation bridge behind the valuation, year by year.</div>
           <table class="model-table model-table-fcf model-table-waterfall">
             <thead><tr><th>Bridge</th><th>[missing]</th></tr></thead>
             <tbody>
@@ -239,6 +245,7 @@
       </div>
       <div class="section inside-split">
         <h3>DCF forecast grid</h3>
+        <div class="small muted">Read left to right like a spreadsheet: operating build first, cash conversion second, present value last.</div>
         <table class="model-table model-table-forecast model-table-wide">
           <thead><tr><th>Metric / date</th><th>[missing]</th></tr></thead>
           <tbody><tr><td>[missing]</td></tr></tbody>
