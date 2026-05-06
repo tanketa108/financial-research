@@ -229,34 +229,40 @@
           <div class="small muted">Interactive local model: change the inputs, hit recalculate, and the valuation updates in-page.</div>
           <div class="input-sheet-caption small muted">Blue cells = base case. Adjacent bands frame the assumption range you want to pressure-test.</div>
           <div class="assumption-actions"><button type="button" id="dcf-recalc" class="workbench-tab active">Recalculate</button><button type="button" id="dcf-reset" class="workbench-tab">Reset</button></div>
-          <table class="model-table model-table-control model-table-inputs">
-            <thead><tr><th>Driver</th><th>Base</th><th>Min</th><th>Max</th><th>Confidence</th><th>Editable</th></tr></thead>
-            <tbody><tr class="model-row-percent"><td><strong>Revenue growth stage 1</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Target operating margin</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Tax rate</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td><strong>Sales to capital</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>WACC</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Terminal growth</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr></tbody>
-          </table>
+          <div class="table-scroll">
+            <table class="model-table model-table-control model-table-inputs">
+              <thead><tr><th>Driver</th><th>Base</th><th>Min</th><th>Max</th><th>Confidence</th><th>Editable</th></tr></thead>
+              <tbody><tr class="model-row-percent"><td><strong>Revenue growth stage 1</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Target operating margin</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Tax rate</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td><strong>Sales to capital</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>WACC</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Terminal growth</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr></tbody>
+            </table>
+          </div>
         </div>
         <div>
           <h3>FCF build</h3>
           <div class="small muted">Waterfall logic: EBIT → less taxes → NOPAT → less reinvestment → FCFF.</div>
           <div class="small muted">This is the core cash-generation bridge behind the valuation, year by year.</div>
-          <table class="model-table model-table-fcf model-table-waterfall">
-            <thead><tr><th>Bridge</th><th>[missing]</th></tr></thead>
-            <tbody>
-              <tr class="model-row-strong"><td><strong>EBIT</strong></td></tr>
-              <tr class="model-row-tax"><td>Tax burden</td></tr>
-              <tr class="model-row-strong"><td><strong>NOPAT</strong></td></tr>
-              <tr class="model-row-tax"><td>Reinvestment</td></tr>
-              <tr class="model-row-fcff"><td><strong>FCFF</strong></td></tr>
-            </tbody>
-          </table>
+          <div class="table-scroll">
+            <table class="model-table model-table-fcf model-table-waterfall">
+              <thead><tr><th>Bridge</th><th>[missing]</th></tr></thead>
+              <tbody>
+                <tr class="model-row-strong"><td><strong>EBIT</strong></td></tr>
+                <tr class="model-row-tax"><td>Tax burden</td></tr>
+                <tr class="model-row-strong"><td><strong>NOPAT</strong></td></tr>
+                <tr class="model-row-tax"><td>Reinvestment</td></tr>
+                <tr class="model-row-fcff"><td><strong>FCFF</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <div class="section inside-split">
         <h3>DCF forecast grid</h3>
         <div class="small muted">Read left to right like a spreadsheet: operating build first, cash conversion second, present value last.</div>
-        <table class="model-table model-table-forecast model-table-wide">
-          <thead><tr><th>Metric / date</th><th>[missing]</th></tr></thead>
-          <tbody><tr><td>[missing]</td></tr></tbody>
-        </table>
+        <div class="table-scroll">
+          <table class="model-table model-table-forecast model-table-wide">
+            <thead><tr><th>Metric / date</th><th>[missing]</th></tr></thead>
+            <tbody><tr><td>[missing]</td></tr></tbody>
+          </table>
+        </div>
       </div>
       <div class="grid compact-grid section inside-split dcf-summary-grid">
         <div><div class="muted small">PV stage 1</div><div class="kpi" data-live="pv_stage1">[missing]</div></div>
@@ -283,10 +289,12 @@
         </div>
         <div class="section inside-split">
           <h2>Key assumptions</h2>
-          <table>
-            <thead><tr><th>Assumption</th><th>Value</th><th>Source</th></tr></thead>
-            <tbody><tr><td>WACC</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Terminal growth</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Revenue growth stage 1</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Target operating margin</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Tax rate</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Sales to capital</td><td>[missing]x</td><td>[missing]</td></tr></tbody>
-          </table>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Assumption</th><th>Value</th><th>Source</th></tr></thead>
+              <tbody><tr><td>WACC</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Terminal growth</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Revenue growth stage 1</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Target operating margin</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Tax rate</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Sales to capital</td><td>[missing]x</td><td>[missing]</td></tr></tbody>
+            </table>
+          </div>
         </div>
       </div>
       <div class="workbench-panel" data-panel="sensitivity-panel">
@@ -438,6 +446,13 @@
   </script>
   <div class="card panel panel-thesis">
     <h2>Thesis / Risks / Catalysts</h2>
+    <div class="thesis-download-card inside-split">
+      <div>
+        <div class="muted small">Full thesis report</div>
+        <div class="small">Attach the full company write-up here so each position has a durable download point.</div>
+      </div>
+      <div class="download-chip-row"><div class="small muted">[full thesis report not yet attached]</div></div>
+    </div>
     <p><strong>Thesis short:</strong> Microsoft remains a high-quality compounder anchored by Azure, enterprise software durability, and optionality from AI monetization.</p>
     <p><strong>Current stance:</strong> under review</p>
     <p><strong>What changes my mind:</strong> Evidence that AI demand is failing to convert into durable margin-accretive growth, or that capital intensity rises faster than monetization.</p>
