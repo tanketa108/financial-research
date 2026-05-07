@@ -217,8 +217,8 @@
       <div class="dcf-hero-row">
         <div class="dcf-fair-price-hero">
           <div class="muted small">Fair price / share</div>
-          <div class="dcf-hero-price">[missing]</div>
-          <div class="small muted">Equity value [missing] · EV [missing]</div>
+          <div class="dcf-hero-price" data-live="fair_price">[missing]</div>
+          <div class="small muted">Equity value <span data-live="equity_value">[missing]</span> · EV <span data-live="enterprise_value">[missing]</span></div>
           <div class="dcf-hero-subgrid">
             <div><span class="muted small">Net debt</span><strong>[missing]</strong></div>
             <div><span class="muted small">Diluted shares</span><strong>[missing]</strong></div>
@@ -342,7 +342,7 @@
       <div class="mini-chart-card"><h3>Cash history</h3><div class="muted small">[missing]</div></div>
     </div>
   </div>
-  <script type="application/json" id="dcf-client-data">{&quot;latest_revenue&quot;: null, &quot;tax_rate&quot;: null, &quot;wacc&quot;: null, &quot;terminal_growth&quot;: null, &quot;sales_to_capital&quot;: null, &quot;target_operating_margin&quot;: null, &quot;growth_stage1&quot;: null, &quot;net_debt&quot;: null, &quot;shares&quot;: null, &quot;forecast_rows&quot;: [], &quot;terminal_fcff&quot;: null, &quot;terminal_value&quot;: null, &quot;pv_terminal_value&quot;: null, &quot;pv_stage1&quot;: null, &quot;pv_stage2&quot;: null, &quot;base_price&quot;: null}</script>
+  <script type="application/json" id="dcf-client-data">{"latest_revenue": null, "tax_rate": null, "wacc": null, "terminal_growth": null, "sales_to_capital": null, "target_operating_margin": null, "growth_stage1": null, "net_debt": null, "shares": null, "forecast_rows": [], "terminal_fcff": null, "terminal_value": null, "pv_terminal_value": null, "pv_stage1": null, "pv_stage2": null, "base_price": null}</script>
   <script>
   (() => {
     const payloadEl = document.getElementById('dcf-client-data');
@@ -433,8 +433,6 @@
       renderLive('hmodel_price_dup', hmodelPrice);
       renderLive('exit_multiple_price', exitMultiplePrice);
       renderLive('exit_multiple_price_dup', exitMultiplePrice);
-      const hero = document.querySelector('.dcf-hero-price');
-      if (hero) hero.textContent = fmtPrice(fairPrice);
     };
     inputs.forEach(el => el.addEventListener('input', recalc));
     if (recalcBtn) recalcBtn.addEventListener('click', recalc);
