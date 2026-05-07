@@ -180,30 +180,32 @@
     </div>
     <div class="valuation-method-grid section">
       <div class="valuation-method-card">
-          <div class="muted small">DCF</div>
-          <div class="kpi">[missing]</div>
-          <div class="small">status: [missing]</div>
-          <div class="small">EV: [missing]</div>
-          <div class="small">Equity: [missing]</div>
-          <div class="small mono">range: [pending]</div>
-          <div class="small muted">units: $/share · EV/equity in $</div>
-        </div><div class="valuation-method-card">
-          <div class="muted small">Gordon</div>
-          <div class="kpi">[missing]</div>
-          <div class="small">status: [missing]</div>
-          <div class="small">EV: [missing]</div>
-          <div class="small">Equity: [missing]</div>
-          <div class="small mono">range: [pending]</div>
-          <div class="small muted">units: $/share · EV/equity in $</div>
-        </div><div class="valuation-method-card">
-          <div class="muted small">Terminal multiple</div>
-          <div class="kpi">[missing]</div>
-          <div class="small">status: [missing]</div>
-          <div class="small">EV: [missing]</div>
-          <div class="small">Equity: [missing]</div>
-          <div class="small mono">range: [pending]</div>
-          <div class="small muted">units: $/share · EV/equity in $</div>
-        </div>
+        <div class="muted small">DCF</div>
+        <div class="kpi" data-live="fair_price">[missing]</div>
+        <div class="small">status: ready</div>
+        <div class="small">EV: <span data-live="enterprise_value">[missing]</span></div>
+        <div class="small">Equity: <span data-live="equity_value">[missing]</span></div>
+        <div class="small mono">range: [pending]</div>
+        <div class="small muted">units: $/share · EV/equity in $</div>
+      </div>
+      <div class="valuation-method-card">
+        <div class="muted small">Gordon</div>
+        <div class="kpi" data-live="gordon_price">[calc]</div>
+        <div class="small">status: derived live</div>
+        <div class="small">EV: terminal-value view</div>
+        <div class="small">Equity: live-derived</div>
+        <div class="small mono">range: [live]</div>
+        <div class="small muted">units: $/share · EV/equity in $</div>
+      </div>
+      <div class="valuation-method-card">
+        <div class="muted small">Terminal multiple</div>
+        <div class="kpi" data-live="exit_multiple_price">[calc]</div>
+        <div class="small">status: derived live</div>
+        <div class="small">EV: terminal-value view</div>
+        <div class="small">Equity: live-derived</div>
+        <div class="small mono">range: [live]</div>
+        <div class="small muted">units: $/share · EV/equity in $</div>
+      </div>
     </div>
     <div class="section inside-split">
       <h2>Classic DCF Model</h2>
