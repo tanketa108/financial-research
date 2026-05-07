@@ -17,33 +17,54 @@
   <div class="status-card"><div class="muted small">Latest period</div><div class="small mono">10-Q | 2025-09-30</div></div>
   <div class="status-card"><div class="muted small">Latest filing</div><div class="small mono">2025-11-04</div></div>
 </div>
-<div class="card section panel-quant-snapshot">
-  <h2>Quant snapshot</h2>
-  <div class="grid compact-grid">
-    <div><div class="muted small">Central value</div><div class="kpi">$84.7</div></div>
-    <div><div class="muted small">Method alignment</div><div><span class="pill pill-single_method">single_method</span></div></div>
-    <div><div class="muted small">Model coverage</div><div class="kpi">6/7</div></div>
-    <div><div class="muted small">Terminal dependence</div><div class="kpi">68.0%</div></div>
-    <div><div class="muted small">Snapshot status</div><div><span class="pill pill-ready">ready</span></div></div>
-    <div><div class="muted small">Normalization</div><div><span class="pill pill-review_needed">review_needed</span></div></div>
-  </div>
-  <div class="small muted section">Missing analyst_overlay_or_reconciliation</div>
-  <div class="grid compact-grid section"><div class="mini-stat-card"><div class="muted small">DCF</div><div class="kpi">$84.7</div><div class="small muted">ready</div></div><div class="mini-stat-card"><div class="muted small">Gordon</div><div class="kpi">[missing]</div><div class="small muted">optional</div></div><div class="mini-stat-card"><div class="muted small">Terminal multiple</div><div class="kpi">[missing]</div><div class="small muted">optional</div></div></div>
-  <div class="grid compact-grid section">
-    <div>
-      <h3>Quality breakdown</h3>
-      <div class="small"><strong>forecast</strong>: <span class="pill pill-strong">strong</span></div><div class="small"><strong>bridge</strong>: <span class="pill pill-strong">strong</span></div><div class="small"><strong>terminal</strong>: <span class="pill pill-adequate">adequate</span></div><div class="small"><strong>multiple</strong>: <span class="pill pill-adequate">adequate</span></div><div class="small"><strong>normalization</strong>: <span class="pill pill-adequate">adequate</span></div>
+<div class="card section panel-quant-workspace">
+  <div class="quant-workspace-shell">
+    <div class="quant-workspace-hero">
+      <div class="muted small">Quant Workspace v2</div>
+      <h2>Fair value, diagnostics, and operating signals</h2>
+      <div class="quant-hero-price">$84.7</div>
+      <div class="quant-hero-subtitle">Fair value · upside/downside 7.0% · terminal dependence 68.0%</div>
+      <div class="quant-hero-pill-row">
+        <span class="pill pill-ready">ready</span>
+        <span class="pill pill-single_method">single_method</span>
+        <span class="pill pill-review_needed">review_needed</span>
+      </div>
+      <div class="small muted quant-hero-message">Missing analyst_overlay_or_reconciliation</div>
     </div>
-    <div>
-      <h3>Top drivers</h3>
+    <div class="quant-workspace-side">
+      <div class="quant-side-grid">
+        <div class="quant-side-card"><div class="muted small">Market price</div><div class="kpi">$79.2</div><div class="small muted">close as of 2026-05-06 · delayed market data</div></div>
+        <div class="quant-side-card"><div class="muted small">Valuation gap</div><div><span class="pill pill-near_fair_value">near_fair_value</span></div><div class="small muted">relative to fair value</div></div>
+        <div class="quant-side-card"><div class="muted small">Model coverage</div><div class="kpi">6/7</div><div class="small muted">filled model blocks</div></div>
+        <div class="quant-side-card"><div class="muted small">Terminal dependence</div><div class="kpi">68.0%</div><div class="small muted">share of EV from terminal</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="quant-signal-strip section"><div class="quant-signal-card"><div class="muted small">Revenue YoY</div><div class="kpi">18.3%</div><div class="small muted">latest reported vs comparable prior period</div></div><div class="quant-signal-card"><div class="muted small">Operating margin</div><div class="kpi">10.7%</div><div class="small muted">latest reported operating margin</div></div><div class="quant-signal-card"><div class="muted small">Net margin</div><div class="kpi">19.3%</div><div class="small muted">reported net margin</div></div><div class="quant-signal-card"><div class="muted small">Net debt / revenue</div><div class="kpi">16.2%</div><div class="small muted">capital structure pressure</div></div><div class="quant-signal-card"><div class="muted small">SBC / revenue</div><div class="kpi">3.5%</div><div class="small muted">dilution intensity</div></div><div class="quant-signal-card"><div class="muted small">Capex / revenue</div><div class="kpi">0.6%</div><div class="small muted">reinvestment intensity</div></div></div>
+  <div class="quant-method-strip section"><div class="mini-stat-card"><div class="muted small">DCF</div><div class="kpi">$84.7</div><div class="small muted">ready</div></div><div class="mini-stat-card"><div class="muted small">Gordon</div><div class="kpi">[missing]</div><div class="small muted">optional</div></div><div class="mini-stat-card"><div class="muted small">Terminal multiple</div><div class="kpi">[missing]</div><div class="small muted">optional</div></div></div>
+  <div class="quant-diagnostic-grid section quant-diagnostic-grid-6">
+    <div class="quant-diagnostic-card">
+      <h3>Model confidence</h3>
+      <div class="quant-quality-grid"><div class="quant-quality-item"><div class="muted small">forecast</div><div><span class="pill pill-strong">strong</span></div></div><div class="quant-quality-item"><div class="muted small">bridge</div><div><span class="pill pill-strong">strong</span></div></div><div class="quant-quality-item"><div class="muted small">terminal</div><div><span class="pill pill-adequate">adequate</span></div></div><div class="quant-quality-item"><div class="muted small">multiple</div><div><span class="pill pill-adequate">adequate</span></div></div><div class="quant-quality-item"><div class="muted small">normalization</div><div><span class="pill pill-adequate">adequate</span></div></div></div>
+    </div>
+    <div class="quant-diagnostic-card">
+      <h3>Driver map</h3>
       <ul class="list small"><li>wacc</li><li>terminal_growth</li><li>revenue_growth_stage1</li></ul>
     </div>
-    <div>
-      <h3>Fragility flags</h3>
+    <div class="quant-diagnostic-card">
+      <h3>Fragility / breakpoints</h3>
       <ul class="list small"><li>single_method_only</li></ul>
     </div>
-    <div>
-      <h3>Missing pieces</h3>
+    <div class="quant-diagnostic-card">
+      <h3>Multiple context</h3>
+      <ul class="list small"><li><strong>P/E</strong>: 6.81x <span class="muted">· annualized latest quarter net income · reported</span></li><li><strong>EV / EBITDA</strong>: [missing] <span class="muted">· reported operating income + D&amp;A proxy · missing</span></li><li><strong>P / FCF</strong>: [missing] <span class="muted">· proxy unlevered FCF after tax + D&amp;A - capex · missing</span></li></ul>
+    </div>
+    <div class="quant-diagnostic-card">
+      <h3>Quant read</h3>
+      <ul class="list small"><li>Market price is trading near the current fair value frame (+7.0%).</li><li>Only one valuation method is populated, so the fair value frame is still narrow.</li><li>Normalization still needs judgment; reported earnings quality is not fully settled.</li></ul>
+    </div>
+    <div class="quant-diagnostic-card">
+      <h3>What still needs hardening</h3>
       <div class="small">analyst_overlay_or_reconciliation</div>
     </div>
   </div>
