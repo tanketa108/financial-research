@@ -226,7 +226,7 @@
             <div><span class="muted small">Diluted shares</span><strong>[missing]</strong></div>
           </div>
         </div>
-        <div class="grid compact-grid dcf-snapshot-grid"><div class="dcf-mini-card"><div class="muted small">Revenue base</div><div class="kpi">[missing]</div></div><div class="dcf-mini-card"><div class="muted small">WACC</div><div class="kpi"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Terminal growth</div><div class="kpi"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Tax rate</div><div class="kpi"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Sales / capital</div><div class="kpi">[missing]x</div></div><div class="dcf-mini-card"><div class="muted small">Net debt</div><div class="kpi">[missing]</div></div><div class="dcf-mini-card"><div class="muted small">Diluted shares</div><div class="kpi">[missing]</div></div></div>
+        <div class="grid compact-grid dcf-snapshot-grid"><div class="dcf-mini-card"><div class="muted small">Revenue base</div><div class="kpi">[missing]</div></div><div class="dcf-mini-card"><div class="muted small">WACC</div><div class="kpi" data-live="wacc_pct"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Terminal growth</div><div class="kpi" data-live="terminal_growth_pct"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Tax rate</div><div class="kpi" data-live="tax_rate_pct"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Sales / capital</div><div class="kpi" data-live="sales_to_capital_ratio">[missing]x</div></div><div class="dcf-mini-card"><div class="muted small">Net debt</div><div class="kpi">[missing]</div></div><div class="dcf-mini-card"><div class="muted small">Diluted shares</div><div class="kpi">[missing]</div></div></div>
       </div>
       <div class="section inside-split dcf-operator-zone">
         <div>
@@ -359,6 +359,8 @@
       return v.toFixed(0);
     };
     const fmtPrice = (v) => v == null || Number.isNaN(v) ? '[calc]' : '$' + v.toFixed(1);
+    const fmtPct = (v) => v == null || Number.isNaN(v) ? '[calc]' : v.toFixed(1) + '%';
+    const fmtRatio = (v) => v == null || Number.isNaN(v) ? '[calc]' : v.toFixed(1) + 'x';
     const inputs = [...document.querySelectorAll('.assumption-input')];
     const steppers = [...document.querySelectorAll('.assumption-stepper')];
     const tabs = [...document.querySelectorAll('.workbench-tab[data-tab]')];
@@ -382,9 +384,10 @@
       const el = document.querySelector(`.assumption-input[data-assumption="${key}"]`);
       return el ? parseFloat(el.value) : fallback;
     };
-    const renderLive = (key, value, money=false) => {
+    const renderLive = (key, value, mode='price') => {
+      const text = mode === 'money' ? fmtMoney(value) : mode === 'pct' ? fmtPct(value) : mode === 'ratio' ? fmtRatio(value) : fmtPrice(value);
       document.querySelectorAll(`[data-live="${key}"]`).forEach(el => {
-        el.textContent = money ? fmtMoney(value) : fmtPrice(value);
+        el.textContent = text;
       });
     };
     const recalc = () => {
@@ -398,7 +401,10 @@
       const years = data.forecast_rows.length;
       let revenue = baseRev;
       let stagePv = 0;
+      let stage1Pv = 0;
+      let stage2Pv = 0;
       let terminalFcff = 0;
+      const stage1Years = Math.min(5, years);
       for (let i = 0; i < years; i++) {
         const fadeGrowth = growth - ((growth - tg) * (i / Math.max(years - 1, 1)));
         const fadeMargin = targetMargin * (0.68 + 0.32 * (i / Math.max(years - 1, 1)));
@@ -408,7 +414,10 @@
         const reinvestment = (nextRevenue - revenue) / Math.max(stc, 0.1);
         const fcff = nopat - reinvestment;
         const df = 1 / Math.pow(1 + wacc, i + 1);
-        stagePv += fcff * df;
+        const pvFcff = fcff * df;
+        stagePv += pvFcff;
+        if (i < stage1Years) stage1Pv += pvFcff;
+        else stage2Pv += pvFcff;
         revenue = nextRevenue;
         terminalFcff = fcff * (1 + tg);
       }
@@ -423,18 +432,22 @@
       const exitMultiplePv = exitMultipleEv / Math.pow(1 + wacc, years);
       const exitMultiplePrice = (stagePv + exitMultiplePv - (data.net_debt || 0)) / Math.max(data.shares || 1, 1);
       renderLive('fair_price', fairPrice);
-      renderLive('enterprise_value', enterpriseValue, true);
-      renderLive('equity_value', equityValue, true);
-      renderLive('terminal_value', terminalValue, true);
-      renderLive('pv_terminal', pvTerminal, true);
-      renderLive('pv_stage1', stagePv, true);
-      renderLive('pv_stage2', 0, true);
+      renderLive('enterprise_value', enterpriseValue, 'money');
+      renderLive('equity_value', equityValue, 'money');
+      renderLive('terminal_value', terminalValue, 'money');
+      renderLive('pv_terminal', pvTerminal, 'money');
+      renderLive('pv_stage1', stage1Pv, 'money');
+      renderLive('pv_stage2', stage2Pv, 'money');
       renderLive('gordon_price', gordonPrice);
       renderLive('gordon_price_dup', gordonPrice);
       renderLive('hmodel_price', hmodelPrice);
       renderLive('hmodel_price_dup', hmodelPrice);
       renderLive('exit_multiple_price', exitMultiplePrice);
       renderLive('exit_multiple_price_dup', exitMultiplePrice);
+      renderLive('wacc_pct', wacc * 100, 'pct');
+      renderLive('terminal_growth_pct', tg * 100, 'pct');
+      renderLive('tax_rate_pct', tax * 100, 'pct');
+      renderLive('sales_to_capital_ratio', stc, 'ratio');
     };
     inputs.forEach(el => el.addEventListener('input', recalc));
     if (recalcBtn) recalcBtn.addEventListener('click', recalc);
