@@ -69,6 +69,79 @@
     </div>
   </div>
 </div>
+<div class="card section panel-uber-model">
+  <h2>Modelo de valoración — vista explícita</h2>
+  <div class="small muted">Esta sección enseña el modelo que estamos usando para pensar UBER, no solo el resultado final.</div>
+  <div class="statement-grid section">
+    <div class="statement-card">
+      <h3>Estructura del modelo</h3>
+      <ul class="list small">
+        <li><strong>Mobility</strong> = Trips × GB/trip × Normalized Take Rate</li>
+        <li><strong>Delivery</strong> = Activity × GB/order × Take Rate</li>
+        <li><strong>Freight</strong> = revenue path conservador</li>
+        <li><strong>Valor</strong> = operating bridge → FCFF bridge → per-share value</li>
+      </ul>
+    </div>
+    <div class="statement-card">
+      <h3>Assumptions centrales</h3>
+      <ul class="list small">
+        <li><strong>Mobility normalized take rate</strong>: 26.9%</li>
+        <li><strong>Mobility segment margin</strong>: 9.5%</li>
+        <li><strong>Delivery segment margin</strong>: 4.3%</li>
+        <li><strong>Overhead intensity</strong>: 7.6%</li>
+        <li><strong>Sales-to-Capital</strong>: 2.5x</li>
+        <li><strong>Dilution</strong>: 1.8%</li>
+        <li><strong>WACC</strong>: 8.7%</li>
+        <li><strong>Terminal margin</strong>: 17.5%</li>
+      </ul>
+    </div>
+    <div class="statement-card">
+      <h3>5 niveles por variable</h3>
+      <div class="small muted">El modelo no usa input libre estilo Excel en v1; usa presets discretos para evitar falsa precisión.</div>
+      <ul class="list small" style="margin-top:10px">
+        <li>stressed</li>
+        <li>cautious</li>
+        <li>base</li>
+        <li>constructive</li>
+        <li>strong</li>
+      </ul>
+    </div>
+    <div class="statement-card">
+      <h3>Qué mueve más el valor</h3>
+      <ol class="list small">
+        <li>Mobility segment margin</li>
+        <li>WACC</li>
+        <li>Mobility normalized take rate</li>
+        <li>Terminal margin</li>
+        <li>Sales-to-Capital</li>
+        <li>Overhead intensity</li>
+        <li>Delivery segment margin</li>
+        <li>Dilution</li>
+      </ol>
+    </div>
+  </div>
+  <div class="split inside-split">
+    <div>
+      <h3>Bridge operativo</h3>
+      <ul class="list small">
+        <li>Mobility hace el trabajo principal</li>
+        <li>Delivery ayuda, pero no carga la tesis</li>
+        <li>Freight es periférico</li>
+        <li>El upside viene más por <strong>operating leverage</strong> y <strong>overhead dilution</strong> que por take-rate heroics</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Bridge a caja</h3>
+      <ul class="list small">
+        <li>FCFF ya es <strong>plausible</strong>, no solo narrativo</li>
+        <li>La disciplina real está en:</li>
+        <li>reinvestment efficiency</li>
+        <li>SBC / dilution</li>
+        <li>cash conversion quality</li>
+      </ul>
+    </div>
+  </div>
+</div>
 <div class="card section panel-top-filings">
   <h2>Filing access</h2>
   <div class="grid compact-grid">
