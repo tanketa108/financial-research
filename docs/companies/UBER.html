@@ -269,7 +269,7 @@
     </div>
     <div class="valuation-method-grid section">
       <div class="valuation-method-card">
-        <div class="muted small">DCF</div>
+        <div class="muted small">DCF (Gordon terminal)</div>
         <div class="kpi" data-live="fair_price">$84.7</div>
         <div class="small">status: ready</div>
         <div class="small">EV: <span data-live="enterprise_value">182.6B</span></div>
@@ -278,9 +278,9 @@
         <div class="small muted">units: $/share · EV/equity in $</div>
       </div>
       <div class="valuation-method-card">
-        <div class="muted small">Gordon</div>
+        <div class="muted small">Gordon terminal check</div>
         <div class="kpi" data-live="gordon_price">[calc]</div>
-        <div class="small">status: derived live</div>
+        <div class="small">status: same terminal logic as main DCF</div>
         <div class="small">EV: terminal-value view</div>
         <div class="small">Equity: live-derived</div>
         <div class="small mono">range: [live]</div>
@@ -300,7 +300,7 @@
       <h2>Classic DCF Model</h2>
       <div class="workbench-tabs">
         <button class="workbench-tab active" data-tab="dcf-model">DCF</button>
-        <button class="workbench-tab" data-tab="terminal-value">Terminal value</button>
+        <button class="workbench-tab" data-tab="terminal-value">Terminal value checks</button>
         <button class="workbench-tab" data-tab="methods-compare">Methods compare</button>
         <button class="workbench-tab" data-tab="sensitivity-panel">Sensitivity</button>
       </div>
@@ -368,16 +368,17 @@
       </div>
       </div>
       <div class="workbench-panel" data-panel="terminal-value">
+        <div class="small muted" style="margin-bottom:12px">Nota: el fair value principal de este DCF ya usa un terminal value tipo Gordon. Por eso el primer bloque de esta pestaña puede coincidir con el precio DCF principal; aquí la idea es contrastar el cierre terminal contra métodos alternativos, no enseñar un segundo DCF independiente.</div>
         <div class="terminal-method-grid">
-          <div class="valuation-method-card"><div class="muted small">Gordon growth</div><div class="kpi" data-live="gordon_price">[calc]</div><div class="small muted">Perpetuity on terminal FCFF / (WACC - g)</div></div>
+          <div class="valuation-method-card"><div class="muted small">Gordon terminal check</div><div class="kpi" data-live="gordon_price">[calc]</div><div class="small muted">Misma lógica terminal que el DCF principal: terminal FCFF / (WACC - g)</div></div>
           <div class="valuation-method-card"><div class="muted small">H-Model</div><div class="kpi" data-live="hmodel_price">[calc]</div><div class="small muted">Half-life fade on growth premium</div></div>
           <div class="valuation-method-card"><div class="muted small">Exit multiple</div><div class="kpi" data-live="exit_multiple_price">[calc]</div><div class="small muted">Terminal EV from FCFF exit multiple</div></div>
         </div>
       </div>
       <div class="workbench-panel" data-panel="methods-compare">
         <div class="terminal-method-grid">
-          <div class="valuation-method-card"><div class="muted small">DCF fair price</div><div class="kpi" data-live="fair_price">$84.7</div></div>
-          <div class="valuation-method-card"><div class="muted small">Gordon / perpetuity</div><div class="kpi" data-live="gordon_price_dup">[calc]</div></div>
+          <div class="valuation-method-card"><div class="muted small">DCF fair price (Gordon terminal)</div><div class="kpi" data-live="fair_price">$84.7</div></div>
+          <div class="valuation-method-card"><div class="muted small">Gordon terminal check</div><div class="kpi" data-live="gordon_price_dup">[calc]</div></div>
           <div class="valuation-method-card"><div class="muted small">H-Model</div><div class="kpi" data-live="hmodel_price_dup">[calc]</div></div>
           <div class="valuation-method-card"><div class="muted small">Exit FCFF multiple</div><div class="kpi" data-live="exit_multiple_price_dup">[calc]</div></div>
         </div>
