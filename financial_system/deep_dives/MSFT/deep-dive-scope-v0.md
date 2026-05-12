@@ -72,3 +72,41 @@ It should separate:
 5. SEC filings and company IR
 6. Secondary sources only for context, labelled as such
 
+
+## Addendum requested by user — profitability and working capital decomposition
+
+Add two required analytical blocks to MSFT deep dive v0.1:
+
+### ROE DuPont analysis
+
+Purpose: understand where Microsoft’s return on equity comes from.
+
+Include:
+
+- ROE trend.
+- Net profit margin.
+- Asset turnover.
+- Equity multiplier / leverage.
+- Optional extended DuPont if data quality allows:
+  - tax burden,
+  - interest burden,
+  - operating margin,
+  - asset turnover,
+  - financial leverage.
+- Interpretation: whether high ROE is driven by margin quality, asset efficiency, leverage, buybacks/equity base shrinkage, or accounting effects.
+
+### Working capital and cash conversion cycle
+
+Purpose: understand cash conversion dynamics and operating funding model.
+
+Include:
+
+- DSO — days sales outstanding.
+- DIO — days inventory outstanding.
+- DPO — days payable outstanding.
+- CCC — cash conversion cycle = DSO + DIO - DPO.
+- Deferred revenue / contract liabilities as separate subscription/software funding dynamic.
+- Receivables, inventory, payables and accrued expenses trends.
+- Interpretation of whether working capital is a source or use of cash.
+- Segment nuance: Microsoft inventory is less central than for industrials/retail; deferred revenue and enterprise billing are more important.
+

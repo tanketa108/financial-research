@@ -334,3 +334,49 @@ Temas que ya aparecen:
 6. Añadir guidance explícito por segmento de la Q3 FY2026 call.
 7. Completar peer/sector framework: AWS/Google Cloud, Salesforce, Google Workspace, AI apps.
 8. Preparar dashboard update MSFT con deep-dive status.
+
+## 17. Addendum — ROE DuPont analysis required
+
+User requested that the MSFT deep dive include a DuPont analysis of ROE to understand the source of profitability.
+
+To complete in v0.1:
+
+- ROE trend.
+- Net profit margin.
+- Asset turnover.
+- Equity multiplier.
+- Extended DuPont if useful:
+  - tax burden,
+  - interest burden,
+  - operating margin,
+  - asset turnover,
+  - financial leverage.
+
+Analytical objective:
+
+- Determine whether Microsoft’s return profile is mainly driven by exceptional margins, asset-light software economics, leverage, buybacks/equity base effects, or a mix of these.
+- Separate genuine business quality from accounting/capital-structure effects.
+
+## 18. Addendum — working capital and cash conversion cycle required
+
+User requested a deeper working capital analysis including cash conversion cycle and its components.
+
+To complete in v0.1:
+
+- DSO — days sales outstanding.
+- DIO — days inventory outstanding.
+- DPO — days payable outstanding.
+- CCC — DSO + DIO - DPO.
+- Receivables trend.
+- Inventory trend.
+- Payables/accruals trend.
+- Deferred revenue / contract liabilities trend.
+- Operating cash conversion: net income → operating cash flow.
+
+Analytical nuance for Microsoft:
+
+- Inventory is likely less important than in industrial/retail companies, though devices/Xbox/hardware still matter.
+- Deferred revenue and contract liabilities are central because subscription/enterprise billing can fund operations upfront.
+- Capex payables/accruals may matter more as AI/cloud infrastructure investment scales.
+- The key question is whether working capital remains structurally favorable or whether cloud/AI capex changes cash conversion.
+
