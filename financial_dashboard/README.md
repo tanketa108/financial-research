@@ -11,12 +11,17 @@ Dar una superficie usable para:
 
 ## Build
 ```bash
-python3 /data/.openclaw/workspace/financial_dashboard/build_dashboard_html.py
+python3 financial_dashboard/build_dashboard_html.py
+```
+
+Optional:
+```bash
+python3 financial_dashboard/build_dashboard_html.py --repo-root /path/to/financial-research --output-dir /tmp/dashboard
 ```
 
 ## Output
-- `output/index.html`
-- `output/companies/<TICKER>.html`
+- `financial_dashboard/output/index.html`
+- `financial_dashboard/output/companies/<TICKER>.html`
 
 ## Fuentes
 - `financial_system/registry/dashboard_state.json`
