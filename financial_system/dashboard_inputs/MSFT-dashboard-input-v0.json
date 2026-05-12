@@ -1,0 +1,699 @@
+{
+  "schema_version": "dashboard-input-v0",
+  "ticker": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "page_intent": "company_snapshot_not_full_thesis",
+  "last_updated": "2026-05-12",
+  "thesis": {
+    "one_line": "Microsoft is a high-quality enterprise software, cloud and AI infrastructure compounder, with the key debate shifting toward AI capex intensity, monetization and FCF conversion.",
+    "current_thesis": "The core thesis is durable software/cloud profitability plus AI optionality, but maintenance should focus on whether the enlarged reinvestment cycle earns adequate returns.",
+    "stance": "covered / needs thesis baseline",
+    "committee_view": "Financial quality is strong; qualitative thesis needs a structured baseline before conviction can be assessed like UBER."
+  },
+  "maintenance": {
+    "status": "baseline_needed",
+    "next_action": "Create MSFT written thesis baseline and map AI/cloud capex questions into maintenance queue.",
+    "latest_updates": [
+      {
+        "date": "2026-05-12",
+        "type": "dashboard_extension",
+        "summary": "MSFT snapshot generated from generic company dashboard methodology."
+      }
+    ]
+  },
+  "qualitative": {
+    "drivers": [
+      {
+        "title": "Cloud and enterprise software scale",
+        "summary": "Azure, Office, Windows, LinkedIn and enterprise stack create recurring, high-margin revenue base."
+      },
+      {
+        "title": "AI infrastructure and Copilot monetization",
+        "summary": "AI can expand workloads and ARPU if capex converts into durable demand and pricing."
+      },
+      {
+        "title": "Operating leverage",
+        "summary": "Very high operating margin indicates strong fixed-cost absorption and pricing power."
+      }
+    ],
+    "risks": [
+      {
+        "title": "AI capex intensity",
+        "summary": "Large reinvestment cycle may pressure FCF conversion if monetization lags."
+      },
+      {
+        "title": "Cloud competition",
+        "summary": "AWS/Google and enterprise optimization cycles can pressure growth or margins."
+      },
+      {
+        "title": "Regulatory scrutiny",
+        "summary": "Scale in cloud, software, gaming and AI increases antitrust/platform risk."
+      }
+    ],
+    "catalysts": [
+      {
+        "title": "Azure/AI growth acceleration",
+        "summary": "Sustained Azure and AI workload growth would support the reinvestment thesis."
+      },
+      {
+        "title": "Copilot adoption evidence",
+        "summary": "Enterprise adoption, usage and pricing data can validate AI monetization."
+      },
+      {
+        "title": "FCF resilience despite capex",
+        "summary": "Strong OCF and controlled capex payback would reduce concern on AI investment cycle."
+      }
+    ],
+    "assumptions": [
+      {
+        "statement": "AI capex earns attractive returns through cloud usage and productivity software monetization.",
+        "status": "needs evidence"
+      },
+      {
+        "statement": "Core Microsoft margins remain resilient despite infrastructure investment.",
+        "status": "watch"
+      },
+      {
+        "statement": "Regulatory pressure does not materially impair bundling/platform economics.",
+        "status": "open"
+      }
+    ],
+    "open_questions": [
+      {
+        "question": "How much of AI capex is defensive vs return-generating?",
+        "status": "open"
+      },
+      {
+        "question": "What is the evidence of Copilot monetization and retention impact?",
+        "status": "open"
+      },
+      {
+        "question": "What normalized FCF margin should be used after AI infrastructure buildout?",
+        "status": "open"
+      }
+    ]
+  },
+  "valuation": {
+    "status": "prefilled",
+    "central_reference": null,
+    "range": null,
+    "user_excel_model": null,
+    "note": "No user Excel model registered for MSFT yet; valuation fields remain preliminary."
+  },
+  "key_metrics": {
+    "revenue": 82886000000,
+    "operating_income": 38398000000,
+    "net_income": 31778000000,
+    "diluted_eps": 4.27,
+    "cash": 32105000000,
+    "debt": 31423000000,
+    "operating_margin": 0.46326279468185216,
+    "net_margin": 0.3833940593103781,
+    "ccc": 104.57320898583595,
+    "share_count": 7429000000,
+    "sbc": 3081000000
+  },
+  "charts": {
+    "financial_trends": [
+      {
+        "label": "Revenue",
+        "points": [
+          {
+            "label": "CY2024",
+            "date": "2024-06-30",
+            "value": 245122000000
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 65585000000
+          },
+          {
+            "label": "CY2024Q4",
+            "date": "2024-12-31",
+            "value": 69632000000
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 70066000000
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-06-30",
+            "value": 281724000000
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 77673000000
+          },
+          {
+            "label": "CY2025Q4",
+            "date": "2025-12-31",
+            "value": 81273000000
+          },
+          {
+            "label": "CY2026Q1",
+            "date": "2026-03-31",
+            "value": 82886000000
+          }
+        ]
+      },
+      {
+        "label": "Operating income",
+        "points": [
+          {
+            "label": "CY2024",
+            "date": "2024-06-30",
+            "value": 109433000000
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 30552000000
+          },
+          {
+            "label": "CY2024Q4",
+            "date": "2024-12-31",
+            "value": 31653000000
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 32000000000
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-06-30",
+            "value": 128528000000
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 37961000000
+          },
+          {
+            "label": "CY2025Q4",
+            "date": "2025-12-31",
+            "value": 38275000000
+          },
+          {
+            "label": "CY2026Q1",
+            "date": "2026-03-31",
+            "value": 38398000000
+          }
+        ]
+      },
+      {
+        "label": "Net income",
+        "points": [
+          {
+            "label": "CY2024",
+            "date": "2024-06-30",
+            "value": 88136000000
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 24667000000
+          },
+          {
+            "label": "CY2024Q4",
+            "date": "2024-12-31",
+            "value": 24108000000
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 25824000000
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-06-30",
+            "value": 101832000000
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 27747000000
+          },
+          {
+            "label": "CY2025Q4",
+            "date": "2025-12-31",
+            "value": 38458000000
+          },
+          {
+            "label": "CY2026Q1",
+            "date": "2026-03-31",
+            "value": 31778000000
+          }
+        ]
+      }
+    ],
+    "balance_sheet": [
+      {
+        "label": "Cash",
+        "points": [
+          {
+            "label": "CY2024Q2I",
+            "date": "2024-06-30",
+            "value": 18315000000
+          },
+          {
+            "label": "CY2024Q3I",
+            "date": "2024-09-30",
+            "value": 20840000000
+          },
+          {
+            "label": "CY2024Q4I",
+            "date": "2024-12-31",
+            "value": 17482000000
+          },
+          {
+            "label": "CY2025Q1I",
+            "date": "2025-03-31",
+            "value": 28828000000
+          },
+          {
+            "label": "CY2025Q2I",
+            "date": "2025-06-30",
+            "value": 30242000000
+          },
+          {
+            "label": "CY2025Q3I",
+            "date": "2025-09-30",
+            "value": 28849000000
+          },
+          {
+            "label": "CY2025Q4I",
+            "date": "2025-12-31",
+            "value": 24296000000
+          },
+          {
+            "label": "CY2026Q1I",
+            "date": "2026-03-31",
+            "value": 32105000000
+          }
+        ]
+      },
+      {
+        "label": "Debt",
+        "points": [
+          {
+            "label": "CY2024Q2I",
+            "date": "2024-06-30",
+            "value": 42688000000
+          },
+          {
+            "label": "CY2024Q3I",
+            "date": "2024-09-30",
+            "value": 42868000000
+          },
+          {
+            "label": "CY2024Q4I",
+            "date": "2024-12-31",
+            "value": 39722000000
+          },
+          {
+            "label": "CY2025Q1I",
+            "date": "2025-03-31",
+            "value": 39882000000
+          },
+          {
+            "label": "CY2025Q2I",
+            "date": "2025-06-30",
+            "value": 40152000000
+          },
+          {
+            "label": "CY2025Q3I",
+            "date": "2025-09-30",
+            "value": 35376000000
+          },
+          {
+            "label": "CY2025Q4I",
+            "date": "2025-12-31",
+            "value": 35425000000
+          },
+          {
+            "label": "CY2026Q1I",
+            "date": "2026-03-31",
+            "value": 31423000000
+          }
+        ]
+      }
+    ],
+    "margins": [
+      {
+        "label": "Operating margin",
+        "points": [
+          {
+            "label": "CY2024",
+            "date": "2024-06-30",
+            "value": 0.44644299573273716
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 0.4658382252039338
+          },
+          {
+            "label": "CY2024Q4",
+            "date": "2024-12-31",
+            "value": 0.4545754825367647
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 0.456712242742557
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-06-30",
+            "value": 0.4562195624085985
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 0.48872838695557014
+          },
+          {
+            "label": "CY2025Q4",
+            "date": "2025-12-31",
+            "value": 0.47094360980891564
+          },
+          {
+            "label": "CY2026Q1",
+            "date": "2026-03-31",
+            "value": 0.46326279468185216
+          }
+        ]
+      },
+      {
+        "label": "Net margin",
+        "points": [
+          {
+            "label": "CY2024",
+            "date": "2024-06-30",
+            "value": 0.35955972944084985
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 0.37610734161774795
+          },
+          {
+            "label": "CY2024Q4",
+            "date": "2024-12-31",
+            "value": 0.34622012867647056
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 0.3685667798932435
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-06-30",
+            "value": 0.3614601524896707
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 0.35722838051832684
+          },
+          {
+            "label": "CY2025Q4",
+            "date": "2025-12-31",
+            "value": 0.473195280105324
+          },
+          {
+            "label": "CY2026Q1",
+            "date": "2026-03-31",
+            "value": 0.3833940593103781
+          }
+        ]
+      }
+    ]
+  },
+  "health": {
+    "overall_status": "good",
+    "summary": "Very strong financial profile, high margins and low leverage; main watch item is AI capex absorbing more cash and requiring evidence of returns.",
+    "scorecards": [
+      {
+        "label": "Profitability",
+        "status": "good",
+        "value": "excellent",
+        "note": "Operating margin above 45%."
+      },
+      {
+        "label": "Growth",
+        "status": "good",
+        "value": "solid",
+        "note": "StockTitan reports FY2025 revenue growth around 14.9%."
+      },
+      {
+        "label": "Balance sheet",
+        "status": "good",
+        "value": "strong",
+        "note": "Low leverage and high interest coverage."
+      },
+      {
+        "label": "FCF conversion",
+        "status": "watch",
+        "value": "capex pressure",
+        "note": "Large AI/cloud capex cycle reduces FCF flow-through."
+      }
+    ],
+    "watch_items": [
+      {
+        "item": "AI capex returns",
+        "severity": "high",
+        "why": "Capex rose sharply; thesis needs proof of monetization and durable demand."
+      },
+      {
+        "item": "Copilot monetization",
+        "severity": "high",
+        "why": "Need evidence of adoption, ARPU, retention and margin impact."
+      },
+      {
+        "item": "Cloud growth durability",
+        "severity": "medium",
+        "why": "Azure growth must justify infrastructure buildout."
+      },
+      {
+        "item": "Regulatory/platform risk",
+        "severity": "medium",
+        "why": "AI/cloud/software scale can attract scrutiny."
+      }
+    ]
+  },
+  "signal_cards": [
+    {
+      "label": "Revenue",
+      "value": 82886000000,
+      "format": "money",
+      "direction": "positive",
+      "note": "Latest reported period"
+    },
+    {
+      "label": "Operating margin",
+      "value": 0.46326279468185216,
+      "format": "percent",
+      "direction": "positive",
+      "note": "Core profitability"
+    },
+    {
+      "label": "Net margin",
+      "value": 0.3833940593103781,
+      "format": "percent",
+      "direction": "positive",
+      "note": "High earnings conversion"
+    },
+    {
+      "label": "Net debt / revenue",
+      "value": -0.00822816881017301,
+      "format": "percent",
+      "direction": "positive",
+      "note": "Very low balance-sheet pressure"
+    },
+    {
+      "label": "SBC / revenue",
+      "value": 0.0371715368095939,
+      "format": "percent",
+      "direction": "watch",
+      "note": "Dilution intensity"
+    },
+    {
+      "label": "Fair value ref.",
+      "value": null,
+      "format": "number",
+      "direction": "neutral",
+      "note": "Not populated yet"
+    }
+  ],
+  "quality_flags": [
+    {
+      "flag": "valuation_reference_missing",
+      "severity": "medium",
+      "explanation": "Dashboard has no accepted valuation reference for MSFT yet."
+    },
+    {
+      "flag": "ai_capex_return_needs_monitoring",
+      "severity": "high",
+      "explanation": "StockTitan notes capex increased materially; thesis must monitor FCF conversion and ROI."
+    },
+    {
+      "flag": "qualitative_thesis_baseline_missing",
+      "severity": "medium",
+      "explanation": "MSFT needs a written thesis baseline equivalent to UBER."
+    }
+  ],
+  "thesis_change_monitor": {
+    "status": "baseline_needed",
+    "last_event": "Q3 FY2026 / StockTitan financial snapshot",
+    "materiality": "medium",
+    "changed_view": "No accepted thesis baseline yet; initial monitor should focus on AI capex, cloud growth and FCF conversion.",
+    "impact_by_area": [
+      {
+        "area": "Core thesis",
+        "impact": "open",
+        "note": "Needs baseline."
+      },
+      {
+        "area": "AI/cloud",
+        "impact": "watch",
+        "note": "Capex and monetization are central."
+      },
+      {
+        "area": "Financial quality",
+        "impact": "good",
+        "note": "Margins, leverage and cash generation are strong."
+      },
+      {
+        "area": "Valuation",
+        "impact": "open",
+        "note": "No accepted valuation range."
+      }
+    ]
+  },
+  "maintenance_queue": [
+    {
+      "priority": "high",
+      "task": "Create MSFT thesis baseline",
+      "owner": "thesis analyst",
+      "trigger": "dashboard extension",
+      "output": "written qualitative thesis v0"
+    },
+    {
+      "priority": "high",
+      "task": "Analyze AI capex ROI and FCF conversion",
+      "owner": "financial analyst",
+      "trigger": "StockTitan/MSFT financials",
+      "output": "capex-to-growth thesis monitor"
+    },
+    {
+      "priority": "medium",
+      "task": "Track Copilot monetization evidence",
+      "owner": "thesis analyst",
+      "trigger": "earnings/transcripts/news",
+      "output": "evidence log"
+    },
+    {
+      "priority": "medium",
+      "task": "Populate valuation reference",
+      "owner": "user + Charlie",
+      "trigger": "model/valuation work",
+      "output": "dashboard-safe valuation range"
+    }
+  ],
+  "source_freshness": {
+    "latest_thesis_memo": null,
+    "latest_excel_model": null,
+    "latest_filing_or_results_reviewed": "StockTitan + MSFT latest financial snapshot, 2026-05-12",
+    "freshness_status": "baseline_needed",
+    "next_refresh_trigger": "MSFT earnings, material AI/cloud disclosure, or user thesis/model upload"
+  },
+  "key_documents": [
+    {
+      "label": "Latest 10-K",
+      "type": "SEC filing",
+      "date": "2025-07-30",
+      "href": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000789019&type=10-K&owner=exclude&count=10",
+      "note": "SEC 10-K listing"
+    },
+    {
+      "label": "Latest 10-Q",
+      "type": "SEC filing",
+      "date": "2026-04-29",
+      "href": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000789019&type=10-Q&owner=exclude&count=10",
+      "note": "SEC 10-Q listing"
+    },
+    {
+      "label": "StockTitan Financials",
+      "type": "External dashboard",
+      "date": "live",
+      "href": "https://www.stocktitan.net/financials/MSFT/",
+      "note": "Free external financials/health display"
+    },
+    {
+      "label": "StockTitan News",
+      "type": "External news feed",
+      "date": "live",
+      "href": "https://www.stocktitan.net/news/MSFT/",
+      "note": "Useful source for monitoring company news"
+    }
+  ],
+  "external_inputs": {
+    "stocktitan": {
+      "financials_url": "https://www.stocktitan.net/financials/MSFT/",
+      "news_url": "https://www.stocktitan.net/news/MSFT/",
+      "readability": "good_for_text_extraction",
+      "recommended_use": "secondary_input_and_dashboard_link",
+      "guardrail": "Verify material claims against primary sources before accepted thesis changes."
+    }
+  },
+  "stocktitan_news_snapshot": [
+    {
+      "date": "2026-04-29",
+      "headline": "Microsoft fiscal Q3 2026 earnings press release available",
+      "thesis_relevance": "high",
+      "category": "earnings"
+    },
+    {
+      "date": "2026-04-21",
+      "headline": "Microsoft expands AI training partnership with NABTU",
+      "thesis_relevance": "medium",
+      "category": "AI / workforce"
+    },
+    {
+      "date": "2026-04-16",
+      "headline": "Microsoft-Rubrik integration highlighted in security/identity roundup",
+      "thesis_relevance": "medium",
+      "category": "security / cloud"
+    },
+    {
+      "date": "2026-03-10",
+      "headline": "Microsoft declares quarterly dividend of $0.91",
+      "thesis_relevance": "low",
+      "category": "capital return"
+    },
+    {
+      "date": "2026-03-03",
+      "headline": "Microsoft and Pivot Point expand Dragon Copilot to rural hospitals",
+      "thesis_relevance": "medium",
+      "category": "AI / healthcare"
+    },
+    {
+      "date": "2026-02-18",
+      "headline": "CrowdStrike Falcon available in Microsoft Marketplace with Azure commitment eligibility",
+      "thesis_relevance": "medium",
+      "category": "cloud marketplace"
+    }
+  ],
+  "guardrails": {
+    "facts_require_source_and_date": true,
+    "stocktitan_is_secondary_input": true,
+    "material_changes_require_primary_source_verification": true
+  }
+}
