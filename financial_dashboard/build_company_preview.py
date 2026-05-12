@@ -178,7 +178,7 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
     <div class="muted small">Company Snapshot · generic dashboard template v0</div>
     <h1>{esc(ticker)} <span class="muted">{esc(name)}</span></h1>
   </div>
-  <div><a href="../index.html">← Portfolio</a></div>
+  <div><a href="../portfolio.html">← Portfolio</a></div>
 </div>
 
 <div class="snapshot-layout section">
