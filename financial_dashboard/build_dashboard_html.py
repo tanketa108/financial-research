@@ -1,16 +1,33 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import argparse
 import json
 import html
 from pathlib import Path
 
-ROOT = Path('/data/.openclaw/workspace')
-DASHBOARD_ROOT = ROOT / 'financial_dashboard'
-OUTPUT = DASHBOARD_ROOT / 'output'
-COMPANIES = OUTPUT / 'companies'
-STATIC = DASHBOARD_ROOT / 'static'
-FS = ROOT / 'financial_system'
+
+def resolve_paths(repo_root: Path, output_dir: Path | None = None):
+    root = repo_root.resolve()
+    dashboard_root = root / 'financial_dashboard'
+    output = (output_dir or (dashboard_root / 'output')).resolve()
+    return {
+        'root': root,
+        'dashboard_root': dashboard_root,
+        'output': output,
+        'companies': output / 'companies',
+        'static': dashboard_root / 'static',
+        'financial_system': root / 'financial_system',
+    }
+
+
+DEFAULT_REPO_ROOT = Path(__file__).resolve().parents[1]
+PATHS = resolve_paths(DEFAULT_REPO_ROOT)
+DASHBOARD_ROOT = PATHS['dashboard_root']
+OUTPUT = PATHS['output']
+COMPANIES = PATHS['companies']
+STATIC = PATHS['static']
+FS = PATHS['financial_system']
 
 DASHBOARD_STATE = FS / 'registry' / 'dashboard_state.json'
 THESIS_OUTPUT = FS / 'registry' / 'thesis_monitor_output.json'
@@ -221,6 +238,32 @@ def render_index(data: dict, thesis_output: dict, valuation_map: dict):
 
 
 def main():
+    parser = argparse.ArgumentParser(description='Build the static financial dashboard HTML.')
+    parser.add_argument(
+        '--repo-root',
+        type=Path,
+        default=DEFAULT_REPO_ROOT,
+        help='Repository root. Defaults to the parent of financial_dashboard/.',
+    )
+    parser.add_argument(
+        '--output-dir',
+        type=Path,
+        default=None,
+        help='Output directory. Defaults to <repo-root>/financial_dashboard/output.',
+    )
+    args = parser.parse_args()
+
+    paths = resolve_paths(args.repo_root, args.output_dir)
+    global DASHBOARD_ROOT, OUTPUT, COMPANIES, STATIC, FS, DASHBOARD_STATE, THESIS_OUTPUT, VALUATIONS
+    DASHBOARD_ROOT = paths['dashboard_root']
+    OUTPUT = paths['output']
+    COMPANIES = paths['companies']
+    STATIC = paths['static']
+    FS = paths['financial_system']
+    DASHBOARD_STATE = FS / 'registry' / 'dashboard_state.json'
+    THESIS_OUTPUT = FS / 'registry' / 'thesis_monitor_output.json'
+    VALUATIONS = FS / 'valuations'
+
     data = load_json(DASHBOARD_STATE)
     thesis_output = load_json(THESIS_OUTPUT)
     valuation_map = {}
