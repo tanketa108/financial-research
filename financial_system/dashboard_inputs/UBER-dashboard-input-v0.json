@@ -217,5 +217,226 @@
     "purpose": "company_snapshot_not_full_thesis",
     "show_detail_level": "medium_low",
     "principle": "dashboard shows status/signals/changes/actions; thesis document and Excel hold full detail"
+  },
+  "charts": {
+    "financial_trends": [
+      {
+        "label": "Revenue",
+        "points": [
+          {
+            "label": "CY2018Q1",
+            "date": "2018-03-31",
+            "value": 2584000000
+          },
+          {
+            "label": "CY2018Q2",
+            "date": "2018-06-30",
+            "value": 2768000000
+          },
+          {
+            "label": "CY2019Q1",
+            "date": "2019-03-31",
+            "value": 3099000000
+          },
+          {
+            "label": "CY2019Q2",
+            "date": "2019-06-30",
+            "value": 3166000000
+          }
+        ]
+      },
+      {
+        "label": "Operating income",
+        "points": [
+          {
+            "label": "2025 Q1",
+            "date": "2024-03-31",
+            "value": 172000000
+          },
+          {
+            "label": "2025 Q2",
+            "date": "2024-06-30",
+            "value": 796000000
+          },
+          {
+            "label": "2025 Q3",
+            "date": "2024-09-30",
+            "value": 1061000000
+          },
+          {
+            "label": "CY2024",
+            "date": "2024-12-31",
+            "value": 2799000000
+          },
+          {
+            "label": "2025 Q1",
+            "date": "2025-03-31",
+            "value": 1228000000
+          },
+          {
+            "label": "2025 Q2",
+            "date": "2025-06-30",
+            "value": 1450000000
+          },
+          {
+            "label": "2025 Q3",
+            "date": "2025-09-30",
+            "value": 1113000000
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-12-31",
+            "value": 5565000000
+          }
+        ]
+      },
+      {
+        "label": "Net income",
+        "points": [
+          {
+            "label": "2025 Q1",
+            "date": "2024-03-31",
+            "value": -654000000
+          },
+          {
+            "label": "2025 Q2",
+            "date": "2024-06-30",
+            "value": 1015000000
+          },
+          {
+            "label": "2025 Q3",
+            "date": "2024-09-30",
+            "value": 2612000000
+          },
+          {
+            "label": "2025 FY",
+            "date": "2024-12-31",
+            "value": 9856000000
+          },
+          {
+            "label": "2025 Q1",
+            "date": "2025-03-31",
+            "value": 1776000000
+          },
+          {
+            "label": "2025 Q2",
+            "date": "2025-06-30",
+            "value": 1355000000
+          },
+          {
+            "label": "2025 Q3",
+            "date": "2025-09-30",
+            "value": 6626000000
+          },
+          {
+            "label": "2025 FY",
+            "date": "2025-12-31",
+            "value": 10053000000
+          }
+        ]
+      }
+    ],
+    "balance_sheet": [
+      {
+        "label": "Cash",
+        "points": [
+          {
+            "label": "CY2024Q1I",
+            "date": "2024-03-31",
+            "value": 5019000000
+          },
+          {
+            "label": "CY2024Q2I",
+            "date": "2024-06-30",
+            "value": 4497000000
+          },
+          {
+            "label": "CY2024Q3I",
+            "date": "2024-09-30",
+            "value": 6150000000
+          },
+          {
+            "label": "CY2024Q4I",
+            "date": "2024-12-31",
+            "value": 5893000000
+          },
+          {
+            "label": "CY2025Q1I",
+            "date": "2025-03-31",
+            "value": 5132000000
+          },
+          {
+            "label": "CY2025Q2I",
+            "date": "2025-06-30",
+            "value": 6438000000
+          },
+          {
+            "label": "CY2025Q3I",
+            "date": "2025-09-30",
+            "value": 8432000000
+          },
+          {
+            "label": "CY2025Q4I",
+            "date": "2025-12-31",
+            "value": 7105000000
+          }
+        ]
+      },
+      {
+        "label": "Debt",
+        "points": [
+          {
+            "label": "CY2024Q1I",
+            "date": "2024-03-31",
+            "value": 9457000000
+          },
+          {
+            "label": "CY2024Q2I",
+            "date": "2024-06-30",
+            "value": 9454000000
+          },
+          {
+            "label": "CY2024Q3I",
+            "date": "2024-09-30",
+            "value": 10986000000
+          },
+          {
+            "label": "CY2024Q4I",
+            "date": "2024-12-31",
+            "value": 8347000000
+          },
+          {
+            "label": "CY2025Q1I",
+            "date": "2025-03-31",
+            "value": 8350000000
+          },
+          {
+            "label": "CY2025Q2I",
+            "date": "2025-06-30",
+            "value": 9578000000
+          },
+          {
+            "label": "CY2025Q3I",
+            "date": "2025-09-30",
+            "value": 10615000000
+          },
+          {
+            "label": "CY2025Q4I",
+            "date": "2025-12-31",
+            "value": 10521000000
+          }
+        ]
+      }
+    ],
+    "margins": [
+      {
+        "label": "Operating margin",
+        "points": []
+      },
+      {
+        "label": "Net margin",
+        "points": []
+      }
+    ]
   }
 }

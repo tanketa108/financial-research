@@ -78,6 +78,23 @@ def horizontal_bar(label, value, max_value, display, tone='blue'):
 </div>'''
 
 
+def mini_chart(title, series, tone='blue', percent=False):
+    points = (series or {}).get('points') or []
+    vals = [float(p.get('value') or 0) for p in points]
+    max_v = max([abs(v) for v in vals] + [1])
+    bars = []
+    for p, v in zip(points, vals):
+        h = max(4, min(100, abs(v) / max_v * 100))
+        label = p.get('label') or p.get('date') or ''
+        display = pct(v) if percent else money(v)
+        bars.append(f'<div class="snapshot-col-wrap"><div class="snapshot-col" title="{esc(label)} · {esc(display)}" style="height:{h:.1f}%"></div><div class="snapshot-col-label">{esc(str(label).replace("CY", ""))}</div></div>')
+    return f'''
+<div class="card snapshot-chart-card tone-border-{esc(tone)}">
+  <h2>{esc(title)}</h2>
+  <div class="snapshot-column-chart tone-{esc(tone)}">{''.join(bars) or '<div class="small muted">[missing]</div>'}</div>
+</div>'''
+
+
 def render(data: dict, css_rel: str = CSS_REL) -> str:
     ticker = data.get('ticker')
     name = data.get('company_name')
@@ -86,6 +103,7 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
     qualitative = data.get('qualitative') or {}
     valuation = data.get('valuation') or {}
     metrics = data.get('key_metrics') or {}
+    charts = data.get('charts') or {}
 
     drivers = qualitative.get('drivers') or []
     risks = qualitative.get('risks') or []
@@ -154,6 +172,15 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
       <div><span>Assumptions</span><strong>{len(assumptions)}</strong></div>
     </div>
   </section>
+</div>
+
+<div class="snapshot-chart-grid section">
+  {mini_chart('Revenue trend', (charts.get('financial_trends') or [{}])[0], 'blue')}
+  {mini_chart('Operating income', (charts.get('financial_trends') or [{}, {}])[1] if len(charts.get('financial_trends') or []) > 1 else {}, 'green')}
+  {mini_chart('Net income', (charts.get('financial_trends') or [{}, {}, {}])[2] if len(charts.get('financial_trends') or []) > 2 else {}, 'green')}
+  {mini_chart('Cash', (charts.get('balance_sheet') or [{}])[0], 'amber')}
+  {mini_chart('Debt', (charts.get('balance_sheet') or [{}, {}])[1] if len(charts.get('balance_sheet') or []) > 1 else {}, 'red')}
+  {mini_chart('Operating margin', (charts.get('margins') or [{}])[0], 'blue', percent=True)}
 </div>
 
 <div class="snapshot-grid section">
