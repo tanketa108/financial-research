@@ -131,6 +131,7 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
     thesis_change_monitor = data.get('thesis_change_monitor') or {}
     maintenance_queue = data.get('maintenance_queue') or []
     source_freshness = data.get('source_freshness') or {}
+    key_documents = data.get('key_documents') or []
 
     drivers = qualitative.get('drivers') or []
     risks = qualitative.get('risks') or []
@@ -192,6 +193,10 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
 
 <div class="signal-card-grid section">
   {''.join(f'<div class="card signal-card signal-{esc(x.get("direction"))}"><div class="muted small">{esc(x.get("label"))}</div><div class="kpi">{format_value(x.get("value"), x.get("format"))}</div><div class="small muted">{esc(x.get("note"))}</div></div>' for x in signal_cards)}
+</div>
+
+<div class="document-access-grid section">
+  {''.join(f'<a class="document-card" href="{esc(x.get("href"))}" target="_blank" rel="noopener"><div class="muted small">{esc(x.get("type"))}</div><strong>{esc(x.get("label"))}</strong><span>{esc(x.get("date"))}</span><small>{esc(x.get("note"))}</small></a>' for x in key_documents)}
 </div>
 
 <div class="snapshot-grid section">

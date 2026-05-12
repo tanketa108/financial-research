@@ -616,5 +616,35 @@
     "latest_filing_or_results_reviewed": "Q1 2026 / 2026-05-06 user memo",
     "freshness_status": "needs_periodic_review",
     "next_refresh_trigger": "next earnings release, material filing, major strategic announcement, or user model update"
-  }
+  },
+  "key_documents": [
+    {
+      "label": "Latest 10-K",
+      "type": "SEC filing",
+      "date": "2026-02-13",
+      "href": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm",
+      "note": "Official annual filing"
+    },
+    {
+      "label": "Latest 10-Q",
+      "type": "SEC filing",
+      "date": "2025-11-04",
+      "href": "https://www.sec.gov/Archives/edgar/data/1543151/000154315125000033/uber-20250930.htm",
+      "note": "Official quarterly filing"
+    },
+    {
+      "label": "Investment thesis memo",
+      "type": "User thesis document",
+      "date": "2026-05-06",
+      "href": "../assets/UBER/uber-investment-committee-thesis-es-actualizado.rtf.doc",
+      "note": "User-provided UBER thesis document"
+    },
+    {
+      "label": "Excel valuation model",
+      "type": "User model",
+      "date": "uploaded 2026-05-12",
+      "href": "../assets/UBER/Model_UBER_v3_3.xlsx",
+      "note": "User-owned quantitative model"
+    }
+  ]
 }
