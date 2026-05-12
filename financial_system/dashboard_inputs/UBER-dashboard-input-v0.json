@@ -438,5 +438,183 @@
         "points": []
       }
     ]
+  },
+  "health": {
+    "overall_status": "watch",
+    "summary": "Business momentum remains healthy, but thesis maintenance should focus on Mobility monetization, Delivery quality and earnings normalization.",
+    "scorecards": [
+      {
+        "label": "Demand / platform momentum",
+        "status": "good",
+        "value": "healthy",
+        "note": "Bookings, trips and Delivery strength support platform demand."
+      },
+      {
+        "label": "Profitability quality",
+        "status": "watch",
+        "value": "mixed",
+        "note": "Operating income improving, but reported net income includes non-operating noise."
+      },
+      {
+        "label": "Balance sheet",
+        "status": "good",
+        "value": "manageable",
+        "note": "Cash/debt position does not currently dominate the thesis."
+      },
+      {
+        "label": "Thesis freshness",
+        "status": "watch",
+        "value": "needs Q1 review",
+        "note": "Q1 2026 introduces monetization questions that require monitoring."
+      }
+    ],
+    "watch_items": [
+      {
+        "item": "Mobility monetization",
+        "severity": "high",
+        "why": "Bookings/trips strength must convert into revenue and operating income quality."
+      },
+      {
+        "item": "Delivery economics",
+        "severity": "medium",
+        "why": "Delivery supports ecosystem thesis but needs durable margin proof."
+      },
+      {
+        "item": "Uber One incrementality",
+        "severity": "medium",
+        "why": "Need evidence that it improves retention/frequency rather than subsidizing existing demand."
+      },
+      {
+        "item": "GAAP/net income normalization",
+        "severity": "medium",
+        "why": "Investment revaluation gains can distort reported profitability."
+      }
+    ]
+  },
+  "signal_cards": [
+    {
+      "label": "Revenue",
+      "value": 13467000000,
+      "format": "money",
+      "direction": "positive",
+      "note": "Latest reported period"
+    },
+    {
+      "label": "Operating margin",
+      "value": 0.08264646914680329,
+      "format": "percent",
+      "direction": "positive",
+      "note": "Profitability anchor"
+    },
+    {
+      "label": "Net margin",
+      "value": 0.492017524318705,
+      "format": "percent",
+      "direction": "caution",
+      "note": "May include non-operating noise"
+    },
+    {
+      "label": "Net debt / revenue",
+      "value": 0.1620999480210886,
+      "format": "percent",
+      "direction": "neutral",
+      "note": "Capital structure pressure"
+    },
+    {
+      "label": "SBC / revenue",
+      "value": 0.13559070320041583,
+      "format": "percent",
+      "direction": "watch",
+      "note": "Dilution intensity"
+    },
+    {
+      "label": "Fair value ref.",
+      "value": 117.04528959437192,
+      "format": "number",
+      "direction": "neutral",
+      "note": "Model-derived reference"
+    }
+  ],
+  "quality_flags": [
+    {
+      "flag": "reported_net_income_likely_contains_non_operating_noise",
+      "severity": "medium",
+      "explanation": "Reported net income should not be treated as clean recurring earnings without normalization."
+    },
+    {
+      "flag": "mobility_revenue_vs_bookings_gap_requires_review",
+      "severity": "high",
+      "explanation": "Q1 2026 showed stronger activity than revenue conversion; monitor take-rate/mix/accounting effects."
+    },
+    {
+      "flag": "delivery_margin_durability_not_fully_proven",
+      "severity": "medium",
+      "explanation": "Delivery strengthens ecosystem but requires evidence of sustainable unit economics."
+    }
+  ],
+  "thesis_change_monitor": {
+    "status": "watch",
+    "last_event": "Q1 2026 results / user memo baseline",
+    "materiality": "medium",
+    "changed_view": "No thesis break, but evidence shifts monitoring focus toward monetization quality by segment.",
+    "impact_by_area": [
+      {
+        "area": "Core thesis",
+        "impact": "stable",
+        "note": "Demand aggregation/platform framing remains intact."
+      },
+      {
+        "area": "Mobility",
+        "impact": "watch",
+        "note": "Activity strong, monetization quality needs explanation."
+      },
+      {
+        "area": "Delivery",
+        "impact": "positive_watch",
+        "note": "Strong growth supports ecosystem thesis but economics still need proof."
+      },
+      {
+        "area": "Valuation",
+        "impact": "open",
+        "note": "Requires bear/base/bull reconciliation with Excel model."
+      }
+    ]
+  },
+  "maintenance_queue": [
+    {
+      "priority": "high",
+      "task": "Review Mobility monetization bridge",
+      "owner": "financial/thesis analyst",
+      "trigger": "Q1 2026 results",
+      "output": "explain bookings/trips vs revenue conversion"
+    },
+    {
+      "priority": "medium",
+      "task": "Validate Delivery margin durability",
+      "owner": "financial analyst",
+      "trigger": "new earnings / filings",
+      "output": "evidence-backed view on structural vs promotional growth"
+    },
+    {
+      "priority": "medium",
+      "task": "Extract Uber One evidence",
+      "owner": "thesis analyst",
+      "trigger": "company disclosures/transcripts",
+      "output": "cohort/retention/frequency evidence log"
+    },
+    {
+      "priority": "medium",
+      "task": "Reconcile Excel valuation summary",
+      "owner": "user + Charlie",
+      "trigger": "uploaded Excel model",
+      "output": "dashboard-safe valuation range and assumptions"
+    }
+  ],
+  "source_freshness": {
+    "latest_thesis_memo": "2026-05-06",
+    "latest_excel_model": "Model_UBER_v3_3.xlsx",
+    "latest_filing_or_results_reviewed": "Q1 2026 / 2026-05-06 user memo",
+    "freshness_status": "needs_periodic_review",
+    "next_refresh_trigger": "next earnings release, material filing, major strategic announcement, or user model update"
   }
 }

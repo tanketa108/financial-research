@@ -65,6 +65,22 @@ def bullets(items, n=3, field=None):
     return ''.join(rows) or '<li>[none]</li>'
 
 
+def format_value(value, fmt):
+    if fmt == 'money':
+        return money(value)
+    if fmt == 'percent':
+        return pct(value)
+    if value is None:
+        return '[missing]'
+    if isinstance(value, float):
+        return f'{value:.1f}'
+    return esc(value)
+
+
+def status_dot(status):
+    return f'<span class="status-dot status-{esc(status or "neutral")}"></span>'
+
+
 def horizontal_bar(label, value, max_value, display, tone='blue'):
     try:
         width = max(3, min(100, abs(float(value)) / max_value * 100)) if max_value else 0
@@ -109,6 +125,12 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
     valuation = data.get('valuation') or {}
     metrics = data.get('key_metrics') or {}
     charts = data.get('charts') or {}
+    health = data.get('health') or {}
+    signal_cards = data.get('signal_cards') or []
+    quality_flags = data.get('quality_flags') or []
+    thesis_change_monitor = data.get('thesis_change_monitor') or {}
+    maintenance_queue = data.get('maintenance_queue') or []
+    source_freshness = data.get('source_freshness') or {}
 
     drivers = qualitative.get('drivers') or []
     risks = qualitative.get('risks') or []
@@ -142,6 +164,7 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
     <h2>{esc(thesis.get('one_line'))}</h2>
     <div class="snapshot-status-row">
       {pill(thesis.get('stance'))}
+      {pill(health.get('overall_status'))}
       {pill(maintenance.get('status'))}
       {pill(valuation.get('status'))}
     </div>
@@ -154,6 +177,21 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
     <div class="card snapshot-score"><div class="muted small">Fair value</div><div class="kpi">{esc(valuation.get('central_reference'))}</div></div>
     <div class="card snapshot-score"><div class="muted small">Open questions</div><div class="kpi">{len(questions)}</div></div>
   </section>
+</div>
+
+<div class="card section health-summary-card">
+  <div>
+    <div class="muted small">Financial / thesis health</div>
+    <h2>{status_dot(health.get('overall_status'))}{esc(health.get('overall_status') or 'unknown').upper()}</h2>
+    <p>{esc(health.get('summary'))}</p>
+  </div>
+  <div class="health-score-grid">
+    {''.join(f'<div class="health-score-item">{status_dot(x.get("status"))}<span>{esc(x.get("label"))}</span><strong>{esc(x.get("value"))}</strong><small>{esc(x.get("note"))}</small></div>' for x in health.get('scorecards', []))}
+  </div>
+</div>
+
+<div class="signal-card-grid section">
+  {''.join(f'<div class="card signal-card signal-{esc(x.get("direction"))}"><div class="muted small">{esc(x.get("label"))}</div><div class="kpi">{format_value(x.get("value"), x.get("format"))}</div><div class="small muted">{esc(x.get("note"))}</div></div>' for x in signal_cards)}
 </div>
 
 <div class="snapshot-grid section">
@@ -204,11 +242,48 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
 </div>
 
 <div class="snapshot-grid section">
+  <section class="card snapshot-panel snapshot-panel-wide thesis-monitor-card">
+    <h2>Thesis Change Monitor</h2>
+    <div class="monitor-head">
+      {pill(thesis_change_monitor.get('status'))}
+      {pill(thesis_change_monitor.get('materiality'))}
+      <span class="small muted">{esc(thesis_change_monitor.get('last_event'))}</span>
+    </div>
+    <p class="small">{esc(thesis_change_monitor.get('changed_view'))}</p>
+    <div class="impact-grid">
+      {''.join(f'<div>{status_dot(x.get("impact"))}<strong>{esc(x.get("area"))}</strong><span>{esc(x.get("impact"))}</span><small>{esc(x.get("note"))}</small></div>' for x in thesis_change_monitor.get('impact_by_area', []))}
+    </div>
+  </section>
+  <section class="card snapshot-panel">
+    <h2>Watch items</h2>
+    <ul class="list small">{''.join(f'<li><strong>{esc(x.get("item"))}</strong> · {esc(x.get("severity"))}<br><span class="muted">{esc(x.get("why"))}</span></li>' for x in health.get('watch_items', [])) or '<li>[none]</li>'}</ul>
+  </section>
+</div>
+
+<div class="snapshot-grid section">
   <section class="card snapshot-panel snapshot-panel-wide">
-    <h2>Maintenance monitor</h2>
-    <div class="snapshot-maintenance">
-      <div><div class="muted small">What changed / latest update</div><strong>{esc(item_title(first(updates, 1)[0]) if updates else '[none]')}</strong></div>
-      <div><div class="muted small">Next action</div><strong>{esc(maintenance.get('next_action'))}</strong></div>
+    <h2>Maintenance queue</h2>
+    <div class="queue-list">
+      {''.join(f'<div class="queue-item"><div>{pill(x.get("priority"))}</div><strong>{esc(x.get("task"))}</strong><span>{esc(x.get("trigger"))}</span><small>{esc(x.get("output"))}</small></div>' for x in maintenance_queue)}
+    </div>
+  </section>
+  <section class="card snapshot-panel">
+    <h2>Source freshness</h2>
+    <ul class="list small">
+      <li>Thesis memo: {esc(source_freshness.get('latest_thesis_memo'))}</li>
+      <li>Excel model: {esc(source_freshness.get('latest_excel_model'))}</li>
+      <li>Latest review: {esc(source_freshness.get('latest_filing_or_results_reviewed'))}</li>
+      <li>Status: {esc(source_freshness.get('freshness_status'))}</li>
+      <li>Next trigger: {esc(source_freshness.get('next_refresh_trigger'))}</li>
+    </ul>
+  </section>
+</div>
+
+<div class="snapshot-grid section">
+  <section class="card snapshot-panel snapshot-panel-wide">
+    <h2>Quality flags</h2>
+    <div class="quality-flag-grid">
+      {''.join(f'<div class="quality-flag quality-{esc(x.get("severity"))}"><strong>{esc(x.get("flag"))}</strong><small>{esc(x.get("explanation"))}</small></div>' for x in quality_flags)}
     </div>
   </section>
   <section class="card snapshot-panel">
