@@ -243,8 +243,8 @@
     "ticker": "UBER",
     "coverage_status": "covered",
     "update_status": {
-      "latest_filing_date": "2026-05-06",
-      "latest_report_date": "2026-03-31",
+      "latest_filing_date": "2025-11-04",
+      "latest_report_date": "2025-09-30",
       "filing_delta_changed": true,
       "data_delta_changed": false,
       "thesis_monitor_decision": "review"
@@ -272,9 +272,9 @@
       ]
     },
     "thesis_status": {
-      "thesis_short": "Uber debe analizarse como plataforma de agregación de demanda y coordinación local de red en Mobility y Delivery, no como ride-hailing convencional.",
-      "current_stance": "prometedora / digna de comité, todavía no fully underwritten",
-      "scenario_central": "Demand aggregation + local liquidity central case"
+      "thesis_short": "Uber está consolidando un sistema operativo global de movilidad y comercio local con efectos de red, adyacencias de alto margen y una vía asset-light hacia la autonomía, lo que debería traducirse en expansión estructural de márgenes y FCF.",
+      "current_stance": "overweight / positiva con riesgo alto-especulativo",
+      "scenario_central": "Hybrid asset-light central case"
     },
     "key_metrics": {
       "revenue": 13467000000,
@@ -290,20 +290,18 @@
       "sbc": 1826000000
     },
     "key_risks": [
-      "Riesgo regulatorio y laboral",
-      "Riesgo competitivo en Mobility y Delivery",
-      "Sobreinterpretar Delivery sin prueba dura de economics",
-      "Complejidad o distracción en Freight/verticales adyacentes",
-      "Valoración ya descontando éxito de ecosistema",
-      "AV desintermediando la relación con el cliente"
+      "Riesgo regulatorio laboral en EE.UU. y Europa",
+      "Presión competitiva de DoorDash en delivery y Lyft en movilidad",
+      "Que la mejora de margen en Delivery no sea tan estructural como parece",
+      "Desintermediación en un futuro AV dominado por OEMs / operadores AV",
+      "Dependencia excesiva de ganancias no operativas para el net income reportado"
     ],
     "key_catalysts": [
-      "Evidencia de Uber One en retención, frecuencia y economics incrementales",
-      "Prueba de Delivery unit economics y margen durable",
-      "Mejor explicación de monetización Mobility tras Q1 2026",
-      "Escalado de Advertising como capa de alto margen",
-      "Alianzas AV que refuercen a Uber como agregador de demanda",
-      "Valoración bear/base/bull validada con modelo del usuario"
+      "Expansión de Uber Advertising y prueba de su contribución al EBITDA",
+      "Crecimiento de Uber One y mejora de frecuencia / retención",
+      "Evidencia adicional de FCF estructural y recompras sostenidas",
+      "Nuevas alianzas AV que refuercen el rol de Uber como agregador de demanda",
+      "Mayor racionalidad competitiva en movilidad y delivery"
     ]
   }
 }
