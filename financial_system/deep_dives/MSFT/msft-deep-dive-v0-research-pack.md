@@ -522,3 +522,183 @@ Microsoft mantiene una calidad financiera excepcional: márgenes altos, ROE >30%
 5. Shareholder returns como % de FCF.
 6. Margen operativo ante mayor depreciación futura.
 
+
+## 20. Guidance, outlook y preguntas accionables de tesis — MSFT v0.2
+
+**Fuentes principales:** Microsoft FY2026 Q3 earnings release / webcast, 2026-04-29; FY2026 Q3 earnings call transcript, 2026-04-29; Microsoft IR / SEC filings.  
+**Objetivo:** bloque de research para análisis del usuario; no es tesis final.
+
+### 20.1 Guidance explícita de management
+
+**Q4 FY2026 — guía por segmento según CFO Amy Hood en call:**
+
+- **Productivity and Business Processes:** revenue esperado de **$37.0–$37.3bn**, crecimiento aproximado **12%–13% YoY**.
+- **Intelligent Cloud:** revenue esperado de **$37.95–$38.25bn**, crecimiento aproximado **27%–28% YoY**.
+- **More Personal Computing:** revenue esperado de **$11.75–$12.25bn**.
+- **Capex:** management espera **más de $40bn en Q4 FY2026**.
+- **Margen operativo FY2026:** management espera que el margen operativo del año fiscal aumente aproximadamente **1 punto YoY**, pese a inversión elevada en AI/cloud y costes puntuales de retiro de empleados en Q4.
+- **Capex calendar 2026:** se mencionó expectativa de alrededor de **$190bn**, incluyendo aproximadamente **$25bn** de presión por mayores precios de componentes.
+
+Fuente: Microsoft Q3 FY2026 earnings call / IR.
+
+### 20.2 Punto de partida Q3 FY2026
+
+Microsoft reportó:
+
+- **Revenue:** $82.9bn, **+18% YoY**, +15% constant currency.
+- **Operating income:** $38.4bn, **+20% YoY**, +16% CC.
+- **Diluted EPS:** $4.27, **+23% GAAP**, +21% non-GAAP.
+- **Microsoft Cloud revenue:** $54.5bn, **+29% YoY**, +25% CC.
+- **Commercial RPO:** $627bn, **+99% YoY**.
+- **AI business ARR:** >**$37bn**, **+123% YoY**.
+
+### 20.3 Azure / cloud: demanda fuerte, capacidad todavía restrictiva
+
+**Datos reportados:**
+
+- Intelligent Cloud revenue: **$34.7bn**, +30% YoY, +28% CC.
+- Azure and other cloud services: **+40% YoY**, +39% CC.
+- Microsoft Cloud revenue: **$54.5bn**, +29% YoY.
+
+**Señales cualitativas de management:**
+
+- La demanda AI/cloud sigue tensionando la capacidad disponible.
+- Microsoft añadió aproximadamente **1GW de capacidad** en el trimestre.
+- La compañía sigue en camino de **duplicar su footprint total en dos años**.
+- Inversiones en nuevas regiones, datacenters, GPUs, CPUs, networking propio, silicon propio y optimización del stack.
+- Management espera que la oferta siga limitada al menos durante 2026, con posible aceleración moderada de Azure en la segunda mitad del año calendario 2026 conforme entre capacidad.
+
+**Implicación:** Azure sigue pareciendo más limitado por capacidad monetizable que por demanda final. Si la capacidad entra en plazo, Azure puede sostener crecimiento elevado; si hay retrasos o presión de supply chain, el capex se adelanta al revenue asociado.
+
+### 20.4 AI capex / datacenters: inversión agresiva y capital intensity mayor
+
+**Q3 FY2026:**
+
+- Capex reportado: aproximadamente **$31.9bn**.
+- Free cash flow: aproximadamente **$15.8bn**, afectado por mayor capex.
+- Management indicó que alrededor de dos tercios del capex se destinan a activos de vida corta como GPUs y CPUs.
+
+**Outlook:**
+
+- Capex esperado en Q4 FY2026: **>$40bn**.
+- Calendar 2026 capex esperado: alrededor de **$190bn**, con presión por precios de componentes.
+- Management defiende el ROI por demanda observable, backlog/RPO, contratos cloud, consumo AI y optimización de COGS mediante software, hardware propio y modelos propios.
+
+**Lectura para PM:** la cuestión no es solo si existe demanda AI; es si Microsoft convierte este ciclo de capex en revenue incremental con márgenes aceptables. La tesis debe modelar:
+
+- retraso entre capex y revenue,
+- mix de activos de vida corta,
+- depreciation drag,
+- utilización de capacidad,
+- pricing power en AI workloads,
+- eficiencia de inference,
+- dependencia de OpenAI / grandes clientes.
+
+### 20.5 Margen: resiliencia operativa pese a presión de AI infrastructure
+
+**Q3:**
+
+- Gross margin aprox. **68%**, presionado por inversión AI.
+- Microsoft Cloud gross margin aprox. **66%**, mejor que lo esperado pero inferior YoY por capex AI.
+- Operating income creció +20% YoY vs revenue +18%.
+
+**Guía:**
+
+- FY2026 operating margin esperado **+1 punto YoY**.
+- Opex growth contenido en rango medio/alto de un dígito, con disciplina de headcount y eficiencia operativa.
+
+**Implicación:** el margen operativo aguanta por escala, mix cloud/software y control de gastos. El riesgo es que gross margin cloud y depreciation empiecen a reflejar con más fuerza el ciclo de AI capex en FY2027.
+
+### 20.6 Productivity / M365 Copilot outlook
+
+**Q3:**
+
+- Productivity and Business Processes revenue: **$35.0bn**, +17% YoY, +13% CC.
+- Microsoft 365 Commercial cloud revenue: **+19% YoY**, +15% CC.
+- Microsoft 365 Consumer cloud revenue: **+33% YoY**, +29% CC.
+- Dynamics 365 revenue: **+22% YoY**, +17% CC.
+- LinkedIn revenue: **+12% YoY**, +9% CC.
+
+**Copilot señales clave:**
+
+- Microsoft 365 Copilot paid seats >**20M**.
+- Seat growth **+250% YoY**.
+- Clientes con >50k seats se cuadruplicaron YoY.
+- Queries per user +~20% QoQ.
+- Monthly usage de first-party agents +6x YTD.
+- Monetización evoluciona hacia modelo híbrido: seat-based entitlement + usage-based consumption.
+
+**Implicación:** Copilot muestra adopción real, pero la tesis debe separar seat growth, usage intensity, attach rate, ARPU incremental y gross margin después de inference cost.
+
+### 20.7 Intelligent Cloud / Azure outlook
+
+**Management focus:**
+
+- AI infrastructure como prioridad estratégica.
+- Capacidad añadida y nuevas inversiones globales en datacenters.
+- Silicon propio: Azure Boost, Cobalt CPU, Maia accelerator.
+- Foundry, Fabric, Cosmos DB y data layer como palancas para capturar AI app workloads.
+
+**KPIs a seguir:**
+
+- Azure growth constant currency.
+- Microsoft Cloud gross margin.
+- Capex y finance leases.
+- RPO growth y current RPO.
+- AI ARR.
+- Utilización / capacidad disponible.
+- Comentarios sobre supply constraints.
+- Foundry / Fabric paid customers y usage.
+- Mix entre OpenAI workloads y enterprise workloads diversificados.
+
+### 20.8 More Personal Computing outlook
+
+**Q3:**
+
+- More Personal Computing revenue: **$13.2bn**, -1% YoY, -3% CC.
+- Windows OEM and Devices: **-2% YoY**, -3% CC.
+- Xbox content and services: **-5% YoY**, -7% CC.
+- Search advertising ex-TAC: **+12% YoY**, +9% CC.
+
+**Q4 guidance:** revenue esperado **$11.75–$12.25bn**.
+
+**Lectura:** MPC es menos central para la tesis AI/cloud. Search crece bien; gaming/devices son más volátiles. Para la tesis MSFT, MPC probablemente funciona más como contribuidor de caja/estabilizador que como driver principal.
+
+### 20.9 Riesgos destacados por management / filings
+
+- Competencia intensa en cloud, productivity, search, gaming y AI.
+- Riesgo de ejecución en inversiones AI/cloud.
+- Inversiones significativas que podrían no generar retornos esperados.
+- Supply chain, calidad de componentes y disponibilidad de infraestructura.
+- Ciberataques, vulnerabilidades y outages.
+- Regulación, privacidad, antitrust y restricciones sobre bundling/distribución.
+- Dependencia de partners estratégicos y ecosistemas de modelos.
+- Obsolescencia tecnológica rápida en hardware AI.
+
+### 20.10 Preguntas accionables para tesis
+
+1. ¿Qué nivel de capex/revenue es normalizado post ciclo AI?
+2. ¿Cuánto del crecimiento Azure es demanda estructural diversificada y cuánto hyperscale/AI concentrado?
+3. ¿Qué retorno incremental sobre capital tendrá el footprint AI/datacenter?
+4. ¿El gross margin cloud puede estabilizarse o seguirá bajando por depreciation/inference?
+5. ¿Copilot será un uplift SaaS de alto margen o un producto compute-heavy con economics más bajos?
+6. ¿Qué parte del AI ARR viene de workloads sostenibles y recurrentes?
+7. ¿Hasta qué punto OpenAI aumenta el moat de Microsoft o crea dependencia estratégica?
+8. ¿Cuánto pricing power mantiene M365 ante Copilot/agents?
+9. ¿El RPO de $627bn convierte en revenue/margen con timing suficiente para justificar capex?
+10. ¿Qué downside hay si la demanda AI se normaliza antes de que la capacidad nueva esté plenamente utilizada?
+
+### 20.11 Próximos datos a monitorizar
+
+- Azure growth CC.
+- Microsoft Cloud gross margin.
+- Capex trimestral y capex/revenue.
+- FCF conversion.
+- RPO y current RPO.
+- AI ARR.
+- M365 Copilot paid seats, attach rate y usage.
+- Cloud capacity commentary.
+- Depreciation growth.
+- Opex discipline / headcount.
+- Shareholder returns vs FCF.
+
