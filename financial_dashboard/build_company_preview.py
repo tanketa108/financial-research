@@ -117,10 +117,13 @@ def mini_chart(title, series, tone='blue', percent=False):
 
 
 def render_document_card(doc):
-    primary_href = doc.get('primary_href')
-    primary_link = ''
-    if primary_href:
-        primary_link = f'<a class="document-secondary-link" href="{esc(primary_href)}" target="_blank" rel="noopener">Open report document</a>'
+    detail_href = doc.get('filing_detail_href')
+    direct_href = doc.get('primary_href')
+    actions = []
+    if direct_href:
+        actions.append(f'<a class="document-secondary-link" href="{esc(direct_href)}" target="_blank" rel="noopener">Raw report HTML</a>')
+    if detail_href:
+        actions.append(f'<a class="document-secondary-link" href="{esc(detail_href)}" target="_blank" rel="noopener">SEC filing details</a>')
     accession = doc.get('accession')
     accession_line = f'<small class="mono">{esc(accession)}</small>' if accession else ''
     period = f' · period {esc(doc.get("period"))}' if doc.get('period') else ''
@@ -133,7 +136,7 @@ def render_document_card(doc):
     <small>{esc(doc.get('note'))}</small>
     {accession_line}
   </a>
-  {primary_link}
+  {''.join(actions)}
 </div>'''
 
 

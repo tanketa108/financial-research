@@ -619,21 +619,23 @@
       "label": "Latest 10-K",
       "type": "SEC filing",
       "date": "2025-07-30",
-      "href": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm",
-      "note": "SEC filing detail page · period 2025-06-30",
+      "href": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+      "note": "Direct SEC report HTML · period 2025-06-30",
       "period": "2025-06-30",
       "primary_href": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
-      "accession": "0000950170-25-100235"
+      "accession": "0000950170-25-100235",
+      "filing_detail_href": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm"
     },
     {
       "label": "Latest 10-Q",
       "type": "SEC filing",
       "date": "2026-04-29",
-      "href": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/0001193125-26-191507-index.htm",
-      "note": "SEC filing detail page · period 2026-03-31",
+      "href": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm",
+      "note": "Direct SEC report HTML · period 2026-03-31",
       "period": "2026-03-31",
       "primary_href": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm",
-      "accession": "0001193125-26-191507"
+      "accession": "0001193125-26-191507",
+      "filing_detail_href": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/0001193125-26-191507-index.htm"
     },
     {
       "label": "StockTitan Financials",
