@@ -601,16 +601,16 @@
     {
       "label": "Latest 10-K",
       "type": "SEC filing",
-      "date": "live",
-      "href": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001065280&type=10-K&owner=exclude&count=10",
-      "note": "SEC 10-K listing"
+      "date": "2026-01-23",
+      "href": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm",
+      "note": "Direct SEC latest 10-K filing"
     },
     {
       "label": "Latest 10-Q",
       "type": "SEC filing",
-      "date": "live",
-      "href": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001065280&type=10-Q&owner=exclude&count=10",
-      "note": "SEC 10-Q listing"
+      "date": "2026-04-17",
+      "href": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000138/nflx-20260331.htm",
+      "note": "Direct SEC latest 10-Q filing"
     },
     {
       "label": "StockTitan Financials",

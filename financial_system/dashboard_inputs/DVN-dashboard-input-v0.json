@@ -563,16 +563,16 @@
     {
       "label": "Latest 10-K",
       "type": "SEC filing",
-      "date": "live",
-      "href": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001090012&type=10-K&owner=exclude&count=10",
-      "note": "SEC 10-K listing"
+      "date": "2026-02-18",
+      "href": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526056485/dvn-20251231.htm",
+      "note": "Direct SEC latest 10-K filing"
     },
     {
       "label": "Latest 10-Q",
       "type": "SEC filing",
-      "date": "live",
-      "href": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001090012&type=10-Q&owner=exclude&count=10",
-      "note": "SEC 10-Q listing"
+      "date": "2026-05-06",
+      "href": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526208143/dvn-20260331.htm",
+      "note": "Direct SEC latest 10-Q filing"
     },
     {
       "label": "StockTitan Financials",
