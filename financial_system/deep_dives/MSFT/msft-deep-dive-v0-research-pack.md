@@ -380,3 +380,145 @@ Analytical nuance for Microsoft:
 - Capex payables/accruals may matter more as AI/cloud infrastructure investment scales.
 - The key question is whether working capital remains structurally favorable or whether cloud/AI capex changes cash conversion.
 
+
+## 19. Financial forensics — MSFT v0.1
+
+**Fuentes primarias usadas:** Microsoft FY2025 Form 10-K / Annual Report, ejercicio cerrado el 30-jun-2025, filed 30-jul-2025 ([Microsoft Annual Report FY2025](https://www.microsoft.com/investor/reports/ar25/index.html), [SEC 10-K](https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm)); Microsoft FY2026 Q3 Form 10-Q, periodo cerrado el 31-mar-2026, filed 29-abr-2026 ([Microsoft FY26 Q3 earnings](https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q3/press-release-webcast), [SEC 10-Q](https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm)). Cifras en USD miles de millones salvo indicación contraria.
+
+### 19.1 Puente de caja: net income → operating cash flow → FCF
+
+| Métrica | FY2025 | 9M FY2026 |
+|---|---:|---:|
+| Net income | 101.8 | 98.0 |
+| Operating cash flow | 136.2 | 127.5 |
+| Capex / additions to PP&E | (64.6) | (80.1) |
+| Free cash flow, simple: OCF - capex | 71.6 | 47.3 |
+| OCF / net income | 134% | 130% |
+| FCF / net income | 70% | 48% |
+
+**Lectura:** Microsoft sigue convirtiendo beneficios en caja operativa de forma muy fuerte, pero el FCF está claramente comprimido por el ciclo de inversión en infraestructura cloud/AI. En FY2025 generó $136.2bn de OCF y $71.6bn de FCF; en los primeros 9 meses de FY2026 el OCF ya fue $127.5bn, pero el capex de $80.1bn redujo el FCF a $47.3bn.
+
+La propia compañía atribuye el mayor uso de caja de inversión en 9M FY2026 principalmente a un aumento de $32.7bn en additions to property and equipment y $9.1bn en otros usos de inversión para facilitar compra de componentes.
+
+### 19.2 Capex vs D&A
+
+| Métrica | FY2025 | 9M FY2026 |
+|---|---:|---:|
+| Capex | 64.6 | 80.1 |
+| Depreciation | 22.0 | 24.0 |
+| Capex / depreciation | 2.9x | 3.3x |
+| Capex / revenue | 22.9% | 33.1% |
+
+**Lectura:** el capex está muy por encima de la depreciación, señal de expansión acelerada de base de activos, no solo mantenimiento. Esto es consistente con inversión en datacenters, cloud y AI. El punto crítico para el PM no es la solvencia actual, sino la normalización futura: si capex/ventas permanece en >30%, la calidad del FCF estructural baja frente al histórico.
+
+### 19.3 Shareholder returns: dividendos, buybacks, SBC y dilución
+
+| Métrica | FY2025 | 9M FY2026 |
+|---|---:|---:|
+| Dividendos pagados | 24.1 | 19.7 |
+| Recompras | 18.4 | 17.7 |
+| Total retorno cash a accionistas | 42.5 | 37.4 |
+| Total retorno / FCF | 59% | 79% |
+| SBC | 12.0 | 9.3 |
+| SBC / revenue | 4.3% | 3.8% |
+| Diluted shares avg | 7.465bn | 7.457bn |
+
+**Lectura:** la política de retorno sigue siendo material pero no agresiva frente a la capacidad de caja. En FY2025 dividendos + buybacks consumieron ~59% del FCF; en 9M FY2026 suben a ~79% por la presión de capex sobre FCF. La SBC es relevante pero manejable; las recompras exceden SBC, y el diluted share count baja ligeramente, lo que indica que las recompras están compensando más que la dilución por equity comp.
+
+### 19.4 ROE y análisis DuPont
+
+**FY2025 DuPont:**
+
+- ROE sobre equity promedio: **33.3%**
+- Net margin: **36.1%**
+- Asset turnover: **0.50x**
+- Equity multiplier: **1.85x**
+
+Fórmula:
+
+`ROE = net margin × asset turnover × equity multiplier`
+
+`33.3% ≈ 36.1% × 0.50x × 1.85x`
+
+**9M FY2026, anualizado aproximado:**
+
+- ROE anualizado sobre equity promedio: **34.5%**
+- Net margin: **40.5%**
+- Asset turnover anualizado: **0.49x**
+- Equity multiplier: **1.73x**
+
+**Lectura:** el ROE está impulsado principalmente por margen neto extraordinario, no por apalancamiento financiero. El equity multiplier baja en 9M FY2026 mientras el margen mejora, por lo que la rentabilidad sobre equity sigue siendo de alta calidad. El riesgo a vigilar es que el crecimiento de activos por capex presione el asset turnover antes de que la nueva capacidad compute/cloud genere ingresos proporcionales.
+
+### 19.5 Working capital y cash conversion cycle
+
+| Métrica | FY2025 | 9M FY2026 |
+|---|---:|---:|
+| Accounts receivable final | 69.9 | 60.0 |
+| Inventory final | 0.9 | 1.2 |
+| Accounts payable final | 27.7 | 37.5 |
+| Unearned revenue / contract liabilities | 67.3 | 53.7 |
+| DSO aprox. | 82 días | 74 días |
+| DIO aprox. | 5 días | 4 días |
+| DPO aprox. | 103 días | 116 días |
+| CCC aprox. | -17 días | -39 días |
+
+**Fórmulas:**
+
+- `DSO = average accounts receivable / revenue × days`
+- `DIO = average inventory / cost of revenue × days`
+- `DPO = average accounts payable / cost of revenue × days`
+- `CCC = DSO + DIO - DPO`
+
+Para 9M FY2026 se usan aproximadamente 274 días del periodo julio-marzo.
+
+**Lectura:** Microsoft tiene ciclo de caja negativo, favorecido por payables elevados y cobros/prepagos de contratos. La unearned revenue baja desde $67.3bn en jun-2025 a $53.7bn en mar-2026 por estacionalidad y reconocimiento de ingresos, pero el backlog contractual aumenta de forma muy fuerte: RPO de $375bn a jun-2025 a $633bn a mar-2026. El 10-Q indica que espera reconocer ~30% del RPO total en los próximos 12 meses y que el RPO comercial era $627bn con duración media de ~2.5 años.
+
+### 19.6 Deuda, liquidez y capacidad de refinanciación
+
+| Métrica | Jun-2025 | Mar-2026 |
+|---|---:|---:|
+| Cash & equivalents | 30.2 | 32.1 |
+| Short-term investments | 64.3 | 46.2 |
+| Cash + ST investments | 94.6 | 78.3 |
+| Long-term debt, incl. current | 43.2 | 40.3 |
+| Net cash vs debt | +51.4 | +38.0 |
+| Interest expense | 2.4 FY | 2.2 9M |
+| Operating income / interest expense | 53.9x | 51.8x |
+
+**Maturity schedule:**
+
+FY2025 10-K, long-term debt maturities as of 30-jun-2025:
+
+- FY2026: $3.0bn
+- FY2027: $9.25bn
+- FY2028: $0
+- FY2029: $2.05bn
+- FY2030: $0
+- Thereafter: $34.9bn
+- Total principal: $49.2bn
+
+FY2026 Q3 10-Q, maturities as of 31-mar-2026:
+
+- Remainder FY2026: $0
+- FY2027: $9.25bn
+- FY2028: $0
+- FY2029: $2.02bn
+- FY2030: $0
+- Thereafter: $34.9bn
+- Total principal: $46.2bn
+
+**Lectura:** balance extremadamente líquido. Aunque cash + short-term investments bajan a $78.3bn por el ciclo inversor, Microsoft continúa en posición net cash frente a deuda financiera. La cobertura de intereses >50x implica riesgo de refinanciación bajo. La compañía declara explícitamente que espera que caja, inversiones de corto plazo, cash flow operativo y acceso a mercados sean suficientes para operaciones, dividendos, recompras, vencimientos de deuda y capex material durante al menos los próximos 12 meses y posteriormente en el futuro previsible.
+
+### 19.7 Conclusión financiera forense
+
+Microsoft mantiene una calidad financiera excepcional: márgenes altos, ROE >30%, bajo apalancamiento económico, liquidez neta positiva y conversión de beneficio a OCF muy fuerte. La única tensión real está en FCF, no por deterioro operativo sino por intensidad de capex vinculada al despliegue AI/cloud. Para un portfolio manager, el debate clave es si la inversión actual en infraestructura producirá suficiente crecimiento incremental y margen futuro para justificar un FCF temporalmente más bajo.
+
+**Variables críticas a monitorizar:**
+
+1. Capex / revenue y capex / depreciation.
+2. FCF conversion frente a net income.
+3. Evolución de RPO comercial y revenue recognition.
+4. Azure/cloud growth vs crecimiento de PP&E.
+5. Shareholder returns como % de FCF.
+6. Margen operativo ante mayor depreciación futura.
+
