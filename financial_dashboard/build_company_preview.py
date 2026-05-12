@@ -82,16 +82,21 @@ def mini_chart(title, series, tone='blue', percent=False):
     points = (series or {}).get('points') or []
     vals = [float(p.get('value') or 0) for p in points]
     max_v = max([abs(v) for v in vals] + [1])
-    bars = []
+    rows = []
     for p, v in zip(points, vals):
-        h = max(4, min(100, abs(v) / max_v * 100))
-        label = p.get('label') or p.get('date') or ''
+        width = max(3, min(100, abs(v) / max_v * 100))
+        label = str(p.get('label') or p.get('date') or '').replace('CY', '')
         display = pct(v) if percent else money(v)
-        bars.append(f'<div class="snapshot-col-wrap"><div class="snapshot-col" title="{esc(label)} · {esc(display)}" style="height:{h:.1f}%"></div><div class="snapshot-col-label">{esc(str(label).replace("CY", ""))}</div></div>')
+        rows.append(f'''
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">{esc(label)}</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-{esc(tone)}" style="width:{width:.1f}%"></div></div>
+  <div class="mini-bar-value small">{esc(display)}</div>
+</div>''')
     return f'''
-<div class="card snapshot-chart-card tone-border-{esc(tone)}">
-  <h2>{esc(title)}</h2>
-  <div class="snapshot-column-chart tone-{esc(tone)}">{''.join(bars) or '<div class="small muted">[missing]</div>'}</div>
+<div class="mini-chart-card snapshot-chart-card tone-border-{esc(tone)}">
+  <h3>{esc(title)}</h3>
+  <div class="mini-chart">{''.join(rows) or '<div class="small muted">[missing]</div>'}</div>
 </div>'''
 
 
