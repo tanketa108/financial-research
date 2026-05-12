@@ -1,0 +1,215 @@
+{
+  "schema_version": "dashboard-input-v0",
+  "ticker": "UBER",
+  "company_name": "Uber Technologies, Inc.",
+  "page_intent": "company_thesis_cockpit",
+  "last_updated": "2026-05-12",
+  "thesis": {
+    "one_line": "Mobility es el activo core; Delivery profundiza engagement; Uber One y ads/AV aportan optionality si Uber conserva control de demanda e interfaz.",
+    "current_thesis": "Uber debe analizarse como una plataforma de agregación de demanda y coordinación local de red en movilidad y delivery, no como una compañía convencional de ride-hailing.",
+    "stance": "promising_committee_worthy_not_fully_underwritten",
+    "committee_view": "Tesis prometedora y digna de comité, pero todavía no completamente underwritten como caso de alta convicción sin más validación en economics, regulación y valoración."
+  },
+  "maintenance": {
+    "status": "baseline_in_progress",
+    "next_action": "Ingest user materials into accepted dashboard state and define first update checklist for future earnings releases.",
+    "latest_updates": [
+      {
+        "date": "2026-05-12",
+        "type": "baseline_ingestion",
+        "summary": "User thesis memo and Excel model registered. Qualitative baseline initialized from memo."
+      },
+      {
+        "date": "2026-05-06",
+        "type": "q1_2026_readthrough",
+        "summary": "Quarter mixed headline but positive for strategic thesis: strong bookings/trips/Delivery/guidance; questions around Mobility monetization quality."
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "uber-user-memo-2026-05-06",
+        "title": "Uber (UBER) — Tesis para Comité de Inversiones",
+        "type": "user_thesis_memo",
+        "date": "2026-05-06",
+        "location": "clawbot-knowledge/research_bank/companies/UBER/sources/user_uploads/uber-investment-committee-thesis-es-actualizado.rtf.txt",
+        "reliability": "user_provided_primary_thesis",
+        "notes": "Baseline qualitative thesis memo uploaded in Discord UBER thread."
+      },
+      {
+        "source_id": "uber-excel-model-v3-3",
+        "title": "Model_UBER_v3_3.xlsx",
+        "type": "excel_valuation_model",
+        "date": null,
+        "location": "clawbot-knowledge/research_bank/companies/UBER/models/Model_UBER_v3_3.xlsx",
+        "reliability": "user_provided_quantitative_model",
+        "notes": "Quantitative model owned by user; dashboard may consume selected summary outputs only after explicit extraction/review."
+      }
+    ]
+  },
+  "qualitative": {
+    "drivers": [
+      {
+        "id": "driver-mobility",
+        "title": "Mobility as core high-quality asset",
+        "summary": "Utilidad clara, recurrencia, liquidez local, ETA/disponibilidad/fiabilidad como ventajas observables."
+      },
+      {
+        "id": "driver-delivery",
+        "title": "Delivery as ecosystem deepener",
+        "summary": "Aumenta frecuencia, casos de uso, Uber One y monetización, aunque sus economics standalone son más frágiles."
+      },
+      {
+        "id": "driver-uber-one",
+        "title": "Uber One retention/frequency upside",
+        "summary": "Puede aumentar retención, frecuencia y share of wallet si crea valor incremental y no solo subsidia demanda existente."
+      },
+      {
+        "id": "driver-optionality",
+        "title": "Ads, adjacent verticals and AV optionality",
+        "summary": "Valiosa solo si Uber conserva control de la demanda y de la interfaz con el cliente."
+      }
+    ],
+    "risks": [
+      {
+        "id": "risk-regulatory-labor",
+        "title": "Riesgo regulatorio y laboral",
+        "summary": "Cambios regulatorios/laborales pueden afectar economics unitarios y margen."
+      },
+      {
+        "id": "risk-competition",
+        "title": "Riesgo competitivo",
+        "summary": "Competencia en Mobility/Delivery puede presionar pricing, incentivos y take rate."
+      },
+      {
+        "id": "risk-delivery-overread",
+        "title": "Sobreinterpretar Delivery",
+        "summary": "Delivery refuerza ecosistema, pero requiere prueba empírica más dura de margen durable."
+      },
+      {
+        "id": "risk-complexity",
+        "title": "Complejidad y dispersión",
+        "summary": "Verticales adyacentes/Freight pueden añadir complejidad sin retorno estratégico suficiente."
+      },
+      {
+        "id": "risk-valuation",
+        "title": "Valoración",
+        "summary": "La distinción entre buena compañía y buena inversión depende del precio y escenarios bear/base/bull."
+      },
+      {
+        "id": "risk-av-disintermediation",
+        "title": "AV disintermediation",
+        "summary": "Si OEMs/operadores AV controlan demanda/interfaz, Uber puede perder captura de valor."
+      }
+    ],
+    "catalysts": [
+      {
+        "id": "cat-q2-guide",
+        "title": "Q2 gross bookings guidance",
+        "summary": "Guidance de bookings por encima de consenso puede sostener narrativa de demanda sana."
+      },
+      {
+        "id": "cat-uber-one",
+        "title": "Uber One disclosures",
+        "summary": "Más evidencia de cohortes, retención y economics incrementales aumentaría convicción."
+      },
+      {
+        "id": "cat-delivery-margin",
+        "title": "Delivery unit economics",
+        "summary": "Prueba de margen durable en Delivery reforzaría tesis de ecosistema."
+      },
+      {
+        "id": "cat-ads",
+        "title": "Advertising scale",
+        "summary": "Ads puede aportar capa de alto margen si escala sobre engagement existente."
+      },
+      {
+        "id": "cat-av-partnerships",
+        "title": "AV partnerships",
+        "summary": "Alianzas AV que refuercen Uber como agregador de demanda serían positivas."
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "assumption-demand-control",
+        "statement": "Uber mantiene control suficiente de demanda final para capturar valor por encima de un operador comoditizado.",
+        "status": "needs_continuous_validation"
+      },
+      {
+        "id": "assumption-local-density",
+        "statement": "Densidad local se traduce en mejor ETA/disponibilidad/fiabilidad y no solo en escala nominal.",
+        "status": "needs_evidence"
+      },
+      {
+        "id": "assumption-delivery-incremental",
+        "statement": "Delivery y Uber One incrementan engagement/retención de forma económicamente incremental.",
+        "status": "needs_evidence"
+      },
+      {
+        "id": "assumption-mobility-monetization",
+        "statement": "La debilidad relativa de Mobility revenue en Q1 2026 es explicable por mix/contabilidad/timing y no por deterioro estructural.",
+        "status": "open"
+      }
+    ],
+    "open_questions": [
+      {
+        "id": "uber-open-001",
+        "question": "¿Qué explica exactamente la debilidad relativa de Mobility revenue frente a bookings/trips fuertes?",
+        "status": "open"
+      },
+      {
+        "id": "uber-open-002",
+        "question": "¿Cuánto de la fortaleza de Delivery es estructural y cuánto promocional?",
+        "status": "open"
+      },
+      {
+        "id": "uber-open-003",
+        "question": "¿Uber One crea valor incremental o subsidia demanda ya existente?",
+        "status": "open"
+      },
+      {
+        "id": "uber-open-004",
+        "question": "¿Cómo normalizar beneficios tras impacto de revalorización de inversiones?",
+        "status": "open"
+      },
+      {
+        "id": "uber-open-005",
+        "question": "¿Qué valoración bear/base/bull justifica o limita la tesis?",
+        "status": "open"
+      },
+      {
+        "id": "uber-open-006",
+        "question": "¿La guía fuerte de Q2 anticipa mejor monetización o solo continuidad de volumen?",
+        "status": "open"
+      }
+    ]
+  },
+  "valuation": {
+    "status": "prefilled",
+    "central_reference": 117.04528959437192,
+    "range": [
+      103.90790947172226,
+      126.72546442158749
+    ],
+    "user_excel_model": "clawbot-knowledge/research_bank/companies/UBER/models/Model_UBER_v3_3.xlsx",
+    "note": "User-owned Excel remains quantitative source of truth; dashboard consumes reviewed outputs."
+  },
+  "key_metrics": {
+    "revenue": 13467000000,
+    "operating_income": 1113000000,
+    "net_income": 6626000000,
+    "diluted_eps": 3.11,
+    "cash": 8432000000,
+    "debt": 10615000000,
+    "operating_margin": 0.08264646914680329,
+    "net_margin": 0.492017524318705,
+    "ccc": 76.26865671641791,
+    "share_count": 2067905000,
+    "sbc": 1826000000
+  },
+  "guardrails": {
+    "facts_require_source_and_date": true,
+    "separate_facts_inferences_opinion": true,
+    "material_changes_require_diff": true,
+    "agents_may_propose_but_not_directly_accept_changes": true
+  }
+}
