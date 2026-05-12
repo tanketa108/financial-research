@@ -116,6 +116,27 @@ def mini_chart(title, series, tone='blue', percent=False):
 </div>'''
 
 
+def render_document_card(doc):
+    primary_href = doc.get('primary_href')
+    primary_link = ''
+    if primary_href:
+        primary_link = f'<a class="document-secondary-link" href="{esc(primary_href)}" target="_blank" rel="noopener">Open report document</a>'
+    accession = doc.get('accession')
+    accession_line = f'<small class="mono">{esc(accession)}</small>' if accession else ''
+    period = f' · period {esc(doc.get("period"))}' if doc.get('period') else ''
+    return f'''
+<div class="document-card document-card-with-actions">
+  <a class="document-main-link" href="{esc(doc.get('href'))}" target="_blank" rel="noopener">
+    <div class="muted small">{esc(doc.get('type'))}{period}</div>
+    <strong>{esc(doc.get('label'))}</strong>
+    <span>{esc(doc.get('date'))}</span>
+    <small>{esc(doc.get('note'))}</small>
+    {accession_line}
+  </a>
+  {primary_link}
+</div>'''
+
+
 def render(data: dict, css_rel: str = CSS_REL) -> str:
     ticker = data.get('ticker')
     name = data.get('company_name')
@@ -197,7 +218,7 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
 </div>
 
 <div class="document-access-grid section">
-  {''.join(f'<a class="document-card" href="{esc(x.get("href"))}" target="_blank" rel="noopener"><div class="muted small">{esc(x.get("type"))}</div><strong>{esc(x.get("label"))}</strong><span>{esc(x.get("date"))}</span><small>{esc(x.get("note"))}</small></a>' for x in key_documents)}
+  {''.join(render_document_card(x) for x in key_documents)}
 </div>
 
 <div class="snapshot-grid section">

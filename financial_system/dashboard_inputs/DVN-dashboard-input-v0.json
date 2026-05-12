@@ -564,15 +564,21 @@
       "label": "Latest 10-K",
       "type": "SEC filing",
       "date": "2026-02-18",
-      "href": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526056485/dvn-20251231.htm",
-      "note": "Direct SEC latest 10-K filing"
+      "href": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526056485/0001193125-26-056485-index.htm",
+      "note": "SEC filing detail page · period 2025-12-31",
+      "period": "2025-12-31",
+      "primary_href": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526056485/dvn-20251231.htm",
+      "accession": "0001193125-26-056485"
     },
     {
       "label": "Latest 10-Q",
       "type": "SEC filing",
       "date": "2026-05-06",
-      "href": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526208143/dvn-20260331.htm",
-      "note": "Direct SEC latest 10-Q filing"
+      "href": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526208143/0001193125-26-208143-index.htm",
+      "note": "SEC filing detail page · period 2026-03-31",
+      "period": "2026-03-31",
+      "primary_href": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526208143/dvn-20260331.htm",
+      "accession": "0001193125-26-208143"
     },
     {
       "label": "StockTitan Financials",
