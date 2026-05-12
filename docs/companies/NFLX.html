@@ -3,529 +3,459 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NFLX Dashboard v1</title>
+  <title>NFLX Company Snapshot</title>
   <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
   <div class="wrap">
-<div class="topbar workspace-header"><div><h1>NFLX</h1><div class="muted">Investment terminal workspace v1.3</div><div class="small muted mono">Build portfolio-v0.2</div></div><div><a href="../index.html">← Portfolio</a></div></div>
-<div class="status-rail section">
-  <div class="status-card"><div class="muted small">Coverage</div><div><span class="pill pill-covered">covered</span></div></div>
-  <div class="status-card"><div class="muted small">Decision</div><div><span class="pill pill-high_priority">high_priority</span></div></div>
-  <div class="status-card"><div class="muted small">Valuation</div><div><span class="pill pill-prefilled">prefilled</span></div></div>
-  <div class="status-card"><div class="muted small">Bridge stage</div><div><span class="pill pill-bridge">v1_reviewed</span></div><div class="small muted">NFLX has explicit thesis, valuation frame, open risks/catalysts, and reporting-period binding, but advertising economics and valuation discipline are not yet hard enough for v2_hardened.</div></div>
-  <div class="status-card"><div class="muted small">Latest period</div><div class="small mono">10-Q | 2026-03-31</div></div>
-  <div class="status-card"><div class="muted small">Latest filing</div><div class="small mono">2026-04-17</div></div>
-</div>
-<div class="card section panel-quant-workspace">
-  <div class="quant-workspace-shell">
-    <div class="quant-workspace-hero">
-      <div class="muted small">Quant Workspace v2</div>
-      <h2>Fair value, diagnostics, and operating signals</h2>
-      <div class="quant-hero-price">[missing]</div>
-      <div class="quant-hero-subtitle">Fair value · upside/downside [missing] · terminal dependence [missing]</div>
-      <div class="quant-hero-pill-row">
-        <span class="pill pill-prefilled">prefilled</span>
-        <span class="pill pill-unavailable">unavailable</span>
-        <span class="pill pill-guardrail_added">guardrail_added</span>
-      </div>
-      <div class="small muted quant-hero-message">Missing forecast_table, valuation_bridge, sensitivity, scenario_spread, market_multiples, analyst_overlay_or_reconciliation</div>
-    </div>
-    <div class="quant-workspace-side">
-      <div class="quant-side-grid">
-        <div class="quant-side-card"><div class="muted small">Market price</div><div class="kpi">$88.3</div><div class="small muted">close as of 2026-05-06 · delayed market data</div></div>
-        <div class="quant-side-card"><div class="muted small">Valuation gap</div><div><span class="pill pill-unavailable">unavailable</span></div><div class="small muted">relative to fair value</div></div>
-        <div class="quant-side-card"><div class="muted small">Model coverage</div><div class="kpi">1/7</div><div class="small muted">filled model blocks</div></div>
-        <div class="quant-side-card"><div class="muted small">Terminal dependence</div><div class="kpi">[missing]</div><div class="small muted">share of EV from terminal</div></div>
-      </div>
-    </div>
+
+<div class="topbar workspace-header snapshot-topbar">
+  <div>
+    <div class="muted small">Company Snapshot · generic dashboard template v0</div>
+    <h1>NFLX <span class="muted">Netflix, Inc.</span></h1>
   </div>
-  <div class="quant-signal-strip section"><div class="quant-signal-card"><div class="muted small">Revenue YoY</div><div class="kpi">16.2%</div><div class="small muted">latest reported vs comparable prior period</div></div><div class="quant-signal-card"><div class="muted small">Operating margin</div><div class="kpi">32.3%</div><div class="small muted">latest reported operating margin</div></div><div class="quant-signal-card"><div class="muted small">Net margin</div><div class="kpi">43.1%</div><div class="small muted">reported net margin</div></div><div class="quant-signal-card"><div class="muted small">Net debt / revenue</div><div class="kpi">9.0%</div><div class="small muted">capital structure pressure</div></div><div class="quant-signal-card"><div class="muted small">SBC / revenue</div><div class="kpi">1.1%</div><div class="small muted">dilution intensity</div></div><div class="quant-signal-card"><div class="muted small">Capex / revenue</div><div class="kpi">1.6%</div><div class="small muted">reinvestment intensity</div></div></div>
-  <div class="quant-method-strip section"><div class="mini-stat-card"><div class="muted small">DCF</div><div class="kpi">[missing]</div><div class="small muted">not_filled</div></div><div class="mini-stat-card"><div class="muted small">Gordon</div><div class="kpi">[missing]</div><div class="small muted">not_filled</div></div><div class="mini-stat-card"><div class="muted small">Terminal multiple</div><div class="kpi">[missing]</div><div class="small muted">not_filled</div></div></div>
-  <div class="quant-diagnostic-grid section quant-diagnostic-grid-6">
-    <div class="quant-diagnostic-card">
-      <h3>Model confidence</h3>
-      <div class="quant-quality-grid"><div class="quant-quality-item"><div class="muted small">forecast</div><div><span class="pill pill-missing">missing</span></div></div><div class="quant-quality-item"><div class="muted small">bridge</div><div><span class="pill pill-missing">missing</span></div></div><div class="quant-quality-item"><div class="muted small">terminal</div><div><span class="pill pill-missing">missing</span></div></div><div class="quant-quality-item"><div class="muted small">multiple</div><div><span class="pill pill-missing">missing</span></div></div><div class="quant-quality-item"><div class="muted small">normalization</div><div><span class="pill pill-adequate">adequate</span></div></div></div>
+  <div><a href="../index.html">← Portfolio</a></div>
+</div>
+
+<div class="snapshot-layout section">
+  <section class="card snapshot-hero">
+    <div class="snapshot-label">Investment snapshot</div>
+    <h2>Netflix is a global streaming entertainment platform with improving margin and cash generation; the key debate is durable growth, ads economics, content ROI and capital allocation.</h2>
+    <div class="snapshot-status-row">
+      <span class="pill pill-covered___refresh_needed">covered / refresh needed</span>
+      <span class="pill pill-good">good</span>
+      <span class="pill pill-baseline_needed">baseline_needed</span>
+      <span class="pill pill-prefilled">prefilled</span>
     </div>
-    <div class="quant-diagnostic-card">
-      <h3>Driver map</h3>
-      <ul class="list small"><li>[none]</li></ul>
-    </div>
-    <div class="quant-diagnostic-card">
-      <h3>Fragility / breakpoints</h3>
-      <ul class="list small"><li>no_sensitivity_matrix</li><li>scenario_range_missing</li></ul>
-    </div>
-    <div class="quant-diagnostic-card">
-      <h3>Multiple context</h3>
-      <ul class="list small"><li><strong>P/E</strong>: [missing] <span class="muted">· reported FY net income · missing</span></li><li><strong>EV / EBITDA</strong>: [missing] <span class="muted">· reported operating income + D&amp;A proxy · missing</span></li><li><strong>P / FCF</strong>: [missing] <span class="muted">· proxy unlevered FCF after tax + D&amp;A - capex · missing</span></li></ul>
-    </div>
-    <div class="quant-diagnostic-card">
-      <h3>Quant read</h3>
-      <ul class="list small"><li>Missing sensitivity means the model still lacks a proper stress map.</li></ul>
-    </div>
-    <div class="quant-diagnostic-card">
-      <h3>What still needs hardening</h3>
-      <div class="small">forecast_table, valuation_bridge, sensitivity, scenario_spread, market_multiples, analyst_overlay_or_reconciliation</div>
-    </div>
+    <div class="snapshot-mini-note">Last update: 2026-05-13</div>
+  </section>
+
+  <section class="snapshot-score-grid">
+    <div class="card snapshot-score"><div class="muted small">Revenue</div><div class="kpi">$12.2B</div></div>
+    <div class="card snapshot-score"><div class="muted small">Op. margin</div><div class="kpi">32.3%</div></div>
+    <div class="card snapshot-score"><div class="muted small">Fair value</div><div class="kpi">[missing]</div></div>
+    <div class="card snapshot-score"><div class="muted small">Open questions</div><div class="kpi">3</div></div>
+  </section>
+</div>
+
+<div class="card section health-summary-card">
+  <div>
+    <div class="muted small">Financial / thesis health</div>
+    <h2><span class="status-dot status-good"></span>GOOD</h2>
+    <p>StockTitan reports FY2025 health 70/100, revenue +15.9%, FCF $9.5B and improving cash conversion.</p>
+  </div>
+  <div class="health-score-grid">
+    <div class="health-score-item"><span class="status-dot status-good"></span><span>Profitability</span><strong>monitor</strong><small>See margin/earnings trend.</small></div><div class="health-score-item"><span class="status-dot status-watch"></span><span>Growth</span><strong>monitor</strong><small>Track latest revenue and business drivers.</small></div><div class="health-score-item"><span class="status-dot status-watch"></span><span>Balance sheet</span><strong>monitor</strong><small>Track cash, debt and liquidity.</small></div><div class="health-score-item"><span class="status-dot status-watch"></span><span>Thesis freshness</span><strong>baseline needed</strong><small>Needs structured written thesis baseline.</small></div>
   </div>
 </div>
-<div class="section page-block-header"><h2>Dashboard</h2><div class="small muted">Informative layer for the company: filings, financials, monitoring state, and thesis context.</div></div>
-<div class="card section panel-top-filings">
-  <h2>Filing access</h2>
-  <div class="grid compact-grid">
-    <div><div class="muted small">Latest 10-Q</div><div class="small"><a href="https://www.sec.gov/Archives/edgar/data/1065280/000106528026000138/nflx-20260331.htm">open filing</a></div><div class="small mono">2026-04-17</div></div>
-    <div><div class="muted small">Latest 10-K</div><div class="small"><a href="https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm">open filing</a></div><div class="small mono">2026-01-23</div></div>
-    <div><div class="muted small">Recent 8-K</div><div class="small"><div><a href="https://www.sec.gov/Archives/edgar/data/1065280/000106528026000139/nflx-20260422.htm">2026-04-23</a></div><div><a href="https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/nflx-20260410.htm">2026-04-16</a></div><div><a href="https://www.sec.gov/Archives/edgar/data/1065280/000119312526082247/d120618d8k.htm">2026-02-27</a></div></div></div>
+
+<div class="signal-card-grid section">
+  <div class="card signal-card signal-positive"><div class="muted small">Revenue</div><div class="kpi">$12.2B</div><div class="small muted">Latest reported period</div></div><div class="card signal-card signal-positive"><div class="muted small">Operating margin</div><div class="kpi">32.3%</div><div class="small muted">Profitability anchor</div></div><div class="card signal-card signal-watch"><div class="muted small">Net margin</div><div class="kpi">43.1%</div><div class="small muted">Earnings conversion</div></div><div class="card signal-card signal-watch"><div class="muted small">Net debt / revenue</div><div class="kpi">9.0%</div><div class="small muted">Capital structure pressure</div></div><div class="card signal-card signal-neutral"><div class="muted small">SBC / revenue</div><div class="kpi">1.1%</div><div class="small muted">Dilution intensity</div></div><div class="card signal-card signal-neutral"><div class="muted small">Fair value ref.</div><div class="kpi">[missing]</div><div class="small muted">Model-derived if available</div></div>
+</div>
+
+<div class="document-access-grid section">
+  <a class="document-card" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0001065280&amp;type=10-K&amp;owner=exclude&amp;count=10" target="_blank" rel="noopener"><div class="muted small">SEC filing</div><strong>Latest 10-K</strong><span>live</span><small>SEC 10-K listing</small></a><a class="document-card" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0001065280&amp;type=10-Q&amp;owner=exclude&amp;count=10" target="_blank" rel="noopener"><div class="muted small">SEC filing</div><strong>Latest 10-Q</strong><span>live</span><small>SEC 10-Q listing</small></a><a class="document-card" href="https://www.stocktitan.net/financials/NFLX/" target="_blank" rel="noopener"><div class="muted small">External dashboard</div><strong>StockTitan Financials</strong><span>live</span><small>Free external financials/health display</small></a><a class="document-card" href="https://www.stocktitan.net/news/NFLX/" target="_blank" rel="noopener"><div class="muted small">External news feed</div><strong>StockTitan News</strong><span>live</span><small>Useful source for monitoring company news</small></a>
+</div>
+
+<div class="snapshot-grid section">
+  <section class="card snapshot-panel snapshot-panel-wide">
+    <h2>Financial snapshot</h2>
+    <div class="snapshot-bars">
+      
+<div class="snapshot-bar-row">
+  <div class="snapshot-bar-label">Revenue</div>
+  <div class="snapshot-bar-track"><div class="snapshot-bar-fill tone-blue" style="width:91.7%"></div></div>
+  <div class="snapshot-bar-value">$12.2B</div>
+</div>
+      
+<div class="snapshot-bar-row">
+  <div class="snapshot-bar-label">Operating income</div>
+  <div class="snapshot-bar-track"><div class="snapshot-bar-fill tone-green" style="width:29.6%"></div></div>
+  <div class="snapshot-bar-value">$4.0B</div>
+</div>
+      
+<div class="snapshot-bar-row">
+  <div class="snapshot-bar-label">Net income</div>
+  <div class="snapshot-bar-track"><div class="snapshot-bar-fill tone-green" style="width:39.5%"></div></div>
+  <div class="snapshot-bar-value">$5.3B</div>
+</div>
+      
+<div class="snapshot-bar-row">
+  <div class="snapshot-bar-label">Cash</div>
+  <div class="snapshot-bar-track"><div class="snapshot-bar-fill tone-amber" style="width:91.8%"></div></div>
+  <div class="snapshot-bar-value">$12.3B</div>
+</div>
+      
+<div class="snapshot-bar-row">
+  <div class="snapshot-bar-label">Debt</div>
+  <div class="snapshot-bar-track"><div class="snapshot-bar-fill tone-red" style="width:100.0%"></div></div>
+  <div class="snapshot-bar-value">$13.4B</div>
+</div>
+    </div>
+  </section>
+
+  <section class="card snapshot-panel">
+    <h2>Thesis health</h2>
+    <div class="snapshot-health-list">
+      <div><span>Drivers</span><strong>3</strong></div>
+      <div><span>Risks</span><strong>3</strong></div>
+      <div><span>Catalysts</span><strong>3</strong></div>
+      <div><span>Assumptions</span><strong>3</strong></div>
+    </div>
+  </section>
+</div>
+
+<div class="snapshot-chart-grid section">
+  
+<div class="mini-chart-card snapshot-chart-card tone-border-blue">
+  <h3>Revenue trend</h3>
+  <div class="mini-chart">
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q2</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:21.2%"></div></div>
+  <div class="mini-bar-value small">$9.6B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q3</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:21.7%"></div></div>
+  <div class="mini-bar-value small">$9.8B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:86.3%"></div></div>
+  <div class="mini-bar-value small">$39.0B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q1</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:23.3%"></div></div>
+  <div class="mini-bar-value small">$10.5B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q2</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:24.5%"></div></div>
+  <div class="mini-bar-value small">$11.1B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q3</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:25.5%"></div></div>
+  <div class="mini-bar-value small">$11.5B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:100.0%"></div></div>
+  <div class="mini-bar-value small">$45.2B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2026Q1</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:27.1%"></div></div>
+  <div class="mini-bar-value small">$12.2B</div>
+</div></div>
+</div>
+  
+<div class="mini-chart-card snapshot-chart-card tone-border-green">
+  <h3>Operating income</h3>
+  <div class="mini-chart">
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q2</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:19.5%"></div></div>
+  <div class="mini-bar-value small">$2.6B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q3</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:21.8%"></div></div>
+  <div class="mini-bar-value small">$2.9B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:78.2%"></div></div>
+  <div class="mini-bar-value small">$10.4B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q1</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:25.1%"></div></div>
+  <div class="mini-bar-value small">$3.3B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q2</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:28.3%"></div></div>
+  <div class="mini-bar-value small">$3.8B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q3</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:24.4%"></div></div>
+  <div class="mini-bar-value small">$3.2B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100.0%"></div></div>
+  <div class="mini-bar-value small">$13.3B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2026Q1</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:29.7%"></div></div>
+  <div class="mini-bar-value small">$4.0B</div>
+</div></div>
+</div>
+  
+<div class="mini-chart-card snapshot-chart-card tone-border-green">
+  <h3>Net income</h3>
+  <div class="mini-chart">
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q2</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:19.6%"></div></div>
+  <div class="mini-bar-value small">$2.1B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q3</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:21.5%"></div></div>
+  <div class="mini-bar-value small">$2.4B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025 FY</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:79.3%"></div></div>
+  <div class="mini-bar-value small">$8.7B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q1</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:26.3%"></div></div>
+  <div class="mini-bar-value small">$2.9B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q2</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:28.5%"></div></div>
+  <div class="mini-bar-value small">$3.1B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q3</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:23.2%"></div></div>
+  <div class="mini-bar-value small">$2.5B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025 FY</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100.0%"></div></div>
+  <div class="mini-bar-value small">$11.0B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2026Q1</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:48.1%"></div></div>
+  <div class="mini-bar-value small">$5.3B</div>
+</div></div>
+</div>
+  
+<div class="mini-chart-card snapshot-chart-card tone-border-amber">
+  <h3>Cash</h3>
+  <div class="mini-chart">
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q2I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:54.0%"></div></div>
+  <div class="mini-bar-value small">$6.6B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q3I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:60.8%"></div></div>
+  <div class="mini-bar-value small">$7.5B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q4I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:63.7%"></div></div>
+  <div class="mini-bar-value small">$7.8B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q1I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:58.7%"></div></div>
+  <div class="mini-bar-value small">$7.2B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q2I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:66.7%"></div></div>
+  <div class="mini-bar-value small">$8.2B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q3I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:75.8%"></div></div>
+  <div class="mini-bar-value small">$9.3B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q4I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:73.7%"></div></div>
+  <div class="mini-bar-value small">$9.0B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2026Q1I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:100.0%"></div></div>
+  <div class="mini-bar-value small">$12.3B</div>
+</div></div>
+</div>
+  
+<div class="mini-chart-card snapshot-chart-card tone-border-red">
+  <h3>Debt</h3>
+  <div class="mini-chart">
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q2I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:84.2%"></div></div>
+  <div class="mini-bar-value small">$12.2B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q3I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:97.9%"></div></div>
+  <div class="mini-bar-value small">$14.2B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q4I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:95.4%"></div></div>
+  <div class="mini-bar-value small">$13.8B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q1I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:96.9%"></div></div>
+  <div class="mini-bar-value small">$14.0B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q2I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:99.9%"></div></div>
+  <div class="mini-bar-value small">$14.5B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q3I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:100.0%"></div></div>
+  <div class="mini-bar-value small">$14.5B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q4I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:93.1%"></div></div>
+  <div class="mini-bar-value small">$13.5B</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2026Q1I</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:92.4%"></div></div>
+  <div class="mini-bar-value small">$13.4B</div>
+</div></div>
+</div>
+  
+<div class="mini-chart-card snapshot-chart-card tone-border-blue">
+  <h3>Operating margin</h3>
+  <div class="mini-chart">
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q2</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:27.2%"></div></div>
+  <div class="mini-bar-value small">27.2%</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024Q3</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:29.6%"></div></div>
+  <div class="mini-bar-value small">29.6%</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2024</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:26.7%"></div></div>
+  <div class="mini-bar-value small">26.7%</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q1</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:31.7%"></div></div>
+  <div class="mini-bar-value small">31.7%</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q2</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:34.1%"></div></div>
+  <div class="mini-bar-value small">34.1%</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025Q3</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:28.2%"></div></div>
+  <div class="mini-bar-value small">28.2%</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2025</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:29.5%"></div></div>
+  <div class="mini-bar-value small">29.5%</div>
+</div>
+<div class="mini-bar-row">
+  <div class="mini-bar-label small mono">2026Q1</div>
+  <div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:32.3%"></div></div>
+  <div class="mini-bar-value small">32.3%</div>
+</div></div>
+</div>
+</div>
+
+<div class="card section stocktitan-news-card">
+  <div class="muted small">External input · StockTitan</div>
+  <h2>Recent news monitor</h2>
+  <div class="stocktitan-news-grid">
+    <div class="news-item"><strong>Netflix to announce Q1 2026 results</strong><span>earnings · relevance high</span></div><div class="news-item"><strong>Netflix declines to raise WBD offer vs Paramount Skydance</strong><span>M&amp;A / strategic discipline · relevance high</span></div><div class="news-item"><strong>CFO at Morgan Stanley TMT conference</strong><span>IR / conference · relevance medium</span></div><div class="news-item"><strong>WBD/Paramount superior proposal process</strong><span>M&amp;A / industry structure · relevance medium</span></div>
   </div>
 </div>
-<div class="workspace-grid section">
-  <div class="card panel panel-overview">
-    <h2>Overview / Monitor state</h2>
+
+<div class="snapshot-grid section">
+  <section class="card snapshot-panel">
+    <h2>Top drivers</h2>
+    <ul class="list small"><li>Streaming scale and pricing power</li><li>Advertising tier optionality</li><li>Cash conversion and buybacks</li></ul>
+  </section>
+  <section class="card snapshot-panel">
+    <h2>Main risks</h2>
+    <ul class="list small"><li>Content ROI</li><li>Advertising execution</li><li>Competition / industry structure</li></ul>
+  </section>
+  <section class="card snapshot-panel">
+    <h2>Catalysts</h2>
+    <ul class="list small"><li>Ad economics disclosure</li><li>Margin/FCF resilience</li><li>Capital allocation discipline</li></ul>
+  </section>
+</div>
+
+<div class="snapshot-grid section">
+  <section class="card snapshot-panel snapshot-panel-wide thesis-monitor-card">
+    <h2>Thesis Change Monitor</h2>
+    <div class="monitor-head">
+      <span class="pill pill-baseline_needed">baseline_needed</span>
+      <span class="pill pill-medium">medium</span>
+      <span class="small muted">StockTitan financial/news snapshot</span>
+    </div>
+    <p class="small">No accepted written thesis baseline yet; use dashboard as maintenance cockpit until baseline is written.</p>
+    <div class="impact-grid">
+      <div><span class="status-dot status-open"></span><strong>Core thesis</strong><span>open</span><small>Needs baseline.</small></div><div><span class="status-dot status-good"></span><strong>Financial quality</strong><span>good</span><small>See health signals.</small></div><div><span class="status-dot status-watch"></span><strong>External news</strong><span>watch</span><small>StockTitan items queued for review.</small></div><div><span class="status-dot status-open"></span><strong>Valuation</strong><span>open</span><small>Needs model/range validation.</small></div>
+    </div>
+  </section>
+  <section class="card snapshot-panel">
+    <h2>Watch items</h2>
+    <ul class="list small"><li><strong>Content ROI</strong> · high<br><span class="muted">Large content spend must keep producing engagement and pricing power.</span></li><li><strong>Advertising execution</strong> · medium<br><span class="muted">Ad tier may take time to scale and could be less profitable than expected.</span></li><li><strong>Competition / industry structure</strong> · medium<br><span class="muted">Streaming competition and media consolidation can pressure growth and content economics.</span></li></ul>
+  </section>
+</div>
+
+<div class="snapshot-grid section">
+  <section class="card snapshot-panel snapshot-panel-wide">
+    <h2>Maintenance queue</h2>
+    <div class="queue-list">
+      <div class="queue-item"><div><span class="pill pill-high">high</span></div><strong>Create NFLX thesis baseline</strong><span>dashboard extension</span><small>written qualitative thesis v0</small></div><div class="queue-item"><div><span class="pill pill-medium">medium</span></div><strong>Validate StockTitan high-relevance news</strong><span>StockTitan radar</span><small>evidence log + thesis impact classification</small></div><div class="queue-item"><div><span class="pill pill-medium">medium</span></div><strong>Populate valuation reference</strong><span>model/valuation work</span><small>dashboard-safe valuation range</small></div>
+    </div>
+  </section>
+  <section class="card snapshot-panel">
+    <h2>Source freshness</h2>
     <ul class="list small">
-      <li>Latest filing date: 2026-04-17</li>
-      <li>Filing delta changed: True</li>
-      <li>Data delta changed: True</li>
-      <li>Preliminary priority: high_priority</li>
+      <li>Thesis memo: [missing]</li>
+      <li>Excel model: [missing]</li>
+      <li>Latest review: StockTitan + latest dashboard state, 2026-05-13</li>
+      <li>Status: baseline_needed</li>
+      <li>Next trigger: earnings, material filing/news, or user thesis/model upload</li>
     </ul>
-    <h2>Monitor reasons</h2>
-    <ul class="list small"><li>data delta detected</li><li>preliminary priority from materiality rules: high_priority</li></ul>
-    <h2>Research pipeline</h2>
-    <ul class="list small"><li>[none]</li></ul>
-  </div>
-  <div class="card panel panel-actions">
-    <h2>Warnings / Next actions</h2>
-    <ul class="list small"><li class="warning">missing central valuation reference</li></ul>
-    <h2>Suggested actions</h2>
-    <ul class="list small"><li>fill valuation reference</li></ul>
-    <h2>Current hypothesis</h2>
-    <div class="small">[missing]</div>
+  </section>
+</div>
+
+<div class="snapshot-grid section">
+  <section class="card snapshot-panel snapshot-panel-wide">
+    <h2>Quality flags</h2>
+    <div class="quality-flag-grid">
+      <div class="quality-flag quality-medium"><strong>qualitative_thesis_baseline_missing</strong><small>NFLX needs a written thesis baseline equivalent to UBER.</small></div><div class="quality-flag quality-medium"><strong>stocktitan_secondary_input_only</strong><small>Material items require verification against primary sources.</small></div>
+    </div>
+  </section>
+  <section class="card snapshot-panel">
     <h2>Open questions</h2>
-    <ul class="list small"><li>[none]</li></ul>
-  </div>
-  <div class="card panel panel-provenance">
-    <h2>Provenance / Semantics</h2>
-    <ul class="list small">
-      <li><strong>Observed</strong>: latest reported statement metrics pulled from SEC-aligned extracted financials.</li>
-      <li><strong>Derived</strong>: net debt, interest coverage, net debt / revenue, CCC-style metrics.</li>
-      <li><strong>Model-extracted</strong>: workbook-derived valuation methods when present.</li>
-      <li><strong>Analyst judgment</strong>: thesis, stance, risks, catalysts, scenario interpretation.</li>
-      <li><strong>Bridge coverage stage</strong>: v1_reviewed</li>
-      <li><strong>Bridge rationale</strong>: NFLX has explicit thesis, valuation frame, open risks/catalysts, and reporting-period binding, but advertising economics and valuation discipline are not yet hard enough for v2_hardened.</li>
-      <li><strong>Current source status</strong>: prefilled</li>
-      <li><strong>Normalization status</strong>: guardrail_added</li>
-    </ul>
-  </div>
-  <div class="card panel panel-financial-stocktitan"><div class="financials-header-strip"><div><div class="muted small">Source</div><div class="small">SEC Filings (10-K / 10-Q)</div></div><div><div class="muted small">Updated</div><div class="small mono">2026-04-17</div></div><div><div class="muted small">Currency</div><div class="small">USD</div></div><div><div class="muted small">FYE</div><div class="small">December</div></div></div><h2>Financials</h2><div class="small muted">This page shows NFLX financial statements, including the income statement, balance sheet, cash flow statement, and key financial ratios.</div><div class="financial-metric-grid section"><div class="financial-metric-card"><div class="muted small">Revenue</div><div class="kpi">45.2B</div><div class="small muted">YoY [missing] · CAGR [missing]</div></div><div class="financial-metric-card"><div class="muted small">Operating income</div><div class="kpi">13.3B</div><div class="small muted">YoY [missing]</div></div><div class="financial-metric-card"><div class="muted small">Net income</div><div class="kpi">11.0B</div><div class="small muted">YoY [missing]</div></div><div class="financial-metric-card"><div class="muted small">EPS (diluted)</div><div class="kpi">1.23</div><div class="small muted">latest reported</div></div><div class="financial-metric-card"><div class="muted small">Free cash flow</div><div class="kpi">5.1B</div><div class="small muted">cash available after capex</div></div><div class="financial-metric-card"><div class="muted small">Cash vs debt</div><div class="kpi">12.3B</div><div class="small muted">cash · debt 13.4B</div></div><div class="financial-metric-card"><div class="muted small">Shares outstanding</div><div class="kpi">4.2B</div><div class="small muted">YoY [missing]</div></div></div><div class="financial-statement-section section"><h3>Income Statement</h3><div class="financial-statement-grid"><div class="financial-statement-table"><div class="muted small">Quarterly</div><div class="table-scroll"><table><thead><tr><th>Metric</th><th>Q1 2025</th><th>Q2 2025</th><th>Q3 2025</th><th>Q1 2026</th></tr></thead><tbody><tr><td>Revenue</td><td>10.5B</td><td>11.1B</td><td>11.5B</td><td>12.2B</td></tr><tr><td>Operating Income</td><td>3.3B</td><td>3.8B</td><td>3.2B</td><td>4.0B</td></tr><tr><td>Net Income</td><td>2.9B</td><td>3.1B</td><td>2.5B</td><td>5.3B</td></tr><tr><td>EPS (Diluted)</td><td>0.66</td><td>7.19</td><td>5.87</td><td>1.23</td></tr></tbody></table></div></div><div class="financial-statement-table"><div class="muted small">Annual</div><div class="table-scroll"><table><thead><tr><th>Metric</th><th>FY 2025</th></tr></thead><tbody><tr><td>Revenue</td><td>45.2B</td></tr><tr><td>Operating Income</td><td>13.3B</td></tr><tr><td>Net Income</td><td>11.0B</td></tr></tbody></table></div></div></div></div><div class="financial-statement-section section"><h3>Balance Sheet</h3><div class="financial-statement-grid"><div class="financial-statement-table"><div class="muted small">Quarterly</div><div class="table-scroll"><table><thead><tr><th>Metric</th><th>Q1 2025</th><th>Q2 2025</th><th>Q3 2025</th><th>Q1 2026</th></tr></thead><tbody><tr><td>Cash &amp; Equivalents</td><td>7.2B</td><td>8.2B</td><td>9.3B</td><td>12.3B</td></tr><tr><td>Total Debt</td><td>14.0B</td><td>14.5B</td><td>14.5B</td><td>13.4B</td></tr></tbody></table></div></div><div class="financial-statement-table"><div class="muted small">Annual</div><div class="table-scroll"><table><thead><tr><th>Metric</th><th>FY 2025</th></tr></thead><tbody><tr><td>Cash &amp; Equivalents</td><td>[missing]</td></tr><tr><td>Total Debt</td><td>[missing]</td></tr><tr><td>Shares Outstanding</td><td>[missing]</td></tr></tbody></table></div></div></div></div><div class="financial-statement-section section"><h3>Cash Flow</h3><div class="financial-cash-grid"><div class="financial-metric-card"><div class="muted small">Operating cash flow</div><div class="kpi">5.3B</div></div><div class="financial-metric-card"><div class="muted small">Capital expenditures</div><div class="kpi">196.1M</div></div><div class="financial-metric-card"><div class="muted small">Free cash flow</div><div class="kpi">5.1B</div></div><div class="financial-metric-card"><div class="muted small">SBC</div><div class="kpi">140.4M</div></div></div></div><div class="financial-statement-section section"><h3>Key Financial Ratios</h3><div class="financial-metric-grid"><div class="financial-metric-card"><div class="muted small">Operating margin</div><div class="kpi">32.3%</div></div><div class="financial-metric-card"><div class="muted small">Net margin</div><div class="kpi">43.1%</div></div><div class="financial-metric-card"><div class="muted small">Net debt / revenue</div><div class="kpi">9.0%</div></div><div class="financial-metric-card"><div class="muted small">Interest coverage</div><div class="kpi">21.41x</div></div><div class="financial-metric-card"><div class="muted small">Cash conversion</div><div class="kpi">100.1%</div></div><div class="financial-metric-card"><div class="muted small">SBC / revenue</div><div class="kpi">1.1%</div></div></div></div></div>
-  <div class="card panel panel-financial-health">
-      <h2>Financial Health</h2>
-      <div class="grid compact-grid">
-        <div><div class="muted small">Overall status</div><div><span class="pill pill-strong">strong</span></div></div>
-        <div><div class="muted small">As of</div><div class="small mono">2026-03-31</div></div>
-        <div><div class="muted small">Period</div><div class="small">Q1 2026</div></div>
-      </div>
-      <div class="chart-grid section financial-health-chart-grid"><div class="mini-chart-card"><h3>Revenue trend</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:23%"></div></div><div class="mini-bar-value small">10.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:24%"></div></div><div class="mini-bar-value small">11.1B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:25%"></div></div><div class="mini-bar-value small">11.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:100%"></div></div><div class="mini-bar-value small">45.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:27%"></div></div><div class="mini-bar-value small">12.2B</div></div></div></div><div class="mini-chart-card"><h3>Operating income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:25%"></div></div><div class="mini-bar-value small">3.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:28%"></div></div><div class="mini-bar-value small">3.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:24%"></div></div><div class="mini-bar-value small">3.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100%"></div></div><div class="mini-bar-value small">13.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:29%"></div></div><div class="mini-bar-value small">4.0B</div></div></div></div><div class="mini-chart-card"><h3>Net income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:26%"></div></div><div class="mini-bar-value small">2.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:28%"></div></div><div class="mini-bar-value small">3.1B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:23%"></div></div><div class="mini-bar-value small">2.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:100%"></div></div><div class="mini-bar-value small">11.0B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:48%"></div></div><div class="mini-bar-value small">5.3B</div></div></div></div><div class="mini-chart-card"><h3>Net debt trend</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:100%"></div></div><div class="mini-bar-value small">6.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:92%"></div></div><div class="mini-bar-value small">6.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:75%"></div></div><div class="mini-bar-value small">5.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q4 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:65%"></div></div><div class="mini-bar-value small">4.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:16%"></div></div><div class="mini-bar-value small">1.1B</div></div></div></div></div>
-      <div class="statement-grid section"><div class="statement-card">
-          <h3>Profitability</h3>
-          <div class="small"><span class="pill pill-strong">strong</span> <span class="pill pill-improving">improving</span></div>
-          <div class="small muted" style="margin-top:8px">Netflix now looks like a scaled subscription/content engine with very impressive margin structure.</div>
-          <ul class="list small" style="margin-top:10px"><li><strong>Operating Margin</strong>: 32.3%</li><li><strong>Free Cash Flow Margin</strong>: 41.6%</li></ul>
-        </div><div class="statement-card">
-          <h3>Growth Quality</h3>
-          <div class="small"><span class="pill pill-strong">strong</span> <span class="pill pill-improving">improving</span></div>
-          <div class="small muted" style="margin-top:8px">Scale, pricing, margins, and cash conversion now reinforce each other.</div>
-          <ul class="list small" style="margin-top:10px"><li><strong>Operating Income</strong>: 4.0B</li><li><strong>Revenue</strong>: 12.2B</li></ul>
-        </div><div class="statement-card">
-          <h3>Cash Generation</h3>
-          <div class="small"><span class="pill pill-strong">strong</span> <span class="pill pill-improving">improving</span></div>
-          <div class="small muted" style="margin-top:8px">Cash generation is one of Netflix&#x27;s clearest strengths.</div>
-          <ul class="list small" style="margin-top:10px"><li><strong>Operating Cash Flow</strong>: 5.3B</li><li><strong>Free Cash Flow</strong>: 5.1B</li><li><strong>Cash Conversion</strong>: 133.7%</li></ul>
-        </div><div class="statement-card">
-          <h3>Balance-Sheet Strength</h3>
-          <div class="small"><span class="pill pill-good">good</span> <span class="pill pill-improving">improving</span></div>
-          <div class="small muted" style="margin-top:8px">Debt still exists, but Netflix looks far less financially constrained than in earlier years.</div>
-          <ul class="list small" style="margin-top:10px"><li><strong>Cash &amp; Equivalents</strong>: 12.3B</li><li><strong>Long-Term Debt (Non-Current)</strong>: 13.4B</li><li><strong>Net Debt</strong>: 1.1B</li></ul>
-        </div><div class="statement-card">
-          <h3>Leverage / Liquidity</h3>
-          <div class="small"><span class="pill pill-good">good</span> <span class="pill pill-stable">stable</span></div>
-          <div class="small muted" style="margin-top:8px">Leverage still matters conceptually, but no longer looks like the main weak point of the story.</div>
-          <ul class="list small" style="margin-top:10px"><li><strong>Leverage Context</strong>: supportive</li></ul>
-        </div><div class="statement-card">
-          <h3>Capital Efficiency</h3>
-          <div class="small"><span class="pill pill-good">good</span> <span class="pill pill-unknown">unknown</span></div>
-          <div class="small muted" style="margin-top:8px">Capital efficiency looks strong, but the latest share-count point should be verified before becoming a hard scoring input.</div>
-          <ul class="list small" style="margin-top:10px"><li><strong>Share Count Verification</strong>: needed</li></ul>
-        </div><div class="statement-card">
-          <h3>Earnings Quality</h3>
-          <div class="small"><span class="pill pill-strong">strong</span> <span class="pill pill-improving">improving</span></div>
-          <div class="small muted" style="margin-top:8px">The current Netflix story is far cleaner and more durable than the old content-burn caricature.</div>
-          <ul class="list small" style="margin-top:10px"><li><strong>SBC as % of Revenue</strong>: 1.1%</li><li><strong>Accrual vs Cash Signal</strong>: positive</li></ul>
-        </div></div>
-      <div class="split inside-split">
-        <div><h3>Caveats</h3><ul class="list small"><li>Latest share-count point from SEC company facts appears suspicious and needs verification before stronger canonization.</li><li>Quarterly free cash flow can be lumpy and should later be paired with TTM context.</li><li>This snapshot still uses simplified debt/cash logic.</li></ul></div>
-        <div><h3>Data quality notes</h3><ul class="list small"><li>Dashboard-native copy of the NFLX canonical snapshot.</li><li>Core profitability and cash-generation signals are filing-grounded.</li></ul></div>
-      </div>
-    </div>
-  <div class="card panel panel-financial-health">
-      <h2>Financial Health Trends</h2>
-      <div class="chart-grid financial-health-chart-grid"><div class="mini-chart-card"><h3>Revenue trend</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:23%"></div></div><div class="mini-bar-value small">10.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:24%"></div></div><div class="mini-bar-value small">11.1B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:25%"></div></div><div class="mini-bar-value small">11.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:100%"></div></div><div class="mini-bar-value small">45.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:27%"></div></div><div class="mini-bar-value small">12.2B</div></div></div></div><div class="mini-chart-card"><h3>Operating income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:25%"></div></div><div class="mini-bar-value small">3.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:28%"></div></div><div class="mini-bar-value small">3.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:24%"></div></div><div class="mini-bar-value small">3.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100%"></div></div><div class="mini-bar-value small">13.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:29%"></div></div><div class="mini-bar-value small">4.0B</div></div></div></div><div class="mini-chart-card"><h3>Net income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:26%"></div></div><div class="mini-bar-value small">2.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:28%"></div></div><div class="mini-bar-value small">3.1B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:23%"></div></div><div class="mini-bar-value small">2.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:100%"></div></div><div class="mini-bar-value small">11.0B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:48%"></div></div><div class="mini-bar-value small">5.3B</div></div></div></div><div class="mini-chart-card"><h3>Net debt trend</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:100%"></div></div><div class="mini-bar-value small">6.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:92%"></div></div><div class="mini-bar-value small">6.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:75%"></div></div><div class="mini-bar-value small">5.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q4 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:65%"></div></div><div class="mini-bar-value small">4.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:16%"></div></div><div class="mini-bar-value small">1.1B</div></div></div></div></div>
-    </div>
-  <div class="card panel panel-normalization">
-    <h2>Normalization Layer</h2>
-    <div class="grid compact-grid">
-      <div><div class="muted small">Reported net income</div><div class="kpi">5.3B</div></div>
-      <div><div class="muted small">Reported net margin</div><div class="kpi">43.1%</div></div>
-      <div><div class="muted small">Operating reference income</div><div class="kpi">4.0B</div></div>
-      <div><div class="muted small">Operating reference margin</div><div class="kpi">32.3%</div></div>
-      <div><div class="muted small">Analyst normalized earnings</div><div class="kpi">[missing]</div></div>
-      <div><div class="muted small">Analyst normalized margin</div><div class="kpi">[missing]</div></div>
-    </div>
-    <div class="split inside-split">
-      <div>
-        <h2>Normalization flags</h2>
-        <ul class="list small"><li>[none]</li></ul>
-      </div>
-      <div>
-        <h2>Notes</h2>
-        <ul class="list small"><li>Reported metrics are kept separate from operating-reference metrics.</li><li>Net income and net margin may be noisy for valuation unless analyst-normalized.</li><li>This layer is only a guardrail, not a substitute for analyst judgment.</li></ul>
-      </div>
-    </div>
-  </div>
-<div class="section page-block-header"><h2>Workspace</h2><div class="small muted">Valuation layer: model controls, methods, sensitivities, and scenario framing.</div></div>
-  <div class="card panel panel-valuation panel-valuation-full">
-    <h2>Valuation Workspace</h2>
-    <div class="grid compact-grid valuation-top-grid valuation-top-grid-compact">
-      <div class="valuation-top-card valuation-top-card-primary"><div class="muted small">Central reference ($/share)</div><div class="kpi">[missing]</div></div>
-      <div class="valuation-top-card"><div class="muted small">Source status</div><div><span class="pill pill-null">null</span></div></div>
-      <div class="valuation-top-card"><div class="muted small">Sensitivity sets</div><div class="kpi">0</div></div>
-      <div class="valuation-top-card"><div class="muted small">Range</div><div class="small mono">[pending]</div></div>
-    </div>
-    <div class="valuation-multiple-grid section">
-      <div class="valuation-multiple-card">
-          <div class="muted small">P/E</div>
-          <div class="kpi">[missing]</div>
-          <div class="small muted">annualized latest quarter net income</div>
-          <div class="small">quality: reported</div>
-        </div><div class="valuation-multiple-card">
-          <div class="muted small">EV / EBITDA</div>
-          <div class="kpi">[missing]</div>
-          <div class="small muted">reported operating income + D&amp;A proxy</div>
-          <div class="small">quality: proxy</div>
-        </div><div class="valuation-multiple-card">
-          <div class="muted small">P / FCF</div>
-          <div class="kpi">[missing]</div>
-          <div class="small muted">proxy unlevered FCF after tax + D&amp;A - capex</div>
-          <div class="small">quality: missing</div>
-        </div>
-    </div>
-    <div class="valuation-method-grid section">
-      <div class="valuation-method-card">
-        <div class="muted small">DCF</div>
-        <div class="kpi" data-live="fair_price">[missing]</div>
-        <div class="small">status: not_filled</div>
-        <div class="small">EV: <span data-live="enterprise_value">[missing]</span></div>
-        <div class="small">Equity: <span data-live="equity_value">[missing]</span></div>
-        <div class="small mono">range: [pending]</div>
-        <div class="small muted">units: $/share · EV/equity in $</div>
-      </div>
-      <div class="valuation-method-card">
-        <div class="muted small">Gordon</div>
-        <div class="kpi" data-live="gordon_price">[calc]</div>
-        <div class="small">status: derived live</div>
-        <div class="small">EV: terminal-value view</div>
-        <div class="small">Equity: live-derived</div>
-        <div class="small mono">range: [live]</div>
-        <div class="small muted">units: $/share · EV/equity in $</div>
-      </div>
-      <div class="valuation-method-card">
-        <div class="muted small">Terminal multiple</div>
-        <div class="kpi" data-live="exit_multiple_price">[calc]</div>
-        <div class="small">status: derived live</div>
-        <div class="small">EV: terminal-value view</div>
-        <div class="small">Equity: live-derived</div>
-        <div class="small mono">range: [live]</div>
-        <div class="small muted">units: $/share · EV/equity in $</div>
-      </div>
-    </div>
-    <div class="section inside-split">
-      <h2>Classic DCF Model</h2>
-      <div class="workbench-tabs">
-        <button class="workbench-tab active" data-tab="dcf-model">DCF</button>
-        <button class="workbench-tab" data-tab="terminal-value">Terminal value</button>
-        <button class="workbench-tab" data-tab="methods-compare">Methods compare</button>
-        <button class="workbench-tab" data-tab="sensitivity-panel">Sensitivity</button>
-      </div>
-      <div class="workbench-panel active" data-panel="dcf-model">
-      <div class="dcf-hero-row">
-        <div class="dcf-fair-price-hero">
-          <div class="muted small">Fair price / share</div>
-          <div class="dcf-hero-price" data-live="fair_price">[missing]</div>
-          <div class="small muted">Equity value <span data-live="equity_value">[missing]</span> · EV <span data-live="enterprise_value">[missing]</span></div>
-          <div class="dcf-hero-subgrid">
-            <div><span class="muted small">Net debt</span><strong>[missing]</strong></div>
-            <div><span class="muted small">Diluted shares</span><strong>[missing]</strong></div>
-          </div>
-        </div>
-        <div class="grid compact-grid dcf-snapshot-grid"><div class="dcf-mini-card"><div class="muted small">Revenue base</div><div class="kpi">12.2B</div></div><div class="dcf-mini-card"><div class="muted small">WACC</div><div class="kpi" data-live="wacc_pct"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Terminal growth</div><div class="kpi" data-live="terminal_growth_pct"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Tax rate</div><div class="kpi" data-live="tax_rate_pct"><em>[missing]</em></div></div><div class="dcf-mini-card"><div class="muted small">Sales / capital</div><div class="kpi" data-live="sales_to_capital_ratio">[missing]x</div></div><div class="dcf-mini-card"><div class="muted small">Net debt</div><div class="kpi">[missing]</div></div><div class="dcf-mini-card"><div class="muted small">Diluted shares</div><div class="kpi">[missing]</div></div></div>
-      </div>
-      <div class="section inside-split dcf-operator-zone">
-        <div>
-          <h3>Model control panel</h3>
-          <div class="small muted">Interactive local model: change the inputs, hit recalculate, and the valuation updates in-page.</div>
-          <div class="input-sheet-caption small muted">Blue cells = base case. Adjacent bands frame the assumption range you want to pressure-test.</div>
-          <div class="assumption-actions"><span class="live-indicator">● live model</span><button type="button" id="dcf-recalc" class="workbench-tab active">Recalculate</button><button type="button" id="dcf-reset" class="workbench-tab">Reset</button></div>
-          <div class="table-scroll">
-            <table class="model-table model-table-control model-table-inputs">
-              <thead><tr><th>Driver</th><th>Base</th><th>Min</th><th>Max</th><th>Confidence</th><th>Editable</th></tr></thead>
-              <tbody><tr class="model-row-percent"><td><strong>Revenue growth stage 1</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Target operating margin</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Tax rate</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr><td><strong>Sales to capital</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>WACC</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr><tr class="model-row-percent"><td><strong>Terminal growth</strong></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td><span>[missing]</span></td><td>medium</td><td><span class="pill pill-yes">yes</span></td></tr></tbody>
-            </table>
-          </div>
-        </div>
-        <div>
-          <h3>FCF build</h3>
-          <div class="small muted">Waterfall logic: EBIT → less taxes → NOPAT → less reinvestment → FCFF.</div>
-          <div class="small muted">This is the core cash-generation bridge behind the valuation, year by year.</div>
-          <div class="table-scroll">
-            <table class="model-table model-table-fcf model-table-waterfall">
-              <thead><tr><th>Bridge</th><th>[missing]</th></tr></thead>
-              <tbody>
-                <tr class="model-row-strong"><td><strong>EBIT</strong></td></tr>
-                <tr class="model-row-tax"><td>Tax burden</td></tr>
-                <tr class="model-row-strong"><td><strong>NOPAT</strong></td></tr>
-                <tr class="model-row-tax"><td>Reinvestment</td></tr>
-                <tr class="model-row-fcff"><td><strong>FCFF</strong></td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="section inside-split">
-        <h3>DCF forecast grid</h3>
-        <div class="small muted">Read left to right like a spreadsheet: operating build first, cash conversion second, present value last.</div>
-        <div class="table-scroll">
-          <table class="model-table model-table-forecast model-table-wide">
-            <thead><tr><th>Metric / date</th><th>[missing]</th></tr></thead>
-            <tbody><tr><td>[missing]</td></tr></tbody>
-          </table>
-        </div>
-      </div>
-      <div class="grid compact-grid section inside-split dcf-summary-grid">
-        <div><div class="muted small">PV stage 1</div><div class="kpi" data-live="pv_stage1">[missing]</div></div>
-        <div><div class="muted small">PV stage 2</div><div class="kpi" data-live="pv_stage2">[missing]</div></div>
-        <div><div class="muted small">PV terminal value</div><div class="kpi" data-live="pv_terminal">[missing]</div></div>
-        <div><div class="muted small">Enterprise value</div><div class="kpi" data-live="enterprise_value">[missing]</div></div>
-        <div><div class="muted small">Equity value</div><div class="kpi" data-live="equity_value">[missing]</div></div>
-        <div><div class="muted small">Terminal value</div><div class="kpi" data-live="terminal_value">[missing]</div></div>
-      </div>
-      </div>
-      <div class="workbench-panel" data-panel="terminal-value">
-        <div class="terminal-method-grid">
-          <div class="valuation-method-card"><div class="muted small">Gordon growth</div><div class="kpi" data-live="gordon_price">[calc]</div><div class="small muted">Perpetuity on terminal FCFF / (WACC - g)</div></div>
-          <div class="valuation-method-card"><div class="muted small">H-Model</div><div class="kpi" data-live="hmodel_price">[calc]</div><div class="small muted">Half-life fade on growth premium</div></div>
-          <div class="valuation-method-card"><div class="muted small">Exit multiple</div><div class="kpi" data-live="exit_multiple_price">[calc]</div><div class="small muted">Terminal EV from FCFF exit multiple</div></div>
-        </div>
-      </div>
-      <div class="workbench-panel" data-panel="methods-compare">
-        <div class="terminal-method-grid">
-          <div class="valuation-method-card"><div class="muted small">DCF fair price</div><div class="kpi" data-live="fair_price">[missing]</div></div>
-          <div class="valuation-method-card"><div class="muted small">Gordon / perpetuity</div><div class="kpi" data-live="gordon_price_dup">[calc]</div></div>
-          <div class="valuation-method-card"><div class="muted small">H-Model</div><div class="kpi" data-live="hmodel_price_dup">[calc]</div></div>
-          <div class="valuation-method-card"><div class="muted small">Exit FCFF multiple</div><div class="kpi" data-live="exit_multiple_price_dup">[calc]</div></div>
-        </div>
-        <div class="section inside-split">
-          <h2>Key assumptions</h2>
-          <div class="table-scroll">
-            <table>
-              <thead><tr><th>Assumption</th><th>Value</th><th>Source</th></tr></thead>
-              <tbody><tr><td>WACC</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Terminal growth</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Revenue growth stage 1</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Target operating margin</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Tax rate</td><td>[missing]</td><td>[missing]</td></tr><tr><td>Sales to capital</td><td>[missing]x</td><td>[missing]</td></tr></tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="workbench-panel" data-panel="sensitivity-panel">
-        <h2>Sensitivities</h2>
-        <div class="muted small">[not yet populated]</div>
-      </div>
-    <div class="split inside-split">
-      <div>
-        <h2>Scenario frame</h2>
-        <ul class="list small"><li><strong>Advertising + margin expansion</strong>: Higher structural earnings power.</li><li><strong>Mature streaming normalization</strong>: More mature but still high-quality media platform economics.</li></ul>
-      </div>
-      <div>
-        <h2>Current valuation gaps</h2>
-        <ul class="list small">
-          <li>Observed vs derived vs analyst judgment: [not yet explicit enough]</li>
-          <li>Normalization layer: guardrail_added</li>
-          <li>Sensitivity tables: [not yet populated]</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="card panel panel-conversion">
-    <h2>Cash Flow / Conversion</h2>
-    <div class="grid compact-grid">
-      <div><div class="muted small">DSO (days)</div><div class="kpi">[missing]</div></div>
-      <div><div class="muted small">DPO (days)</div><div class="kpi">26.66</div></div>
-      <div><div class="muted small">DIO (days)</div><div class="kpi">[missing]</div></div>
-      <div><div class="muted small">CCC (days)</div><div class="kpi">-26.66</div></div>
-      <div><div class="muted small">Capex</div><div class="kpi">196.1M</div><div class="small muted">10-Q · 2026-03-31</div></div>
-      <div><div class="muted small">Depreciation</div><div class="kpi">98.6M</div><div class="small muted">10-Q · 2026-03-31</div></div>
-    </div>
-  </div>
-  <div class="card panel panel-charts">
-    <h2>Key charts</h2>
-    <div class="chart-grid">
-      <div class="mini-chart-card"><h3>Operating income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:25%"></div></div><div class="mini-bar-value small">3.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:28%"></div></div><div class="mini-bar-value small">3.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:24%"></div></div><div class="mini-bar-value small">3.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100%"></div></div><div class="mini-bar-value small">13.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:29%"></div></div><div class="mini-bar-value small">4.0B</div></div></div></div>
-      <div class="mini-chart-card"><h3>Net income history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:26%"></div></div><div class="mini-bar-value small">2.9B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:28%"></div></div><div class="mini-bar-value small">3.1B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:23%"></div></div><div class="mini-bar-value small">2.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">FY 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:100%"></div></div><div class="mini-bar-value small">11.0B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-blue" style="width:48%"></div></div><div class="mini-bar-value small">5.3B</div></div></div></div>
-      <div class="mini-chart-card"><h3>Share count / dilution</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:100%"></div></div><div class="mini-bar-value small">4.2B</div></div></div></div>
-      <div class="mini-chart-card"><h3>Debt vs cash</h3><div class="mini-chart dual-series-chart"><div class="dual-series-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="dual-series-bars"><div class="dual-bar-group"><span class="dual-bar-name">Debt</span><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:96%"></div></div><span class="dual-bar-value">14.0B</span></div><div class="dual-bar-group"><span class="dual-bar-name">Cash</span><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:49%"></div></div><span class="dual-bar-value">7.2B</span></div></div></div><div class="dual-series-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="dual-series-bars"><div class="dual-bar-group"><span class="dual-bar-name">Debt</span><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:99%"></div></div><span class="dual-bar-value">14.5B</span></div><div class="dual-bar-group"><span class="dual-bar-name">Cash</span><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:56%"></div></div><span class="dual-bar-value">8.2B</span></div></div></div><div class="dual-series-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="dual-series-bars"><div class="dual-bar-group"><span class="dual-bar-name">Debt</span><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:100%"></div></div><span class="dual-bar-value">14.5B</span></div><div class="dual-bar-group"><span class="dual-bar-name">Cash</span><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:64%"></div></div><span class="dual-bar-value">9.3B</span></div></div></div><div class="dual-series-row"><div class="mini-bar-label small mono">Q4 2025</div><div class="dual-series-bars"><div class="dual-bar-group"><span class="dual-bar-name">Debt</span><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:93%"></div></div><span class="dual-bar-value">13.5B</span></div><div class="dual-bar-group"><span class="dual-bar-name">Cash</span><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:62%"></div></div><span class="dual-bar-value">9.0B</span></div></div></div><div class="dual-series-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="dual-series-bars"><div class="dual-bar-group"><span class="dual-bar-name">Debt</span><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:92%"></div></div><span class="dual-bar-value">13.4B</span></div><div class="dual-bar-group"><span class="dual-bar-name">Cash</span><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:84%"></div></div><span class="dual-bar-value">12.3B</span></div></div></div></div></div>
-      <div class="mini-chart-card"><h3>Net debt trend</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:100%"></div></div><div class="mini-bar-value small">6.8B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:92%"></div></div><div class="mini-bar-value small">6.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:75%"></div></div><div class="mini-bar-value small">5.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q4 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:65%"></div></div><div class="mini-bar-value small">4.4B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-amber" style="width:16%"></div></div><div class="mini-bar-value small">1.1B</div></div></div></div>
-      <div class="mini-chart-card"><h3>Debt history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:96%"></div></div><div class="mini-bar-value small">14.0B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:99%"></div></div><div class="mini-bar-value small">14.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:100%"></div></div><div class="mini-bar-value small">14.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q4 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:93%"></div></div><div class="mini-bar-value small">13.5B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-red" style="width:92%"></div></div><div class="mini-bar-value small">13.4B</div></div></div></div>
-      <div class="mini-chart-card"><h3>Cash history</h3><div class="mini-chart"><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:58%"></div></div><div class="mini-bar-value small">7.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q2 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:66%"></div></div><div class="mini-bar-value small">8.2B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q3 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:75%"></div></div><div class="mini-bar-value small">9.3B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q4 2025</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:73%"></div></div><div class="mini-bar-value small">9.0B</div></div><div class="mini-bar-row"><div class="mini-bar-label small mono">Q1 2026</div><div class="mini-bar-track"><div class="mini-bar-fill tone-green" style="width:100%"></div></div><div class="mini-bar-value small">12.3B</div></div></div></div>
-    </div>
-  </div>
-  <script type="application/json" id="dcf-client-data">{"latest_revenue": 12249757000, "tax_rate": null, "wacc": null, "terminal_growth": null, "sales_to_capital": null, "target_operating_margin": null, "growth_stage1": null, "net_debt": null, "shares": null, "forecast_rows": [], "terminal_fcff": null, "terminal_value": null, "pv_terminal_value": null, "pv_stage1": null, "pv_stage2": null, "base_price": null}</script>
-  <script>
-  (() => {
-    const payloadEl = document.getElementById('dcf-client-data');
-    if (!payloadEl) return;
-    const data = JSON.parse(payloadEl.textContent);
-    const fmtMoney = (v) => {
-      if (v == null || Number.isNaN(v)) return '[missing]';
-      const av = Math.abs(v);
-      if (av >= 1e9) return (v/1e9).toFixed(1) + 'B';
-      if (av >= 1e6) return (v/1e6).toFixed(1) + 'M';
-      if (av >= 1e3) return (v/1e3).toFixed(1) + 'K';
-      return v.toFixed(0);
-    };
-    const fmtPrice = (v) => v == null || Number.isNaN(v) ? '[calc]' : '$' + v.toFixed(1);
-    const fmtPct = (v) => v == null || Number.isNaN(v) ? '[calc]' : v.toFixed(1) + '%';
-    const fmtRatio = (v) => v == null || Number.isNaN(v) ? '[calc]' : v.toFixed(1) + 'x';
-    const inputs = [...document.querySelectorAll('.assumption-input')];
-    const steppers = [...document.querySelectorAll('.assumption-stepper')];
-    const tabs = [...document.querySelectorAll('.workbench-tab[data-tab]')];
-    const panels = [...document.querySelectorAll('.workbench-panel')];
-    const recalcBtn = document.getElementById('dcf-recalc');
-    const resetBtn = document.getElementById('dcf-reset');
-    const initialValues = Object.fromEntries(inputs.map(el => [el.dataset.assumption, el.value]));
-    tabs.forEach(btn => btn.addEventListener('click', () => {
-      tabs.forEach(x => x.classList.toggle('active', x === btn));
-      panels.forEach(p => p.classList.toggle('active', p.dataset.panel === btn.dataset.tab));
-    }));
-    steppers.forEach(btn => btn.addEventListener('click', () => {
-      const input = document.querySelector(`.assumption-input[data-assumption="${btn.dataset.target}"]`);
-      if (!input) return;
-      const step = parseFloat(input.step || '0.1') || 0.1;
-      const current = parseFloat(input.value || '0') || 0;
-      input.value = (btn.dataset.dir === 'up' ? current + step : current - step).toFixed(4);
-      recalc();
-    }));
-    const get = (key, fallback=null) => {
-      const el = document.querySelector(`.assumption-input[data-assumption="${key}"]`);
-      return el ? parseFloat(el.value) : fallback;
-    };
-    const renderLive = (key, value, mode='price') => {
-      const text = mode === 'money' ? fmtMoney(value) : mode === 'pct' ? fmtPct(value) : mode === 'ratio' ? fmtRatio(value) : fmtPrice(value);
-      document.querySelectorAll(`[data-live="${key}"]`).forEach(el => {
-        el.textContent = text;
-      });
-    };
-    const recalc = () => {
-      const wacc = get('wacc', data.wacc) / 100;
-      const tg = get('terminal_growth', data.terminal_growth) / 100;
-      const tax = get('tax_rate', data.tax_rate) / 100;
-      const targetMargin = get('target_operating_margin', data.target_operating_margin) / 100;
-      const growth = get('revenue_growth_stage1', data.growth_stage1) / 100;
-      const stc = get('sales_to_capital', data.sales_to_capital);
-      const baseRev = data.latest_revenue;
-      const years = data.forecast_rows.length;
-      let revenue = baseRev;
-      let stagePv = 0;
-      let stage1Pv = 0;
-      let stage2Pv = 0;
-      let terminalFcff = 0;
-      const stage1Years = Math.min(5, years);
-      for (let i = 0; i < years; i++) {
-        const fadeGrowth = growth - ((growth - tg) * (i / Math.max(years - 1, 1)));
-        const fadeMargin = targetMargin * (0.68 + 0.32 * (i / Math.max(years - 1, 1)));
-        const nextRevenue = revenue * (1 + fadeGrowth);
-        const ebit = nextRevenue * fadeMargin;
-        const nopat = ebit * (1 - tax);
-        const reinvestment = (nextRevenue - revenue) / Math.max(stc, 0.1);
-        const fcff = nopat - reinvestment;
-        const df = 1 / Math.pow(1 + wacc, i + 1);
-        const pvFcff = fcff * df;
-        stagePv += pvFcff;
-        if (i < stage1Years) stage1Pv += pvFcff;
-        else stage2Pv += pvFcff;
-        revenue = nextRevenue;
-        terminalFcff = fcff * (1 + tg);
-      }
-      const terminalValue = wacc > tg ? terminalFcff / Math.max(wacc - tg, 0.0001) : null;
-      const pvTerminal = terminalValue ? terminalValue / Math.pow(1 + wacc, years) : null;
-      const enterpriseValue = stagePv + (pvTerminal || 0);
-      const equityValue = enterpriseValue - (data.net_debt || 0);
-      const fairPrice = equityValue / Math.max(data.shares || 1, 1);
-      const gordonPrice = fairPrice;
-      const hmodelPrice = fairPrice * 1.08;
-      const exitMultipleEv = terminalFcff * 18;
-      const exitMultiplePv = exitMultipleEv / Math.pow(1 + wacc, years);
-      const exitMultiplePrice = (stagePv + exitMultiplePv - (data.net_debt || 0)) / Math.max(data.shares || 1, 1);
-      renderLive('fair_price', fairPrice);
-      renderLive('enterprise_value', enterpriseValue, 'money');
-      renderLive('equity_value', equityValue, 'money');
-      renderLive('terminal_value', terminalValue, 'money');
-      renderLive('pv_terminal', pvTerminal, 'money');
-      renderLive('pv_stage1', stage1Pv, 'money');
-      renderLive('pv_stage2', stage2Pv, 'money');
-      renderLive('gordon_price', gordonPrice);
-      renderLive('gordon_price_dup', gordonPrice);
-      renderLive('hmodel_price', hmodelPrice);
-      renderLive('hmodel_price_dup', hmodelPrice);
-      renderLive('exit_multiple_price', exitMultiplePrice);
-      renderLive('exit_multiple_price_dup', exitMultiplePrice);
-      renderLive('wacc_pct', wacc * 100, 'pct');
-      renderLive('terminal_growth_pct', tg * 100, 'pct');
-      renderLive('tax_rate_pct', tax * 100, 'pct');
-      renderLive('sales_to_capital_ratio', stc, 'ratio');
-    };
-    inputs.forEach(el => el.addEventListener('input', recalc));
-    if (recalcBtn) recalcBtn.addEventListener('click', recalc);
-    if (resetBtn) resetBtn.addEventListener('click', () => {
-      inputs.forEach(el => {
-        if (initialValues[el.dataset.assumption] != null) el.value = initialValues[el.dataset.assumption];
-      });
-      recalc();
-    });
-    recalc();
-  })();
-  </script>
-  <div class="card panel panel-thesis">
-    <h2>Thesis / Risks / Catalysts</h2>
-    <div class="thesis-download-card inside-split">
-      <div>
-        <div class="muted small">Full thesis report</div>
-        <div class="small">Attach the full company write-up here so each position has a durable download point.</div>
-      </div>
-      <div class="download-chip-row"><div class="small muted">[full thesis report not yet attached]</div></div>
-    </div>
-    <p><strong>Thesis short:</strong> Netflix looks like a stronger margin and cash compounder than the old market caricature, but upside still depends on advertising, pricing power, and disciplined content economics holding up.</p>
-    <p><strong>Current stance:</strong> under review</p>
-    <p><strong>What changes my mind:</strong> Clearer evidence that advertising monetization disappoints, engagement weakens, or content intensity must rise again enough to erode margin durability.</p>
-    <div class="split inside-split">
-      <div><h2>Risks</h2><ul class="list small"><li>Competitive pressure or weaker engagement reducing subscriber and monetization durability</li><li>Ad-tier monetization underdelivering relative to current expectations</li><li>Valuation compression if growth or operating leverage softens</li></ul></div>
-      <div><h2>Catalysts</h2><ul class="list small"><li>Ad-tier monetization scaling into a meaningful incremental earnings driver</li><li>Continued margin durability alongside disciplined content spend</li></ul></div>
-    </div>
-    <div class="section inside-split">
-      <h2>Data quality / sourcing notes</h2>
-      <ul class="list small">
-        <li>SBC: 140.4M · 10-Q · 2026-03-31</li>
-        <li>Interest burden: 184.8M · 10-Q · 2024-09-30</li>
-        <li>Share count anchor: 4.2B · 10-Q · 2026-03-31</li>
-        <li>CCC inputs: receivables [missing], payables 894.7M, inventory [missing]</li>
-      </ul>
-    </div>
-  </div>
+    <ul class="list small"><li>What is normalized ad-tier profitability?</li><li>How durable is engagement/share vs YouTube/Disney/Prime?</li><li>What FCF margin is sustainable after content investment?</li></ul>
+  </section>
 </div>
+
+<div class="card section snapshot-footer-note">
+  <strong>Design rule:</strong> this page is a company snapshot, not the full thesis. Detailed argumentation belongs in the written thesis; detailed valuation belongs in Excel/model files. The dashboard only shows status, signals, changes, and action priorities.
 </div>
+
+  </div>
 </body>
 </html>

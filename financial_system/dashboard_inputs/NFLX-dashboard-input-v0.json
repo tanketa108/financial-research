@@ -1,0 +1,670 @@
+{
+  "schema_version": "dashboard-input-v0",
+  "ticker": "NFLX",
+  "company_name": "Netflix, Inc.",
+  "page_intent": "company_snapshot_not_full_thesis",
+  "last_updated": "2026-05-13",
+  "thesis": {
+    "one_line": "Netflix is a global streaming entertainment platform with improving margin and cash generation; the key debate is durable growth, ads economics, content ROI and capital allocation.",
+    "current_thesis": "The snapshot suggests a cash-generating earnings engine with margin expansion and buybacks; maintenance should focus on advertising economics, content spend efficiency, WBD/industry structure and valuation discipline.",
+    "stance": "covered / refresh needed",
+    "committee_view": "Financial quality has improved materially, but qualitative thesis needs a cleaner baseline around ads, content ROI and competitive durability."
+  },
+  "maintenance": {
+    "status": "baseline_needed",
+    "next_action": "Create NFLX written thesis baseline and validate StockTitan-triggered watch items against primary sources.",
+    "latest_updates": [
+      {
+        "date": "2026-05-13",
+        "type": "dashboard_extension",
+        "summary": "NFLX snapshot generated from generic portfolio methodology."
+      }
+    ]
+  },
+  "qualitative": {
+    "drivers": [
+      {
+        "title": "Streaming scale and pricing power",
+        "summary": "Global subscriber base and content platform support revenue/margin expansion."
+      },
+      {
+        "title": "Advertising tier optionality",
+        "summary": "Ad-supported plans can add monetization if engagement and inventory scale well."
+      },
+      {
+        "title": "Cash conversion and buybacks",
+        "summary": "Improved FCF enables shareholder returns and balance-sheet flexibility."
+      }
+    ],
+    "risks": [
+      {
+        "title": "Content ROI",
+        "summary": "Large content spend must keep producing engagement and pricing power."
+      },
+      {
+        "title": "Advertising execution",
+        "summary": "Ad tier may take time to scale and could be less profitable than expected."
+      },
+      {
+        "title": "Competition / industry structure",
+        "summary": "Streaming competition and media consolidation can pressure growth and content economics."
+      }
+    ],
+    "catalysts": [
+      {
+        "title": "Ad economics disclosure",
+        "summary": "Evidence of ad ARPU, fill rates and advertiser demand."
+      },
+      {
+        "title": "Margin/FCF resilience",
+        "summary": "Sustained margin expansion and cash conversion."
+      },
+      {
+        "title": "Capital allocation discipline",
+        "summary": "Buybacks funded by FCF without weakening balance sheet."
+      }
+    ],
+    "assumptions": [
+      {
+        "statement": "What is normalized ad-tier profitability?",
+        "status": "open"
+      },
+      {
+        "statement": "How durable is engagement/share vs YouTube/Disney/Prime?",
+        "status": "open"
+      },
+      {
+        "statement": "What FCF margin is sustainable after content investment?",
+        "status": "open"
+      }
+    ],
+    "open_questions": [
+      {
+        "question": "What is normalized ad-tier profitability?",
+        "status": "open"
+      },
+      {
+        "question": "How durable is engagement/share vs YouTube/Disney/Prime?",
+        "status": "open"
+      },
+      {
+        "question": "What FCF margin is sustainable after content investment?",
+        "status": "open"
+      }
+    ]
+  },
+  "valuation": {
+    "status": "prefilled",
+    "central_reference": null,
+    "range": null,
+    "user_excel_model": null,
+    "note": "No user Excel model registered for NFLX yet; valuation fields remain preliminary."
+  },
+  "key_metrics": {
+    "revenue": 12249757000,
+    "operating_income": 3956997000,
+    "net_income": 5282791000,
+    "diluted_eps": 1.23,
+    "cash": 12259772000,
+    "debt": 13361331000,
+    "operating_margin": 0.3230265710576953,
+    "net_margin": 0.4312567996246783,
+    "ccc": -26.658370855846364,
+    "share_count": 4212794271,
+    "sbc": 140405000
+  },
+  "charts": {
+    "financial_trends": [
+      {
+        "label": "Revenue",
+        "points": [
+          {
+            "label": "CY2024Q2",
+            "date": "2024-06-30",
+            "value": 9559310000
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 9824703000
+          },
+          {
+            "label": "CY2024",
+            "date": "2024-12-31",
+            "value": 39000966000
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 10542801000
+          },
+          {
+            "label": "CY2025Q2",
+            "date": "2025-06-30",
+            "value": 11079166000
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 11510307000
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-12-31",
+            "value": 45183036000
+          },
+          {
+            "label": "CY2026Q1",
+            "date": "2026-03-31",
+            "value": 12249757000
+          }
+        ]
+      },
+      {
+        "label": "Operating income",
+        "points": [
+          {
+            "label": "CY2024Q2",
+            "date": "2024-06-30",
+            "value": 2602837000
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 2909477000
+          },
+          {
+            "label": "CY2024",
+            "date": "2024-12-31",
+            "value": 10417614000
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 3346999000
+          },
+          {
+            "label": "CY2025Q2",
+            "date": "2025-06-30",
+            "value": 3774694000
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 3248247000
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-12-31",
+            "value": 13326603000
+          },
+          {
+            "label": "CY2026Q1",
+            "date": "2026-03-31",
+            "value": 3956997000
+          }
+        ]
+      },
+      {
+        "label": "Net income",
+        "points": [
+          {
+            "label": "CY2024Q2",
+            "date": "2024-06-30",
+            "value": 2147306000
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 2363509000
+          },
+          {
+            "label": "2025 FY",
+            "date": "2024-12-31",
+            "value": 8711631000
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 2890351000
+          },
+          {
+            "label": "CY2025Q2",
+            "date": "2025-06-30",
+            "value": 3125413000
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 2546916000
+          },
+          {
+            "label": "2025 FY",
+            "date": "2025-12-31",
+            "value": 10981201000
+          },
+          {
+            "label": "CY2026Q1",
+            "date": "2026-03-31",
+            "value": 5282791000
+          }
+        ]
+      }
+    ],
+    "balance_sheet": [
+      {
+        "label": "Cash",
+        "points": [
+          {
+            "label": "CY2024Q2I",
+            "date": "2024-06-30",
+            "value": 6624939000
+          },
+          {
+            "label": "CY2024Q3I",
+            "date": "2024-09-30",
+            "value": 7457025000
+          },
+          {
+            "label": "CY2024Q4I",
+            "date": "2024-12-31",
+            "value": 7804733000
+          },
+          {
+            "label": "CY2025Q1I",
+            "date": "2025-03-31",
+            "value": 7199848000
+          },
+          {
+            "label": "CY2025Q2I",
+            "date": "2025-06-30",
+            "value": 8177405000
+          },
+          {
+            "label": "CY2025Q3I",
+            "date": "2025-09-30",
+            "value": 9287287000
+          },
+          {
+            "label": "CY2025Q4I",
+            "date": "2025-12-31",
+            "value": 9033681000
+          },
+          {
+            "label": "CY2026Q1I",
+            "date": "2026-03-31",
+            "value": 12259772000
+          }
+        ]
+      },
+      {
+        "label": "Debt",
+        "points": [
+          {
+            "label": "CY2024Q2I",
+            "date": "2024-06-30",
+            "value": 12180024000
+          },
+          {
+            "label": "CY2024Q3I",
+            "date": "2024-09-30",
+            "value": 14160932000
+          },
+          {
+            "label": "CY2024Q4I",
+            "date": "2024-12-31",
+            "value": 13798351000
+          },
+          {
+            "label": "CY2025Q1I",
+            "date": "2025-03-31",
+            "value": 14011037000
+          },
+          {
+            "label": "CY2025Q2I",
+            "date": "2025-06-30",
+            "value": 14453206000
+          },
+          {
+            "label": "CY2025Q3I",
+            "date": "2025-09-30",
+            "value": 14463020000
+          },
+          {
+            "label": "CY2025Q4I",
+            "date": "2025-12-31",
+            "value": 13463971000
+          },
+          {
+            "label": "CY2026Q1I",
+            "date": "2026-03-31",
+            "value": 13361331000
+          }
+        ]
+      }
+    ],
+    "margins": [
+      {
+        "label": "Operating margin",
+        "points": [
+          {
+            "label": "CY2024Q2",
+            "date": "2024-06-30",
+            "value": 0.27228293673915793
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 0.2961389265405784
+          },
+          {
+            "label": "CY2024",
+            "date": "2024-12-31",
+            "value": 0.26711169154117875
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 0.31746772039043514
+          },
+          {
+            "label": "CY2025Q2",
+            "date": "2025-06-30",
+            "value": 0.34070199868834894
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 0.28220333306487827
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-12-31",
+            "value": 0.29494704605507255
+          },
+          {
+            "label": "CY2026Q1",
+            "date": "2026-03-31",
+            "value": 0.3230265710576953
+          }
+        ]
+      },
+      {
+        "label": "Net margin",
+        "points": [
+          {
+            "label": "CY2024Q2",
+            "date": "2024-06-30",
+            "value": 0.2246298111474573
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 0.24056798459963624
+          },
+          {
+            "label": "2025 FY",
+            "date": "2024-12-31",
+            "value": 0.22336962115246067
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 0.2741539938010781
+          },
+          {
+            "label": "CY2025Q2",
+            "date": "2025-06-30",
+            "value": 0.28209821930639906
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 0.2212726385143333
+          },
+          {
+            "label": "2025 FY",
+            "date": "2025-12-31",
+            "value": 0.24303813935832022
+          },
+          {
+            "label": "CY2026Q1",
+            "date": "2026-03-31",
+            "value": 0.4312567996246783
+          }
+        ]
+      }
+    ]
+  },
+  "health": {
+    "overall_status": "good",
+    "summary": "StockTitan reports FY2025 health 70/100, revenue +15.9%, FCF $9.5B and improving cash conversion.",
+    "scorecards": [
+      {
+        "label": "Profitability",
+        "status": "good",
+        "value": "monitor",
+        "note": "See margin/earnings trend."
+      },
+      {
+        "label": "Growth",
+        "status": "watch",
+        "value": "monitor",
+        "note": "Track latest revenue and business drivers."
+      },
+      {
+        "label": "Balance sheet",
+        "status": "watch",
+        "value": "monitor",
+        "note": "Track cash, debt and liquidity."
+      },
+      {
+        "label": "Thesis freshness",
+        "status": "watch",
+        "value": "baseline needed",
+        "note": "Needs structured written thesis baseline."
+      }
+    ],
+    "watch_items": [
+      {
+        "item": "Content ROI",
+        "severity": "high",
+        "why": "Large content spend must keep producing engagement and pricing power."
+      },
+      {
+        "item": "Advertising execution",
+        "severity": "medium",
+        "why": "Ad tier may take time to scale and could be less profitable than expected."
+      },
+      {
+        "item": "Competition / industry structure",
+        "severity": "medium",
+        "why": "Streaming competition and media consolidation can pressure growth and content economics."
+      }
+    ]
+  },
+  "signal_cards": [
+    {
+      "label": "Revenue",
+      "value": 12249757000,
+      "format": "money",
+      "direction": "positive",
+      "note": "Latest reported period"
+    },
+    {
+      "label": "Operating margin",
+      "value": 0.3230265710576953,
+      "format": "percent",
+      "direction": "positive",
+      "note": "Profitability anchor"
+    },
+    {
+      "label": "Net margin",
+      "value": 0.4312567996246783,
+      "format": "percent",
+      "direction": "watch",
+      "note": "Earnings conversion"
+    },
+    {
+      "label": "Net debt / revenue",
+      "value": 0.08992496749119186,
+      "format": "percent",
+      "direction": "watch",
+      "note": "Capital structure pressure"
+    },
+    {
+      "label": "SBC / revenue",
+      "value": 0.011461860018937519,
+      "format": "percent",
+      "direction": "neutral",
+      "note": "Dilution intensity"
+    },
+    {
+      "label": "Fair value ref.",
+      "value": null,
+      "format": "number",
+      "direction": "neutral",
+      "note": "Model-derived if available"
+    }
+  ],
+  "quality_flags": [
+    {
+      "flag": "qualitative_thesis_baseline_missing",
+      "severity": "medium",
+      "explanation": "NFLX needs a written thesis baseline equivalent to UBER."
+    },
+    {
+      "flag": "stocktitan_secondary_input_only",
+      "severity": "medium",
+      "explanation": "Material items require verification against primary sources."
+    }
+  ],
+  "thesis_change_monitor": {
+    "status": "baseline_needed",
+    "last_event": "StockTitan financial/news snapshot",
+    "materiality": "medium",
+    "changed_view": "No accepted written thesis baseline yet; use dashboard as maintenance cockpit until baseline is written.",
+    "impact_by_area": [
+      {
+        "area": "Core thesis",
+        "impact": "open",
+        "note": "Needs baseline."
+      },
+      {
+        "area": "Financial quality",
+        "impact": "good",
+        "note": "See health signals."
+      },
+      {
+        "area": "External news",
+        "impact": "watch",
+        "note": "StockTitan items queued for review."
+      },
+      {
+        "area": "Valuation",
+        "impact": "open",
+        "note": "Needs model/range validation."
+      }
+    ]
+  },
+  "maintenance_queue": [
+    {
+      "priority": "high",
+      "task": "Create NFLX thesis baseline",
+      "owner": "thesis analyst",
+      "trigger": "dashboard extension",
+      "output": "written qualitative thesis v0"
+    },
+    {
+      "priority": "medium",
+      "task": "Validate StockTitan high-relevance news",
+      "owner": "research analyst",
+      "trigger": "StockTitan radar",
+      "output": "evidence log + thesis impact classification"
+    },
+    {
+      "priority": "medium",
+      "task": "Populate valuation reference",
+      "owner": "user + Charlie",
+      "trigger": "model/valuation work",
+      "output": "dashboard-safe valuation range"
+    }
+  ],
+  "source_freshness": {
+    "latest_thesis_memo": null,
+    "latest_excel_model": null,
+    "latest_filing_or_results_reviewed": "StockTitan + latest dashboard state, 2026-05-13",
+    "freshness_status": "baseline_needed",
+    "next_refresh_trigger": "earnings, material filing/news, or user thesis/model upload"
+  },
+  "key_documents": [
+    {
+      "label": "Latest 10-K",
+      "type": "SEC filing",
+      "date": "live",
+      "href": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001065280&type=10-K&owner=exclude&count=10",
+      "note": "SEC 10-K listing"
+    },
+    {
+      "label": "Latest 10-Q",
+      "type": "SEC filing",
+      "date": "live",
+      "href": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001065280&type=10-Q&owner=exclude&count=10",
+      "note": "SEC 10-Q listing"
+    },
+    {
+      "label": "StockTitan Financials",
+      "type": "External dashboard",
+      "date": "live",
+      "href": "https://www.stocktitan.net/financials/NFLX/",
+      "note": "Free external financials/health display"
+    },
+    {
+      "label": "StockTitan News",
+      "type": "External news feed",
+      "date": "live",
+      "href": "https://www.stocktitan.net/news/NFLX/",
+      "note": "Useful source for monitoring company news"
+    }
+  ],
+  "external_inputs": {
+    "stocktitan": {
+      "financials_url": "https://www.stocktitan.net/financials/NFLX/",
+      "news_url": "https://www.stocktitan.net/news/NFLX/",
+      "readability": "good_for_text_extraction",
+      "recommended_use": "secondary_input_and_dashboard_link",
+      "guardrail": "Verify material claims against primary sources before accepted thesis changes."
+    }
+  },
+  "stocktitan_news_snapshot": [
+    {
+      "date": "2026-04-16",
+      "headline": "Netflix to announce Q1 2026 results",
+      "thesis_relevance": "high",
+      "category": "earnings"
+    },
+    {
+      "date": "2026-02-26",
+      "headline": "Netflix declines to raise WBD offer vs Paramount Skydance",
+      "thesis_relevance": "high",
+      "category": "M&A / strategic discipline"
+    },
+    {
+      "date": "2026-03-04",
+      "headline": "CFO at Morgan Stanley TMT conference",
+      "thesis_relevance": "medium",
+      "category": "IR / conference"
+    },
+    {
+      "date": "2026-02-24",
+      "headline": "WBD/Paramount superior proposal process",
+      "thesis_relevance": "medium",
+      "category": "M&A / industry structure"
+    }
+  ],
+  "guardrails": {
+    "facts_require_source_and_date": true,
+    "stocktitan_is_secondary_input": true,
+    "material_changes_require_primary_source_verification": true
+  }
+}

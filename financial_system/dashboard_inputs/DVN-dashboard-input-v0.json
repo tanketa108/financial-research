@@ -1,0 +1,632 @@
+{
+  "schema_version": "dashboard-input-v0",
+  "ticker": "DVN",
+  "company_name": "Devon Energy Corporation",
+  "page_intent": "company_snapshot_not_full_thesis",
+  "last_updated": "2026-05-13",
+  "thesis": {
+    "one_line": "Devon Energy is a U.S. oil & gas cash-return thesis where maintenance should focus on commodity sensitivity, FCF durability, balance sheet, dividends/buybacks and Coterra merger execution.",
+    "current_thesis": "The snapshot is more event-driven than software/platform names: merger integration, capital returns, production/capex discipline and commodity cycle drive the thesis monitor.",
+    "stance": "covered / event-driven review",
+    "committee_view": "Financial profile is more cyclical and lower-health than MSFT/NFLX; the dashboard should act as a monitoring cockpit for cash generation, leverage, liquidity and merger execution."
+  },
+  "maintenance": {
+    "status": "baseline_needed",
+    "next_action": "Create DVN written thesis baseline and validate StockTitan-triggered watch items against primary sources.",
+    "latest_updates": [
+      {
+        "date": "2026-05-13",
+        "type": "dashboard_extension",
+        "summary": "DVN snapshot generated from generic portfolio methodology."
+      }
+    ]
+  },
+  "qualitative": {
+    "drivers": [
+      {
+        "title": "Free cash flow and capital returns",
+        "summary": "FCF supports dividends and repurchases when commodity conditions cooperate."
+      },
+      {
+        "title": "Coterra merger scale/synergies",
+        "summary": "Combined company targets synergies and broader asset base."
+      },
+      {
+        "title": "Capital discipline",
+        "summary": "Capex and production discipline are central to shareholder returns."
+      }
+    ],
+    "risks": [
+      {
+        "title": "Commodity price sensitivity",
+        "summary": "Oil/gas price declines can quickly pressure earnings and FCF."
+      },
+      {
+        "title": "Liquidity / working capital",
+        "summary": "StockTitan flags tight current ratio despite solid cash generation."
+      },
+      {
+        "title": "Merger execution",
+        "summary": "Coterra integration and promised synergies must be delivered."
+      }
+    ],
+    "catalysts": [
+      {
+        "title": "Coterra synergy guidance",
+        "summary": "Combined company guidance and synergy execution."
+      },
+      {
+        "title": "Capital return update",
+        "summary": "$8B repurchase authorization and higher fixed dividend."
+      },
+      {
+        "title": "Commodity price support",
+        "summary": "Oil/gas price strength improves FCF and balance sheet flexibility."
+      }
+    ],
+    "assumptions": [
+      {
+        "statement": "What combined-company FCF profile is realistic post Coterra?",
+        "status": "open"
+      },
+      {
+        "statement": "How much of capital return is sustainable through the cycle?",
+        "status": "open"
+      },
+      {
+        "statement": "What debt/liquidity guardrails matter most for DVN?",
+        "status": "open"
+      }
+    ],
+    "open_questions": [
+      {
+        "question": "What combined-company FCF profile is realistic post Coterra?",
+        "status": "open"
+      },
+      {
+        "question": "How much of capital return is sustainable through the cycle?",
+        "status": "open"
+      },
+      {
+        "question": "What debt/liquidity guardrails matter most for DVN?",
+        "status": "open"
+      }
+    ]
+  },
+  "valuation": {
+    "status": "bootstrapped_from_model",
+    "central_reference": 59.81180136230986,
+    "range": [
+      59.81180136230986,
+      59.81180136230986
+    ],
+    "user_excel_model": null,
+    "note": "No user Excel model registered for DVN yet; valuation fields remain preliminary."
+  },
+  "key_metrics": {
+    "revenue": 4251000000,
+    "operating_income": 326000000,
+    "net_income": 687000000,
+    "diluted_eps": 1.09,
+    "cash": 1229000000,
+    "debt": 7393000000,
+    "operating_margin": 0.07668783815572806,
+    "net_margin": 0.1616090331686662,
+    "ccc": 182.71465537520584,
+    "share_count": 622000000,
+    "sbc": 99000000
+  },
+  "charts": {
+    "financial_trends": [
+      {
+        "label": "Revenue",
+        "points": [
+          {
+            "label": "CY2024Q1",
+            "date": "2024-03-31",
+            "value": 3741000000
+          },
+          {
+            "label": "CY2024Q2",
+            "date": "2024-06-30",
+            "value": 3894000000
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 3797000000
+          },
+          {
+            "label": "CY2024",
+            "date": "2024-12-31",
+            "value": 15919000000
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 4550000000
+          },
+          {
+            "label": "CY2025Q2",
+            "date": "2025-06-30",
+            "value": 4048000000
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 4251000000
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-12-31",
+            "value": 16786000000
+          }
+        ]
+      },
+      {
+        "label": "Operating income",
+        "points": [
+          {
+            "label": "CY2015",
+            "date": "2015-12-31",
+            "value": -20727000000
+          },
+          {
+            "label": "CY2016Q1",
+            "date": "2016-03-31",
+            "value": -3500000000
+          },
+          {
+            "label": "CY2016Q2",
+            "date": "2016-06-30",
+            "value": -1497000000
+          },
+          {
+            "label": "CY2016Q3",
+            "date": "2016-09-30",
+            "value": 1465000000
+          },
+          {
+            "label": "CY2016",
+            "date": "2016-12-31",
+            "value": -2895000000
+          },
+          {
+            "label": "CY2017Q1",
+            "date": "2017-03-31",
+            "value": 706000000
+          },
+          {
+            "label": "CY2017Q2",
+            "date": "2017-06-30",
+            "value": 542000000
+          },
+          {
+            "label": "CY2017Q3",
+            "date": "2017-09-30",
+            "value": 326000000
+          }
+        ]
+      },
+      {
+        "label": "Net income",
+        "points": [
+          {
+            "label": "CY2024Q1",
+            "date": "2024-03-31",
+            "value": 596000000
+          },
+          {
+            "label": "CY2024Q2",
+            "date": "2024-06-30",
+            "value": 844000000
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 812000000
+          },
+          {
+            "label": "2025 FY",
+            "date": "2024-12-31",
+            "value": 2891000000
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 494000000
+          },
+          {
+            "label": "CY2025Q2",
+            "date": "2025-06-30",
+            "value": 899000000
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 687000000
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-12-31",
+            "value": 2642000000
+          }
+        ]
+      }
+    ],
+    "balance_sheet": [
+      {
+        "label": "Cash",
+        "points": [
+          {
+            "label": "CY2024Q1I",
+            "date": "2024-03-31",
+            "value": 1126000000
+          },
+          {
+            "label": "CY2024Q2I",
+            "date": "2024-06-30",
+            "value": 1140000000
+          },
+          {
+            "label": "CY2024Q3I",
+            "date": "2024-09-30",
+            "value": 645000000
+          },
+          {
+            "label": "CY2024Q4I",
+            "date": "2024-12-31",
+            "value": 811000000
+          },
+          {
+            "label": "CY2025Q1I",
+            "date": "2025-03-31",
+            "value": 1198000000
+          },
+          {
+            "label": "CY2025Q2I",
+            "date": "2025-06-30",
+            "value": 1713000000
+          },
+          {
+            "label": "CY2025Q3I",
+            "date": "2025-09-30",
+            "value": 1229000000
+          },
+          {
+            "label": "CY2025Q4I",
+            "date": "2025-12-31",
+            "value": 1384000000
+          }
+        ]
+      },
+      {
+        "label": "Debt",
+        "points": [
+          {
+            "label": "CY2024Q1I",
+            "date": "2024-03-31",
+            "value": 5668000000
+          },
+          {
+            "label": "CY2024Q2I",
+            "date": "2024-06-30",
+            "value": 5665000000
+          },
+          {
+            "label": "CY2024Q3I",
+            "date": "2024-09-30",
+            "value": 8884000000
+          },
+          {
+            "label": "CY2024Q4I",
+            "date": "2024-12-31",
+            "value": 8398000000
+          },
+          {
+            "label": "CY2025Q1I",
+            "date": "2025-03-31",
+            "value": 8395000000
+          },
+          {
+            "label": "CY2025Q2I",
+            "date": "2025-06-30",
+            "value": 8393000000
+          },
+          {
+            "label": "CY2025Q3I",
+            "date": "2025-09-30",
+            "value": 7393000000
+          },
+          {
+            "label": "CY2025Q4I",
+            "date": "2025-12-31",
+            "value": 7391000000
+          }
+        ]
+      }
+    ],
+    "margins": [
+      {
+        "label": "Operating margin",
+        "points": []
+      },
+      {
+        "label": "Net margin",
+        "points": [
+          {
+            "label": "CY2024Q1",
+            "date": "2024-03-31",
+            "value": 0.15931569099171344
+          },
+          {
+            "label": "CY2024Q2",
+            "date": "2024-06-30",
+            "value": 0.216743708269132
+          },
+          {
+            "label": "CY2024Q3",
+            "date": "2024-09-30",
+            "value": 0.2138530418751646
+          },
+          {
+            "label": "2025 FY",
+            "date": "2024-12-31",
+            "value": 0.1816068848545763
+          },
+          {
+            "label": "CY2025Q1",
+            "date": "2025-03-31",
+            "value": 0.10857142857142857
+          },
+          {
+            "label": "CY2025Q2",
+            "date": "2025-06-30",
+            "value": 0.22208498023715414
+          },
+          {
+            "label": "CY2025Q3",
+            "date": "2025-09-30",
+            "value": 0.1616090331686662
+          },
+          {
+            "label": "CY2025",
+            "date": "2025-12-31",
+            "value": 0.15739306564994637
+          }
+        ]
+      }
+    ]
+  },
+  "health": {
+    "overall_status": "watch",
+    "summary": "StockTitan reports FY2025 health 46/100, revenue +7.8%, FCF $3.1B, low D/E but tight liquidity/current ratio.",
+    "scorecards": [
+      {
+        "label": "Profitability",
+        "status": "watch",
+        "value": "monitor",
+        "note": "See margin/earnings trend."
+      },
+      {
+        "label": "Growth",
+        "status": "watch",
+        "value": "monitor",
+        "note": "Track latest revenue and business drivers."
+      },
+      {
+        "label": "Balance sheet",
+        "status": "watch",
+        "value": "monitor",
+        "note": "Track cash, debt and liquidity."
+      },
+      {
+        "label": "Thesis freshness",
+        "status": "watch",
+        "value": "baseline needed",
+        "note": "Needs structured written thesis baseline."
+      }
+    ],
+    "watch_items": [
+      {
+        "item": "Commodity price sensitivity",
+        "severity": "high",
+        "why": "Oil/gas price declines can quickly pressure earnings and FCF."
+      },
+      {
+        "item": "Liquidity / working capital",
+        "severity": "medium",
+        "why": "StockTitan flags tight current ratio despite solid cash generation."
+      },
+      {
+        "item": "Merger execution",
+        "severity": "medium",
+        "why": "Coterra integration and promised synergies must be delivered."
+      }
+    ]
+  },
+  "signal_cards": [
+    {
+      "label": "Revenue",
+      "value": 4251000000,
+      "format": "money",
+      "direction": "positive",
+      "note": "Latest reported period"
+    },
+    {
+      "label": "Operating margin",
+      "value": 0.07668783815572806,
+      "format": "percent",
+      "direction": "positive",
+      "note": "Profitability anchor"
+    },
+    {
+      "label": "Net margin",
+      "value": 0.1616090331686662,
+      "format": "percent",
+      "direction": "watch",
+      "note": "Earnings conversion"
+    },
+    {
+      "label": "Net debt / revenue",
+      "value": 1.4500117619383674,
+      "format": "percent",
+      "direction": "watch",
+      "note": "Capital structure pressure"
+    },
+    {
+      "label": "SBC / revenue",
+      "value": 0.02328863796753705,
+      "format": "percent",
+      "direction": "neutral",
+      "note": "Dilution intensity"
+    },
+    {
+      "label": "Fair value ref.",
+      "value": 59.81180136230986,
+      "format": "number",
+      "direction": "neutral",
+      "note": "Model-derived if available"
+    }
+  ],
+  "quality_flags": [
+    {
+      "flag": "qualitative_thesis_baseline_missing",
+      "severity": "medium",
+      "explanation": "DVN needs a written thesis baseline equivalent to UBER."
+    },
+    {
+      "flag": "stocktitan_secondary_input_only",
+      "severity": "medium",
+      "explanation": "Material items require verification against primary sources."
+    }
+  ],
+  "thesis_change_monitor": {
+    "status": "baseline_needed",
+    "last_event": "StockTitan financial/news snapshot",
+    "materiality": "medium",
+    "changed_view": "No accepted written thesis baseline yet; use dashboard as maintenance cockpit until baseline is written.",
+    "impact_by_area": [
+      {
+        "area": "Core thesis",
+        "impact": "open",
+        "note": "Needs baseline."
+      },
+      {
+        "area": "Financial quality",
+        "impact": "watch",
+        "note": "See health signals."
+      },
+      {
+        "area": "External news",
+        "impact": "watch",
+        "note": "StockTitan items queued for review."
+      },
+      {
+        "area": "Valuation",
+        "impact": "open",
+        "note": "Needs model/range validation."
+      }
+    ]
+  },
+  "maintenance_queue": [
+    {
+      "priority": "high",
+      "task": "Create DVN thesis baseline",
+      "owner": "thesis analyst",
+      "trigger": "dashboard extension",
+      "output": "written qualitative thesis v0"
+    },
+    {
+      "priority": "medium",
+      "task": "Validate StockTitan high-relevance news",
+      "owner": "research analyst",
+      "trigger": "StockTitan radar",
+      "output": "evidence log + thesis impact classification"
+    },
+    {
+      "priority": "medium",
+      "task": "Populate valuation reference",
+      "owner": "user + Charlie",
+      "trigger": "model/valuation work",
+      "output": "dashboard-safe valuation range"
+    }
+  ],
+  "source_freshness": {
+    "latest_thesis_memo": null,
+    "latest_excel_model": null,
+    "latest_filing_or_results_reviewed": "StockTitan + latest dashboard state, 2026-05-13",
+    "freshness_status": "baseline_needed",
+    "next_refresh_trigger": "earnings, material filing/news, or user thesis/model upload"
+  },
+  "key_documents": [
+    {
+      "label": "Latest 10-K",
+      "type": "SEC filing",
+      "date": "live",
+      "href": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001090012&type=10-K&owner=exclude&count=10",
+      "note": "SEC 10-K listing"
+    },
+    {
+      "label": "Latest 10-Q",
+      "type": "SEC filing",
+      "date": "live",
+      "href": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001090012&type=10-Q&owner=exclude&count=10",
+      "note": "SEC 10-Q listing"
+    },
+    {
+      "label": "StockTitan Financials",
+      "type": "External dashboard",
+      "date": "live",
+      "href": "https://www.stocktitan.net/financials/DVN/",
+      "note": "Free external financials/health display"
+    },
+    {
+      "label": "StockTitan News",
+      "type": "External news feed",
+      "date": "live",
+      "href": "https://www.stocktitan.net/news/DVN/",
+      "note": "Useful source for monitoring company news"
+    }
+  ],
+  "external_inputs": {
+    "stocktitan": {
+      "financials_url": "https://www.stocktitan.net/financials/DVN/",
+      "news_url": "https://www.stocktitan.net/news/DVN/",
+      "readability": "good_for_text_extraction",
+      "recommended_use": "secondary_input_and_dashboard_link",
+      "guardrail": "Verify material claims against primary sources before accepted thesis changes."
+    }
+  },
+  "stocktitan_news_snapshot": [
+    {
+      "date": "2026-05-07",
+      "headline": "Devon completes Coterra merger and announces $8B buyback authorization",
+      "thesis_relevance": "high",
+      "category": "M&A / capital return"
+    },
+    {
+      "date": "2026-05-05",
+      "headline": "Devon reports Q1 2026 results and Q2 outlook",
+      "thesis_relevance": "high",
+      "category": "earnings"
+    },
+    {
+      "date": "2026-05-07",
+      "headline": "Coterra merger completed; ~54/46 ownership split",
+      "thesis_relevance": "high",
+      "category": "M&A"
+    },
+    {
+      "date": "2026-04",
+      "headline": "Kimmeridge urges capital discipline and compensation reset",
+      "thesis_relevance": "medium",
+      "category": "governance"
+    }
+  ],
+  "guardrails": {
+    "facts_require_source_and_date": true,
+    "stocktitan_is_secondary_input": true,
+    "material_changes_require_primary_source_verification": true
+  }
+}
