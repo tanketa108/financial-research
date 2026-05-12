@@ -132,6 +132,7 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
     maintenance_queue = data.get('maintenance_queue') or []
     source_freshness = data.get('source_freshness') or {}
     key_documents = data.get('key_documents') or []
+    stocktitan_news = data.get('stocktitan_news_snapshot') or []
 
     drivers = qualitative.get('drivers') or []
     risks = qualitative.get('risks') or []
@@ -229,6 +230,14 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
   {mini_chart('Cash', (charts.get('balance_sheet') or [{}])[0], 'amber')}
   {mini_chart('Debt', (charts.get('balance_sheet') or [{}, {}])[1] if len(charts.get('balance_sheet') or []) > 1 else {}, 'red')}
   {mini_chart('Operating margin', (charts.get('margins') or [{}])[0], 'blue', percent=True)}
+</div>
+
+<div class="card section stocktitan-news-card">
+  <div class="muted small">External input · StockTitan</div>
+  <h2>Recent news monitor</h2>
+  <div class="stocktitan-news-grid">
+    {''.join(f'<div class="news-item"><strong>{esc(x.get("headline"))}</strong><span>{esc(x.get("category"))} · relevance {esc(x.get("thesis_relevance"))}</span></div>' for x in stocktitan_news[:6])}
+  </div>
 </div>
 
 <div class="snapshot-grid section">

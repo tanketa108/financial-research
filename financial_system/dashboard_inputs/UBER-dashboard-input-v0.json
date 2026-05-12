@@ -645,6 +645,67 @@
       "date": "uploaded 2026-05-12",
       "href": "../assets/UBER/Model_UBER_v3_3.xlsx",
       "note": "User-owned quantitative model"
+    },
+    {
+      "label": "StockTitan Financials",
+      "type": "External dashboard",
+      "date": "live",
+      "href": "https://www.stocktitan.net/financials/UBER/",
+      "note": "Free external financials/health display"
+    },
+    {
+      "label": "StockTitan News",
+      "type": "External news feed",
+      "date": "live",
+      "href": "https://www.stocktitan.net/news/UBER/",
+      "note": "Useful source for monitoring company news"
+    }
+  ],
+  "external_inputs": {
+    "stocktitan": {
+      "financials_url": "https://www.stocktitan.net/financials/UBER/",
+      "news_url": "https://www.stocktitan.net/news/UBER/",
+      "readability": "good_for_text_extraction",
+      "recommended_use": "secondary_input_and_dashboard_link",
+      "guardrail": "Do not treat StockTitan derived summaries as primary source for final figures; verify material claims against SEC filings, company IR, press releases, or uploaded user materials."
+    }
+  },
+  "stocktitan_news_snapshot": [
+    {
+      "date": "2026-05",
+      "headline": "Uber CFO to participate in Bernstein Strategic Decisions Conference",
+      "thesis_relevance": "low",
+      "category": "IR / conference"
+    },
+    {
+      "date": "2026-05-07",
+      "headline": "Uber and Ulta Beauty add 1,500+ stores to Uber Eats marketplace",
+      "thesis_relevance": "medium",
+      "category": "Delivery / retail expansion"
+    },
+    {
+      "date": "2026-05-06",
+      "headline": "Uber reports Q1 2026 results",
+      "thesis_relevance": "high",
+      "category": "earnings"
+    },
+    {
+      "date": "2026-04",
+      "headline": "Hertz/Oro Mobility partnerships with Uber for autonomous robotaxi and fleet services",
+      "thesis_relevance": "medium",
+      "category": "AV / partnership"
+    },
+    {
+      "date": "2026-04-29",
+      "headline": "Uber GO-GET event: travel, hotel bookings, Shop for Me, Voice Bookings, One Search",
+      "thesis_relevance": "medium",
+      "category": "product / ecosystem"
+    },
+    {
+      "date": "2026-04",
+      "headline": "Uber liable in passenger assault bellwether case",
+      "thesis_relevance": "medium",
+      "category": "legal / risk"
     }
   ]
 }
