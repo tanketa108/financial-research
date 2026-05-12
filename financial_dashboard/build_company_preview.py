@@ -25,10 +25,9 @@ def money(value):
         v = float(value)
     except Exception:
         return esc(value)
-    abs_v = abs(v)
-    if abs_v >= 1_000_000_000:
+    if abs(v) >= 1_000_000_000:
         return f'${v/1_000_000_000:.1f}B'
-    if abs_v >= 1_000_000:
+    if abs(v) >= 1_000_000:
         return f'${v/1_000_000:.1f}M'
     return f'${v:,.0f}'
 
@@ -48,16 +47,35 @@ def pill(value, kind=None):
     return f'<span class="pill pill-{esc(cls)}">{esc(text)}</span>'
 
 
-def card_list(title, items, field='title', sub='summary', empty='[none]'):
+def first(items, n=3):
+    return (items or [])[:n]
+
+
+def item_title(item, fallback='[missing]'):
+    if isinstance(item, dict):
+        return item.get('title') or item.get('question') or item.get('statement') or item.get('summary') or item.get('id') or fallback
+    return item or fallback
+
+
+def bullets(items, n=3, field=None):
     rows = []
-    for item in items or []:
-        if isinstance(item, dict):
-            main = item.get(field) or item.get('question') or item.get('statement') or item.get('summary') or item.get('id')
-            detail = item.get(sub) if sub else None
-            rows.append(f'<li><strong>{esc(main)}</strong>{f": {esc(detail)}" if detail and detail != main else ""}</li>')
-        else:
-            rows.append(f'<li>{esc(item)}</li>')
-    return f'<div class="card cockpit-card"><h2>{esc(title)}</h2><ul class="list small">{"".join(rows) or f"<li>{esc(empty)}</li>"}</ul></div>'
+    for item in first(items, n):
+        text = item.get(field) if field and isinstance(item, dict) else item_title(item)
+        rows.append(f'<li>{esc(text)}</li>')
+    return ''.join(rows) or '<li>[none]</li>'
+
+
+def horizontal_bar(label, value, max_value, display, tone='blue'):
+    try:
+        width = max(3, min(100, abs(float(value)) / max_value * 100)) if max_value else 0
+    except Exception:
+        width = 0
+    return f'''
+<div class="snapshot-bar-row">
+  <div class="snapshot-bar-label">{esc(label)}</div>
+  <div class="snapshot-bar-track"><div class="snapshot-bar-fill tone-{esc(tone)}" style="width:{width:.1f}%"></div></div>
+  <div class="snapshot-bar-value">{esc(display)}</div>
+</div>'''
 
 
 def render(data: dict, css_rel: str = CSS_REL) -> str:
@@ -68,7 +86,6 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
     qualitative = data.get('qualitative') or {}
     valuation = data.get('valuation') or {}
     metrics = data.get('key_metrics') or {}
-    guardrails = data.get('guardrails') or {}
 
     drivers = qualitative.get('drivers') or []
     risks = qualitative.get('risks') or []
@@ -76,68 +93,100 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
     assumptions = qualitative.get('assumptions') or []
     questions = qualitative.get('open_questions') or []
     updates = maintenance.get('latest_updates') or []
-    sources = maintenance.get('sources') or []
+
+    revenue = metrics.get('revenue')
+    op_income = metrics.get('operating_income')
+    net_income = metrics.get('net_income')
+    cash = metrics.get('cash')
+    debt = metrics.get('debt')
+    op_margin = metrics.get('operating_margin')
+    net_margin = metrics.get('net_margin')
+    fcf = metrics.get('free_cash_flow')
+    max_fin = max([abs(float(x or 0)) for x in [revenue, op_income, net_income, cash, debt, fcf]] + [1])
 
     body = f'''
-<div class="topbar workspace-header cockpit-topbar">
+<div class="topbar workspace-header snapshot-topbar">
   <div>
-    <div class="muted small">Company Thesis Cockpit v0 · generic template preview</div>
+    <div class="muted small">Company Snapshot · generic dashboard template v0</div>
     <h1>{esc(ticker)} <span class="muted">{esc(name)}</span></h1>
-    <div class="small muted">This preview is generated from dashboard input state, not hand-coded for one company.</div>
   </div>
   <div><a href="../index.html">← Portfolio</a></div>
 </div>
 
-<div class="status-rail section cockpit-status-rail">
-  <div class="status-card"><div class="muted small">Thesis status</div><div>{pill(thesis.get('stance'))}</div></div>
-  <div class="status-card"><div class="muted small">Maintenance</div><div>{pill(maintenance.get('status'))}</div></div>
-  <div class="status-card"><div class="muted small">Valuation</div><div>{pill(valuation.get('status'))}</div></div>
-  <div class="status-card"><div class="muted small">Last updated</div><div class="small mono">{esc(data.get('last_updated'))}</div></div>
-  <div class="status-card"><div class="muted small">Template</div><div>{pill('generic')}</div></div>
+<div class="snapshot-layout section">
+  <section class="card snapshot-hero">
+    <div class="snapshot-label">Investment snapshot</div>
+    <h2>{esc(thesis.get('one_line'))}</h2>
+    <div class="snapshot-status-row">
+      {pill(thesis.get('stance'))}
+      {pill(maintenance.get('status'))}
+      {pill(valuation.get('status'))}
+    </div>
+    <div class="snapshot-mini-note">Last update: {esc(data.get('last_updated'))}</div>
+  </section>
+
+  <section class="snapshot-score-grid">
+    <div class="card snapshot-score"><div class="muted small">Revenue</div><div class="kpi">{money(revenue)}</div></div>
+    <div class="card snapshot-score"><div class="muted small">Op. margin</div><div class="kpi">{pct(op_margin)}</div></div>
+    <div class="card snapshot-score"><div class="muted small">Fair value</div><div class="kpi">{esc(valuation.get('central_reference'))}</div></div>
+    <div class="card snapshot-score"><div class="muted small">Open questions</div><div class="kpi">{len(questions)}</div></div>
+  </section>
 </div>
 
-<div class="card section cockpit-hero">
-  <div class="muted small">Thesis snapshot</div>
-  <h2>{esc(thesis.get('one_line'))}</h2>
-  <p>{esc(thesis.get('current_thesis'))}</p>
-  <div class="cockpit-committee-view"><strong>Committee view:</strong> {esc(thesis.get('committee_view'))}</div>
+<div class="snapshot-grid section">
+  <section class="card snapshot-panel snapshot-panel-wide">
+    <h2>Financial snapshot</h2>
+    <div class="snapshot-bars">
+      {horizontal_bar('Revenue', revenue, max_fin, money(revenue), 'blue')}
+      {horizontal_bar('Operating income', op_income, max_fin, money(op_income), 'green')}
+      {horizontal_bar('Net income', net_income, max_fin, money(net_income), 'green')}
+      {horizontal_bar('Cash', cash, max_fin, money(cash), 'amber')}
+      {horizontal_bar('Debt', debt, max_fin, money(debt), 'red')}
+    </div>
+  </section>
+
+  <section class="card snapshot-panel">
+    <h2>Thesis health</h2>
+    <div class="snapshot-health-list">
+      <div><span>Drivers</span><strong>{len(drivers)}</strong></div>
+      <div><span>Risks</span><strong>{len(risks)}</strong></div>
+      <div><span>Catalysts</span><strong>{len(catalysts)}</strong></div>
+      <div><span>Assumptions</span><strong>{len(assumptions)}</strong></div>
+    </div>
+  </section>
 </div>
 
-<div class="grid section cockpit-kpi-grid">
-  <div class="card"><div class="muted small">Revenue</div><div class="kpi">{money(metrics.get('revenue'))}</div></div>
-  <div class="card"><div class="muted small">Operating income</div><div class="kpi">{money(metrics.get('operating_income'))}</div></div>
-  <div class="card"><div class="muted small">Operating margin</div><div class="kpi">{pct(metrics.get('operating_margin'))}</div></div>
-  <div class="card"><div class="muted small">Central valuation</div><div class="kpi">{esc(valuation.get('central_reference'))}</div><div class="small muted">Range: {esc(valuation.get('range'))}</div></div>
+<div class="snapshot-grid section">
+  <section class="card snapshot-panel">
+    <h2>Top drivers</h2>
+    <ul class="list small">{bullets(drivers, 3)}</ul>
+  </section>
+  <section class="card snapshot-panel">
+    <h2>Main risks</h2>
+    <ul class="list small">{bullets(risks, 3)}</ul>
+  </section>
+  <section class="card snapshot-panel">
+    <h2>Catalysts</h2>
+    <ul class="list small">{bullets(catalysts, 3)}</ul>
+  </section>
 </div>
 
-<div class="workspace-grid section cockpit-main-grid">
-  <div class="card panel panel-overview cockpit-panel-large">
-    <h2>Maintenance / what changed</h2>
-    <p class="small"><strong>Next action:</strong> {esc(maintenance.get('next_action'))}</p>
-    <ul class="list small">{''.join(f'<li><strong>{esc(x.get("date") if isinstance(x, dict) else "")}</strong> {esc(x.get("summary") if isinstance(x, dict) else x)}</li>' for x in updates) or '<li>[none]</li>'}</ul>
-  </div>
-  <div class="card panel panel-actions cockpit-panel-side">
-    <h2>Model / valuation source</h2>
-    <ul class="list small">
-      <li>Status: {esc(valuation.get('status'))}</li>
-      <li>Excel/model: {esc(valuation.get('user_excel_model'))}</li>
-      <li>{esc(valuation.get('note'))}</li>
-    </ul>
-  </div>
+<div class="snapshot-grid section">
+  <section class="card snapshot-panel snapshot-panel-wide">
+    <h2>Maintenance monitor</h2>
+    <div class="snapshot-maintenance">
+      <div><div class="muted small">What changed / latest update</div><strong>{esc(item_title(first(updates, 1)[0]) if updates else '[none]')}</strong></div>
+      <div><div class="muted small">Next action</div><strong>{esc(maintenance.get('next_action'))}</strong></div>
+    </div>
+  </section>
+  <section class="card snapshot-panel">
+    <h2>Open questions</h2>
+    <ul class="list small">{bullets(questions, 3)}</ul>
+  </section>
 </div>
 
-<div class="grid section cockpit-card-grid">
-  {card_list('Key drivers', drivers)}
-  {card_list('Risks', risks)}
-  {card_list('Catalysts', catalysts)}
-  {card_list('Assumptions to validate', assumptions, field='statement', sub='status')}
-  {card_list('Open questions', questions, field='question', sub='status')}
-  {card_list('Sources', sources, field='title', sub='notes')}
-</div>
-
-<div class="card section cockpit-guardrails">
-  <h2>Guardrails</h2>
-  <ul class="list small">{''.join(f'<li><strong>{esc(k)}</strong>: {esc(v)}</li>' for k, v in guardrails.items()) or '<li>[none]</li>'}</ul>
+<div class="card section snapshot-footer-note">
+  <strong>Design rule:</strong> this page is a company snapshot, not the full thesis. Detailed argumentation belongs in the written thesis; detailed valuation belongs in Excel/model files. The dashboard only shows status, signals, changes, and action priorities.
 </div>
 '''
     return f'''<!doctype html>
@@ -145,7 +194,7 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(ticker)} Company Thesis Cockpit v0</title>
+  <title>{esc(ticker)} Company Snapshot</title>
   <link rel="stylesheet" href="{css_rel}">
 </head>
 <body>
@@ -158,7 +207,7 @@ def render(data: dict, css_rel: str = CSS_REL) -> str:
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Build a generic company dashboard preview from dashboard input JSON.')
+    parser = argparse.ArgumentParser(description='Build a generic company dashboard snapshot from dashboard input JSON.')
     parser.add_argument('--input', type=Path, default=DEFAULT_INPUT)
     parser.add_argument('--output', type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()

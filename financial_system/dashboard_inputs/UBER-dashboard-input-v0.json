@@ -204,12 +204,18 @@
     "net_margin": 0.492017524318705,
     "ccc": 76.26865671641791,
     "share_count": 2067905000,
-    "sbc": 1826000000
+    "sbc": 1826000000,
+    "free_cash_flow": 2300000000
   },
   "guardrails": {
     "facts_require_source_and_date": true,
     "separate_facts_inferences_opinion": true,
     "material_changes_require_diff": true,
     "agents_may_propose_but_not_directly_accept_changes": true
+  },
+  "snapshot_design": {
+    "purpose": "company_snapshot_not_full_thesis",
+    "show_detail_level": "medium_low",
+    "principle": "dashboard shows status/signals/changes/actions; thesis document and Excel hold full detail"
   }
 }
