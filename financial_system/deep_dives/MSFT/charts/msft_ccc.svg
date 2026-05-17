@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" viewBox="0 0 820 460">
+<rect width="100%" height="100%" fill="white"/>
+<text x="410.0" y="32" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">MSFT: ciclo de conversión de caja</text>
+<line x1="70" y1="370" x2="750" y2="370" stroke="#111"/><line x1="70" y1="70" x2="70" y2="370" stroke="#111"/>
+<rect x="80.6" y="185.6" width="47.8" height="184.4" fill="#2563eb"/>
+<text x="104.5" y="180.6" text-anchor="middle" font-family="Arial" font-size="11">82</text>
+<rect x="250.6" y="358.8" width="47.8" height="11.2" fill="#2563eb"/>
+<text x="274.5" y="353.8" text-anchor="middle" font-family="Arial" font-size="11">5</text>
+<rect x="420.6" y="138.4" width="47.8" height="231.6" fill="#2563eb"/>
+<text x="444.5" y="133.4" text-anchor="middle" font-family="Arial" font-size="11">103</text>
+<rect x="590.6" y="408.2" width="47.8" height="-38.2" fill="#2563eb"/>
+<text x="614.5" y="403.2" text-anchor="middle" font-family="Arial" font-size="11">-17</text>
+<rect x="133.8" y="203.6" width="47.8" height="166.4" fill="#16a34a"/>
+<text x="157.7" y="198.6" text-anchor="middle" font-family="Arial" font-size="11">74</text>
+<rect x="303.8" y="361.0" width="47.8" height="9.0" fill="#16a34a"/>
+<text x="327.7" y="356.0" text-anchor="middle" font-family="Arial" font-size="11">4</text>
+<rect x="473.8" y="109.1" width="47.8" height="260.9" fill="#16a34a"/>
+<text x="497.7" y="104.1" text-anchor="middle" font-family="Arial" font-size="11">116</text>
+<rect x="643.8" y="457.7" width="47.8" height="-87.7" fill="#16a34a"/>
+<text x="667.7" y="452.7" text-anchor="middle" font-family="Arial" font-size="11">-39</text>
+<text x="155.0" y="405" text-anchor="middle" font-family="Arial" font-size="13">DSO</text>
+<text x="325.0" y="405" text-anchor="middle" font-family="Arial" font-size="13">DIO</text>
+<text x="495.0" y="405" text-anchor="middle" font-family="Arial" font-size="13">DPO</text>
+<text x="665.0" y="405" text-anchor="middle" font-family="Arial" font-size="13">CCC</text>
+<rect x="70" y="413" width="12" height="12" fill="#2563eb"/><text x="88" y="423" font-family="Arial" font-size="13">FY2025</text>
+<rect x="240" y="413" width="12" height="12" fill="#16a34a"/><text x="258" y="423" font-family="Arial" font-size="13">9M FY26</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" viewBox="0 0 820 460">
+<rect width="100%" height="100%" fill="white"/>
+<text x="410.0" y="32" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">MSFT: beneficio, OCF, capex y FCF</text>
+<line x1="70" y1="370" x2="750" y2="370" stroke="#111"/><line x1="70" y1="70" x2="70" y2="370" stroke="#111"/>
+<rect x="83.1" y="175.0" width="58.8" height="195.0" fill="#2563eb"/>
+<text x="112.5" y="170.0" text-anchor="middle" font-family="Arial" font-size="11">101.8</text>
+<rect x="423.1" y="182.3" width="58.8" height="187.7" fill="#2563eb"/>
+<text x="452.5" y="177.3" text-anchor="middle" font-family="Arial" font-size="11">98</text>
+<rect x="148.5" y="109.1" width="58.8" height="260.9" fill="#16a34a"/>
+<text x="177.9" y="104.1" text-anchor="middle" font-family="Arial" font-size="11">136.2</text>
+<rect x="488.5" y="125.8" width="58.8" height="244.2" fill="#16a34a"/>
+<text x="517.9" y="120.8" text-anchor="middle" font-family="Arial" font-size="11">127.5</text>
+<rect x="213.8" y="246.3" width="58.8" height="123.7" fill="#dc2626"/>
+<text x="243.3" y="241.3" text-anchor="middle" font-family="Arial" font-size="11">64.6</text>
+<rect x="553.8" y="216.6" width="58.8" height="153.4" fill="#dc2626"/>
+<text x="583.3" y="211.6" text-anchor="middle" font-family="Arial" font-size="11">80.1</text>
+<rect x="279.2" y="232.9" width="58.8" height="137.1" fill="#64748b"/>
+<text x="308.7" y="227.9" text-anchor="middle" font-family="Arial" font-size="11">71.6</text>
+<rect x="619.2" y="279.4" width="58.8" height="90.6" fill="#64748b"/>
+<text x="648.7" y="274.4" text-anchor="middle" font-family="Arial" font-size="11">47.3</text>
+<text x="240.0" y="405" text-anchor="middle" font-family="Arial" font-size="13">FY2025</text>
+<text x="580.0" y="405" text-anchor="middle" font-family="Arial" font-size="13">9M FY2026</text>
+<rect x="70" y="413" width="12" height="12" fill="#2563eb"/><text x="88" y="423" font-family="Arial" font-size="13">Net income</text>
+<rect x="240" y="413" width="12" height="12" fill="#16a34a"/><text x="258" y="423" font-family="Arial" font-size="13">OCF</text>
+<rect x="410" y="413" width="12" height="12" fill="#dc2626"/><text x="428" y="423" font-family="Arial" font-size="13">Capex</text>
+<rect x="580" y="413" width="12" height="12" fill="#64748b"/><text x="598" y="423" font-family="Arial" font-size="13">FCF</text>
+</svg>
