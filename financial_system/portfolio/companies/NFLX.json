@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "0.1.0",
+  "updatedAt": "2026-05-15",
+  "ticker": "NFLX",
+  "name": "Netflix, Inc.",
+  "type": "portfolio",
+  "status": "active",
+  "priority": "high",
+  "identifiers": {
+    "cik": "0001065280",
+    "isin": null,
+    "exchange": null,
+    "country": null
+  },
+  "discord": {
+    "threadId": "1504215517001420925",
+    "threadUrl": null
+  },
+  "thesisState": {
+    "status": "research_pack_completed",
+    "owner": "user",
+    "lastReviewedAt": "2026-05-15",
+    "conviction": "unknown",
+    "summary": "NFLX Deep Dive v1.0 completed as pre-valuation pack. No new valuation workflow is active; prior workflow opening was a misunderstanding of a DVN request.",
+    "whatWouldChangeOurMind": [],
+    "portfolioManagerDecision": null
+  },
+  "businessSnapshot": {
+    "description": "Global streaming entertainment platform with subscription, advertising tier, content IP and growing margin/FCF profile.",
+    "segments": [
+      "Streaming subscriptions",
+      "Advertising tier",
+      "Content/IP/games/live initiatives"
+    ],
+    "geographies": [],
+    "competitors": [
+      "Disney",
+      "Amazon Prime Video",
+      "YouTube",
+      "Apple TV+",
+      "Warner Bros. Discovery",
+      "local streaming platforms"
+    ],
+    "cycleExposure": "Consumer discretionary subscriptions, content slate, advertising market and competitive streaming intensity."
+  },
+  "keyDrivers": [
+    "Revenue growth by subscription/pricing/ads",
+    "Advertising revenue scale and incremental margin",
+    "Content spend efficiency and content amortization",
+    "Operating margin sustainability above 30%",
+    "FCF conversion after content cash spend",
+    "Capital allocation: buybacks vs WBD/deleveraging"
+  ],
+  "keyRisks": [
+    "Paid-sharing tailwind normalizes faster than expected",
+    "Pricing elasticity/churn in mature markets",
+    "Content hit-rate or cost inflation weakens FCF",
+    "Advertising execution or cannibalization risk",
+    "WBD transaction adds debt, integration and regulatory risk",
+    "Competition from YouTube/Amazon/Disney/social video"
+  ],
+  "watchMetrics": [
+    "Revenue growth and FX-neutral growth",
+    "Operating margin",
+    "OCF and FCF",
+    "Content additions and amortization",
+    "Content liabilities/obligations",
+    "Advertising revenue",
+    "Buybacks and net debt"
+  ],
+  "openQuestions": [
+    "Build standalone and post-WBD valuation scenarios separately.",
+    "Confirm Q1 2026 net income one-offs before annualizing.",
+    "Estimate ads margin and cannibalization effects.",
+    "Normalize paid-sharing/pricing tailwinds for 2027+."
+  ],
+  "recentEvents": [
+    {
+      "date": "2026-05-13",
+      "type": "deep_dive_requested",
+      "materiality": "medium",
+      "summary": "User requested NFLX as next Deep Dive and asked to keep Netflix discussion in dedicated portfolio thread.",
+      "source": "Discord thread NFLX",
+      "taskId": "TASK-2026-05-13-003"
+    },
+    {
+      "date": "2026-05-13",
+      "type": "deep_dive_completed",
+      "materiality": "high",
+      "summary": "NFLX Deep Dive v1.0 pre-valuation pack completed with 5Y financials, content accounting, guidance/outlook, scenario matrix and valuation checklist.",
+      "source": "financial-research/financial_system/deep_dives/NFLX/NFLX-research-deep-dive-v1.0-prevaluation-report.pdf",
+      "taskId": "TASK-2026-05-13-003"
+    }
+  ],
+  "researchOutputs": [
+    {
+      "date": "2026-05-13",
+      "type": "deep_dive_prevaluation",
+      "version": "v1.0",
+      "path": "financial-research/financial_system/deep_dives/NFLX/NFLX-research-deep-dive-v1.0-prevaluation-report.pdf",
+      "summary": "Pre-valuation Deep Dive focused on streaming economics, ads, content cash spend/amortization, FCF quality, capital allocation and WBD risk."
+    }
+  ],
+  "tasks": {
+    "open": [],
+    "closed": [
+      "TASK-2026-05-13-003"
+    ]
+  },
+  "sources": [
+    "SEC EDGAR",
+    "Netflix Investor Relations"
+  ],
+  "notes": "Deep Dive v1.0 complete; next work should be valuation model scenarios, not more architecture."
+}

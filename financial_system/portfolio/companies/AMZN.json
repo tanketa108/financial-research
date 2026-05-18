@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "0.1.0",
+  "updatedAt": "2026-05-15",
+  "ticker": "AMZN",
+  "name": "Amazon.com, Inc.",
+  "type": "portfolio",
+  "status": "research_pending",
+  "priority": "high",
+  "identifiers": {
+    "cik": "0001018724",
+    "isin": null,
+    "exchange": "NASDAQ",
+    "country": "US"
+  },
+  "discord": {
+    "threadId": "1504869094808227901",
+    "threadUrl": null
+  },
+  "thesisState": {
+    "status": "preliminary_report_completed",
+    "owner": "user",
+    "lastReviewedAt": "2026-05-15",
+    "conviction": "unknown",
+    "summary": "AMZN preliminary report completed. Core issue: separate AWS/AI, advertising, and retail/logistics economics; test whether AI/cloud capex produces enough incremental return to justify lower near-term FCF conversion.",
+    "whatWouldChangeOurMind": [],
+    "portfolioManagerDecision": null
+  },
+  "businessSnapshot": {
+    "description": "Global technology and commerce platform spanning e-commerce marketplace/retail, AWS cloud, advertising, subscriptions/Prime, logistics and digital media.",
+    "segments": [
+      "North America",
+      "International",
+      "AWS",
+      "Advertising/services embedded across commerce and media"
+    ],
+    "geographies": [
+      "United States",
+      "International"
+    ],
+    "competitors": [
+      "Microsoft Azure",
+      "Google Cloud",
+      "Walmart",
+      "Meta/Google ads",
+      "Alibaba/JD/PDD",
+      "Shopify"
+    ],
+    "cycleExposure": "Consumer spending, enterprise cloud demand, advertising budgets, AI infrastructure cycle, logistics/labor costs and regulation."
+  },
+  "keyDrivers": [
+    "AWS growth and AI infrastructure ROI",
+    "Advertising growth and incremental margin",
+    "Retail/logistics efficiency",
+    "Prime engagement and marketplace take rate",
+    "Capex intensity and FCF conversion",
+    "Regulatory risk and competitive cloud pricing"
+  ],
+  "keyRisks": [
+    "AI capex fails to earn attractive returns",
+    "AWS growth/pricing pressure from Azure/GCP",
+    "Retail/logistics margin pressure",
+    "Regulatory/antitrust intervention",
+    "International profitability drag",
+    "FCF conversion weaker than EBIT due to capex/leases"
+  ],
+  "watchMetrics": [
+    "AWS revenue growth and operating margin",
+    "Advertising growth",
+    "Operating income by segment",
+    "OCF, capex and lease-adjusted FCF",
+    "Capex/revenue",
+    "SBC and share count",
+    "Cash, debt and lease obligations"
+  ],
+  "openQuestions": [
+    "How much of current capex is AI/cloud vs fulfillment/logistics?",
+    "What normalized AWS margin is realistic after AI depreciation?",
+    "What is advertising revenue/margin contribution by channel?",
+    "What consolidated FCF conversion should be normalized for valuation?",
+    "Is SOTP more useful than consolidated DCF?"
+  ],
+  "recentEvents": [
+    {
+      "date": "2026-05-15",
+      "type": "preliminary_report_requested",
+      "materiality": "high",
+      "summary": "User requested preliminary report on Amazon and dedicated AMZN workflow was opened.",
+      "source": "Discord #portfolio",
+      "taskId": "TASK-2026-05-15-003"
+    }
+  ],
+  "researchOutputs": [
+    {
+      "date": "2026-05-15",
+      "type": "preliminary_report",
+      "version": "v0",
+      "path": "financial-research/financial_system/preliminary_reports/AMZN/AMZN-preliminary-report-v0.md",
+      "summary": "Preliminary AMZN brief focused on AWS/AI economics, advertising, retail/logistics, capex intensity, FCF conversion and scenario questions."
+    }
+  ],
+  "tasks": {
+    "open": [],
+    "closed": [
+      "TASK-2026-05-15-003"
+    ]
+  },
+  "sources": [
+    "SEC EDGAR",
+    "Amazon Investor Relations"
+  ],
+  "notes": "Next recommended step: source pack / Deep Dive with segment-level financial extraction and FCF bridge."
+}

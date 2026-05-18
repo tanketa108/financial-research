@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "0.1.0",
+  "updatedAt": "2026-05-17",
+  "ticker": "NVO",
+  "name": "Novo Nordisk A/S",
+  "type": "portfolio",
+  "status": "research_active",
+  "priority": "high",
+  "identifiers": {
+    "cik": null,
+    "isin": null,
+    "exchange": "NYSE ADR / Nasdaq Copenhagen",
+    "country": "Denmark"
+  },
+  "discord": {
+    "threadId": "1505293006905937953",
+    "threadUrl": null
+  },
+  "thesisState": {
+    "status": "not_started",
+    "owner": "user",
+    "lastReviewedAt": "2026-05-17",
+    "conviction": "unknown",
+    "summary": "Novo Nordisk is in research-pending status after a growth/price reset. Initial read: the company remains a GLP-1 leader with strong obesity/diabetes assets, but 2026 guidance embeds material pricing/competition pressure and lower US realised prices.",
+    "whatWouldChangeOurMind": [
+      "Evidence that US realised price pressure is worse/better than current guidance implies.",
+      "Oral Wegovy uptake, persistence and channel mix differ materially from assumptions.",
+      "Lilly/tirzepatide competitive pressure changes Novo's volume share trajectory.",
+      "CagriSema, semaglutide 7.2 mg or other pipeline decisions materially alter long-term obesity share/margin outlook."
+    ],
+    "portfolioManagerDecision": null
+  },
+  "businessSnapshot": {
+    "description": "Global healthcare company focused on diabetes, obesity and rare disease, with core economics driven by GLP-1 therapies including Ozempic and Wegovy.",
+    "segments": [
+      "Obesity care",
+      "Diabetes care",
+      "Rare disease"
+    ],
+    "geographies": [
+      "US Operations",
+      "International Operations",
+      "EUCAN",
+      "Emerging Markets",
+      "APAC",
+      "Region China"
+    ],
+    "competitors": [
+      "Eli Lilly",
+      "other GLP-1/obesity entrants"
+    ],
+    "cycleExposure": "Healthcare/pharma; less macro-cyclical than industrials, but exposed to pricing, reimbursement, regulation, patent cycles and competitive clinical data."
+  },
+  "keyDrivers": [
+    "Global GLP-1 volume expansion in obesity and diabetes.",
+    "Wegovy and oral Wegovy uptake, access and channel mix.",
+    "Ozempic durability in diabetes despite market share pressure.",
+    "US realised prices, rebates, Medicaid/coverage and MFN effects.",
+    "Manufacturing capacity expansion and gross margin recovery.",
+    "Pipeline optionality: CagriSema, semaglutide 7.2 mg, zenagamtide/amycretin, cardiovascular/metabolic assets."
+  ],
+  "keyRisks": [
+    "2026 adjusted sales and operating profit guidance implies decline at CER due to lower realised prices and competition.",
+    "US Operations pressure from pricing, coverage changes and competition.",
+    "Global diabetes value share declined in 2025.",
+    "Gross margin pressure from Catalent-site depreciation/amortisation, restructuring and capacity expansion costs.",
+    "Patent/compound expiry impacts for semaglutide in certain International Operations markets.",
+    "Execution risk in scaling supply chain and launching oral Wegovy."
+  ],
+  "watchMetrics": [
+    "Obesity care sales growth and branded GLP-1 obesity volume share.",
+    "Wegovy prescription trends, including oral Wegovy launch metrics.",
+    "Ozempic sales growth and GLP-1 diabetes value share.",
+    "US vs International Operations sales growth.",
+    "Gross margin and operating margin bridge, including restructuring/Catalent effects.",
+    "Free cash flow after high CAPEX.",
+    "Management guidance revisions for adjusted sales/operating profit growth."
+  ],
+  "openQuestions": [
+    "What is the normalised 2027-2030 revenue/margin trajectory after 2026 pricing reset?",
+    "How much oral Wegovy is incremental vs cannibalising injectable Wegovy/GLP-1 demand?",
+    "What share and price assumptions are required for Novo to defend premium valuation vs Lilly?",
+    "How should we adjust margins for restructuring, Catalent integration and capacity ramp costs?",
+    "What is the probability-weighted value of CagriSema, semaglutide 7.2 mg and next-generation assets?"
+  ],
+  "recentEvents": [
+    {
+      "date": "2026-02-03",
+      "type": "results_outlook",
+      "summary": "Novo Nordisk reported 2025 sales of DKK 309.064bn (+6% reported, +10% CER) and operating profit of DKK 127.658bn (-1% reported, +6% CER). 2026 adjusted sales and adjusted operating profit growth guidance: -5% to -13% at CER.",
+      "sources": [
+        "Novo Nordisk Company Announcement No 4 / 2026"
+      ]
+    },
+    {
+      "date": "2025-12-22",
+      "type": "product_approval",
+      "summary": "US FDA approved once-daily oral semaglutide 25 mg for obesity under Wegovy pill; launched 5 January 2026 with around 50,000 weekly prescriptions as of 23 January, per company announcement.",
+      "sources": [
+        "Novo Nordisk Company Announcement No 4 / 2026"
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "type": "earnings_release",
+      "materiality": "high",
+      "summary": "Q1 2026 investor presentation: adjusted sales DKK 70.063bn (-4% CER) and adjusted operating profit DKK 32.858bn (-6% CER); outlook raised to adjusted sales and adjusted operating profit growth of -4% to -12% CER, driven by higher GLP-1 expectations. Wegovy pill reached >1m US patients since launch and ~207k weekly TRx as of 17 Apr 2026.",
+      "sources": [
+        "Novo Nordisk Q1 2026 Investor Presentation, pp. 4, 6, 10-11"
+      ],
+      "taskId": "TASK-2026-05-17-001"
+    }
+  ],
+  "researchOutputs": [
+    {
+      "date": "2026-05-16",
+      "type": "pipeline_initial_analysis",
+      "path": "Discord thread 1505293006905937953",
+      "summary": "Initial NVO pipeline analysis posted to portfolio thread; task remains open pending deeper Deep Dive / valuation setup."
+    },
+    {
+      "date": "2026-05-16",
+      "type": "source_pack",
+      "path": "financial-research/financial_system/deep_dives/NVO/NVO-source-pack-2026-05-16.md",
+      "summary": "Source pack created for NVO Deep Dive, covering FY2025 anchors, 2026 reset, oral Wegovy, margin/FCF pressure and Novo vs Lilly questions."
+    },
+    {
+      "date": "2026-05-16",
+      "type": "deep_dive_working_memo",
+      "path": "financial-research/financial_system/deep_dives/NVO/NVO-deep-dive-prevaluation-v0.md",
+      "summary": "Pre-valuation working memo created; final PDF still requires full Q1 2026 primary extraction, Lilly primary comparison, historical tables and charts."
+    },
+    {
+      "date": "2026-05-16",
+      "type": "deep_dive_prevaluation_pdf",
+      "path": "financial-research/financial_system/deep_dives/NVO/NVO-research-deep-dive-prevaluation-report.pdf",
+      "summary": "Formatted pre-valuation PDF generated with source pack, Lilly comparison, charts and valuation checklist. Limitation: Q1 2026 Novo PDF primary extraction remains partial; Q1-specific figures are treated cautiously."
+    },
+    {
+      "date": "2026-05-17",
+      "type": "q1_2026_primary_extraction",
+      "path": "financial-research/financial_system/portfolio/daily-radar/2026-05-17-nvo-follow-up.md",
+      "summary": "Primary extraction of Q1 2026 investor presentation added: sales/OP, guidance raise, oral Wegovy traction, FCF/CAPEX and modelling implications."
+    }
+  ],
+  "tasks": {
+    "open": [
+      "TASK-2026-05-17-001"
+    ],
+    "closed": [
+      "TASK-2026-05-13-001"
+    ]
+  },
+  "sources": [
+    "https://www.novonordisk.com/content/nncorp/global/en/news-and-media/news-and-ir-materials/news-details.html?id=916483",
+    "https://annualreport.novonordisk.com/2025/strategic-aspirations/financial-performance.html",
+    "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=915255"
+  ],
+  "notes": "NVO Deep Dive task completed as a pre-valuation pack; current open work is valuation setup/model inputs after Q1 2026 primary extraction."
+}

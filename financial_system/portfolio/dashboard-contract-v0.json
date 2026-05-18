@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "0.1.0",
+  "updatedAt": "2026-05-13",
+  "purpose": "Minimum data contract for rendering portfolio monitoring state in the dashboard.",
+  "inputs": {
+    "companyRegistry": "portfolio/company-registry.json",
+    "taskPipeline": "portfolio/task-pipeline.json",
+    "companyStates": "portfolio/companies/<TICKER>.json"
+  },
+  "dashboardSections": [
+    {
+      "id": "portfolio_overview",
+      "title": "Portfolio Overview",
+      "description": "Active portfolio/watchlist companies with status, priority and latest update.",
+      "fields": [
+        "ticker",
+        "name",
+        "type",
+        "status",
+        "priority",
+        "lastUpdate",
+        "nextKnownEvent"
+      ]
+    },
+    {
+      "id": "open_tasks",
+      "title": "Open Research Tasks",
+      "description": "Actionable pipeline grouped by priority and company.",
+      "fields": [
+        "id",
+        "company",
+        "type",
+        "priority",
+        "status",
+        "reason",
+        "createdAt",
+        "closeCriteria"
+      ]
+    },
+    {
+      "id": "thesis_review_queue",
+      "title": "Thesis Review Queue",
+      "description": "Companies/tasks requiring thesis review after material events.",
+      "filter": {
+        "company.status": "thesis_review_needed"
+      }
+    },
+    {
+      "id": "upcoming_events",
+      "title": "Upcoming Events",
+      "description": "Known future events relevant to monitored companies.",
+      "fields": [
+        "ticker",
+        "nextKnownEvent",
+        "priority"
+      ]
+    },
+    {
+      "id": "recent_outputs",
+      "title": "Recent Research Outputs",
+      "description": "Latest preliminary reports, Deep Dives, mini-memos or task outputs.",
+      "fields": [
+        "company",
+        "lastDeepDive",
+        "lastUpdate"
+      ]
+    },
+    {
+      "id": "company_state_detail",
+      "title": "Company State Detail",
+      "description": "Per-company thesis state, drivers, risks, watch metrics, open questions, recent events and research outputs.",
+      "fields": [
+        "ticker",
+        "thesisState.status",
+        "thesisState.lastReviewedAt",
+        "keyDrivers",
+        "keyRisks",
+        "watchMetrics",
+        "openQuestions",
+        "recentEvents",
+        "researchOutputs",
+        "tasks"
+      ]
+    }
+  ],
+  "statusColors": {
+    "active": "green",
+    "monitoring": "blue",
+    "research_pending": "yellow",
+    "thesis_review_needed": "red",
+    "archived": "gray"
+  },
+  "priorityOrder": [
+    "high",
+    "medium",
+    "low"
+  ]
+}

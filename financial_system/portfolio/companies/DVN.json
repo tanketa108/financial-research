@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "0.1.0",
+  "updatedAt": "2026-05-15",
+  "ticker": "DVN",
+  "name": "Devon Energy Corporation",
+  "type": "portfolio",
+  "status": "research_pending",
+  "priority": "high",
+  "identifiers": {
+    "cik": "0001090012",
+    "isin": null,
+    "exchange": null,
+    "country": null
+  },
+  "discord": {
+    "threadId": "1504738035995246642",
+    "threadUrl": null
+  },
+  "thesisState": {
+    "status": "preliminary_report_completed",
+    "owner": "user",
+    "lastReviewedAt": "2026-05-15",
+    "conviction": "unknown",
+    "summary": "DVN preliminary report completed. Main issue: assess combined Devon/Coterra through-cycle FCF and capital returns under conservative commodity assumptions before considering a full Deep Dive.",
+    "whatWouldChangeOurMind": [],
+    "portfolioManagerDecision": null
+  },
+  "businessSnapshot": {
+    "description": "US oil and gas exploration and production company with cash return focus and commodity-sensitive economics.",
+    "segments": [
+      "Oil",
+      "Natural gas",
+      "NGLs"
+    ],
+    "geographies": [],
+    "competitors": [
+      "EOG",
+      "Pioneer/Exxon",
+      "Diamondback",
+      "Coterra",
+      "ConocoPhillips",
+      "Occidental"
+    ],
+    "cycleExposure": "Oil/gas/NGL prices, shale productivity, service costs, decline rates, hedging and capital discipline."
+  },
+  "keyDrivers": [
+    "Oil/gas price realization",
+    "Production volumes and well productivity",
+    "Capex discipline",
+    "FCF generation through cycle",
+    "Dividend/buyback framework",
+    "Balance sheet leverage"
+  ],
+  "keyRisks": [
+    "Commodity price downside",
+    "Cost inflation",
+    "Reserve/productivity deterioration",
+    "M&A integration/execution",
+    "Capital allocation procyclicality"
+  ],
+  "watchMetrics": [
+    "Production volumes",
+    "Realized prices",
+    "Capex",
+    "FCF",
+    "Net debt/leverage",
+    "Dividend/buyback payout",
+    "Reserve replacement/productivity"
+  ],
+  "openQuestions": [
+    "What mid-cycle oil/gas price supports current FCF thesis?",
+    "Is capital return sustainable through commodity downturns?",
+    "Does M&A improve or dilute asset quality?"
+  ],
+  "recentEvents": [
+    {
+      "date": "2026-05-15",
+      "type": "preliminary_report_requested",
+      "materiality": "high",
+      "summary": "User requested dedicated DVN thread and preliminary report.",
+      "source": "Discord #portfolio",
+      "taskId": "TASK-2026-05-15-002"
+    }
+  ],
+  "researchOutputs": [
+    {
+      "date": "2026-05-15",
+      "type": "preliminary_report",
+      "version": "v0",
+      "path": "financial-research/financial_system/preliminary_reports/DVN/DVN-preliminary-report-v0.md",
+      "summary": "Preliminary DVN brief focused on Devon/Coterra combined-company setup, cyclicality, FCF durability, capital returns, leverage and open model questions."
+    }
+  ],
+  "tasks": {
+    "open": [
+      "TASK-2026-05-15-002"
+    ],
+    "closed": []
+  },
+  "sources": [
+    "SEC EDGAR",
+    "Devon Energy Investor Relations"
+  ],
+  "notes": "Energy/cyclicality requires sector-specific monitoring."
+}

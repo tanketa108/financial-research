@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "0.1.0",
+  "purpose": "Minimum per-company state for portfolio research and monitoring.",
+  "requiredFields": [
+    "ticker",
+    "name",
+    "type",
+    "status",
+    "priority",
+    "thesisState",
+    "keyDrivers",
+    "keyRisks",
+    "watchMetrics",
+    "openQuestions",
+    "recentEvents",
+    "researchOutputs",
+    "tasks"
+  ],
+  "companyTypes": ["portfolio", "watchlist", "idea", "archived"],
+  "companyStatuses": ["active", "monitoring", "research_pending", "thesis_review_needed", "archived"],
+  "thesisStatuses": ["not_started", "preliminary", "active", "under_review", "stale", "archived"],
+  "convictionLevels": ["unknown", "low", "medium", "high"],
+  "riskLevels": ["unknown", "low", "medium", "high"],
+  "eventMateriality": ["low", "medium", "high"],
+  "taskLinking": {
+    "taskIdsSource": "portfolio/task-pipeline.json",
+    "rule": "Company state references task ids; task-pipeline remains source of truth for task lifecycle."
+  }
+}

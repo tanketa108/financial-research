@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "0.1.0",
+  "updatedAt": "2026-05-13",
+  "ticker": "UBER",
+  "name": "Uber Technologies, Inc.",
+  "type": "portfolio",
+  "status": "monitoring",
+  "priority": "medium",
+  "identifiers": {
+    "cik": "0001543151",
+    "isin": null,
+    "exchange": null,
+    "country": null
+  },
+  "discord": {
+    "threadId": null,
+    "threadUrl": null
+  },
+  "thesisState": {
+    "status": "not_started",
+    "owner": "user",
+    "lastReviewedAt": null,
+    "conviction": "unknown",
+    "summary": "Initial Company State placeholder. User thesis has not been formalized in the system yet.",
+    "whatWouldChangeOurMind": [],
+    "portfolioManagerDecision": null
+  },
+  "businessSnapshot": {
+    "description": "Mobility, Delivery and Freight platform with marketplace, advertising and subscription optionality.",
+    "segments": [
+      "Mobility",
+      "Delivery",
+      "Freight"
+    ],
+    "geographies": [],
+    "competitors": [
+      "Lyft",
+      "DoorDash",
+      "Grab",
+      "Bolt",
+      "Didi",
+      "local taxi/transport networks"
+    ],
+    "cycleExposure": "Consumer mobility/delivery demand, driver supply, regulation and local market competition."
+  },
+  "keyDrivers": [
+    "Mobility bookings and take-rate quality",
+    "Delivery margin durability",
+    "Uber One adoption and cross-platform frequency",
+    "Advertising and marketplace monetization",
+    "Autonomous vehicle strategy/partnerships"
+  ],
+  "keyRisks": [
+    "Regulatory/labor classification pressure",
+    "Local competition and incentives",
+    "Delivery margin fragility",
+    "Insurance/legal cost inflation",
+    "AV disintermediation risk"
+  ],
+  "watchMetrics": [
+    "Gross bookings by segment",
+    "Trips / MAPCs",
+    "Take rate",
+    "Adjusted EBITDA by segment",
+    "FCF conversion",
+    "Insurance/legal expense commentary"
+  ],
+  "openQuestions": [
+    "How durable is Delivery margin expansion?",
+    "Can Mobility sustain pricing/take-rate without demand damage?",
+    "Does AV become margin tailwind or platform risk?"
+  ],
+  "recentEvents": [],
+  "researchOutputs": [],
+  "tasks": {
+    "open": [],
+    "closed": []
+  },
+  "sources": [
+    "SEC EDGAR",
+    "Uber Investor Relations"
+  ],
+  "notes": "Existing control sample. Needs company thread and updated research state."
+}

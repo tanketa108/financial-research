@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "0.1.0",
+  "updatedAt": "2026-05-13",
+  "ticker": "RACE",
+  "name": "Ferrari N.V.",
+  "type": "portfolio",
+  "status": "monitoring",
+  "priority": "medium",
+  "identifiers": {
+    "cik": null,
+    "isin": null,
+    "exchange": null,
+    "country": null
+  },
+  "discord": {
+    "threadId": null,
+    "threadUrl": null
+  },
+  "thesisState": {
+    "status": "not_started",
+    "owner": "user",
+    "lastReviewedAt": null,
+    "conviction": "unknown",
+    "summary": "Initial Company State placeholder. User thesis has not been formalized in the system yet.",
+    "whatWouldChangeOurMind": [],
+    "portfolioManagerDecision": null
+  },
+  "businessSnapshot": {
+    "description": "Luxury performance car manufacturer with scarcity, brand pricing power, personalization and racing heritage.",
+    "segments": [
+      "Cars and spare parts",
+      "Sponsorship/commercial/brand",
+      "Engines"
+    ],
+    "geographies": [],
+    "competitors": [
+      "Porsche",
+      "Lamborghini",
+      "Aston Martin",
+      "McLaren",
+      "Bentley",
+      "high-end luxury goods peers"
+    ],
+    "cycleExposure": "Luxury demand, ultra-high-net-worth spending, order book, mix/personalization and product cycle."
+  },
+  "keyDrivers": [
+    "Volume discipline and scarcity",
+    "Pricing and personalization mix",
+    "Order book depth",
+    "Margin resilience",
+    "Electrification transition without brand dilution"
+  ],
+  "keyRisks": [
+    "Brand dilution from volume growth",
+    "Luxury demand slowdown",
+    "Execution risk in EV/hybrid transition",
+    "FX and geographic mix",
+    "Formula 1/brand perception volatility"
+  ],
+  "watchMetrics": [
+    "Shipments",
+    "ASP/mix",
+    "EBITDA margin",
+    "Order book commentary",
+    "Personalization contribution",
+    "Industrial FCF"
+  ],
+  "openQuestions": [
+    "How much volume growth is compatible with scarcity?",
+    "Can EV transition preserve Ferrari economics?",
+    "What normalized margin is sustainable through cycles?"
+  ],
+  "recentEvents": [],
+  "researchOutputs": [],
+  "tasks": {
+    "open": [],
+    "closed": []
+  },
+  "sources": [
+    "Ferrari Investor Relations"
+  ],
+  "notes": "Foreign issuer path/identifiers need validation."
+}

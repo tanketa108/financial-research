@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "0.1.0",
+  "updatedAt": "2026-05-18",
+  "source": "Portfolio Operating Model v0",
+  "companies": [
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "type": "portfolio",
+      "status": "active",
+      "priority": "high",
+      "cik": "0000789019",
+      "discordThreadId": "1503902848700907551",
+      "lastDeepDive": "financial-research/financial_system/deep_dives/MSFT/MSFT-research-deep-dive-v1.2-prevaluation-report.pdf",
+      "lastUpdate": "2026-05-18",
+      "nextKnownEvent": null,
+      "sources": [
+        "SEC EDGAR",
+        "Microsoft Investor Relations"
+      ],
+      "notes": "MSFT Deep Dive v1.2, user valuation model v1.2 and qualitative thesis v1.1 integrated. Monitor AI capex normalization, Azure/Copilot monetization, FCF conversion and multiple compression risk."
+    },
+    {
+      "ticker": "UBER",
+      "name": "Uber Technologies, Inc.",
+      "type": "portfolio",
+      "status": "monitoring",
+      "priority": "medium",
+      "cik": "0001543151",
+      "discordThreadId": null,
+      "lastDeepDive": null,
+      "lastUpdate": null,
+      "nextKnownEvent": null,
+      "sources": [
+        "SEC EDGAR",
+        "Uber Investor Relations"
+      ],
+      "notes": "Existing control sample. Needs company thread and updated research state."
+    },
+    {
+      "ticker": "RACE",
+      "name": "Ferrari N.V.",
+      "type": "portfolio",
+      "status": "monitoring",
+      "priority": "medium",
+      "cik": null,
+      "discordThreadId": null,
+      "lastDeepDive": null,
+      "lastUpdate": null,
+      "nextKnownEvent": null,
+      "sources": [
+        "Ferrari Investor Relations"
+      ],
+      "notes": "Foreign issuer path/identifiers need validation."
+    },
+    {
+      "ticker": "NVO",
+      "name": "Novo Nordisk A/S",
+      "type": "portfolio",
+      "status": "research_pending",
+      "priority": "high",
+      "cik": null,
+      "discordThreadId": "1505293006905937953",
+      "lastDeepDive": null,
+      "lastUpdate": "2026-05-13",
+      "nextKnownEvent": null,
+      "sources": [
+        "Novo Nordisk Investor Relations",
+        "SEC EDGAR ADR/6-K if applicable"
+      ],
+      "notes": "Preliminary candidate after growth/price reset. Key work: GLP-1 durability, Novo vs Lilly, US pricing, oral Wegovy/HD, adjusted margins and valuation."
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "type": "portfolio",
+      "status": "active",
+      "priority": "high",
+      "cik": "0001065280",
+      "discordThreadId": "1504215517001420925",
+      "lastDeepDive": "financial-research/financial_system/deep_dives/NFLX/NFLX-research-deep-dive-v1.0-prevaluation-report.pdf",
+      "lastUpdate": "2026-05-13",
+      "nextKnownEvent": null,
+      "sources": [
+        "SEC EDGAR",
+        "Netflix Investor Relations"
+      ],
+      "notes": "NFLX Deep Dive v1.0 completed. Monitor streaming economics, ads scaling, pricing/paid-sharing normalization, content spend/amortization, WBD transaction impact, FCF and capital allocation."
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy Corporation",
+      "type": "portfolio",
+      "status": "research_pending",
+      "priority": "high",
+      "cik": "0001090012",
+      "discordThreadId": "1504738035995246642",
+      "lastDeepDive": null,
+      "lastUpdate": "2026-05-15",
+      "nextKnownEvent": null,
+      "sources": [
+        "SEC EDGAR",
+        "Devon Energy Investor Relations"
+      ],
+      "notes": "DVN preliminary report workflow opened. Focus: Devon/Coterra combined shale platform, commodity sensitivity, FCF durability, capital returns, leverage and merger execution."
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "type": "portfolio",
+      "status": "research_pending",
+      "priority": "high",
+      "cik": "0001018724",
+      "discordThreadId": "1504869094808227901",
+      "lastDeepDive": null,
+      "lastUpdate": "2026-05-15",
+      "nextKnownEvent": null,
+      "sources": [
+        "SEC EDGAR",
+        "Amazon Investor Relations"
+      ],
+      "notes": "Preliminary report completed. Focus: AWS/AI capex ROI, advertising margin, retail/logistics efficiency, FCF conversion and segment-level valuation."
+    }
+  ]
+}

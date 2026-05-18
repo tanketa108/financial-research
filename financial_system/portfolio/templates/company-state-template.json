@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "0.1.0",
+  "updatedAt": "YYYY-MM-DD",
+  "ticker": "TICKER",
+  "name": "Company Name",
+  "type": "portfolio",
+  "status": "monitoring",
+  "priority": "medium",
+  "identifiers": {
+    "cik": null,
+    "isin": null,
+    "exchange": null,
+    "country": null
+  },
+  "discord": {
+    "threadId": null,
+    "threadUrl": null
+  },
+  "thesisState": {
+    "status": "not_started",
+    "owner": "user",
+    "lastReviewedAt": null,
+    "conviction": "unknown",
+    "summary": null,
+    "whatWouldChangeOurMind": [],
+    "portfolioManagerDecision": null
+  },
+  "businessSnapshot": {
+    "description": null,
+    "segments": [],
+    "geographies": [],
+    "competitors": [],
+    "cycleExposure": null
+  },
+  "keyDrivers": [],
+  "keyRisks": [],
+  "watchMetrics": [],
+  "openQuestions": [],
+  "recentEvents": [],
+  "researchOutputs": [],
+  "tasks": {
+    "open": [],
+    "closed": []
+  },
+  "sources": [],
+  "notes": null
+}
