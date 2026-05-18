@@ -3,17 +3,22 @@
   "ticker": "MSFT",
   "company_name": "Microsoft Corporation",
   "page_intent": "company_snapshot_not_full_thesis",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-18",
   "thesis": {
     "one_line": "Microsoft is a high-quality enterprise software, cloud and AI infrastructure compounder, with the key debate shifting toward AI capex intensity, monetization and FCF conversion.",
     "current_thesis": "The core thesis is durable software/cloud profitability plus AI optionality, but maintenance should focus on whether the enlarged reinvestment cycle earns adequate returns.",
-    "stance": "covered / needs thesis baseline",
-    "committee_view": "Financial quality is strong; qualitative thesis needs a structured baseline before conviction can be assessed like UBER."
+    "stance": "valuation integrated / under review",
+    "committee_view": "User Excel valuation model v1.2 integrated. MSFT remains high-quality, but underwriting is now dominated by AI capex normalization, FCF conversion and multiple-compression risk."
   },
   "maintenance": {
-    "status": "baseline_needed",
-    "next_action": "Create MSFT written thesis baseline and map AI/cloud capex questions into maintenance queue.",
+    "status": "valuation_integrated",
+    "next_action": "Monitor capex/revenue normalization, Azure/Copilot monetization, FCF conversion and multiple risk; keep Excel model fixed unless user requests edits.",
     "latest_updates": [
+      {
+        "date": "2026-05-18",
+        "type": "valuation_model",
+        "summary": "User Excel MSFT_v1_2 valuation model integrated into dashboard state; median target $463.7, average $476.4, range $357-$604, probabilistic scenario value ~$474."
+      },
       {
         "date": "2026-05-12",
         "type": "dashboard_extension",
@@ -94,11 +99,14 @@
     ]
   },
   "valuation": {
-    "status": "prefilled",
-    "central_reference": null,
-    "range": null,
-    "user_excel_model": null,
-    "note": "No user Excel model registered for MSFT yet; valuation fields remain preliminary."
+    "status": "model_integrated",
+    "central_reference": 463.7,
+    "range": "$357-$604",
+    "user_excel_model": "financial_system/deep_dives/MSFT/MSFT_v1_2_valuation_model.xlsx",
+    "average_reference": 476.4,
+    "probabilistic_scenario_value": 474,
+    "spot_price_used": 408,
+    "note": "User Excel model integrated as fixed input. Main debate: whether AI capex normalizes and converts into durable Azure/Copilot revenue and FCF."
   },
   "key_metrics": {
     "revenue": 82886000000,
