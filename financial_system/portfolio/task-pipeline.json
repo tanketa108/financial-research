@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.0",
-  "updatedAt": "2026-05-17",
+  "updatedAt": "2026-05-22",
   "tasks": [
     {
       "id": "TASK-2026-05-13-001",
@@ -159,6 +159,86 @@
       "outputPath": "SCOUT_PILOT_2_REPORT_V0_1.md",
       "affectsThesis": "no",
       "closeSummary": "Scout completed second read-only monitoring-style pilot successfully: official company sources used, source existence/date/type identified, confidence and missing data explicit, no state mutation or external action performed."
+    },
+    {
+      "id": "TASK-2026-05-18-001",
+      "company": "EOG",
+      "type": "deep_dive",
+      "priority": "medium",
+      "status": "done",
+      "trigger": "User requested EOG Deep Dive alongside prior analysis",
+      "reason": "Produce pre-valuation research pack for EOG Resources with source-backed financials, asset/commodity drivers, 2026 guidance, Encino impact, risks and scenario setup.",
+      "threadId": "1506052260608606219",
+      "owner": "Charlie",
+      "laneId": "writer",
+      "createdAt": "2026-05-18",
+      "closedAt": "2026-05-18",
+      "closeCriteria": "Deep Dive pre-valuation report completed with sources, charts, PDF, caveats and valuation checklist.",
+      "sources": [
+        "https://investors.eogresources.com/2026-05-05-EOG-Resources-Reports-First-Quarter-2026-Results",
+        "https://investors.eogresources.com/2026-02-24-EOG-Resources-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Announces-2026-Capital-Plan",
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0000821189.json",
+        "financial-research/financial_system/deep_dives/EOG/EOG-research-deep-dive-prevaluation-report.pdf"
+      ],
+      "notes": "Completed as pre-valuation pack; not an investment recommendation. Remaining work: peer model and WTI/HH sensitivity model if user wants valuation step.",
+      "outcome": "valuation_update_required",
+      "outputPath": "financial-research/financial_system/deep_dives/EOG/EOG-research-deep-dive-prevaluation-report.pdf",
+      "affectsThesis": "unknown",
+      "closeSummary": "EOG Deep Dive pre-valuation PDF completed with 5-year financials, production/guidance, Encino/Utica impact, balance sheet, risks and scenario matrix.",
+      "nextAction": "If user wants to proceed, build EOG valuation input sheet with peer comp and WTI/HH/NGL sensitivity; otherwise keep as research pack for PM review."
+    },
+    {
+      "id": "TASK-2026-05-21-001",
+      "company": "RACE",
+      "type": "deep_dive",
+      "priority": "medium",
+      "status": "done",
+      "trigger": "User requested Ferrari (RACE) as next portfolio company Deep Dive",
+      "reason": "Produce pre-valuation research pack for Ferrari with source-backed financials, luxury/scarcity economics, EV transition, capital allocation, risks and scenario setup.",
+      "threadId": "1507116139912888482",
+      "owner": "Charlie",
+      "laneId": "writer",
+      "createdAt": "2026-05-21",
+      "closedAt": "2026-05-21",
+      "closeCriteria": "Deep Dive pre-valuation report completed with sources, charts, PDF, caveats and valuation checklist.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1648416/000164841626000024/race-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1648416/000162828026030266/ferrarinvinterimreport-033.htm",
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0001648416.json",
+        "financial-research/financial_system/deep_dives/RACE/RACE-research-deep-dive-prevaluation-report.pdf"
+      ],
+      "notes": "Completed as pre-valuation pack; not an investment recommendation. Remaining work: valuation input sheet with ASP/mix, shipment, EBIT margin and industrial FCF sensitivities if user wants valuation step.",
+      "outcome": "valuation_update_required",
+      "outputPath": "financial-research/financial_system/deep_dives/RACE/RACE-research-deep-dive-prevaluation-report.pdf",
+      "affectsThesis": "unknown",
+      "closeSummary": "RACE Deep Dive pre-valuation PDF completed with 5-year financials, Q1 2026/guidance, scarcity economics, balance sheet, capital allocation, risks and scenario matrix.",
+      "nextAction": "If user wants to proceed, build RACE valuation input sheet with shipment/ASP/mix, EBIT margin and FCF yield scenarios."
+    },
+    {
+      "id": "TASK-2026-05-22-001",
+      "company": "LVMH",
+      "type": "deep_dive",
+      "priority": "medium",
+      "status": "done",
+      "trigger": "User requested next company Deep Dive for Louis Vuitton / LVMH",
+      "reason": "Produce pre-valuation research pack for LVMH covering business model, segments, 5-year financials, cash flow, debt/liquidity, sector positioning and scenario variables.",
+      "threadId": "1507444169478770919",
+      "owner": "Charlie",
+      "createdAt": "2026-05-22",
+      "closedAt": "2026-05-22",
+      "closeCriteria": "Deep Dive completed and delivered in dedicated Discord thread with source-backed figures and PDF output.",
+      "sources": [
+        "financial-research/financial_system/deep_dives/LVMH/lvmh-source-pack-v0.md",
+        "financial-research/financial_system/deep_dives/LVMH/LVMH-research-deep-dive-prevaluation-report.pdf",
+        "LVMH FY2025 Financial Documents",
+        "LVMH Q1 2026 Revenue Presentation"
+      ],
+      "notes": "Completed as pre-valuation pack. Open next iteration: live multiples/peer table and full URD risk-factor extraction if needed for valuation stage.",
+      "outcome": "valuation_update_required",
+      "closeSummary": "LVMH Deep Dive completed with FY2021-2025 financials, segment/geography analysis, FCF/debt review, Q1 2026 update, risks and scenario matrix.",
+      "outputPath": "financial-research/financial_system/deep_dives/LVMH/LVMH-research-deep-dive-prevaluation-report.pdf",
+      "nextAction": "Use as input for user-led valuation/model assumptions; add market multiples if moving to valuation.",
+      "laneId": "writer"
     }
   ]
 }

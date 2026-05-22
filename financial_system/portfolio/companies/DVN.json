@@ -118,5 +118,55 @@
     "SEC EDGAR",
     "Devon Energy Investor Relations"
   ],
-  "notes": "Energy/cyclicality requires sector-specific monitoring."
+  "notes": "Energy/cyclicality requires sector-specific monitoring.",
+  "coverage": {
+    "deepDive": {
+      "status": "yes",
+      "path": "financial-research/financial_system/deep_dives/DVN/DVN-research-prevaluation-v0.2-report.pdf",
+      "date": "2026-05-22"
+    },
+    "model": {
+      "status": "yes_needs_review",
+      "path": "financial-research/docs/models/DVN/DVN_Valoracion_v1_1.xlsx",
+      "date": "2026-05-22"
+    },
+    "thesis": {
+      "status": "implicit_in_preliminary_and_model",
+      "path": null
+    },
+    "reportingReadiness": "medium"
+  },
+  "lastUpdated": "2026-05-22",
+  "coverageGaps": [
+    {
+      "type": "model",
+      "severity": "high",
+      "summary": "User valuation model v1.1 exists but needs formula/assumption/sensitivity review before full reporting confidence.",
+      "recommendedAction": "Review model assumptions, formulas, commodity sensitivity, FCF durability, capital returns and leverage."
+    }
+  ],
+  "nextReviewAction": {
+    "action": "Review DVN valuation model v1.1: formulas, assumptions, commodity sensitivity, FCF durability, capital returns, leverage and merger execution.",
+    "priority": "high",
+    "owner": "Charlie",
+    "trigger": "User model uploaded and incorporated",
+    "due": null,
+    "status": "open"
+  },
+  "portfolioPosition": {
+    "status": "in_portfolio",
+    "weight": null,
+    "costBasis": null,
+    "currentPrice": null,
+    "currency": null,
+    "asOf": null,
+    "source": "user"
+  },
+  "reporting": {
+    "includeInPortfolioReview": true,
+    "includeInWatchlistReview": false,
+    "lastReviewedInReport": "2026-05-22",
+    "lastMaterialChange": "2026-05-22",
+    "notes": "High-priority portfolio company; model exists but needs review."
+  }
 }

@@ -4,8 +4,8 @@
   "ticker": "UBER",
   "name": "Uber Technologies, Inc.",
   "type": "portfolio",
-  "status": "monitoring",
-  "priority": "medium",
+  "status": "active",
+  "priority": "low",
   "identifiers": {
     "cik": "0001543151",
     "isin": null,
@@ -23,7 +23,7 @@
     "conviction": "unknown",
     "summary": "Initial Company State placeholder. User thesis has not been formalized in the system yet.",
     "whatWouldChangeOurMind": [],
-    "portfolioManagerDecision": null
+    "portfolioManagerDecision": "in portfolio; low reporting priority because thesis/model are comparatively better developed"
   },
   "businessSnapshot": {
     "description": "Mobility, Delivery and Freight platform with marketplace, advertising and subscription optionality.",
@@ -80,5 +80,53 @@
     "SEC EDGAR",
     "Uber Investor Relations"
   ],
-  "notes": "Existing control sample. Needs company thread and updated research state."
+  "notes": "Existing control sample. Needs company thread and updated research state.",
+  "coverage": {
+    "deepDive": {
+      "status": "not_in_repo_or_not_linked",
+      "path": null
+    },
+    "model": {
+      "status": "exists_outside_repo_or_not_linked",
+      "path": null
+    },
+    "thesis": {
+      "status": "developed_but_not_fully_linked",
+      "path": null
+    },
+    "reportingReadiness": "medium_high"
+  },
+  "lastUpdated": "2026-05-22",
+  "coverageGaps": [
+    {
+      "type": "state_quality",
+      "severity": "low",
+      "summary": "Repo links to existing thesis/model artifacts are incomplete, but user clarified the thesis is comparatively well developed.",
+      "recommendedAction": "Optionally link existing thesis/model artifacts later; do not prioritize over less-developed names."
+    }
+  ],
+  "nextReviewAction": {
+    "action": "Keep UBER low priority; optionally link existing thesis/model artifacts when convenient, but do not allocate near-term analytical capacity.",
+    "priority": "low",
+    "owner": "Charlie",
+    "trigger": "Housekeeping pass or PM requests UBER refresh",
+    "due": null,
+    "status": "open"
+  },
+  "portfolioPosition": {
+    "status": "in_portfolio",
+    "weight": null,
+    "costBasis": null,
+    "currentPrice": null,
+    "currency": null,
+    "asOf": null,
+    "source": "user"
+  },
+  "reporting": {
+    "includeInPortfolioReview": true,
+    "includeInWatchlistReview": false,
+    "lastReviewedInReport": "2026-05-22",
+    "lastMaterialChange": "2026-05-22",
+    "notes": "Portfolio company; low priority by explicit user clarification."
+  }
 }

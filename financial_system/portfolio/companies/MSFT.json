@@ -143,5 +143,48 @@
     "Microsoft Investor Relations",
     "MSFT Deep Dive v1.2"
   ],
-  "notes": "Company state updated after valuation model integration. Model remains a fixed user input; dashboard should surface the Excel, valuation addendum and qualitative thesis without modifying model assumptions."
+  "notes": "Company state updated after valuation model integration. Model remains a fixed user input; dashboard should surface the Excel, valuation addendum and qualitative thesis without modifying model assumptions.",
+  "coverage": {
+    "deepDive": {
+      "status": "yes",
+      "path": "financial-research/financial_system/deep_dives/MSFT/MSFT-research-deep-dive-v1.2-prevaluation-report.pdf",
+      "date": "2026-05-13"
+    },
+    "model": {
+      "status": "yes",
+      "path": "financial-research/financial_system/deep_dives/MSFT/MSFT_v1_2_valuation_model.xlsx",
+      "date": "2026-05-18"
+    },
+    "thesis": {
+      "status": "yes",
+      "path": "financial-research/financial_system/deep_dives/MSFT/MSFT-investment-thesis-v1.1-qualitative.md"
+    },
+    "reportingReadiness": "high"
+  },
+  "lastUpdated": "2026-05-22",
+  "coverageGaps": [],
+  "nextReviewAction": {
+    "action": "Monitor events and revisit only if AI capex normalization, Azure/Copilot monetization or FCF conversion assumptions change.",
+    "priority": "low",
+    "owner": "Charlie",
+    "trigger": "Material event, earnings update, or model assumption change",
+    "due": null,
+    "status": "open"
+  },
+  "portfolioPosition": {
+    "status": "in_portfolio",
+    "weight": null,
+    "costBasis": null,
+    "currentPrice": null,
+    "currency": null,
+    "asOf": null,
+    "source": "user"
+  },
+  "reporting": {
+    "includeInPortfolioReview": true,
+    "includeInWatchlistReview": false,
+    "lastReviewedInReport": "2026-05-22",
+    "lastMaterialChange": "2026-05-18",
+    "notes": "High-readiness portfolio company; monitor rather than rework."
+  }
 }

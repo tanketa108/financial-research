@@ -1,27 +1,27 @@
 {
   "schemaVersion": "0.1.0",
-  "updatedAt": "2026-05-13",
+  "updatedAt": "2026-05-21",
   "ticker": "RACE",
   "name": "Ferrari N.V.",
   "type": "portfolio",
-  "status": "monitoring",
+  "status": "active",
   "priority": "medium",
   "identifiers": {
-    "cik": null,
+    "cik": "0001648416",
     "isin": null,
-    "exchange": null,
-    "country": null
+    "exchange": "NYSE / Euronext Milan",
+    "country": "Netherlands / Italy operations"
   },
   "discord": {
-    "threadId": null,
+    "threadId": "1507116139912888482",
     "threadUrl": null
   },
   "thesisState": {
-    "status": "not_started",
+    "status": "research_completed_prevaluation",
     "owner": "user",
-    "lastReviewedAt": null,
+    "lastReviewedAt": "2026-05-21",
     "conviction": "unknown",
-    "summary": "Initial Company State placeholder. User thesis has not been formalized in the system yet.",
+    "summary": "RACE Deep Dive pre-valuation completed. Thesis work should focus on scarcity-compatible growth, ASP/mix/personalization, EV transition economics, normalized EBIT margin and industrial FCF durability.",
     "whatWouldChangeOurMind": [],
     "portfolioManagerDecision": null
   },
@@ -70,14 +70,83 @@
     "Can EV transition preserve Ferrari economics?",
     "What normalized margin is sustainable through cycles?"
   ],
-  "recentEvents": [],
-  "researchOutputs": [],
+  "recentEvents": [
+    {
+      "date": "2026-05-21",
+      "type": "deep_dive_completed",
+      "summary": "Ferrari RACE pre-valuation Deep Dive PDF completed."
+    },
+    {
+      "date": "2026-05-05",
+      "type": "results",
+      "summary": "Q1 2026 results: guidance confirmed, EBITDA margin 39.1%, industrial FCF €653m, order book toward end-2027."
+    }
+  ],
+  "researchOutputs": [
+    {
+      "date": "2026-05-21",
+      "type": "deep_dive",
+      "path": "financial-research/financial_system/deep_dives/RACE/RACE-research-deep-dive-prevaluation-report.pdf",
+      "threadId": "1507116139912888482"
+    }
+  ],
   "tasks": {
     "open": [],
-    "closed": []
+    "closed": [
+      "TASK-2026-05-21-001"
+    ]
   },
   "sources": [
     "Ferrari Investor Relations"
   ],
-  "notes": "Foreign issuer path/identifiers need validation."
+  "notes": "Foreign issuer path/identifiers need validation.",
+  "coverage": {
+    "deepDive": {
+      "status": "yes",
+      "path": "financial-research/financial_system/deep_dives/RACE/RACE-research-deep-dive-prevaluation-report.pdf",
+      "date": "2026-05-21"
+    },
+    "model": {
+      "status": "pending_valuation_step",
+      "path": null
+    },
+    "thesis": {
+      "status": "implicit_in_deep_dive",
+      "path": null
+    },
+    "reportingReadiness": "medium_high"
+  },
+  "lastUpdated": "2026-05-22",
+  "coverageGaps": [
+    {
+      "type": "model",
+      "severity": "medium",
+      "summary": "Deep Dive is complete but explicit valuation/model assumptions are pending.",
+      "recommendedAction": "Build valuation assumption sheet if PM wants to complete coverage."
+    }
+  ],
+  "nextReviewAction": {
+    "action": "Build valuation/model assumptions for shipments, ASP/mix, EBIT margin and industrial FCF if this becomes next analytical priority.",
+    "priority": "medium",
+    "owner": "Charlie",
+    "trigger": "PM selects RACE as next valuation step",
+    "due": null,
+    "status": "open"
+  },
+  "portfolioPosition": {
+    "status": "in_portfolio",
+    "weight": null,
+    "costBasis": null,
+    "currentPrice": null,
+    "currency": null,
+    "asOf": null,
+    "source": "user"
+  },
+  "reporting": {
+    "includeInPortfolioReview": true,
+    "includeInWatchlistReview": false,
+    "lastReviewedInReport": "2026-05-22",
+    "lastMaterialChange": "2026-05-21",
+    "notes": "Deep Dive complete; valuation assumptions are the main remaining coverage gap."
+  }
 }

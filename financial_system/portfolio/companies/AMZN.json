@@ -3,9 +3,9 @@
   "updatedAt": "2026-05-15",
   "ticker": "AMZN",
   "name": "Amazon.com, Inc.",
-  "type": "portfolio",
+  "type": "watchlist",
   "status": "research_pending",
-  "priority": "high",
+  "priority": "medium",
   "identifiers": {
     "cik": "0001018724",
     "isin": null,
@@ -23,7 +23,7 @@
     "conviction": "unknown",
     "summary": "AMZN preliminary report completed. Core issue: separate AWS/AI, advertising, and retail/logistics economics; test whether AI/cloud capex produces enough incremental return to justify lower near-term FCF conversion.",
     "whatWouldChangeOurMind": [],
-    "portfolioManagerDecision": null
+    "portfolioManagerDecision": "idea/watchlist; not current portfolio position"
   },
   "businessSnapshot": {
     "description": "Global technology and commerce platform spanning e-commerce marketplace/retail, AWS cloud, advertising, subscriptions/Prime, logistics and digital media.",
@@ -108,5 +108,54 @@
     "SEC EDGAR",
     "Amazon Investor Relations"
   ],
-  "notes": "Next recommended step: source pack / Deep Dive with segment-level financial extraction and FCF bridge."
+  "notes": "Next recommended step: source pack / Deep Dive with segment-level financial extraction and FCF bridge.",
+  "coverage": {
+    "deepDive": {
+      "status": "no_preliminary_only",
+      "path": "financial-research/financial_system/preliminary_reports/AMZN/AMZN-preliminary-report-v0.md",
+      "date": "2026-05-15"
+    },
+    "model": {
+      "status": "no",
+      "path": null
+    },
+    "thesis": {
+      "status": "preliminary",
+      "path": null
+    },
+    "reportingReadiness": "medium_low"
+  },
+  "lastUpdated": "2026-05-22",
+  "coverageGaps": [
+    {
+      "type": "deep_dive",
+      "severity": "medium",
+      "summary": "AMZN is watchlist/idea with preliminary report only; no Deep Dive/model yet.",
+      "recommendedAction": "Only proceed to Deep Dive/model if PM wants to advance the idea."
+    }
+  ],
+  "nextReviewAction": {
+    "action": "Decide whether AMZN as watchlist/idea should be promoted into full Deep Dive/model work.",
+    "priority": "medium",
+    "owner": "Portfolio Manager",
+    "trigger": "PM wants to advance AMZN idea",
+    "due": null,
+    "status": "waiting"
+  },
+  "portfolioPosition": {
+    "status": "watchlist",
+    "weight": null,
+    "costBasis": null,
+    "currentPrice": null,
+    "currency": null,
+    "asOf": null,
+    "source": "user"
+  },
+  "reporting": {
+    "includeInPortfolioReview": false,
+    "includeInWatchlistReview": true,
+    "lastReviewedInReport": "2026-05-22",
+    "lastMaterialChange": "2026-05-15",
+    "notes": "Watchlist/idea, not current portfolio."
+  }
 }

@@ -24,8 +24,8 @@
       "ticker": "UBER",
       "name": "Uber Technologies, Inc.",
       "type": "portfolio",
-      "status": "monitoring",
-      "priority": "medium",
+      "status": "active",
+      "priority": "low",
       "cik": "0001543151",
       "discordThreadId": null,
       "lastDeepDive": null,
@@ -35,7 +35,7 @@
         "SEC EDGAR",
         "Uber Investor Relations"
       ],
-      "notes": "Existing control sample. Needs company thread and updated research state."
+      "notes": "UBER is in the portfolio. User clarified it is one of the better-developed theses, so it should not be treated as priority work versus less-modeled/less-developed names."
     },
     {
       "ticker": "RACE",
@@ -61,14 +61,14 @@
       "priority": "high",
       "cik": null,
       "discordThreadId": "1505293006905937953",
-      "lastDeepDive": null,
-      "lastUpdate": "2026-05-13",
+      "lastDeepDive": "financial-research/financial_system/deep_dives/NVO/NVO-research-deep-dive-prevaluation-report.pdf",
+      "lastUpdate": "2026-05-17",
       "nextKnownEvent": null,
       "sources": [
         "Novo Nordisk Investor Relations",
         "SEC EDGAR ADR/6-K if applicable"
       ],
-      "notes": "Preliminary candidate after growth/price reset. Key work: GLP-1 durability, Novo vs Lilly, US pricing, oral Wegovy/HD, adjusted margins and valuation."
+      "notes": "NVO Deep Dive completed. Remaining work: valuation/model inputs for normalized 2027-2030 revenue/margin, US pricing pressure, oral Wegovy contribution, CAPEX/FCF and scenario assumptions."
     },
     {
       "ticker": "NFLX",
@@ -95,21 +95,21 @@
       "priority": "high",
       "cik": "0001090012",
       "discordThreadId": "1504738035995246642",
-      "lastDeepDive": null,
+      "lastDeepDive": "financial-research/financial_system/deep_dives/DVN/DVN-research-prevaluation-v0.2-report.pdf",
       "lastUpdate": "2026-05-22",
       "nextKnownEvent": null,
       "sources": [
         "SEC EDGAR",
         "Devon Energy Investor Relations"
       ],
-      "notes": "DVN preliminary report workflow opened. User valuation model v1.1 incorporated into dashboard; focus next on checking assumptions/formulas, commodity sensitivity, FCF durability, capital returns, leverage and merger execution."
+      "notes": "DVN preliminary/deep-dive style report and user valuation model v1.1 incorporated. Focus next on checking assumptions/formulas, commodity sensitivity, FCF durability, capital returns, leverage and merger execution."
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com, Inc.",
-      "type": "portfolio",
+      "type": "watchlist",
       "status": "research_pending",
-      "priority": "high",
+      "priority": "medium",
       "cik": "0001018724",
       "discordThreadId": "1504869094808227901",
       "lastDeepDive": null,
@@ -119,7 +119,42 @@
         "SEC EDGAR",
         "Amazon Investor Relations"
       ],
-      "notes": "Preliminary report completed. Focus: AWS/AI capex ROI, advertising margin, retail/logistics efficiency, FCF conversion and segment-level valuation."
+      "notes": "AMZN is an idea/watchlist name, not currently in the portfolio. Preliminary report completed; decide whether to proceed to Deep Dive/model work."
+    },
+    {
+      "ticker": "LVMH",
+      "name": "LVMH Moët Hennessy Louis Vuitton SE",
+      "type": "portfolio",
+      "status": "active",
+      "priority": "medium",
+      "cik": null,
+      "discordThreadId": "1507444169478770919",
+      "lastDeepDive": "financial-research/financial_system/deep_dives/LVMH/LVMH-research-deep-dive-prevaluation-report.pdf",
+      "lastUpdate": "2026-05-22",
+      "nextKnownEvent": null,
+      "sources": [
+        "LVMH Investor Relations",
+        "LVMH Universal Registration Document",
+        "LVMH Q1 revenue releases"
+      ],
+      "notes": "LVMH is in the portfolio. Deep Dive completed. Monitor F&LG recovery/margins, China/US demand, FX, Wines & Spirits, Sephora/Jewelry offset and FCF quality."
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources, Inc.",
+      "type": "portfolio",
+      "status": "active",
+      "priority": "medium",
+      "cik": "0000821189",
+      "discordThreadId": "1506052260608606219",
+      "lastDeepDive": "financial-research/financial_system/deep_dives/EOG/EOG-research-deep-dive-prevaluation-report.pdf",
+      "lastUpdate": "2026-05-18",
+      "nextKnownEvent": null,
+      "sources": [
+        "SEC EDGAR",
+        "EOG Resources Investor Relations"
+      ],
+      "notes": "EOG is in the portfolio per user clarification. Deep Dive completed; remaining work is valuation input sheet with peer comp and WTI/HH/NGL sensitivity if needed."
     }
   ]
 }

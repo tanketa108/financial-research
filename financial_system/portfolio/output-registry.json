@@ -27,19 +27,22 @@
       "intakeId": null,
       "type": "dashboard",
       "entity": "SYSTEM",
-      "title": "Research Operations Dashboard",
+      "title": "Research & Monitoring Dashboard v0.2",
       "path": "financial-research/docs/portfolio.html",
       "createdAt": "2026-05-17",
-      "updatedAt": "2026-05-17",
-      "status": "draft",
+      "updatedAt": "2026-05-22",
+      "status": "final",
       "sources": [
         "portfolio/company-registry.json",
-        "portfolio/task-pipeline.json",
         "portfolio/companies/*.json",
+        "portfolio/task-pipeline.json",
+        "portfolio/output-registry.json",
+        "portfolio/PORTFOLIO_STATE_CONTRACT_V0_2.md",
+        "workflows/portfolio-review-v0.2.md",
         "runtime/state/system-health.json"
       ],
-      "summary": "Static operational dashboard for portfolio/research pipeline state and structural health.",
-      "notes": "Generated dashboard artifact."
+      "summary": "Static operational dashboard v0.2 connected to Portfolio State Contract v0.2: portfolio/watchlist split, readiness, coverage gaps, next review actions and latest Portfolio Review links.",
+      "notes": "Updated during Architecture Phase 1.6 Dashboard v0.2 hardening pass."
     },
     {
       "id": "OUT-2026-05-17-003",
@@ -172,6 +175,124 @@
       ],
       "summary": "User-provided DVN Excel valuation model v1.1 added to the repo and surfaced in the GitHub dashboard. Workbook sheets: Resumen, Hipotesis, Historico, Modelo, DuPont_WC, Reverse_DCF, Conclusiones and Fuentes.",
       "notes": "Fixed user input; do not edit the Excel unless explicitly requested. Next recommended step: audit assumptions, formula integrity and DCF/reverse DCF sensitivities."
+    },
+    {
+      "id": "OUT-2026-05-22-002",
+      "taskId": null,
+      "intakeId": null,
+      "type": "system_report",
+      "entity": "PORTFOLIO",
+      "title": "Portfolio Review v0.1 — 2026-05-22",
+      "path": "financial-research/financial_system/portfolio/reports/2026-05-22-portfolio-review-v0.1.md",
+      "createdAt": "2026-05-22",
+      "updatedAt": "2026-05-22",
+      "status": "final",
+      "sources": [
+        "portfolio/company-registry.json",
+        "portfolio/companies/*.json",
+        "portfolio/task-pipeline.json",
+        "portfolio/PORTFOLIO_REPORTING_V0_1.md"
+      ],
+      "summary": "First Portfolio Reporting v0.1 baseline review: coverage dashboard, company review blocks, open tasks, gaps and PM review queue.",
+      "notes": "Portfolio-level reporting baseline output; no taskId because user directly requested implementation of portfolio reporting roadmap rather than creating a separate ledger task first."
+    },
+    {
+      "id": "OUT-2026-05-22-003",
+      "taskId": null,
+      "intakeId": null,
+      "type": "system_report",
+      "entity": "PORTFOLIO",
+      "title": "Portfolio Reporting v0.1 Validation Notes",
+      "path": "portfolio/portfolio-reporting-v0.1-validation-notes.md",
+      "createdAt": "2026-05-22",
+      "updatedAt": "2026-05-22",
+      "status": "final",
+      "sources": [
+        "financial-research/financial_system/portfolio/reports/2026-05-22-portfolio-review-v0.1.md",
+        "portfolio/PORTFOLIO_REPORTING_V0_1.md"
+      ],
+      "summary": "Validation and iteration notes for first Portfolio Reporting v0.1 baseline.",
+      "notes": "Portfolio reporting validation note created as part of direct user-requested roadmap implementation; no separate taskId was created."
+    },
+    {
+      "id": "OUT-2026-05-22-004",
+      "taskId": null,
+      "intakeId": null,
+      "type": "system_report",
+      "entity": "PORTFOLIO",
+      "title": "Portfolio State Contract v0.2",
+      "path": "portfolio/PORTFOLIO_STATE_CONTRACT_V0_2.md",
+      "createdAt": "2026-05-22",
+      "updatedAt": "2026-05-22",
+      "status": "final",
+      "sources": [
+        "portfolio/company-registry.json",
+        "portfolio/companies/*.json",
+        "portfolio/portfolio-reporting-v0.1-validation-notes.md"
+      ],
+      "summary": "Canonical Portfolio State Contract v0.2 defining coverageGaps, nextReviewAction, portfolioPosition and reporting fields.",
+      "notes": "Architecture Phase 1.6 direct user-requested hardening output; no separate taskId was created."
+    },
+    {
+      "id": "OUT-2026-05-22-005",
+      "taskId": null,
+      "intakeId": null,
+      "type": "system_report",
+      "entity": "PORTFOLIO",
+      "title": "Portfolio Review Workflow v0.2",
+      "path": "workflows/portfolio-review-v0.2.md",
+      "createdAt": "2026-05-22",
+      "updatedAt": "2026-05-22",
+      "status": "final",
+      "sources": [
+        "portfolio/PORTFOLIO_STATE_CONTRACT_V0_2.md",
+        "portfolio/PORTFOLIO_REPORTING_V0_1.md"
+      ],
+      "summary": "Workflow for recurring Portfolio Review v0.2 with digest, canonical state inputs, PM queue and validation gates.",
+      "notes": "Architecture Phase 1.6 direct user-requested hardening output; no separate taskId was created."
+    },
+    {
+      "id": "OUT-2026-05-22-006",
+      "taskId": null,
+      "intakeId": null,
+      "type": "system_report",
+      "entity": "PORTFOLIO",
+      "title": "Portfolio Review v0.2 — 2026-05-22",
+      "path": "financial-research/financial_system/portfolio/reports/2026-05-22-portfolio-review-v0.2.md",
+      "createdAt": "2026-05-22",
+      "updatedAt": "2026-05-22",
+      "status": "final",
+      "sources": [
+        "portfolio/company-registry.json",
+        "portfolio/companies/*.json",
+        "portfolio/task-pipeline.json",
+        "portfolio/output-registry.json",
+        "portfolio/PORTFOLIO_STATE_CONTRACT_V0_2.md",
+        "workflows/portfolio-review-v0.2.md"
+      ],
+      "summary": "First v0.2 Portfolio Review generated from canonical coverageGaps, nextReviewAction, portfolioPosition and reporting fields.",
+      "notes": "Architecture Phase 1.6 portfolio review output; digest stored separately under reports path."
+    },
+    {
+      "id": "OUT-2026-05-22-007",
+      "taskId": null,
+      "intakeId": null,
+      "type": "dashboard",
+      "entity": "PORTFOLIO",
+      "title": "GitHub Dashboard Home v0.2",
+      "path": "financial-research/docs/index.html",
+      "createdAt": "2026-05-22",
+      "updatedAt": "2026-05-22",
+      "status": "final",
+      "sources": [
+        "portfolio/company-registry.json",
+        "portfolio/companies/*.json",
+        "portfolio/output-registry.json",
+        "financial-research/financial_system/portfolio/reports/2026-05-22-portfolio-review-v0.2.md",
+        "financial-research/financial_system/portfolio/reports/2026-05-22-portfolio-review-digest-v0.2.md"
+      ],
+      "summary": "GitHub Pages home dashboard updated as PM cockpit for Portfolio Research & Monitoring OS: digest, PM queue, workflow map, universe, KPIs and links to Portfolio Review/Operations Dashboard.",
+      "notes": "Direct user-requested dashboard front page update; no separate taskId was created."
     }
   ]
 }

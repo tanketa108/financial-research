@@ -4,7 +4,7 @@
   "ticker": "NVO",
   "name": "Novo Nordisk A/S",
   "type": "portfolio",
-  "status": "research_active",
+  "status": "research_pending",
   "priority": "high",
   "identifiers": {
     "cik": null,
@@ -17,7 +17,7 @@
     "threadUrl": null
   },
   "thesisState": {
-    "status": "not_started",
+    "status": "under_review",
     "owner": "user",
     "lastReviewedAt": "2026-05-17",
     "conviction": "unknown",
@@ -156,5 +156,55 @@
     "https://annualreport.novonordisk.com/2025/strategic-aspirations/financial-performance.html",
     "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=915255"
   ],
-  "notes": "NVO Deep Dive task completed as a pre-valuation pack; current open work is valuation setup/model inputs after Q1 2026 primary extraction."
+  "notes": "NVO Deep Dive task completed as a pre-valuation pack; current open work is valuation setup/model inputs after Q1 2026 primary extraction.",
+  "coverage": {
+    "deepDive": {
+      "status": "yes",
+      "path": "financial-research/financial_system/deep_dives/NVO/NVO-research-deep-dive-prevaluation-report.pdf",
+      "date": "2026-05-17"
+    },
+    "model": {
+      "status": "open_task",
+      "path": null,
+      "taskId": "TASK-2026-05-17-001"
+    },
+    "thesis": {
+      "status": "implicit_in_deep_dive",
+      "path": null
+    },
+    "reportingReadiness": "medium"
+  },
+  "lastUpdated": "2026-05-22",
+  "coverageGaps": [
+    {
+      "type": "model",
+      "severity": "high",
+      "summary": "Open task exists for valuation/model inputs after Deep Dive.",
+      "recommendedAction": "Complete TASK-2026-05-17-001 with source-backed base/downside/upside assumptions."
+    }
+  ],
+  "nextReviewAction": {
+    "action": "Complete NVO valuation/model input sheet: normalized 2027-2030 revenue/margin, US pricing, oral Wegovy, CAPEX/FCF and scenarios.",
+    "priority": "high",
+    "owner": "Charlie",
+    "trigger": "Open task TASK-2026-05-17-001",
+    "due": null,
+    "status": "open"
+  },
+  "portfolioPosition": {
+    "status": "in_portfolio",
+    "weight": null,
+    "costBasis": null,
+    "currentPrice": null,
+    "currency": null,
+    "asOf": null,
+    "source": "user"
+  },
+  "reporting": {
+    "includeInPortfolioReview": true,
+    "includeInWatchlistReview": false,
+    "lastReviewedInReport": "2026-05-22",
+    "lastMaterialChange": "2026-05-17",
+    "notes": "High-priority portfolio company with explicit open model-input task."
+  }
 }

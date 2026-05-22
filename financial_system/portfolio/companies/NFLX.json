@@ -111,5 +111,55 @@
     "SEC EDGAR",
     "Netflix Investor Relations"
   ],
-  "notes": "Deep Dive v1.0 complete; next work should be valuation model scenarios, not more architecture."
+  "notes": "Deep Dive v1.0 complete; next work should be valuation model scenarios, not more architecture.",
+  "coverage": {
+    "deepDive": {
+      "status": "yes",
+      "path": "financial-research/financial_system/deep_dives/NFLX/NFLX-research-deep-dive-v1.0-prevaluation-report.pdf",
+      "date": "2026-05-13"
+    },
+    "model": {
+      "status": "yes",
+      "path": "financial-research/financial_system/deep_dives/NFLX/NFLX_v1_valuation_model.xlsx",
+      "date": "2026-05-13"
+    },
+    "thesis": {
+      "status": "implicit_in_deep_dive",
+      "path": null
+    },
+    "reportingReadiness": "high"
+  },
+  "lastUpdated": "2026-05-22",
+  "coverageGaps": [
+    {
+      "type": "thesis",
+      "severity": "low",
+      "summary": "Standalone thesis memo is less explicit than MSFT; thesis is mostly embedded in Deep Dive/model artifacts.",
+      "recommendedAction": "Create standalone thesis memo only if PM wants committee-style output."
+    }
+  ],
+  "nextReviewAction": {
+    "action": "Monitor streaming economics, ads scale, pricing/paid-sharing normalization and FCF; revisit on material event or model change.",
+    "priority": "low",
+    "owner": "Charlie",
+    "trigger": "Material event, earnings update, or model assumption change",
+    "due": null,
+    "status": "open"
+  },
+  "portfolioPosition": {
+    "status": "in_portfolio",
+    "weight": null,
+    "costBasis": null,
+    "currentPrice": null,
+    "currency": null,
+    "asOf": null,
+    "source": "user"
+  },
+  "reporting": {
+    "includeInPortfolioReview": true,
+    "includeInWatchlistReview": false,
+    "lastReviewedInReport": "2026-05-22",
+    "lastMaterialChange": "2026-05-13",
+    "notes": "High-readiness portfolio company; optional standalone thesis cleanup."
+  }
 }

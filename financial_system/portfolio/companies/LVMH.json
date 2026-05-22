@@ -1,0 +1,122 @@
+{
+  "ticker": "LVMH",
+  "name": "LVMH Moët Hennessy Louis Vuitton SE",
+  "type": "portfolio",
+  "status": "active",
+  "priority": "medium",
+  "thesisState": {
+    "status": "preliminary",
+    "owner": "Portfolio Manager",
+    "lastReviewedAt": "2026-05-22",
+    "conviction": "unknown",
+    "summary": "Deep Dive completed. Thesis work should focus on whether Fashion & Leather Goods can normalize growth/margins after the current luxury slowdown, with Sephora/Jewelry offset, China/US demand, FX and FCF quality as key variables.",
+    "whatWouldChangeOurMind": [
+      "Sustained deterioration in Fashion & Leather Goods organic growth or margin beyond cyclical slowdown.",
+      "Evidence that China/US luxury demand weakness is structural rather than cyclical.",
+      "Material deterioration in cash conversion, leverage or brand pricing power."
+    ],
+    "portfolioManagerDecision": "in portfolio; valuation/model step pending if user wants deeper work"
+  },
+  "keyDrivers": [
+    "Fashion & Leather Goods organic growth recovery",
+    "Louis Vuitton/Dior brand desirability and pricing power",
+    "Sephora and Jewelry offset to luxury soft patch",
+    "China/Asia and US luxury demand normalization",
+    "Operating leverage and cost discipline",
+    "Lease-adjusted FCF quality and capital allocation"
+  ],
+  "keyRisks": [
+    "Prolonged luxury demand downturn",
+    "Brand dilution or pricing fatigue",
+    "China weakness lasting longer than expected",
+    "FX and tourism flow headwinds",
+    "Wines & Spirits inventory/channel pressure",
+    "Margin compression from mix, opex or under-absorption"
+  ],
+  "watchMetrics": [
+    "Fashion & Leather Goods organic revenue growth",
+    "Segment operating margin",
+    "China/Asia ex-Japan and US revenue trends",
+    "Sephora selective retailing growth/margin",
+    "Wines & Spirits organic growth and inventory commentary",
+    "Free cash flow conversion",
+    "Net debt / liquidity and buyback cadence"
+  ],
+  "openQuestions": [
+    "What normalized F&LG growth/margin should be used after the luxury slowdown?",
+    "How much of current weakness is cyclical vs brand-specific?",
+    "What valuation multiple is justified versus Hermes/Kering/Richemont under slower growth?",
+    "How resilient is FCF after leases, capex and working capital normalization?"
+  ],
+  "recentEvents": [
+    {
+      "date": "2026-05-22",
+      "type": "deep_dive_completed",
+      "materiality": "high",
+      "summary": "LVMH Deep Dive completed with FY2021-2025 financials, Q1 2026 update, segment/geography analysis, FCF/debt review, risks and scenario matrix.",
+      "source": "financial-research/financial_system/deep_dives/LVMH/LVMH-research-deep-dive-prevaluation-report.pdf",
+      "taskId": "TASK-2026-05-22-001"
+    }
+  ],
+  "researchOutputs": [
+    {
+      "date": "2026-05-22",
+      "type": "deep_dive_prevaluation",
+      "version": "v1.0",
+      "path": "financial-research/financial_system/deep_dives/LVMH/LVMH-research-deep-dive-prevaluation-report.pdf",
+      "summary": "Pre-valuation Deep Dive focused on luxury segment economics, Fashion & Leather Goods, Sephora/Jewelry offset, cash generation, debt/liquidity and scenario variables."
+    }
+  ],
+  "tasks": [
+    "TASK-2026-05-22-001"
+  ],
+  "coverage": {
+    "deepDive": {
+      "status": "yes",
+      "path": "financial-research/financial_system/deep_dives/LVMH/LVMH-research-deep-dive-prevaluation-report.pdf",
+      "date": "2026-05-22"
+    },
+    "model": {
+      "status": "pending_valuation_step",
+      "path": null
+    },
+    "thesis": {
+      "status": "implicit_in_deep_dive",
+      "path": null
+    },
+    "reportingReadiness": "medium_high"
+  },
+  "lastUpdated": "2026-05-22",
+  "coverageGaps": [
+    {
+      "type": "model",
+      "severity": "medium",
+      "summary": "Deep Dive is complete but explicit valuation/model assumptions are pending.",
+      "recommendedAction": "Build valuation assumptions around F&LG recovery, segment margins, FX, Sephora/Jewelry offset and FCF quality."
+    }
+  ],
+  "nextReviewAction": {
+    "action": "Build valuation/model assumptions for F&LG recovery, margin normalization, China/US demand and FCF quality if selected.",
+    "priority": "medium",
+    "owner": "Charlie",
+    "trigger": "PM selects LVMH as next valuation step",
+    "due": null,
+    "status": "open"
+  },
+  "portfolioPosition": {
+    "status": "in_portfolio",
+    "weight": null,
+    "costBasis": null,
+    "currentPrice": null,
+    "currency": null,
+    "asOf": null,
+    "source": "user"
+  },
+  "reporting": {
+    "includeInPortfolioReview": true,
+    "includeInWatchlistReview": false,
+    "lastReviewedInReport": "2026-05-22",
+    "lastMaterialChange": "2026-05-22",
+    "notes": "Portfolio company with Deep Dive complete; valuation assumptions pending."
+  }
+}

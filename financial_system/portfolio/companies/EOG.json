@@ -1,0 +1,122 @@
+{
+  "ticker": "EOG",
+  "name": "EOG Resources, Inc.",
+  "type": "portfolio",
+  "status": "active",
+  "priority": "medium",
+  "thesisState": {
+    "status": "preliminary",
+    "owner": "Portfolio Manager",
+    "lastReviewedAt": "2026-05-18",
+    "conviction": "unknown",
+    "summary": "EOG Deep Dive completed as pre-valuation pack. Portfolio name per user clarification. Core analytical focus is through-cycle shale FCF, oil/gas/NGL sensitivity, capital discipline, Encino/Utica impact and balance sheet resilience.",
+    "whatWouldChangeOurMind": [
+      "Material deterioration in well productivity or capital efficiency.",
+      "Sustained commodity downside that breaks mid-cycle FCF/capital return thesis.",
+      "Leverage or acquisition integration risk rising beyond expected range."
+    ],
+    "portfolioManagerDecision": "in portfolio; valuation sensitivity work pending if needed"
+  },
+  "keyDrivers": [
+    "WTI/HH/NGL realized prices",
+    "Well productivity and drilling returns",
+    "Capital discipline and reinvestment rate",
+    "Encino/Utica contribution and integration",
+    "FCF conversion through cycle",
+    "Balance sheet and shareholder returns"
+  ],
+  "keyRisks": [
+    "Commodity price downside",
+    "Cost inflation and service costs",
+    "Well productivity degradation",
+    "M&A/integration risk",
+    "Regulatory/environmental constraints",
+    "Capital allocation drift"
+  ],
+  "watchMetrics": [
+    "Production volumes and mix",
+    "Realized prices",
+    "Capex/reinvestment rate",
+    "FCF and FCF yield",
+    "Net debt/leverage",
+    "Shareholder returns",
+    "Encino/Utica milestones"
+  ],
+  "openQuestions": [
+    "What mid-cycle WTI/HH/NGL deck should anchor valuation?",
+    "How much incremental value does Encino/Utica create after integration costs?",
+    "What peer multiple/sensitivity framework best captures EOG quality premium?",
+    "How resilient are capital returns in downside commodity scenarios?"
+  ],
+  "recentEvents": [
+    {
+      "date": "2026-05-18",
+      "type": "deep_dive_completed",
+      "materiality": "high",
+      "summary": "EOG Deep Dive pre-valuation PDF completed with 5-year financials, production/guidance, Encino/Utica impact, balance sheet, risks and scenario matrix.",
+      "source": "financial-research/financial_system/deep_dives/EOG/EOG-research-deep-dive-prevaluation-report.pdf",
+      "taskId": "TASK-2026-05-18-001"
+    }
+  ],
+  "researchOutputs": [
+    {
+      "date": "2026-05-18",
+      "type": "deep_dive_prevaluation",
+      "version": "v1.0",
+      "path": "financial-research/financial_system/deep_dives/EOG/EOG-research-deep-dive-prevaluation-report.pdf",
+      "summary": "Pre-valuation Deep Dive focused on shale economics, production/guidance, commodity sensitivity, Encino/Utica, cash flow, balance sheet and scenario variables."
+    }
+  ],
+  "tasks": [
+    "TASK-2026-05-18-001"
+  ],
+  "coverage": {
+    "deepDive": {
+      "status": "yes",
+      "path": "financial-research/financial_system/deep_dives/EOG/EOG-research-deep-dive-prevaluation-report.pdf",
+      "date": "2026-05-18"
+    },
+    "model": {
+      "status": "pending_valuation_step",
+      "path": null
+    },
+    "thesis": {
+      "status": "implicit_in_deep_dive",
+      "path": null
+    },
+    "reportingReadiness": "medium_high"
+  },
+  "lastUpdated": "2026-05-22",
+  "coverageGaps": [
+    {
+      "type": "model",
+      "severity": "medium",
+      "summary": "Deep Dive is complete but valuation/sensitivity model is pending.",
+      "recommendedAction": "Build WTI/HH/NGL sensitivity and peer valuation framework if PM selects EOG."
+    }
+  ],
+  "nextReviewAction": {
+    "action": "Build valuation/sensitivity framework for WTI, Henry Hub, NGLs, peer multiples and Encino/Utica contribution if selected.",
+    "priority": "medium",
+    "owner": "Charlie",
+    "trigger": "PM selects EOG as next valuation step",
+    "due": null,
+    "status": "open"
+  },
+  "portfolioPosition": {
+    "status": "in_portfolio",
+    "weight": null,
+    "costBasis": null,
+    "currentPrice": null,
+    "currency": null,
+    "asOf": null,
+    "source": "user"
+  },
+  "reporting": {
+    "includeInPortfolioReview": true,
+    "includeInWatchlistReview": false,
+    "lastReviewedInReport": "2026-05-22",
+    "lastMaterialChange": "2026-05-18",
+    "notes": "Portfolio company with Deep Dive complete; commodity sensitivity is the key next layer."
+  }
+}
