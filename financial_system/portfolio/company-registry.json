@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.0",
-  "updatedAt": "2026-05-18",
+  "updatedAt": "2026-05-22",
   "source": "Portfolio Operating Model v0",
   "companies": [
     {
@@ -41,17 +41,17 @@
       "ticker": "RACE",
       "name": "Ferrari N.V.",
       "type": "portfolio",
-      "status": "monitoring",
+      "status": "active",
       "priority": "medium",
-      "cik": null,
-      "discordThreadId": null,
-      "lastDeepDive": null,
-      "lastUpdate": null,
+      "cik": "0001648416",
+      "discordThreadId": "1507116139912888482",
+      "lastDeepDive": "financial-research/financial_system/deep_dives/RACE/RACE-research-deep-dive-prevaluation-report.pdf",
+      "lastUpdate": "2026-05-21",
       "nextKnownEvent": null,
       "sources": [
         "Ferrari Investor Relations"
       ],
-      "notes": "Foreign issuer path/identifiers need validation."
+      "notes": "RACE Deep Dive completed. Monitor scarcity/volume discipline, personalization/mix, EV transition/Ferrari Luce, China, tariffs, industrial FCF and buybacks."
     },
     {
       "ticker": "NVO",
@@ -96,13 +96,13 @@
       "cik": "0001090012",
       "discordThreadId": "1504738035995246642",
       "lastDeepDive": null,
-      "lastUpdate": "2026-05-15",
+      "lastUpdate": "2026-05-22",
       "nextKnownEvent": null,
       "sources": [
         "SEC EDGAR",
         "Devon Energy Investor Relations"
       ],
-      "notes": "DVN preliminary report workflow opened. Focus: Devon/Coterra combined shale platform, commodity sensitivity, FCF durability, capital returns, leverage and merger execution."
+      "notes": "DVN preliminary report workflow opened. User valuation model v1.1 incorporated into dashboard; focus next on checking assumptions/formulas, commodity sensitivity, FCF durability, capital returns, leverage and merger execution."
     },
     {
       "ticker": "AMZN",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.2.0",
-  "updatedAt": "2026-05-18",
+  "updatedAt": "2026-05-22",
   "outputs": [
     {
       "id": "OUT-2026-05-17-001",
@@ -154,6 +154,24 @@
       ],
       "summary": "Committee-style MSFT thesis framed around enterprise switching costs, Azure quality, AI upside and capex/multiple-compression risk.",
       "notes": "Dashboard-visible MSFT research output."
+    },
+    {
+      "id": "OUT-2026-05-22-001",
+      "taskId": null,
+      "intakeId": null,
+      "type": "valuation_inputs",
+      "entity": "DVN",
+      "title": "DVN valuation model v1.1",
+      "path": "financial-research/docs/models/DVN/DVN_Valoracion_v1_1.xlsx",
+      "sourcePath": "financial-research/financial_system/valuations/DVN/DVN_Valoracion_v1_1.xlsx",
+      "createdAt": "2026-05-22",
+      "updatedAt": "2026-05-22",
+      "status": "final",
+      "sources": [
+        "Discord #dvn uploaded Excel model"
+      ],
+      "summary": "User-provided DVN Excel valuation model v1.1 added to the repo and surfaced in the GitHub dashboard. Workbook sheets: Resumen, Hipotesis, Historico, Modelo, DuPont_WC, Reverse_DCF, Conclusiones and Fuentes.",
+      "notes": "Fixed user input; do not edit the Excel unless explicitly requested. Next recommended step: audit assumptions, formula integrity and DCF/reverse DCF sensitivities."
     }
   ]
 }
