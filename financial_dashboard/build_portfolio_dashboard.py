@@ -110,13 +110,14 @@ def coverage_summary(coverage):
 
 def report_link(path: str, label: str):
     p = Path(path)
-    rel = None
-    if p.exists():
-        try:
-            rel = p.relative_to(ROOT / 'docs')
-        except ValueError:
-            rel = None
-    return f'<a class="download-chip" href="{esc(rel or path)}">{esc(label)}</a>'
+    if p.name:
+        docs_report = ROOT / 'docs' / 'portfolio_reports' / p.name
+        if p.exists() and not docs_report.exists():
+            docs_report.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(p, docs_report)
+        if docs_report.exists():
+            return f'<a class="download-chip" href="portfolio_reports/{esc(p.name)}">{esc(label)}</a>'
+    return f'<a class="download-chip" href="{esc(path)}">{esc(label)}</a>'
 
 
 def render_company_state_page(state, tasks_by_id):
