@@ -17,7 +17,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "financial_system" / "macro" / "data" / "nyfed-rrp-state.json"
-ENDPOINT = "https://markets.newyorkfed.org/api/rp/reverserepo/all/results/last/10.csv"
+ENDPOINT = "https://markets.newyorkfed.org/api/rp/reverserepo/all/results/last/90.csv"
 USER_AGENT = "financial-research-macro-v0/0.1"
 
 

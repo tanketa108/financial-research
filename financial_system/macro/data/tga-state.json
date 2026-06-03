@@ -2,20 +2,20 @@
   "version": "0.1",
   "source": "treasury_fiscaldata",
   "sourceUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/dts/operating_cash_balance",
-  "fetchedAt": "2026-06-02T21:30:20.397226+00:00",
-  "recordDate": "2026-06-01",
+  "fetchedAt": "2026-06-03T22:48:43.634435+00:00",
+  "recordDate": "2026-06-02",
   "units": "USD millions",
   "tgaOpeningBalance": {
     "accountType": "Treasury General Account (TGA) Opening Balance",
-    "openTodayBalanceUsdMn": 903881.0,
+    "openTodayBalanceUsdMn": 856842.0,
     "openMonthBalanceUsdMn": 903881.0,
     "openFiscalYearBalanceUsdMn": 890825.0,
     "closeTodayBalanceUsdMn": null,
     "raw": {
-      "record_date": "2026-06-01",
+      "record_date": "2026-06-02",
       "account_type": "Treasury General Account (TGA) Opening Balance",
       "close_today_bal": "null",
-      "open_today_bal": "903881",
+      "open_today_bal": "856842",
       "open_month_bal": "903881",
       "open_fiscal_year_bal": "890825",
       "table_nbr": "I",
@@ -27,22 +27,22 @@
       "record_calendar_year": "2026",
       "record_calendar_quarter": "2",
       "record_calendar_month": "06",
-      "record_calendar_day": "01"
+      "record_calendar_day": "02"
     }
   },
   "totalTgaDeposits": {
     "accountType": "Total TGA Deposits (Table II)",
-    "openTodayBalanceUsdMn": 280267.0,
-    "openMonthBalanceUsdMn": 280267.0,
-    "openFiscalYearBalanceUsdMn": 26421631.0,
+    "openTodayBalanceUsdMn": 263280.0,
+    "openMonthBalanceUsdMn": 543548.0,
+    "openFiscalYearBalanceUsdMn": 26684911.0,
     "closeTodayBalanceUsdMn": null,
     "raw": {
-      "record_date": "2026-06-01",
+      "record_date": "2026-06-02",
       "account_type": "Total TGA Deposits (Table II)",
       "close_today_bal": "null",
-      "open_today_bal": "280267",
-      "open_month_bal": "280267",
-      "open_fiscal_year_bal": "26421631",
+      "open_today_bal": "263280",
+      "open_month_bal": "543548",
+      "open_fiscal_year_bal": "26684911",
       "table_nbr": "I",
       "table_nm": "Operating Cash Balance",
       "sub_table_name": "Cash Balance Details",
@@ -52,22 +52,22 @@
       "record_calendar_year": "2026",
       "record_calendar_quarter": "2",
       "record_calendar_month": "06",
-      "record_calendar_day": "01"
+      "record_calendar_day": "02"
     }
   },
   "totalTgaWithdrawals": {
     "accountType": "Total TGA Withdrawals (Table II) (-)",
-    "openTodayBalanceUsdMn": 327307.0,
-    "openMonthBalanceUsdMn": 327307.0,
-    "openFiscalYearBalanceUsdMn": 26455615.0,
+    "openTodayBalanceUsdMn": 254047.0,
+    "openMonthBalanceUsdMn": 581354.0,
+    "openFiscalYearBalanceUsdMn": 26709661.0,
     "closeTodayBalanceUsdMn": null,
     "raw": {
-      "record_date": "2026-06-01",
+      "record_date": "2026-06-02",
       "account_type": "Total TGA Withdrawals (Table II) (-)",
       "close_today_bal": "null",
-      "open_today_bal": "327307",
-      "open_month_bal": "327307",
-      "open_fiscal_year_bal": "26455615",
+      "open_today_bal": "254047",
+      "open_month_bal": "581354",
+      "open_fiscal_year_bal": "26709661",
       "table_nbr": "I",
       "table_nm": "Operating Cash Balance",
       "sub_table_name": "Cash Balance Details",
@@ -77,12 +77,18 @@
       "record_calendar_year": "2026",
       "record_calendar_quarter": "2",
       "record_calendar_month": "06",
-      "record_calendar_day": "01"
+      "record_calendar_day": "02"
     }
   },
   "tgaTrend": {
-    "historyWindowRecords": 10,
+    "historyWindowRecords": 60,
     "historyLatestFirst": [
+      {
+        "recordDate": "2026-06-02",
+        "tgaOpeningBalanceUsdMn": 856842.0,
+        "openMonthBalanceUsdMn": 903881.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
       {
         "recordDate": "2026-06-01",
         "tgaOpeningBalanceUsdMn": 903881.0,
@@ -142,12 +148,306 @@
         "tgaOpeningBalanceUsdMn": 758819.0,
         "openMonthBalanceUsdMn": 969383.0,
         "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-15",
+        "tgaOpeningBalanceUsdMn": 802412.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-14",
+        "tgaOpeningBalanceUsdMn": 807420.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-13",
+        "tgaOpeningBalanceUsdMn": 844036.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-12",
+        "tgaOpeningBalanceUsdMn": 854589.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-11",
+        "tgaOpeningBalanceUsdMn": 839161.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-08",
+        "tgaOpeningBalanceUsdMn": 846562.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-07",
+        "tgaOpeningBalanceUsdMn": 862757.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-06",
+        "tgaOpeningBalanceUsdMn": 860287.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-05",
+        "tgaOpeningBalanceUsdMn": 879968.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-04",
+        "tgaOpeningBalanceUsdMn": 857311.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-01",
+        "tgaOpeningBalanceUsdMn": 969383.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-30",
+        "tgaOpeningBalanceUsdMn": 988102.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-29",
+        "tgaOpeningBalanceUsdMn": 990422.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-28",
+        "tgaOpeningBalanceUsdMn": 1002382.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-27",
+        "tgaOpeningBalanceUsdMn": 974251.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-24",
+        "tgaOpeningBalanceUsdMn": 969844.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-23",
+        "tgaOpeningBalanceUsdMn": 1007172.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-22",
+        "tgaOpeningBalanceUsdMn": 1029510.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-21",
+        "tgaOpeningBalanceUsdMn": 1038035.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-20",
+        "tgaOpeningBalanceUsdMn": 998636.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-17",
+        "tgaOpeningBalanceUsdMn": 971155.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-16",
+        "tgaOpeningBalanceUsdMn": 924435.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-15",
+        "tgaOpeningBalanceUsdMn": 779506.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-14",
+        "tgaOpeningBalanceUsdMn": 758910.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-13",
+        "tgaOpeningBalanceUsdMn": 703218.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-10",
+        "tgaOpeningBalanceUsdMn": 686969.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-09",
+        "tgaOpeningBalanceUsdMn": 697079.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-08",
+        "tgaOpeningBalanceUsdMn": 728227.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-07",
+        "tgaOpeningBalanceUsdMn": 775433.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-06",
+        "tgaOpeningBalanceUsdMn": 753938.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-03",
+        "tgaOpeningBalanceUsdMn": 776076.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-02",
+        "tgaOpeningBalanceUsdMn": 803553.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-04-01",
+        "tgaOpeningBalanceUsdMn": 893000.0,
+        "openMonthBalanceUsdMn": 893000.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-31",
+        "tgaOpeningBalanceUsdMn": 868478.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-30",
+        "tgaOpeningBalanceUsdMn": 848655.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-27",
+        "tgaOpeningBalanceUsdMn": 823031.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-26",
+        "tgaOpeningBalanceUsdMn": 837412.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-25",
+        "tgaOpeningBalanceUsdMn": 876206.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-24",
+        "tgaOpeningBalanceUsdMn": 909509.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-23",
+        "tgaOpeningBalanceUsdMn": 870864.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-20",
+        "tgaOpeningBalanceUsdMn": 882822.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-19",
+        "tgaOpeningBalanceUsdMn": 875833.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-18",
+        "tgaOpeningBalanceUsdMn": 929668.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-17",
+        "tgaOpeningBalanceUsdMn": 937577.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-16",
+        "tgaOpeningBalanceUsdMn": 806335.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-13",
+        "tgaOpeningBalanceUsdMn": 809284.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-12",
+        "tgaOpeningBalanceUsdMn": 805806.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-11",
+        "tgaOpeningBalanceUsdMn": 862841.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-03-10",
+        "tgaOpeningBalanceUsdMn": 858548.0,
+        "openMonthBalanceUsdMn": 798943.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
       }
     ],
-    "oneDayChangeUsdMn": 54171.0,
-    "windowChangeUsdMn": 145062.0,
-    "windowStartDate": "2026-05-18",
-    "windowEndDate": "2026-06-01"
+    "oneDayChangeUsdMn": -47039.0,
+    "windowChangeUsdMn": -1706.0,
+    "windowStartDate": "2026-03-10",
+    "windowEndDate": "2026-06-02"
   },
   "recordCountForDate": 4,
   "caveats": [

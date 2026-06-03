@@ -1,12 +1,12 @@
 {
   "version": "0.1",
   "source": "fred_public_csv",
-  "fetchedAt": "2026-06-03T20:26:18.945887+00:00",
+  "fetchedAt": "2026-06-03T22:48:30.532854+00:00",
   "series": {
     "GDPC1": {
       "seriesId": "GDPC1",
       "seriesName": "Real Gross Domestic Product",
-      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1&cosd=2024-01-01",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1&cosd=2025-01-01",
       "units": "bn chained 2017 USD",
       "calc": "qoq_yoy",
       "latest": {
@@ -14,7 +14,7 @@
         "value": 24152.656
       },
       "trend": {
-        "historyWindowRecords": 8,
+        "historyWindowRecords": 5,
         "historyLatestFirst": [
           {
             "observationDate": "2026-01-01",
@@ -35,34 +35,22 @@
           {
             "observationDate": "2025-01-01",
             "value": 23548.21
-          },
-          {
-            "observationDate": "2024-10-01",
-            "value": 23586.542
-          },
-          {
-            "observationDate": "2024-07-01",
-            "value": 23478.57
-          },
-          {
-            "observationDate": "2024-04-01",
-            "value": 23286.508
           }
         ],
         "onePeriodChange": 96.90699999999924,
         "onePeriodPct": 0.40284341177654337,
         "yoyPct": 2.566844783531308,
-        "windowPct": 3.7195272043365035,
+        "windowPct": 2.566844783531308,
         "windowDirection": "rising",
         "yearAgoDate": "2025-01-01",
-        "windowStartDate": "2024-04-01",
+        "windowStartDate": "2025-01-01",
         "windowEndDate": "2026-01-01"
       }
     },
     "PCECC96": {
       "seriesId": "PCECC96",
       "seriesName": "Real Personal Consumption Expenditures",
-      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCECC96&cosd=2024-01-01",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCECC96&cosd=2025-01-01",
       "units": "bn chained 2017 USD",
       "calc": "qoq_yoy",
       "latest": {
@@ -70,7 +58,7 @@
         "value": 16723.347
       },
       "trend": {
-        "historyWindowRecords": 8,
+        "historyWindowRecords": 5,
         "historyLatestFirst": [
           {
             "observationDate": "2026-01-01",
@@ -91,34 +79,22 @@
           {
             "observationDate": "2025-01-01",
             "value": 16345.793
-          },
-          {
-            "observationDate": "2024-10-01",
-            "value": 16320.89
-          },
-          {
-            "observationDate": "2024-07-01",
-            "value": 16165.768
-          },
-          {
-            "observationDate": "2024-04-01",
-            "value": 16009.637
           }
         ],
         "onePeriodChange": 58.12800000000061,
         "onePeriodPct": 0.34879829662004536,
         "yoyPct": 2.3097931070092503,
-        "windowPct": 4.458002389435811,
+        "windowPct": 2.3097931070092503,
         "windowDirection": "rising",
         "yearAgoDate": "2025-01-01",
-        "windowStartDate": "2024-04-01",
+        "windowStartDate": "2025-01-01",
         "windowEndDate": "2026-01-01"
       }
     },
     "RSXFS": {
       "seriesId": "RSXFS",
       "seriesName": "Advance Retail Sales",
-      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=RSXFS&cosd=2024-01-01",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=RSXFS&cosd=2025-01-01",
       "units": "USD millions",
       "calc": "mom_yoy",
       "latest": {
@@ -126,7 +102,7 @@
         "value": 656115.0
       },
       "trend": {
-        "historyWindowRecords": 8,
+        "historyWindowRecords": 16,
         "historyLatestFirst": [
           {
             "observationDate": "2026-04-01",
@@ -159,22 +135,54 @@
           {
             "observationDate": "2025-09-01",
             "value": 632395.0
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 632149.0
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 628747.0
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 624146.0
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 618037.0
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 623635.0
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 625420.0
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": 616636.0
+          },
+          {
+            "observationDate": "2025-01-01",
+            "value": 615145.0
           }
         ],
         "onePeriodChange": 3075.0,
         "onePeriodPct": 0.4708746784270579,
         "yoyPct": 5.208174653443121,
-        "windowPct": 3.750820294278112,
+        "windowPct": 6.660218322509337,
         "windowDirection": "rising",
         "yearAgoDate": "2025-04-01",
-        "windowStartDate": "2025-09-01",
+        "windowStartDate": "2025-01-01",
         "windowEndDate": "2026-04-01"
       }
     },
     "RRSFS": {
       "seriesId": "RRSFS",
       "seriesName": "Advance Real Retail and Food Services Sales",
-      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=RRSFS&cosd=2024-01-01",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=RRSFS&cosd=2025-01-01",
       "units": "USD millions",
       "calc": "mom_yoy",
       "latest": {
@@ -182,7 +190,7 @@
         "value": 227758.0
       },
       "trend": {
-        "historyWindowRecords": 8,
+        "historyWindowRecords": 15,
         "historyLatestFirst": [
           {
             "observationDate": "2026-04-01",
@@ -215,22 +223,50 @@
           {
             "observationDate": "2025-08-01",
             "value": 226329.0
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 225884.0
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 224939.0
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 223349.0
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 225382.0
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 226195.0
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": 222590.0
+          },
+          {
+            "observationDate": "2025-01-01",
+            "value": 222993.0
           }
         ],
         "onePeriodChange": -333.0,
         "onePeriodPct": -0.14599436189941528,
         "yoyPct": 0.6909967063816636,
-        "windowPct": 0.6313817495769536,
+        "windowPct": 2.1368383760925314,
         "windowDirection": "rising",
         "yearAgoDate": "2025-03-01",
-        "windowStartDate": "2025-08-01",
+        "windowStartDate": "2025-01-01",
         "windowEndDate": "2026-04-01"
       }
     },
     "INDPRO": {
       "seriesId": "INDPRO",
       "seriesName": "Industrial Production: Total Index",
-      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDPRO&cosd=2024-01-01",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDPRO&cosd=2025-01-01",
       "units": "index",
       "calc": "mom_yoy",
       "latest": {
@@ -238,7 +274,7 @@
         "value": 102.4963
       },
       "trend": {
-        "historyWindowRecords": 8,
+        "historyWindowRecords": 16,
         "historyLatestFirst": [
           {
             "observationDate": "2026-04-01",
@@ -271,22 +307,54 @@
           {
             "observationDate": "2025-09-01",
             "value": 101.668
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 101.6247
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 101.894
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 101.4785
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 100.9655
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 101.1279
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 101.0404
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": 101.0993
+          },
+          {
+            "observationDate": "2025-01-01",
+            "value": 100.0647
           }
         ],
         "onePeriodChange": 0.6903000000000077,
         "onePeriodPct": 0.6780543386440963,
         "yoyPct": 1.353137956983197,
-        "windowPct": 0.8147106267458737,
+        "windowPct": 2.4300277720314956,
         "windowDirection": "rising",
         "yearAgoDate": "2025-04-01",
-        "windowStartDate": "2025-09-01",
+        "windowStartDate": "2025-01-01",
         "windowEndDate": "2026-04-01"
       }
     },
     "HOUST": {
       "seriesId": "HOUST",
       "seriesName": "Housing Starts",
-      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=HOUST&cosd=2024-01-01",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=HOUST&cosd=2025-01-01",
       "units": "thousands SAAR",
       "calc": "mom_yoy",
       "latest": {
@@ -294,7 +362,7 @@
         "value": 1465.0
       },
       "trend": {
-        "historyWindowRecords": 8,
+        "historyWindowRecords": 16,
         "historyLatestFirst": [
           {
             "observationDate": "2026-04-01",
@@ -327,22 +395,54 @@
           {
             "observationDate": "2025-09-01",
             "value": 1319.0
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 1291.0
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 1432.0
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 1379.0
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 1289.0
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 1400.0
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 1346.0
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": 1491.0
+          },
+          {
+            "observationDate": "2025-01-01",
+            "value": 1353.0
           }
         ],
         "onePeriodChange": -42.0,
         "onePeriodPct": -2.786994027869938,
         "yoyPct": 4.642857142857149,
-        "windowPct": 11.06899166034876,
+        "windowPct": 8.27790096082779,
         "windowDirection": "rising",
         "yearAgoDate": "2025-04-01",
-        "windowStartDate": "2025-09-01",
+        "windowStartDate": "2025-01-01",
         "windowEndDate": "2026-04-01"
       }
     },
     "PERMIT": {
       "seriesId": "PERMIT",
       "seriesName": "New Privately-Owned Housing Units Authorized by Building Permits",
-      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PERMIT&cosd=2024-01-01",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PERMIT&cosd=2025-01-01",
       "units": "thousands SAAR",
       "calc": "mom_yoy",
       "latest": {
@@ -350,7 +450,7 @@
         "value": 1423.0
       },
       "trend": {
-        "historyWindowRecords": 8,
+        "historyWindowRecords": 16,
         "historyLatestFirst": [
           {
             "observationDate": "2026-04-01",
@@ -383,22 +483,54 @@
           {
             "observationDate": "2025-09-01",
             "value": 1444.0
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 1347.0
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 1400.0
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 1399.0
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 1416.0
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 1445.0
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 1492.0
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": 1446.0
+          },
+          {
+            "observationDate": "2025-01-01",
+            "value": 1463.0
           }
         ],
         "onePeriodChange": 60.0,
         "onePeriodPct": 4.402054292002933,
         "yoyPct": -1.52249134948097,
-        "windowPct": -1.454293628808867,
+        "windowPct": -2.734107997265889,
         "windowDirection": "falling",
         "yearAgoDate": "2025-04-01",
-        "windowStartDate": "2025-09-01",
+        "windowStartDate": "2025-01-01",
         "windowEndDate": "2026-04-01"
       }
     },
     "DGORDER": {
       "seriesId": "DGORDER",
       "seriesName": "Manufacturers' New Orders: Durable Goods",
-      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGORDER&cosd=2024-01-01",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGORDER&cosd=2025-01-01",
       "units": "USD millions",
       "calc": "mom_yoy",
       "latest": {
@@ -406,7 +538,7 @@
         "value": 346182.0
       },
       "trend": {
-        "historyWindowRecords": 8,
+        "historyWindowRecords": 16,
         "historyLatestFirst": [
           {
             "observationDate": "2026-04-01",
@@ -439,22 +571,54 @@
           {
             "observationDate": "2025-09-01",
             "value": 314147.0
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 312138.0
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 303032.0
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 311761.0
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 344069.0
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 295229.0
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 316215.0
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": 293985.0
+          },
+          {
+            "observationDate": "2025-01-01",
+            "value": 291195.0
           }
         ],
         "onePeriodChange": 25697.0,
         "onePeriodPct": 8.018159976285943,
         "yoyPct": 17.2588058761165,
-        "windowPct": 10.197455331421267,
+        "windowPct": 18.883222582805324,
         "windowDirection": "rising",
         "yearAgoDate": "2025-04-01",
-        "windowStartDate": "2025-09-01",
+        "windowStartDate": "2025-01-01",
         "windowEndDate": "2026-04-01"
       }
     },
     "NEWORDER": {
       "seriesId": "NEWORDER",
       "seriesName": "Manufacturers' New Orders: Nondefense Capital Goods Excluding Aircraft",
-      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NEWORDER&cosd=2024-01-01",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NEWORDER&cosd=2025-01-01",
       "units": "USD millions",
       "calc": "mom_yoy",
       "latest": {
@@ -462,7 +626,7 @@
         "value": 82487.0
       },
       "trend": {
-        "historyWindowRecords": 8,
+        "historyWindowRecords": 16,
         "historyLatestFirst": [
           {
             "observationDate": "2026-04-01",
@@ -495,15 +659,47 @@
           {
             "observationDate": "2025-09-01",
             "value": 77591.0
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 76806.0
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 76154.0
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 75608.0
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 76049.0
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 74631.0
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 75781.0
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": 75561.0
+          },
+          {
+            "observationDate": "2025-01-01",
+            "value": 75971.0
           }
         ],
         "onePeriodChange": -809.0,
         "onePeriodPct": -0.9712351133307706,
         "yoyPct": 10.526456834291388,
-        "windowPct": 6.310010181593229,
+        "windowPct": 8.576956996748763,
         "windowDirection": "rising",
         "yearAgoDate": "2025-04-01",
-        "windowStartDate": "2025-09-01",
+        "windowStartDate": "2025-01-01",
         "windowEndDate": "2026-04-01"
       }
     }

@@ -23,9 +23,9 @@ OUT = ROOT / "financial_system" / "macro" / "data" / "fed-reserve-balances-state
 SERIES_ID = "WRESBAL"
 # Limit the public CSV to recent observations; full-history downloads can be slow
 # from the FRED graph endpoint and are unnecessary for the v0 trend window.
-ENDPOINT = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={SERIES_ID}&cosd=2026-01-01"
+ENDPOINT = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={SERIES_ID}&cosd=2025-01-01"
 USER_AGENT = "Mozilla/5.0 financial-research-macro-v0/0.1"
-HISTORY_WINDOW = 10
+HISTORY_WINDOW = 120
 
 
 def fetch_csv(url: str, attempts: int = 3) -> list[dict[str, str]]:
@@ -33,7 +33,7 @@ def fetch_csv(url: str, attempts: int = 3) -> list[dict[str, str]]:
     # curl while Python urllib can intermittently hang on TLS reads.
     try:
         text = subprocess.check_output(
-            ["curl", "-L", "--fail", "--silent", "--show-error", "--max-time", "20", url],
+            ["curl", "-L", "--fail", "--silent", "--show-error", "--max-time", "60", url],
             text=True,
         )
         return list(csv.DictReader(io.StringIO(text)))

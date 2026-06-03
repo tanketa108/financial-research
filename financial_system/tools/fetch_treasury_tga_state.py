@@ -35,7 +35,7 @@ def to_number(value: Any) -> float | None:
         return None
 
 
-def latest_records(page_size: int = 80) -> list[dict[str, Any]]:
+def latest_records(page_size: int = 480) -> list[dict[str, Any]]:
     params = urllib.parse.urlencode({"page[size]": page_size, "sort": "-record_date"})
     payload = fetch_json(f"{ENDPOINT}?{params}")
     return payload.get("data", [])
@@ -54,7 +54,7 @@ def build_state(records: list[dict[str, Any]]) -> dict[str, Any]:
     latest = [r for r in records if r.get("record_date") == latest_date]
 
     history: list[dict[str, Any]] = []
-    for record_date in record_dates(records)[:10]:
+    for record_date in record_dates(records)[:60]:
         rows = [r for r in records if r.get("record_date") == record_date]
         by_account_for_date = {r.get("account_type"): r for r in rows}
         tga_for_date = by_account_for_date.get("Treasury General Account (TGA) Opening Balance")

@@ -3,8 +3,8 @@
   "source": "fred_public_csv",
   "seriesId": "WRESBAL",
   "seriesName": "Reserve Balances with Federal Reserve Banks",
-  "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WRESBAL&cosd=2026-01-01",
-  "fetchedAt": "2026-06-03T07:15:08.447255+00:00",
+  "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WRESBAL&cosd=2025-01-01",
+  "fetchedAt": "2026-06-03T22:48:33.178871+00:00",
   "frequency": "weekly",
   "units": "USD millions",
   "latest": {
@@ -12,7 +12,7 @@
     "reserveBalancesUsdMn": 3066560.0
   },
   "trend": {
-    "historyWindowRecords": 10,
+    "historyWindowRecords": 74,
     "historyLatestFirst": [
       {
         "observationDate": "2026-05-27",
@@ -53,11 +53,267 @@
       {
         "observationDate": "2026-03-25",
         "reserveBalancesUsdMn": 2993955.0
+      },
+      {
+        "observationDate": "2026-03-18",
+        "reserveBalancesUsdMn": 3019995.0
+      },
+      {
+        "observationDate": "2026-03-11",
+        "reserveBalancesUsdMn": 3037665.0
+      },
+      {
+        "observationDate": "2026-03-04",
+        "reserveBalancesUsdMn": 3015531.0
+      },
+      {
+        "observationDate": "2026-02-25",
+        "reserveBalancesUsdMn": 2965765.0
+      },
+      {
+        "observationDate": "2026-02-18",
+        "reserveBalancesUsdMn": 2949804.0
+      },
+      {
+        "observationDate": "2026-02-11",
+        "reserveBalancesUsdMn": 2939557.0
+      },
+      {
+        "observationDate": "2026-02-04",
+        "reserveBalancesUsdMn": 2925170.0
+      },
+      {
+        "observationDate": "2026-01-28",
+        "reserveBalancesUsdMn": 2901600.0
+      },
+      {
+        "observationDate": "2026-01-21",
+        "reserveBalancesUsdMn": 2954903.0
+      },
+      {
+        "observationDate": "2026-01-14",
+        "reserveBalancesUsdMn": 3049630.0
+      },
+      {
+        "observationDate": "2026-01-07",
+        "reserveBalancesUsdMn": 2996379.0
+      },
+      {
+        "observationDate": "2025-12-31",
+        "reserveBalancesUsdMn": 2957410.0
+      },
+      {
+        "observationDate": "2025-12-24",
+        "reserveBalancesUsdMn": 2955581.0
+      },
+      {
+        "observationDate": "2025-12-17",
+        "reserveBalancesUsdMn": 2959044.0
+      },
+      {
+        "observationDate": "2025-12-10",
+        "reserveBalancesUsdMn": 2932112.0
+      },
+      {
+        "observationDate": "2025-12-03",
+        "reserveBalancesUsdMn": 2858284.0
+      },
+      {
+        "observationDate": "2025-11-26",
+        "reserveBalancesUsdMn": 2896586.0
+      },
+      {
+        "observationDate": "2025-11-19",
+        "reserveBalancesUsdMn": 2888643.0
+      },
+      {
+        "observationDate": "2025-11-12",
+        "reserveBalancesUsdMn": 2855030.0
+      },
+      {
+        "observationDate": "2025-11-05",
+        "reserveBalancesUsdMn": 2862569.0
+      },
+      {
+        "observationDate": "2025-10-29",
+        "reserveBalancesUsdMn": 2848021.0
+      },
+      {
+        "observationDate": "2025-10-22",
+        "reserveBalancesUsdMn": 2933037.0
+      },
+      {
+        "observationDate": "2025-10-15",
+        "reserveBalancesUsdMn": 3019028.0
+      },
+      {
+        "observationDate": "2025-10-08",
+        "reserveBalancesUsdMn": 2998471.0
+      },
+      {
+        "observationDate": "2025-10-01",
+        "reserveBalancesUsdMn": 2966094.0
+      },
+      {
+        "observationDate": "2025-09-24",
+        "reserveBalancesUsdMn": 3002218.0
+      },
+      {
+        "observationDate": "2025-09-17",
+        "reserveBalancesUsdMn": 3073355.0
+      },
+      {
+        "observationDate": "2025-09-10",
+        "reserveBalancesUsdMn": 3160774.0
+      },
+      {
+        "observationDate": "2025-09-03",
+        "reserveBalancesUsdMn": 3181701.0
+      },
+      {
+        "observationDate": "2025-08-27",
+        "reserveBalancesUsdMn": 3224967.0
+      },
+      {
+        "observationDate": "2025-08-20",
+        "reserveBalancesUsdMn": 3317292.0
+      },
+      {
+        "observationDate": "2025-08-13",
+        "reserveBalancesUsdMn": 3320050.0
+      },
+      {
+        "observationDate": "2025-08-06",
+        "reserveBalancesUsdMn": 3332492.0
+      },
+      {
+        "observationDate": "2025-07-30",
+        "reserveBalancesUsdMn": 3347414.0
+      },
+      {
+        "observationDate": "2025-07-23",
+        "reserveBalancesUsdMn": 3362277.0
+      },
+      {
+        "observationDate": "2025-07-16",
+        "reserveBalancesUsdMn": 3398822.0
+      },
+      {
+        "observationDate": "2025-07-09",
+        "reserveBalancesUsdMn": 3330249.0
+      },
+      {
+        "observationDate": "2025-07-02",
+        "reserveBalancesUsdMn": 3225980.0
+      },
+      {
+        "observationDate": "2025-06-25",
+        "reserveBalancesUsdMn": 3369328.0
+      },
+      {
+        "observationDate": "2025-06-18",
+        "reserveBalancesUsdMn": 3406366.0
+      },
+      {
+        "observationDate": "2025-06-11",
+        "reserveBalancesUsdMn": 3407108.0
+      },
+      {
+        "observationDate": "2025-06-04",
+        "reserveBalancesUsdMn": 3294381.0
+      },
+      {
+        "observationDate": "2025-05-28",
+        "reserveBalancesUsdMn": 3270661.0
+      },
+      {
+        "observationDate": "2025-05-21",
+        "reserveBalancesUsdMn": 3289469.0
+      },
+      {
+        "observationDate": "2025-05-14",
+        "reserveBalancesUsdMn": 3235723.0
+      },
+      {
+        "observationDate": "2025-05-07",
+        "reserveBalancesUsdMn": 3218636.0
+      },
+      {
+        "observationDate": "2025-04-30",
+        "reserveBalancesUsdMn": 3219214.0
+      },
+      {
+        "observationDate": "2025-04-23",
+        "reserveBalancesUsdMn": 3256734.0
+      },
+      {
+        "observationDate": "2025-04-16",
+        "reserveBalancesUsdMn": 3452030.0
+      },
+      {
+        "observationDate": "2025-04-09",
+        "reserveBalancesUsdMn": 3474682.0
+      },
+      {
+        "observationDate": "2025-04-02",
+        "reserveBalancesUsdMn": 3379339.0
+      },
+      {
+        "observationDate": "2025-03-26",
+        "reserveBalancesUsdMn": 3450933.0
+      },
+      {
+        "observationDate": "2025-03-19",
+        "reserveBalancesUsdMn": 3467789.0
+      },
+      {
+        "observationDate": "2025-03-12",
+        "reserveBalancesUsdMn": 3400235.0
+      },
+      {
+        "observationDate": "2025-03-05",
+        "reserveBalancesUsdMn": 3312625.0
+      },
+      {
+        "observationDate": "2025-02-26",
+        "reserveBalancesUsdMn": 3327249.0
+      },
+      {
+        "observationDate": "2025-02-19",
+        "reserveBalancesUsdMn": 3270082.0
+      },
+      {
+        "observationDate": "2025-02-12",
+        "reserveBalancesUsdMn": 3220027.0
+      },
+      {
+        "observationDate": "2025-02-05",
+        "reserveBalancesUsdMn": 3177065.0
+      },
+      {
+        "observationDate": "2025-01-29",
+        "reserveBalancesUsdMn": 3224785.0
+      },
+      {
+        "observationDate": "2025-01-22",
+        "reserveBalancesUsdMn": 3332278.0
+      },
+      {
+        "observationDate": "2025-01-15",
+        "reserveBalancesUsdMn": 3340816.0
+      },
+      {
+        "observationDate": "2025-01-08",
+        "reserveBalancesUsdMn": 3254743.0
+      },
+      {
+        "observationDate": "2025-01-01",
+        "reserveBalancesUsdMn": 3095997.0
       }
     ],
     "onePeriodChangeUsdMn": -63002.0,
-    "windowChangeUsdMn": 72605.0,
-    "windowStartDate": "2026-03-25",
+    "windowChangeUsdMn": -29437.0,
+    "windowStartDate": "2025-01-01",
     "windowEndDate": "2026-05-27"
   },
   "caveats": [

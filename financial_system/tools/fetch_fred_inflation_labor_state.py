@@ -18,9 +18,9 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "financial_system" / "macro" / "data" / "fred-inflation-labor-state.json"
-COSD = "2024-01-01"
+COSD = "2025-01-01"
 USER_AGENT = "Mozilla/5.0 financial-research-macro-v0/0.1"
-HISTORY_WINDOW = 14
+HISTORY_WINDOW = 36
 
 SERIES = {
     "CPIAUCSL": {"block": "inflation", "name": "Consumer Price Index for All Urban Consumers: All Items", "units": "index", "calc": "mom_yoy"},
@@ -42,7 +42,7 @@ def endpoint(series_id: str) -> str:
 
 def fetch_text(url: str) -> str:
     try:
-        return subprocess.check_output(["curl", "-L", "--fail", "--silent", "--show-error", "--max-time", "20", url], text=True)
+        return subprocess.check_output(["curl", "-L", "--fail", "--silent", "--show-error", "--max-time", "60", url], text=True)
     except Exception:
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=30) as resp:

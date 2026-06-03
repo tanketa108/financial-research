@@ -19,8 +19,8 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "financial_system" / "macro" / "data" / "fred-rates-curve-state.json"
 USER_AGENT = "Mozilla/5.0 financial-research-macro-v0/0.1"
-COSD = "2026-01-01"
-HISTORY_WINDOW = 10
+COSD = "2025-01-01"
+HISTORY_WINDOW = 120
 
 SERIES = {
     "FEDFUNDS": {
@@ -63,7 +63,7 @@ def endpoint(series_id: str) -> str:
 def fetch_text(url: str) -> str:
     try:
         return subprocess.check_output(
-            ["curl", "-L", "--fail", "--silent", "--show-error", "--max-time", "20", url],
+            ["curl", "-L", "--fail", "--silent", "--show-error", "--max-time", "60", url],
             text=True,
         )
     except Exception:
