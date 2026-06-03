@@ -1,0 +1,77 @@
+{
+  "version": "0.1",
+  "scope": "Upcoming US macro release events v0",
+  "generatedBy": "manual_seed_from_official_sources",
+  "lastCheckedAt": "2026-06-01T21:44:00Z",
+  "timezone": "America/New_York",
+  "notes": [
+    "This file tracks dated release events separately from the canonical release registry.",
+    "Dates must cite an official source URL and should be marked pending_manual_confirmation if not verified.",
+    "BLS schedule pages returned 403 to automated fetch during seed creation; BLS event dates are intentionally not guessed."
+  ],
+  "events": [
+    {
+      "releaseId": "us_fomc_decision",
+      "releaseDate": "2026-06-17",
+      "releaseTimeET": "14:00",
+      "period": "June 2026 FOMC",
+      "status": "confirmed_official_calendar",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "sourceNote": "Federal Reserve 2026 FOMC calendar lists June 16-17 meeting; policy decision normally released at 14:00 ET. Asterisk indicates SEP meeting."
+    },
+    {
+      "releaseId": "us_gdp",
+      "releaseDate": "2026-06-25",
+      "releaseTimeET": "08:30",
+      "period": "Q1 2026 third estimate",
+      "status": "confirmed_official_calendar",
+      "sourceUrl": "https://www.bea.gov/news/schedule",
+      "sourceNote": "BEA schedule: GDP (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 1st Quarter 2026."
+    },
+    {
+      "releaseId": "us_pce_income_outlays",
+      "releaseDate": "2026-06-25",
+      "releaseTimeET": "08:30",
+      "period": "May 2026",
+      "status": "confirmed_official_calendar",
+      "sourceUrl": "https://www.bea.gov/news/schedule",
+      "sourceNote": "BEA schedule: Personal Income and Outlays, May 2026."
+    },
+    {
+      "releaseId": "us_gdp",
+      "releaseDate": "2026-07-30",
+      "releaseTimeET": "08:30",
+      "period": "Q2 2026 advance estimate",
+      "status": "confirmed_official_calendar",
+      "sourceUrl": "https://www.bea.gov/news/schedule",
+      "sourceNote": "BEA schedule: GDP (Advance Estimate), 2nd Quarter 2026."
+    },
+    {
+      "releaseId": "us_pce_income_outlays",
+      "releaseDate": "2026-07-30",
+      "releaseTimeET": "08:30",
+      "period": "June 2026",
+      "status": "confirmed_official_calendar",
+      "sourceUrl": "https://www.bea.gov/news/schedule",
+      "sourceNote": "BEA schedule: Personal Income and Outlays, June 2026."
+    },
+    {
+      "releaseId": "us_cpi",
+      "releaseDate": null,
+      "releaseTimeET": "08:30",
+      "period": "next monthly release",
+      "status": "pending_manual_confirmation",
+      "sourceUrl": "https://www.bls.gov/schedule/news_release/cpi.htm",
+      "sourceNote": "BLS schedule page must be checked manually or through an approved access method; automated fetch returned 403."
+    },
+    {
+      "releaseId": "us_employment_situation",
+      "releaseDate": null,
+      "releaseTimeET": "08:30",
+      "period": "next monthly release",
+      "status": "pending_manual_confirmation",
+      "sourceUrl": "https://www.bls.gov/schedule/news_release/empsit.htm",
+      "sourceNote": "BLS schedule page must be checked manually or through an approved access method; automated fetch returned 403."
+    }
+  ]
+}

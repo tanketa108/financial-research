@@ -1,0 +1,157 @@
+{
+  "version": "0.1",
+  "source": "treasury_fiscaldata",
+  "sourceUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/dts/operating_cash_balance",
+  "fetchedAt": "2026-06-02T21:30:20.397226+00:00",
+  "recordDate": "2026-06-01",
+  "units": "USD millions",
+  "tgaOpeningBalance": {
+    "accountType": "Treasury General Account (TGA) Opening Balance",
+    "openTodayBalanceUsdMn": 903881.0,
+    "openMonthBalanceUsdMn": 903881.0,
+    "openFiscalYearBalanceUsdMn": 890825.0,
+    "closeTodayBalanceUsdMn": null,
+    "raw": {
+      "record_date": "2026-06-01",
+      "account_type": "Treasury General Account (TGA) Opening Balance",
+      "close_today_bal": "null",
+      "open_today_bal": "903881",
+      "open_month_bal": "903881",
+      "open_fiscal_year_bal": "890825",
+      "table_nbr": "I",
+      "table_nm": "Operating Cash Balance",
+      "sub_table_name": "Cash Balance Details",
+      "src_line_nbr": "1",
+      "record_fiscal_year": "2026",
+      "record_fiscal_quarter": "3",
+      "record_calendar_year": "2026",
+      "record_calendar_quarter": "2",
+      "record_calendar_month": "06",
+      "record_calendar_day": "01"
+    }
+  },
+  "totalTgaDeposits": {
+    "accountType": "Total TGA Deposits (Table II)",
+    "openTodayBalanceUsdMn": 280267.0,
+    "openMonthBalanceUsdMn": 280267.0,
+    "openFiscalYearBalanceUsdMn": 26421631.0,
+    "closeTodayBalanceUsdMn": null,
+    "raw": {
+      "record_date": "2026-06-01",
+      "account_type": "Total TGA Deposits (Table II)",
+      "close_today_bal": "null",
+      "open_today_bal": "280267",
+      "open_month_bal": "280267",
+      "open_fiscal_year_bal": "26421631",
+      "table_nbr": "I",
+      "table_nm": "Operating Cash Balance",
+      "sub_table_name": "Cash Balance Details",
+      "src_line_nbr": "2",
+      "record_fiscal_year": "2026",
+      "record_fiscal_quarter": "3",
+      "record_calendar_year": "2026",
+      "record_calendar_quarter": "2",
+      "record_calendar_month": "06",
+      "record_calendar_day": "01"
+    }
+  },
+  "totalTgaWithdrawals": {
+    "accountType": "Total TGA Withdrawals (Table II) (-)",
+    "openTodayBalanceUsdMn": 327307.0,
+    "openMonthBalanceUsdMn": 327307.0,
+    "openFiscalYearBalanceUsdMn": 26455615.0,
+    "closeTodayBalanceUsdMn": null,
+    "raw": {
+      "record_date": "2026-06-01",
+      "account_type": "Total TGA Withdrawals (Table II) (-)",
+      "close_today_bal": "null",
+      "open_today_bal": "327307",
+      "open_month_bal": "327307",
+      "open_fiscal_year_bal": "26455615",
+      "table_nbr": "I",
+      "table_nm": "Operating Cash Balance",
+      "sub_table_name": "Cash Balance Details",
+      "src_line_nbr": "3",
+      "record_fiscal_year": "2026",
+      "record_fiscal_quarter": "3",
+      "record_calendar_year": "2026",
+      "record_calendar_quarter": "2",
+      "record_calendar_month": "06",
+      "record_calendar_day": "01"
+    }
+  },
+  "tgaTrend": {
+    "historyWindowRecords": 10,
+    "historyLatestFirst": [
+      {
+        "recordDate": "2026-06-01",
+        "tgaOpeningBalanceUsdMn": 903881.0,
+        "openMonthBalanceUsdMn": 903881.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-29",
+        "tgaOpeningBalanceUsdMn": 849710.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-28",
+        "tgaOpeningBalanceUsdMn": 842660.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-27",
+        "tgaOpeningBalanceUsdMn": 881329.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-26",
+        "tgaOpeningBalanceUsdMn": 825550.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-22",
+        "tgaOpeningBalanceUsdMn": 785882.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-21",
+        "tgaOpeningBalanceUsdMn": 781979.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-20",
+        "tgaOpeningBalanceUsdMn": 822275.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-19",
+        "tgaOpeningBalanceUsdMn": 785925.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      },
+      {
+        "recordDate": "2026-05-18",
+        "tgaOpeningBalanceUsdMn": 758819.0,
+        "openMonthBalanceUsdMn": 969383.0,
+        "openFiscalYearBalanceUsdMn": 890825.0
+      }
+    ],
+    "oneDayChangeUsdMn": 54171.0,
+    "windowChangeUsdMn": 145062.0,
+    "windowStartDate": "2026-05-18",
+    "windowEndDate": "2026-06-01"
+  },
+  "recordCountForDate": 4,
+  "caveats": [
+    "Daily Treasury Statement fields are reported by Treasury FiscalData; use source field definitions for exact accounting treatment.",
+    "Do not overinterpret one-day TGA moves without broader liquidity context."
+  ]
+}

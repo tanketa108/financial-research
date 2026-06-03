@@ -23,6 +23,11 @@ financial_system/outputs/phase2_packets/*.md
 # Local dashboard serving/runtime leftovers
 financial_dashboard/output/
 
+# Local Streamlit installs/cache
+financial_system/macro/app/vendor/
+financial_system/macro/app/.venv/
+.streamlit/secrets.toml
+
 # OS/editor
 .DS_Store
 .vscode/

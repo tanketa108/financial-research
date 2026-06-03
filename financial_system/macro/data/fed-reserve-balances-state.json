@@ -1,0 +1,67 @@
+{
+  "version": "0.1",
+  "source": "fred_public_csv",
+  "seriesId": "WRESBAL",
+  "seriesName": "Reserve Balances with Federal Reserve Banks",
+  "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WRESBAL&cosd=2026-01-01",
+  "fetchedAt": "2026-06-03T07:15:08.447255+00:00",
+  "frequency": "weekly",
+  "units": "USD millions",
+  "latest": {
+    "observationDate": "2026-05-27",
+    "reserveBalancesUsdMn": 3066560.0
+  },
+  "trend": {
+    "historyWindowRecords": 10,
+    "historyLatestFirst": [
+      {
+        "observationDate": "2026-05-27",
+        "reserveBalancesUsdMn": 3066560.0
+      },
+      {
+        "observationDate": "2026-05-20",
+        "reserveBalancesUsdMn": 3129562.0
+      },
+      {
+        "observationDate": "2026-05-13",
+        "reserveBalancesUsdMn": 3102810.0
+      },
+      {
+        "observationDate": "2026-05-06",
+        "reserveBalancesUsdMn": 3032588.0
+      },
+      {
+        "observationDate": "2026-04-29",
+        "reserveBalancesUsdMn": 2918599.0
+      },
+      {
+        "observationDate": "2026-04-22",
+        "reserveBalancesUsdMn": 2901825.0
+      },
+      {
+        "observationDate": "2026-04-15",
+        "reserveBalancesUsdMn": 3129588.0
+      },
+      {
+        "observationDate": "2026-04-08",
+        "reserveBalancesUsdMn": 3116247.0
+      },
+      {
+        "observationDate": "2026-04-01",
+        "reserveBalancesUsdMn": 3026708.0
+      },
+      {
+        "observationDate": "2026-03-25",
+        "reserveBalancesUsdMn": 2993955.0
+      }
+    ],
+    "onePeriodChangeUsdMn": -63002.0,
+    "windowChangeUsdMn": 72605.0,
+    "windowStartDate": "2026-03-25",
+    "windowEndDate": "2026-05-27"
+  },
+  "caveats": [
+    "FRED public CSV is keyless and suitable for monitoring, but official release notes/metadata should be checked before publication-grade claims.",
+    "Reserve balances are a key liquidity indicator, but should be read alongside TGA, RRP and funding-market indicators."
+  ]
+}

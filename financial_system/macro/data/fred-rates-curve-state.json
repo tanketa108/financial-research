@@ -1,0 +1,360 @@
+{
+  "version": "0.1",
+  "source": "fred_public_csv",
+  "fetchedAt": "2026-06-03T20:18:24.600407+00:00",
+  "series": {
+    "FEDFUNDS": {
+      "seriesId": "FEDFUNDS",
+      "seriesName": "Effective Federal Funds Rate",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FEDFUNDS&cosd=2026-01-01",
+      "units": "percent",
+      "frequency": "monthly",
+      "latest": {
+        "observationDate": "2026-05-01",
+        "value": 3.63
+      },
+      "trend": {
+        "historyWindowRecords": 5,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-05-01",
+            "value": 3.63
+          },
+          {
+            "observationDate": "2026-04-01",
+            "value": 3.64
+          },
+          {
+            "observationDate": "2026-03-01",
+            "value": 3.64
+          },
+          {
+            "observationDate": "2026-02-01",
+            "value": 3.64
+          },
+          {
+            "observationDate": "2026-01-01",
+            "value": 3.64
+          }
+        ],
+        "onePeriodChange": -0.010000000000000231,
+        "windowChange": -0.010000000000000231,
+        "windowStartDate": "2026-01-01",
+        "windowEndDate": "2026-05-01"
+      }
+    },
+    "DGS2": {
+      "seriesId": "DGS2",
+      "seriesName": "Market Yield on U.S. Treasury Securities at 2-Year Constant Maturity",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2&cosd=2026-01-01",
+      "units": "percent",
+      "frequency": "daily",
+      "latest": {
+        "observationDate": "2026-06-01",
+        "value": 4.05
+      },
+      "trend": {
+        "historyWindowRecords": 10,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-01",
+            "value": 4.05
+          },
+          {
+            "observationDate": "2026-05-29",
+            "value": 3.98
+          },
+          {
+            "observationDate": "2026-05-28",
+            "value": 3.99
+          },
+          {
+            "observationDate": "2026-05-27",
+            "value": 4.0
+          },
+          {
+            "observationDate": "2026-05-26",
+            "value": 4.01
+          },
+          {
+            "observationDate": "2026-05-22",
+            "value": 4.13
+          },
+          {
+            "observationDate": "2026-05-21",
+            "value": 4.08
+          },
+          {
+            "observationDate": "2026-05-20",
+            "value": 4.04
+          },
+          {
+            "observationDate": "2026-05-19",
+            "value": 4.13
+          },
+          {
+            "observationDate": "2026-05-18",
+            "value": 4.07
+          }
+        ],
+        "onePeriodChange": 0.06999999999999984,
+        "windowChange": -0.020000000000000462,
+        "windowStartDate": "2026-05-18",
+        "windowEndDate": "2026-06-01"
+      }
+    },
+    "DGS10": {
+      "seriesId": "DGS10",
+      "seriesName": "Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10&cosd=2026-01-01",
+      "units": "percent",
+      "frequency": "daily",
+      "latest": {
+        "observationDate": "2026-06-01",
+        "value": 4.47
+      },
+      "trend": {
+        "historyWindowRecords": 10,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-01",
+            "value": 4.47
+          },
+          {
+            "observationDate": "2026-05-29",
+            "value": 4.45
+          },
+          {
+            "observationDate": "2026-05-28",
+            "value": 4.45
+          },
+          {
+            "observationDate": "2026-05-27",
+            "value": 4.48
+          },
+          {
+            "observationDate": "2026-05-26",
+            "value": 4.5
+          },
+          {
+            "observationDate": "2026-05-22",
+            "value": 4.56
+          },
+          {
+            "observationDate": "2026-05-21",
+            "value": 4.57
+          },
+          {
+            "observationDate": "2026-05-20",
+            "value": 4.57
+          },
+          {
+            "observationDate": "2026-05-19",
+            "value": 4.67
+          },
+          {
+            "observationDate": "2026-05-18",
+            "value": 4.61
+          }
+        ],
+        "onePeriodChange": 0.019999999999999574,
+        "windowChange": -0.14000000000000057,
+        "windowStartDate": "2026-05-18",
+        "windowEndDate": "2026-06-01"
+      }
+    },
+    "DGS30": {
+      "seriesId": "DGS30",
+      "seriesName": "Market Yield on U.S. Treasury Securities at 30-Year Constant Maturity",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS30&cosd=2026-01-01",
+      "units": "percent",
+      "frequency": "daily",
+      "latest": {
+        "observationDate": "2026-06-01",
+        "value": 4.99
+      },
+      "trend": {
+        "historyWindowRecords": 10,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-01",
+            "value": 4.99
+          },
+          {
+            "observationDate": "2026-05-29",
+            "value": 4.99
+          },
+          {
+            "observationDate": "2026-05-28",
+            "value": 4.98
+          },
+          {
+            "observationDate": "2026-05-27",
+            "value": 5.01
+          },
+          {
+            "observationDate": "2026-05-26",
+            "value": 5.03
+          },
+          {
+            "observationDate": "2026-05-22",
+            "value": 5.07
+          },
+          {
+            "observationDate": "2026-05-21",
+            "value": 5.1
+          },
+          {
+            "observationDate": "2026-05-20",
+            "value": 5.11
+          },
+          {
+            "observationDate": "2026-05-19",
+            "value": 5.18
+          },
+          {
+            "observationDate": "2026-05-18",
+            "value": 5.14
+          }
+        ],
+        "onePeriodChange": 0.0,
+        "windowChange": -0.14999999999999947,
+        "windowStartDate": "2026-05-18",
+        "windowEndDate": "2026-06-01"
+      }
+    },
+    "T10Y2Y": {
+      "seriesId": "T10Y2Y",
+      "seriesName": "10-Year Treasury Constant Maturity Minus 2-Year Treasury Constant Maturity",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=T10Y2Y&cosd=2026-01-01",
+      "units": "percentage points",
+      "frequency": "daily",
+      "latest": {
+        "observationDate": "2026-06-02",
+        "value": 0.41
+      },
+      "trend": {
+        "historyWindowRecords": 10,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-02",
+            "value": 0.41
+          },
+          {
+            "observationDate": "2026-06-01",
+            "value": 0.42
+          },
+          {
+            "observationDate": "2026-05-29",
+            "value": 0.47
+          },
+          {
+            "observationDate": "2026-05-28",
+            "value": 0.46
+          },
+          {
+            "observationDate": "2026-05-27",
+            "value": 0.48
+          },
+          {
+            "observationDate": "2026-05-26",
+            "value": 0.49
+          },
+          {
+            "observationDate": "2026-05-22",
+            "value": 0.43
+          },
+          {
+            "observationDate": "2026-05-21",
+            "value": 0.49
+          },
+          {
+            "observationDate": "2026-05-20",
+            "value": 0.53
+          },
+          {
+            "observationDate": "2026-05-19",
+            "value": 0.54
+          }
+        ],
+        "onePeriodChange": -0.010000000000000009,
+        "windowChange": -0.13000000000000006,
+        "windowStartDate": "2026-05-19",
+        "windowEndDate": "2026-06-02"
+      }
+    },
+    "T10Y3M": {
+      "seriesId": "T10Y3M",
+      "seriesName": "10-Year Treasury Constant Maturity Minus 3-Month Treasury Constant Maturity",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=T10Y3M&cosd=2026-01-01",
+      "units": "percentage points",
+      "frequency": "daily",
+      "latest": {
+        "observationDate": "2026-06-02",
+        "value": 0.69
+      },
+      "trend": {
+        "historyWindowRecords": 10,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-02",
+            "value": 0.69
+          },
+          {
+            "observationDate": "2026-06-01",
+            "value": 0.69
+          },
+          {
+            "observationDate": "2026-05-29",
+            "value": 0.76
+          },
+          {
+            "observationDate": "2026-05-28",
+            "value": 0.76
+          },
+          {
+            "observationDate": "2026-05-27",
+            "value": 0.8
+          },
+          {
+            "observationDate": "2026-05-26",
+            "value": 0.82
+          },
+          {
+            "observationDate": "2026-05-22",
+            "value": 0.88
+          },
+          {
+            "observationDate": "2026-05-21",
+            "value": 0.89
+          },
+          {
+            "observationDate": "2026-05-20",
+            "value": 0.92
+          },
+          {
+            "observationDate": "2026-05-19",
+            "value": 1.0
+          }
+        ],
+        "onePeriodChange": 0.0,
+        "windowChange": -0.31000000000000005,
+        "windowStartDate": "2026-05-19",
+        "windowEndDate": "2026-06-02"
+      }
+    }
+  },
+  "summary": {
+    "latest2yPct": 4.05,
+    "latest10yPct": 4.47,
+    "latest10y2ySpreadPctPts": 0.41,
+    "curveShape10y2y": "positive/upward sloping",
+    "twoYearTrend": "falling",
+    "tenYearTrend": "falling",
+    "curveTrend10y2y": "falling"
+  },
+  "caveats": [
+    "FRED graph CSV is keyless and suitable for monitoring; publication-grade reports should verify metadata/revisions when needed.",
+    "Rates/curve context is not a portfolio instruction; use it to frame valuation sensitivity and macro regime questions."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "version": "0.1",
+  "scope": "US macro v0",
+  "series": [
+    {
+      "id": "us_10y_treasury_yield",
+      "source": "fred",
+      "sourceSeriesId": "DGS10",
+      "name": "10-Year Treasury Constant Maturity Rate",
+      "category": "rates_curve",
+      "frequency": "daily",
+      "units": "percent",
+      "defaultTransform": "level",
+      "importance": "high",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DGS10"
+    },
+    {
+      "id": "us_2y_treasury_yield",
+      "source": "fred",
+      "sourceSeriesId": "DGS2",
+      "name": "2-Year Treasury Constant Maturity Rate",
+      "category": "rates_curve",
+      "frequency": "daily",
+      "units": "percent",
+      "defaultTransform": "level",
+      "importance": "high",
+      "sourceUrl": "https://fred.stlouisfed.org/series/DGS2"
+    },
+    {
+      "id": "us_cpi_all_items",
+      "source": "fred",
+      "sourceSeriesId": "CPIAUCSL",
+      "name": "Consumer Price Index for All Urban Consumers: All Items",
+      "category": "inflation",
+      "frequency": "monthly",
+      "units": "index 1982-1984=100",
+      "defaultTransform": "yoy",
+      "importance": "high",
+      "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCSL"
+    },
+    {
+      "id": "us_unemployment_rate",
+      "source": "fred",
+      "sourceSeriesId": "UNRATE",
+      "name": "Unemployment Rate",
+      "category": "labor",
+      "frequency": "monthly",
+      "units": "percent",
+      "defaultTransform": "level",
+      "importance": "high",
+      "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE"
+    },
+    {
+      "id": "us_treasury_operating_cash_balance",
+      "source": "treasury_fiscaldata",
+      "endpoint": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/dts/operating_cash_balance",
+      "name": "Treasury Operating Cash Balance / TGA proxy",
+      "category": "liquidity_treasury",
+      "frequency": "daily",
+      "units": "USD millions, depending on field",
+      "defaultTransform": "level",
+      "importance": "high",
+      "sourceUrl": "https://fiscaldata.treasury.gov/datasets/daily-treasury-statement/operating-cash-balance"
+    }
+  ]
+}

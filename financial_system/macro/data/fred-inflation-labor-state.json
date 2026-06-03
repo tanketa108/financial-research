@@ -1,0 +1,832 @@
+{
+  "version": "0.1",
+  "source": "fred_public_csv",
+  "fetchedAt": "2026-06-03T20:23:11.256099+00:00",
+  "series": {
+    "CPIAUCSL": {
+      "seriesId": "CPIAUCSL",
+      "seriesName": "Consumer Price Index for All Urban Consumers: All Items",
+      "block": "inflation",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL&cosd=2024-01-01",
+      "units": "index",
+      "calc": "mom_yoy",
+      "latest": {
+        "observationDate": "2026-04-01",
+        "value": 332.407
+      },
+      "trend": {
+        "historyWindowRecords": 14,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-04-01",
+            "value": 332.407
+          },
+          {
+            "observationDate": "2026-03-01",
+            "value": 330.293
+          },
+          {
+            "observationDate": "2026-02-01",
+            "value": 327.46
+          },
+          {
+            "observationDate": "2026-01-01",
+            "value": 326.588
+          },
+          {
+            "observationDate": "2025-12-01",
+            "value": 326.031
+          },
+          {
+            "observationDate": "2025-11-01",
+            "value": 325.063
+          },
+          {
+            "observationDate": "2025-09-01",
+            "value": 324.245
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 323.291
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 322.169
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 321.435
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 320.62
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 320.302
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 319.785
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": 319.679
+          }
+        ],
+        "onePeriodChange": 2.113999999999976,
+        "windowChange": 12.728000000000009,
+        "windowDirection": "rising",
+        "momPct": 0.6400377846336402,
+        "yoyPct": 3.9470269087042764,
+        "yearAgoDate": "2025-03-01",
+        "windowStartDate": "2025-02-01",
+        "windowEndDate": "2026-04-01"
+      }
+    },
+    "CPILFESL": {
+      "seriesId": "CPILFESL",
+      "seriesName": "Consumer Price Index for All Urban Consumers: All Items Less Food and Energy",
+      "block": "inflation",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPILFESL&cosd=2024-01-01",
+      "units": "index",
+      "calc": "mom_yoy",
+      "latest": {
+        "observationDate": "2026-04-01",
+        "value": 335.423
+      },
+      "trend": {
+        "historyWindowRecords": 14,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-04-01",
+            "value": 335.423
+          },
+          {
+            "observationDate": "2026-03-01",
+            "value": 334.165
+          },
+          {
+            "observationDate": "2026-02-01",
+            "value": 333.512
+          },
+          {
+            "observationDate": "2026-01-01",
+            "value": 332.793
+          },
+          {
+            "observationDate": "2025-12-01",
+            "value": 331.814
+          },
+          {
+            "observationDate": "2025-11-01",
+            "value": 331.043
+          },
+          {
+            "observationDate": "2025-09-01",
+            "value": 330.418
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 329.7
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 328.682
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 327.658
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 326.893
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 326.467
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 325.69
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": 325.465
+          }
+        ],
+        "onePeriodChange": 1.2579999999999814,
+        "windowChange": 9.958000000000027,
+        "windowDirection": "rising",
+        "momPct": 0.376460730477457,
+        "yoyPct": 2.9884245755166017,
+        "yearAgoDate": "2025-03-01",
+        "windowStartDate": "2025-02-01",
+        "windowEndDate": "2026-04-01"
+      }
+    },
+    "PCEPI": {
+      "seriesId": "PCEPI",
+      "seriesName": "Personal Consumption Expenditures: Chain-type Price Index",
+      "block": "inflation",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCEPI&cosd=2024-01-01",
+      "units": "index",
+      "calc": "mom_yoy",
+      "latest": {
+        "observationDate": "2026-04-01",
+        "value": 130.902
+      },
+      "trend": {
+        "historyWindowRecords": 14,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-04-01",
+            "value": 130.902
+          },
+          {
+            "observationDate": "2026-03-01",
+            "value": 130.381
+          },
+          {
+            "observationDate": "2026-02-01",
+            "value": 129.52
+          },
+          {
+            "observationDate": "2026-01-01",
+            "value": 129.002
+          },
+          {
+            "observationDate": "2025-12-01",
+            "value": 128.576
+          },
+          {
+            "observationDate": "2025-11-01",
+            "value": 128.152
+          },
+          {
+            "observationDate": "2025-10-01",
+            "value": 127.871
+          },
+          {
+            "observationDate": "2025-09-01",
+            "value": 127.625
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 127.293
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 126.96
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 126.743
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 126.38
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 126.15
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 125.941
+          }
+        ],
+        "onePeriodChange": 0.5209999999999866,
+        "windowChange": 4.960999999999984,
+        "windowDirection": "rising",
+        "momPct": 0.3995981009502714,
+        "yoyPct": 3.7669441141498172,
+        "yearAgoDate": "2025-04-01",
+        "windowStartDate": "2025-03-01",
+        "windowEndDate": "2026-04-01"
+      }
+    },
+    "PCEPILFE": {
+      "seriesId": "PCEPILFE",
+      "seriesName": "Personal Consumption Expenditures Excluding Food and Energy",
+      "block": "inflation",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCEPILFE&cosd=2024-01-01",
+      "units": "index",
+      "calc": "mom_yoy",
+      "latest": {
+        "observationDate": "2026-04-01",
+        "value": 129.63
+      },
+      "trend": {
+        "historyWindowRecords": 14,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-04-01",
+            "value": 129.63
+          },
+          {
+            "observationDate": "2026-03-01",
+            "value": 129.321
+          },
+          {
+            "observationDate": "2026-02-01",
+            "value": 128.94
+          },
+          {
+            "observationDate": "2026-01-01",
+            "value": 128.432
+          },
+          {
+            "observationDate": "2025-12-01",
+            "value": 127.886
+          },
+          {
+            "observationDate": "2025-11-01",
+            "value": 127.469
+          },
+          {
+            "observationDate": "2025-10-01",
+            "value": 127.243
+          },
+          {
+            "observationDate": "2025-09-01",
+            "value": 126.954
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 126.714
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 126.43
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 126.121
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 125.79
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 125.502
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 125.267
+          }
+        ],
+        "onePeriodChange": 0.3089999999999975,
+        "windowChange": 4.3629999999999995,
+        "windowDirection": "rising",
+        "momPct": 0.23894031131834748,
+        "yoyPct": 3.289190610508208,
+        "yearAgoDate": "2025-04-01",
+        "windowStartDate": "2025-03-01",
+        "windowEndDate": "2026-04-01"
+      }
+    },
+    "PAYEMS": {
+      "seriesId": "PAYEMS",
+      "seriesName": "All Employees, Total Nonfarm",
+      "block": "labor",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PAYEMS&cosd=2024-01-01",
+      "units": "thousands",
+      "calc": "level_change",
+      "latest": {
+        "observationDate": "2026-04-01",
+        "value": 158736.0
+      },
+      "trend": {
+        "historyWindowRecords": 14,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-04-01",
+            "value": 158736.0
+          },
+          {
+            "observationDate": "2026-03-01",
+            "value": 158621.0
+          },
+          {
+            "observationDate": "2026-02-01",
+            "value": 158436.0
+          },
+          {
+            "observationDate": "2026-01-01",
+            "value": 158592.0
+          },
+          {
+            "observationDate": "2025-12-01",
+            "value": 158432.0
+          },
+          {
+            "observationDate": "2025-11-01",
+            "value": 158449.0
+          },
+          {
+            "observationDate": "2025-10-01",
+            "value": 158408.0
+          },
+          {
+            "observationDate": "2025-09-01",
+            "value": 158548.0
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 158472.0
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 158542.0
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 158478.0
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 158498.0
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 158485.0
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 158377.0
+          }
+        ],
+        "onePeriodChange": 115.0,
+        "windowChange": 359.0,
+        "windowDirection": "rising",
+        "momPct": null,
+        "yoyPct": null,
+        "yearAgoDate": "2025-04-01",
+        "windowStartDate": "2025-03-01",
+        "windowEndDate": "2026-04-01"
+      }
+    },
+    "UNRATE": {
+      "seriesId": "UNRATE",
+      "seriesName": "Unemployment Rate",
+      "block": "labor",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE&cosd=2024-01-01",
+      "units": "percent",
+      "calc": "level_change",
+      "latest": {
+        "observationDate": "2026-04-01",
+        "value": 4.3
+      },
+      "trend": {
+        "historyWindowRecords": 14,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-04-01",
+            "value": 4.3
+          },
+          {
+            "observationDate": "2026-03-01",
+            "value": 4.3
+          },
+          {
+            "observationDate": "2026-02-01",
+            "value": 4.4
+          },
+          {
+            "observationDate": "2026-01-01",
+            "value": 4.3
+          },
+          {
+            "observationDate": "2025-12-01",
+            "value": 4.4
+          },
+          {
+            "observationDate": "2025-11-01",
+            "value": 4.5
+          },
+          {
+            "observationDate": "2025-09-01",
+            "value": 4.4
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 4.3
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 4.3
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 4.1
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 4.3
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 4.2
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 4.2
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": 4.2
+          }
+        ],
+        "onePeriodChange": 0.0,
+        "windowChange": 0.09999999999999964,
+        "windowDirection": "rising",
+        "momPct": null,
+        "yoyPct": null,
+        "yearAgoDate": "2025-03-01",
+        "windowStartDate": "2025-02-01",
+        "windowEndDate": "2026-04-01"
+      }
+    },
+    "CIVPART": {
+      "seriesId": "CIVPART",
+      "seriesName": "Labor Force Participation Rate",
+      "block": "labor",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CIVPART&cosd=2024-01-01",
+      "units": "percent",
+      "calc": "level_change",
+      "latest": {
+        "observationDate": "2026-04-01",
+        "value": 61.8
+      },
+      "trend": {
+        "historyWindowRecords": 14,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-04-01",
+            "value": 61.8
+          },
+          {
+            "observationDate": "2026-03-01",
+            "value": 61.9
+          },
+          {
+            "observationDate": "2026-02-01",
+            "value": 62.0
+          },
+          {
+            "observationDate": "2026-01-01",
+            "value": 62.1
+          },
+          {
+            "observationDate": "2025-12-01",
+            "value": 62.4
+          },
+          {
+            "observationDate": "2025-11-01",
+            "value": 62.5
+          },
+          {
+            "observationDate": "2025-09-01",
+            "value": 62.5
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 62.3
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 62.2
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 62.3
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 62.4
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 62.6
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 62.5
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": 62.5
+          }
+        ],
+        "onePeriodChange": -0.10000000000000142,
+        "windowChange": -0.7000000000000028,
+        "windowDirection": "falling",
+        "momPct": null,
+        "yoyPct": null,
+        "yearAgoDate": "2025-03-01",
+        "windowStartDate": "2025-02-01",
+        "windowEndDate": "2026-04-01"
+      }
+    },
+    "CES0500000003": {
+      "seriesId": "CES0500000003",
+      "seriesName": "Average Hourly Earnings of All Employees, Total Private",
+      "block": "labor",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CES0500000003&cosd=2024-01-01",
+      "units": "USD/hour",
+      "calc": "mom_yoy",
+      "latest": {
+        "observationDate": "2026-04-01",
+        "value": 37.41
+      },
+      "trend": {
+        "historyWindowRecords": 14,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-04-01",
+            "value": 37.41
+          },
+          {
+            "observationDate": "2026-03-01",
+            "value": 37.35
+          },
+          {
+            "observationDate": "2026-02-01",
+            "value": 37.27
+          },
+          {
+            "observationDate": "2026-01-01",
+            "value": 37.15
+          },
+          {
+            "observationDate": "2025-12-01",
+            "value": 37.02
+          },
+          {
+            "observationDate": "2025-11-01",
+            "value": 37.0
+          },
+          {
+            "observationDate": "2025-10-01",
+            "value": 36.85
+          },
+          {
+            "observationDate": "2025-09-01",
+            "value": 36.7
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 36.62
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 36.47
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 36.36
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 36.28
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 36.12
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 36.11
+          }
+        ],
+        "onePeriodChange": 0.05999999999999517,
+        "windowChange": 1.2999999999999972,
+        "windowDirection": "rising",
+        "momPct": 0.16064257028112205,
+        "yoyPct": 3.5714285714285587,
+        "yearAgoDate": "2025-04-01",
+        "windowStartDate": "2025-03-01",
+        "windowEndDate": "2026-04-01"
+      }
+    },
+    "ICSA": {
+      "seriesId": "ICSA",
+      "seriesName": "Initial Claims",
+      "block": "labor",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=ICSA&cosd=2024-01-01",
+      "units": "persons",
+      "calc": "level_change",
+      "latest": {
+        "observationDate": "2026-05-23",
+        "value": 215000.0
+      },
+      "trend": {
+        "historyWindowRecords": 14,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-05-23",
+            "value": 215000.0
+          },
+          {
+            "observationDate": "2026-05-16",
+            "value": 210000.0
+          },
+          {
+            "observationDate": "2026-05-09",
+            "value": 212000.0
+          },
+          {
+            "observationDate": "2026-05-02",
+            "value": 199000.0
+          },
+          {
+            "observationDate": "2026-04-25",
+            "value": 190000.0
+          },
+          {
+            "observationDate": "2026-04-18",
+            "value": 215000.0
+          },
+          {
+            "observationDate": "2026-04-11",
+            "value": 208000.0
+          },
+          {
+            "observationDate": "2026-04-04",
+            "value": 218000.0
+          },
+          {
+            "observationDate": "2026-03-28",
+            "value": 203000.0
+          },
+          {
+            "observationDate": "2026-03-21",
+            "value": 211000.0
+          },
+          {
+            "observationDate": "2026-03-14",
+            "value": 205000.0
+          },
+          {
+            "observationDate": "2026-03-07",
+            "value": 213000.0
+          },
+          {
+            "observationDate": "2026-02-28",
+            "value": 214000.0
+          },
+          {
+            "observationDate": "2026-02-21",
+            "value": 211000.0
+          }
+        ],
+        "onePeriodChange": 5000.0,
+        "windowChange": 4000.0,
+        "windowDirection": "rising",
+        "momPct": null,
+        "yoyPct": null,
+        "yearAgoDate": "2026-02-28",
+        "windowStartDate": "2026-02-21",
+        "windowEndDate": "2026-05-23"
+      }
+    },
+    "JTSJOL": {
+      "seriesId": "JTSJOL",
+      "seriesName": "Job Openings: Total Nonfarm",
+      "block": "labor",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=JTSJOL&cosd=2024-01-01",
+      "units": "thousands",
+      "calc": "level_change",
+      "latest": {
+        "observationDate": "2026-04-01",
+        "value": 7618.0
+      },
+      "trend": {
+        "historyWindowRecords": 14,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-04-01",
+            "value": 7618.0
+          },
+          {
+            "observationDate": "2026-03-01",
+            "value": 6887.0
+          },
+          {
+            "observationDate": "2026-02-01",
+            "value": 6922.0
+          },
+          {
+            "observationDate": "2026-01-01",
+            "value": 7240.0
+          },
+          {
+            "observationDate": "2025-12-01",
+            "value": 6550.0
+          },
+          {
+            "observationDate": "2025-11-01",
+            "value": 6846.0
+          },
+          {
+            "observationDate": "2025-10-01",
+            "value": 7170.0
+          },
+          {
+            "observationDate": "2025-09-01",
+            "value": 7169.0
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": 6919.0
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 7089.0
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": 7204.0
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 7310.0
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 7098.0
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": 6952.0
+          }
+        ],
+        "onePeriodChange": 731.0,
+        "windowChange": 666.0,
+        "windowDirection": "rising",
+        "momPct": null,
+        "yoyPct": null,
+        "yearAgoDate": "2025-04-01",
+        "windowStartDate": "2025-03-01",
+        "windowEndDate": "2026-04-01"
+      }
+    }
+  },
+  "summary": {
+    "headlineCpiYoyPct": 3.9470269087042764,
+    "coreCpiYoyPct": 2.9884245755166017,
+    "headlinePceYoyPct": 3.7669441141498172,
+    "corePceYoyPct": 3.289190610508208,
+    "payrollsOneMonthChangeK": 115.0,
+    "unemploymentRatePct": 4.3,
+    "participationRatePct": 61.8,
+    "initialClaimsLatest": 215000.0,
+    "joltsOpeningsLatestK": 7618.0
+  },
+  "caveats": [
+    "FRED public CSV provides revised historical series; it does not provide consensus, surprise, or release-time vintage analysis.",
+    "Inflation/labor reads are context only until release calendars, revisions and source release notes are fully wired."
+  ]
+}
