@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.0",
-  "updatedAt": "2026-05-15",
+  "updatedAt": "2026-06-03",
   "ticker": "NFLX",
   "name": "Netflix, Inc.",
   "type": "portfolio",
@@ -94,11 +94,94 @@
   ],
   "researchOutputs": [
     {
-      "date": "2026-05-13",
-      "type": "deep_dive_prevaluation",
-      "version": "v1.0",
-      "path": "financial-research/financial_system/deep_dives/NFLX/NFLX-research-deep-dive-v1.0-prevaluation-report.pdf",
-      "summary": "Pre-valuation Deep Dive focused on streaming economics, ads, content cash spend/amortization, FCF quality, capital allocation and WBD risk."
+      "type": "dashboard",
+      "date": "2026-06-03",
+      "title": "NFLX dashboard / artifact hub",
+      "path": "../companies/NFLX.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NFLX-research-deep-dive-v1.0-prevaluation-formatted",
+      "path": "../reports/NFLX/NFLX-research-deep-dive-v1.0-prevaluation-formatted.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NFLX-research-deep-dive-v1.0-prevaluation-report",
+      "path": "../reports/NFLX/NFLX-research-deep-dive-v1.0-prevaluation-report.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NFLX-research-deep-dive-v1.0-prevaluation-report",
+      "path": "../reports/NFLX/NFLX-research-deep-dive-v1.0-prevaluation-report.pdf"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NFLX-research-deep-dive-v1.0-prevaluation",
+      "path": "../reports/NFLX/NFLX-research-deep-dive-v1.0-prevaluation.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NFLX-valuation-model-integration-v1.0",
+      "path": "../reports/NFLX/NFLX-valuation-model-integration-v1.0.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NFLX_v1_valuation_model",
+      "path": "../reports/NFLX/NFLX_v1_valuation_model.xlsx"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "nflx_5y_revenue_opincome_fcf",
+      "path": "../reports/NFLX/charts/nflx_5y_revenue_opincome_fcf.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "nflx_cashflow_bridge",
+      "path": "../reports/NFLX/charts/nflx_cashflow_bridge.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "nflx_content_assets",
+      "path": "../reports/NFLX/charts/nflx_content_assets.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "nflx_margin_conversion",
+      "path": "../reports/NFLX/charts/nflx_margin_conversion.svg"
+    },
+    {
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "nflx-extraction-notes-v0",
+      "path": "../reports/NFLX/nflx-extraction-notes-v0.md"
+    },
+    {
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "nflx-source-pack-v0",
+      "path": "../reports/NFLX/nflx-source-pack-v0.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NFLX-valuation-display-v1",
+      "path": "../reports/NFLX/valuation/NFLX-valuation-display-v1.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NFLX_v1_valuation_model",
+      "path": "../models/NFLX/NFLX_v1_valuation_model.xlsx"
     }
   ],
   "tasks": {
@@ -114,22 +197,22 @@
   "notes": "Deep Dive v1.0 complete; next work should be valuation model scenarios, not more architecture.",
   "coverage": {
     "deepDive": {
-      "status": "yes",
-      "path": "financial-research/financial_system/deep_dives/NFLX/NFLX-research-deep-dive-v1.0-prevaluation-report.pdf",
+      "status": "linked_or_hub",
+      "path": "docs/companies/NFLX.html",
       "date": "2026-05-13"
     },
     "model": {
-      "status": "yes",
-      "path": "financial-research/financial_system/deep_dives/NFLX/NFLX_v1_valuation_model.xlsx",
+      "status": "linked",
+      "path": "docs/reports/NFLX/NFLX-research-deep-dive-v1.0-prevaluation-formatted.md",
       "date": "2026-05-13"
     },
     "thesis": {
-      "status": "implicit_in_deep_dive",
-      "path": null
+      "status": "linked_or_report_backed",
+      "path": "docs/reports/NFLX/nflx-extraction-notes-v0.md"
     },
     "reportingReadiness": "high"
   },
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-06-03",
   "coverageGaps": [
     {
       "type": "thesis",

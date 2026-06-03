@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.0",
-  "updatedAt": "2026-05-21",
+  "updatedAt": "2026-06-03",
   "ticker": "RACE",
   "name": "Ferrari N.V.",
   "type": "portfolio",
@@ -84,10 +84,58 @@
   ],
   "researchOutputs": [
     {
-      "date": "2026-05-21",
-      "type": "deep_dive",
-      "path": "financial-research/financial_system/deep_dives/RACE/RACE-research-deep-dive-prevaluation-report.pdf",
-      "threadId": "1507116139912888482"
+      "type": "dashboard",
+      "date": "2026-06-03",
+      "title": "RACE dashboard / artifact hub",
+      "path": "../companies/RACE.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "RACE-research-deep-dive-prevaluation-formatted",
+      "path": "../reports/RACE/RACE-research-deep-dive-prevaluation-formatted.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "RACE-research-deep-dive-prevaluation-report",
+      "path": "../reports/RACE/RACE-research-deep-dive-prevaluation-report.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "RACE-research-deep-dive-prevaluation-report",
+      "path": "../reports/RACE/RACE-research-deep-dive-prevaluation-report.pdf"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "RACE-research-deep-dive-prevaluation",
+      "path": "../reports/RACE/RACE-research-deep-dive-prevaluation.md"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "cash_bridge",
+      "path": "../reports/RACE/charts/cash_bridge.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "revenue_ebit_fcf",
+      "path": "../reports/RACE/charts/revenue_ebit_fcf.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "revenue_mix_2025",
+      "path": "../reports/RACE/charts/revenue_mix_2025.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "shipments",
+      "path": "../reports/RACE/charts/shipments.svg"
     }
   ],
   "tasks": {
@@ -102,21 +150,21 @@
   "notes": "Foreign issuer path/identifiers need validation.",
   "coverage": {
     "deepDive": {
-      "status": "yes",
-      "path": "financial-research/financial_system/deep_dives/RACE/RACE-research-deep-dive-prevaluation-report.pdf",
+      "status": "linked_or_hub",
+      "path": "docs/companies/RACE.html",
       "date": "2026-05-21"
     },
     "model": {
-      "status": "pending_valuation_step",
-      "path": null
+      "status": "linked",
+      "path": "docs/reports/RACE/RACE-research-deep-dive-prevaluation-formatted.md"
     },
     "thesis": {
-      "status": "implicit_in_deep_dive",
-      "path": null
+      "status": "linked_or_report_backed",
+      "path": "docs/reports/RACE/sources/Ferrari_Annual_Report_2023.pdf"
     },
     "reportingReadiness": "medium_high"
   },
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-06-03",
   "coverageGaps": [
     {
       "type": "model",

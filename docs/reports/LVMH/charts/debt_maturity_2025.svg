@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="350">
+<style>text{font-family:Inter,Arial,sans-serif;font-size:12px;fill:#263238}.title{font-size:18px;font-weight:800}.grid{stroke:#e6eef5}.bar{fill:#0b5cab}</style>
+<text x="410.0" y="30" text-anchor="middle" class="title">Gross borrowings maturity profile after derivatives (€m)</text>
+<line x1="70" y1="50.0" x2="795" y2="50.0" class="grid"/>
+<text x="62" y="54.0" text-anchor="end">9,349</text>
+<line x1="70" y1="108.75" x2="795" y2="108.75" class="grid"/>
+<text x="62" y="112.75" text-anchor="end">7,012</text>
+<line x1="70" y1="167.5" x2="795" y2="167.5" class="grid"/>
+<text x="62" y="171.5" text-anchor="end">4,675</text>
+<line x1="70" y1="226.25" x2="795" y2="226.25" class="grid"/>
+<text x="62" y="230.25" text-anchor="end">2,337</text>
+<line x1="70" y1="285.0" x2="795" y2="285.0" class="grid"/>
+<text x="62" y="289.0" text-anchor="end">0</text>
+<rect x="89.67857142857143" y="85.84745762711863" width="64.21428571428571" height="199.15254237288138" class="bar"/>
+<text x="121.78571428571428" y="78.84745762711863" text-anchor="middle">7,923</text><text x="121.78571428571428" y="316" text-anchor="middle">2026</text>
+<rect x="193.24999999999997" y="235.07990039725578" width="64.21428571428571" height="49.920099602744216" class="bar"/>
+<text x="225.35714285714283" y="228.07990039725578" text-anchor="middle">1,986</text><text x="225.35714285714283" y="316" text-anchor="middle">2027</text>
+<rect x="296.82142857142856" y="240.58468479453725" width="64.21428571428571" height="44.41531520546275" class="bar"/>
+<text x="328.9285714285714" y="233.58468479453725" text-anchor="middle">1,767</text><text x="328.9285714285714" y="316" text-anchor="middle">2028</text>
+<rect x="400.39285714285717" y="232.03844417775323" width="64.21428571428571" height="52.961555822246766" class="bar"/>
+<text x="432.5" y="225.03844417775323" text-anchor="middle">2,107</text><text x="432.5" y="316" text-anchor="middle">2029</text>
+<rect x="503.9642857142857" y="263.30763043445705" width="64.21428571428571" height="21.692369565542947" class="bar"/>
+<text x="536.0714285714286" y="256.30763043445705" text-anchor="middle">863</text><text x="536.0714285714286" y="316" text-anchor="middle">2030</text>
+<rect x="607.5357142857143" y="247.17031726982376" width="64.21428571428571" height="37.829682730176245" class="bar"/>
+<text x="639.6428571428572" y="240.17031726982376" text-anchor="middle">1,505</text><text x="639.6428571428572" y="316" text-anchor="middle">2031</text>
+<rect x="711.1071428571429" y="179.27797637001905" width="64.21428571428571" height="105.72202362998095" class="bar"/>
+<text x="743.2142857142858" y="172.27797637001905" text-anchor="middle">4,206</text><text x="743.2142857142858" y="316" text-anchor="middle">Thereafter</text>
+</svg>

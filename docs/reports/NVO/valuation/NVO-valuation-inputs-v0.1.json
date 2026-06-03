@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "0.1.0",
+  "ticker": "NVO",
+  "company": "Novo Nordisk A/S",
+  "currency": "DKK",
+  "createdAt": "2026-05-23",
+  "taskId": "TASK-2026-05-17-001",
+  "status": "pm_ready_input_scaffold",
+  "notValuation": true,
+  "sourceAnchors": {
+    "fy2025SalesDkkBn": 309.064,
+    "fy2025OperatingProfitDkkBn": 127.658,
+    "fy2025NetProfitDkkBn": 102.434,
+    "fy2025DilutedEpsDkk": 23.03,
+    "fy2025GrossMarginPct": 81.0,
+    "fy2025FcfDkkBn": 28.3,
+    "fy2025PpeCapexDkkBn": 60.1,
+    "q1_2026AdjustedSalesDkkBn": 70.063,
+    "q1_2026AdjustedOperatingProfitDkkBn": 32.858,
+    "q1_2026AdjustedOperatingMarginPct": 46.9,
+    "fy2026AdjustedSalesGrowthCerGuidancePct": [-12, -4],
+    "fy2026AdjustedOperatingProfitGrowthCerGuidancePct": [-12, -4],
+    "fy2026CapexGuideDkkBn": 55,
+    "fy2026FcfGuideDkkBn": [36, 46],
+    "usWegovyWeeklyTrxApprox": 475000,
+    "usWegovyPillWeeklyTrxApprox": 207000
+  },
+  "scenarios": {
+    "downside": {
+      "fy2026AdjustedSalesGrowthCerPct": -12,
+      "salesGrowth2027PctRange": [0, 3],
+      "salesCagr2028_2030PctRange": [2, 4],
+      "oralWegovyIncrementalDemandPctRange": [20, 30],
+      "normalizedGrossMarginPctRange": [78, 80],
+      "normalizedAdjustedOperatingMarginPctRange": [38, 40],
+      "view": "Pricing pressure persists, Lilly share pressure remains severe, oral Wegovy cannibalizes more than it expands, capex intensity remains elevated."
+    },
+    "base": {
+      "fy2026AdjustedSalesGrowthCerPct": -8,
+      "salesGrowth2027PctRange": [4, 7],
+      "salesCagr2028_2030PctRange": [6, 8],
+      "oralWegovyIncrementalDemandPctRange": [40, 60],
+      "normalizedGrossMarginPctRange": [80, 82],
+      "normalizedAdjustedOperatingMarginPctRange": [41, 44],
+      "view": "2026 is a reset year; GLP-1 volume and oral Wegovy partially offset price/share pressure; margins recover but do not immediately return to 2024 levels."
+    },
+    "upside": {
+      "fy2026AdjustedSalesGrowthCerPct": -4,
+      "salesGrowth2027PctRange": [8, 11],
+      "salesCagr2028_2030PctRange": [9, 12],
+      "oralWegovyIncrementalDemandPctRange": [65, 80],
+      "normalizedGrossMarginPctRange": [82, 84],
+      "normalizedAdjustedOperatingMarginPctRange": [44, 47],
+      "view": "Oral Wegovy expands TAM materially, pricing stabilizes, Novo defends share better than feared, capex normalizes and FCF conversion improves."
+    }
+  },
+  "pmDecisionsRequired": [
+    "Choose point estimate within 2026 -4% to -12% CER guidance range.",
+    "Set oral Wegovy incrementality versus cannibalisation.",
+    "Set Lilly share pressure assumption.",
+    "Decide whether 2024 gross margin is recoverable or 2025 is the new anchor.",
+    "Set capex normalization path after 2025-2026.",
+    "Decide whether to include explicit probability-weighted pipeline value."
+  ],
+  "recommendedNextTask": "Build actual valuation model / DCF sensitivity once PM selects point estimates."
+}

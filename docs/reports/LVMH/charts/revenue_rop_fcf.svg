@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="380" viewBox="0 0 820 380">
+<style>text{font-family:Inter,Arial,sans-serif;font-size:12px;fill:#263238}.title{font-size:18px;font-weight:800}.axis{stroke:#90a4ae}.grid{stroke:#e6eef5}.line{fill:none;stroke-width:3}.note{font-size:11px;fill:#607d8b}</style>
+<text x="410.0" y="28" text-anchor="middle" class="title">LVMH: revenue, recurring operating profit and operating FCF</text>
+<line x1="70" y1="48.0" x2="795" y2="48.0" class="grid"/>
+<text x="62" y="52.0" text-anchor="end">96,491</text>
+<line x1="70" y1="116.0" x2="795" y2="116.0" class="grid"/>
+<text x="62" y="120.0" text-anchor="end">72,369</text>
+<line x1="70" y1="184.0" x2="795" y2="184.0" class="grid"/>
+<text x="62" y="188.0" text-anchor="end">48,246</text>
+<line x1="70" y1="252.0" x2="795" y2="252.0" class="grid"/>
+<text x="62" y="256.0" text-anchor="end">24,123</text>
+<line x1="70" y1="320.0" x2="795" y2="320.0" class="grid"/>
+<text x="62" y="324.0" text-anchor="end">0</text>
+<line x1="70" y1="320" x2="795" y2="320" class="axis"/>
+<text x="70.0" y="352" text-anchor="middle">2021</text>
+<text x="251.25" y="352" text-anchor="middle">2022</text>
+<text x="432.5" y="352" text-anchor="middle">2023</text>
+<text x="613.75" y="352" text-anchor="middle">2024</text>
+<text x="795.0" y="352" text-anchor="middle">2025</text>
+<polyline points="70.0,138.98400022551246 251.25,96.78780773739746 432.5,77.1428571428572 613.75,81.28664784080152 795.0,92.21272453823849" class="line" stroke="#0b5cab"/>
+<circle cx="70.0" cy="138.98400022551246" r="4" fill="#0b5cab" stroke="white" stroke-width="2"/><text x="70.0" y="130.98400022551246" text-anchor="middle">64,215</text>
+<circle cx="251.25" cy="96.78780773739746" r="4" fill="#0b5cab" stroke="white" stroke-width="2"/><text x="251.25" y="88.78780773739746" text-anchor="middle">79,184</text>
+<circle cx="432.5" cy="77.1428571428572" r="4" fill="#0b5cab" stroke="white" stroke-width="2"/><text x="432.5" y="69.1428571428572" text-anchor="middle">86,153</text>
+<circle cx="613.75" cy="81.28664784080152" r="4" fill="#0b5cab" stroke="white" stroke-width="2"/><text x="613.75" y="73.28664784080152" text-anchor="middle">84,683</text>
+<circle cx="795.0" cy="92.21272453823849" r="4" fill="#0b5cab" stroke="white" stroke-width="2"/><text x="795.0" y="84.21272453823849" text-anchor="middle">80,807</text>
+<rect x="70" y="342" width="12" height="12" fill="#0b5cab"/><text x="88" y="353">Revenue</text>
+<polyline points="70.0,271.65295628541253 251.25,260.64795024134804 432.5,255.72332279283864 613.75,264.83120561260614 795.0,269.9503375224476" class="line" stroke="#1aa6b7"/>
+<circle cx="70.0" cy="271.65295628541253" r="4" fill="#1aa6b7" stroke="white" stroke-width="2"/><text x="70.0" y="263.65295628541253" text-anchor="middle">17,151</text>
+<circle cx="251.25" cy="260.64795024134804" r="4" fill="#1aa6b7" stroke="white" stroke-width="2"/><text x="251.25" y="252.64795024134804" text-anchor="middle">21,055</text>
+<circle cx="432.5" cy="255.72332279283864" r="4" fill="#1aa6b7" stroke="white" stroke-width="2"/><text x="432.5" y="247.72332279283864" text-anchor="middle">22,802</text>
+<circle cx="613.75" cy="264.83120561260614" r="4" fill="#1aa6b7" stroke="white" stroke-width="2"/><text x="613.75" y="256.83120561260614" text-anchor="middle">19,571</text>
+<circle cx="795.0" cy="269.9503375224476" r="4" fill="#1aa6b7" stroke="white" stroke-width="2"/><text x="795.0" y="261.9503375224476" text-anchor="middle">17,755</text>
+<rect x="280" y="342" width="12" height="12" fill="#1aa6b7"/><text x="298" y="353">Recurring op. profit</text>
+<polyline points="70.0,281.85739324225506 251.25,291.4924113412849 432.5,297.1555919618088 613.75,290.4635109298905 795.0,288.05334695251474" class="line" stroke="#2e7d32"/>
+<circle cx="70.0" cy="281.85739324225506" r="4" fill="#2e7d32" stroke="white" stroke-width="2"/><text x="70.0" y="273.85739324225506" text-anchor="middle">13,531</text>
+<circle cx="251.25" cy="291.4924113412849" r="4" fill="#2e7d32" stroke="white" stroke-width="2"/><text x="251.25" y="283.4924113412849" text-anchor="middle">10,113</text>
+<circle cx="432.5" cy="297.1555919618088" r="4" fill="#2e7d32" stroke="white" stroke-width="2"/><text x="432.5" y="289.1555919618088" text-anchor="middle">8,104</text>
+<circle cx="613.75" cy="290.4635109298905" r="4" fill="#2e7d32" stroke="white" stroke-width="2"/><text x="613.75" y="282.4635109298905" text-anchor="middle">10,478</text>
+<circle cx="795.0" cy="288.05334695251474" r="4" fill="#2e7d32" stroke="white" stroke-width="2"/><text x="795.0" y="280.05334695251474" text-anchor="middle">11,333</text>
+<rect x="490" y="342" width="12" height="12" fill="#2e7d32"/><text x="508" y="353">Operating FCF</text>
+<text x="795" y="372" text-anchor="end" class="note">€m</text></svg>

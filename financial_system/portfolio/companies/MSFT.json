@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.0",
-  "updatedAt": "2026-05-18",
+  "updatedAt": "2026-06-03",
   "ticker": "MSFT",
   "name": "Microsoft Corporation",
   "type": "portfolio",
@@ -106,32 +106,148 @@
   ],
   "researchOutputs": [
     {
-      "type": "deep_dive",
-      "date": "2026-05-13",
-      "title": "MSFT Research Deep Dive v1.2 pre-valuation report",
-      "path": "financial-research/financial_system/deep_dives/MSFT/MSFT-research-deep-dive-v1.2-prevaluation-report.pdf",
-      "notes": "Approved methodology sample: 5Y financials by default, charts and bibliography."
+      "type": "dashboard",
+      "date": "2026-06-03",
+      "title": "MSFT dashboard / artifact hub",
+      "path": "../companies/MSFT.html"
     },
     {
-      "type": "valuation_model",
-      "date": "2026-05-18",
-      "title": "MSFT valuation model v1.2 (user Excel)",
-      "path": "financial-research/financial_system/deep_dives/MSFT/MSFT_v1_2_valuation_model.xlsx",
-      "notes": "Original user valuation model uploaded in the MSFT thread; kept as fixed input, not edited."
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "MSFT-investment-thesis-v0.1",
+      "path": "../reports/MSFT/MSFT-investment-thesis-v0.1.md"
     },
     {
-      "type": "valuation_addendum",
-      "date": "2026-05-18",
-      "title": "MSFT valuation model integration v1.3",
-      "path": "financial-research/financial_system/deep_dives/MSFT/MSFT-valuation-model-integration-v1.3.md",
-      "notes": "Summarizes 8-method valuation output, scenario framing and reverse DCF read-through."
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "MSFT-investment-thesis-v0.2",
+      "path": "../reports/MSFT/MSFT-investment-thesis-v0.2.md"
     },
     {
-      "type": "thesis_memo",
-      "date": "2026-05-18",
-      "title": "MSFT qualitative thesis memo v1.1",
-      "path": "financial-research/financial_system/deep_dives/MSFT/MSFT-tesis-cualitativa-comite-v1.1.pdf",
-      "notes": "Committee-style qualitative thesis emphasizing switching costs, Azure quality, AI upside and capex/multiple risk."
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "MSFT-investment-thesis-v1.0",
+      "path": "../reports/MSFT/MSFT-investment-thesis-v1.0.md"
+    },
+    {
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "MSFT-investment-thesis-v1.1-qualitative",
+      "path": "../reports/MSFT/MSFT-investment-thesis-v1.1-qualitative.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT-research-deep-dive-v1-prevaluation-formatted",
+      "path": "../reports/MSFT/MSFT-research-deep-dive-v1-prevaluation-formatted.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT-research-deep-dive-v1-prevaluation-report",
+      "path": "../reports/MSFT/MSFT-research-deep-dive-v1-prevaluation-report.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT-research-deep-dive-v1-prevaluation-report",
+      "path": "../reports/MSFT/MSFT-research-deep-dive-v1-prevaluation-report.pdf"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT-research-deep-dive-v1-prevaluation",
+      "path": "../reports/MSFT/MSFT-research-deep-dive-v1-prevaluation.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT-research-deep-dive-v1.1-prevaluation-formatted",
+      "path": "../reports/MSFT/MSFT-research-deep-dive-v1.1-prevaluation-formatted.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT-research-deep-dive-v1.1-prevaluation-report",
+      "path": "../reports/MSFT/MSFT-research-deep-dive-v1.1-prevaluation-report.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT-research-deep-dive-v1.1-prevaluation-report",
+      "path": "../reports/MSFT/MSFT-research-deep-dive-v1.1-prevaluation-report.pdf"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT-research-deep-dive-v1.2-prevaluation-formatted",
+      "path": "../reports/MSFT/MSFT-research-deep-dive-v1.2-prevaluation-formatted.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT-research-deep-dive-v1.2-prevaluation-report",
+      "path": "../reports/MSFT/MSFT-research-deep-dive-v1.2-prevaluation-report.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT-research-deep-dive-v1.2-prevaluation-report",
+      "path": "../reports/MSFT/MSFT-research-deep-dive-v1.2-prevaluation-report.pdf"
+    },
+    {
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "MSFT-tesis-cualitativa-comite-v1.1-formatted",
+      "path": "../reports/MSFT/MSFT-tesis-cualitativa-comite-v1.1-formatted.md"
+    },
+    {
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "MSFT-tesis-cualitativa-comite-v1.1",
+      "path": "../reports/MSFT/MSFT-tesis-cualitativa-comite-v1.1.html"
+    },
+    {
+      "type": "report_pdf",
+      "date": "2026-06-03",
+      "title": "MSFT-tesis-cualitativa-comite-v1.1",
+      "path": "../reports/MSFT/MSFT-tesis-cualitativa-comite-v1.1.pdf"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT-valuation-model-integration-v1.3",
+      "path": "../reports/MSFT/MSFT-valuation-model-integration-v1.3.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "MSFT_v1_2_valuation_model",
+      "path": "../reports/MSFT/MSFT_v1_2_valuation_model.xlsx"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "msft_5y_capex_fcf_conversion",
+      "path": "../reports/MSFT/charts/msft_5y_capex_fcf_conversion.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "msft_5y_revenue_opincome_fcf",
+      "path": "../reports/MSFT/charts/msft_5y_revenue_opincome_fcf.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "msft_capex_fcf_conversion",
+      "path": "../reports/MSFT/charts/msft_capex_fcf_conversion.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "msft_cashflow_capex_bridge",
+      "path": "../reports/MSFT/charts/msft_cashflow_capex_bridge.svg"
     }
   ],
   "tasks": {
@@ -146,22 +262,22 @@
   "notes": "Company state updated after valuation model integration. Model remains a fixed user input; dashboard should surface the Excel, valuation addendum and qualitative thesis without modifying model assumptions.",
   "coverage": {
     "deepDive": {
-      "status": "yes",
-      "path": "financial-research/financial_system/deep_dives/MSFT/MSFT-research-deep-dive-v1.2-prevaluation-report.pdf",
+      "status": "linked_or_hub",
+      "path": "docs/companies/MSFT.html",
       "date": "2026-05-13"
     },
     "model": {
-      "status": "yes",
-      "path": "financial-research/financial_system/deep_dives/MSFT/MSFT_v1_2_valuation_model.xlsx",
+      "status": "linked",
+      "path": "docs/reports/MSFT/MSFT-research-deep-dive-v1-prevaluation-formatted.md",
       "date": "2026-05-18"
     },
     "thesis": {
-      "status": "yes",
-      "path": "financial-research/financial_system/deep_dives/MSFT/MSFT-investment-thesis-v1.1-qualitative.md"
+      "status": "linked_or_report_backed",
+      "path": "docs/reports/MSFT/MSFT-investment-thesis-v0.1.md"
     },
     "reportingReadiness": "high"
   },
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-06-03",
   "coverageGaps": [],
   "nextReviewAction": {
     "action": "Monitor events and revisit only if AI capex normalization, Azure/Copilot monetization or FCF conversion assumptions change.",

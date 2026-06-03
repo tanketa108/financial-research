@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380"><style>text{font-family:Arial;font-size:13px;fill:#334155} .t{font-size:20px;font-weight:700;fill:#0f172a}</style><rect width="100%" height="100%" fill="white"/><text class="t" x="70" y="30">DVN: revenue, operating income & FCF</text>
+<line x1="70" x2="735" y1="322.0" y2="322.0" stroke="#e2e8f0"/><text x="8" y="326.0">$-6.4B</text>
+<line x1="70" x2="735" y1="255.25" y2="255.25" stroke="#e2e8f0"/><text x="8" y="259.25">$0.0B</text>
+<line x1="70" x2="735" y1="188.50000000000003" y2="188.50000000000003" stroke="#e2e8f0"/><text x="8" y="192.50000000000003">$6.4B</text>
+<line x1="70" x2="735" y1="121.74999999999999" y2="121.74999999999999" stroke="#e2e8f0"/><text x="8" y="125.74999999999999">$12.8B</text>
+<line x1="70" x2="735" y1="55.0" y2="55.0" stroke="#e2e8f0"/><text x="8" y="59.0">$19.2B</text>
+<text x="56.0" y="360">2021</text>
+<text x="222.25" y="360">2022</text>
+<text x="388.5" y="360">2023</text>
+<text x="554.75" y="360">2024</text>
+<text x="721.0" y="360">2025</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="3" points="70.0,190.4614661285899 236.25,205.02339066724133 402.5,127.84100615131452 568.75,55.0 735.0,95.91356815421386"/>
+<circle cx="70.0" cy="190.4614661285899" r="4" fill="#2563eb"/>
+<circle cx="236.25" cy="205.02339066724133" r="4" fill="#2563eb"/>
+<circle cx="402.5" cy="127.84100615131452" r="4" fill="#2563eb"/>
+<circle cx="568.75" cy="55.0" r="4" fill="#2563eb"/>
+<circle cx="735.0" cy="95.91356815421386" r="4" fill="#2563eb"/>
+<rect x="70" y="336" width="12" height="12" fill="#2563eb"/><text x="88" y="346">Revenue</text>
+<rect x="250" y="336" width="12" height="12" fill="#16a34a"/><text x="268" y="346">Op. income</text>
+<polyline fill="none" stroke="#dc2626" stroke-width="3" points="402.5,322.0 568.75,220.34897935195707 735.0,226.39552560435686"/>
+<circle cx="402.5" cy="322.0" r="4" fill="#dc2626"/>
+<circle cx="568.75" cy="220.34897935195707" r="4" fill="#dc2626"/>
+<circle cx="735.0" cy="226.39552560435686" r="4" fill="#dc2626"/>
+<rect x="430" y="336" width="12" height="12" fill="#dc2626"/><text x="448" y="346">FCF</text>
+</svg>

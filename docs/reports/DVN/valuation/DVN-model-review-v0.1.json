@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "0.1.0",
+  "ticker": "DVN",
+  "company": "Devon Energy Corporation",
+  "createdAt": "2026-05-23",
+  "reviewedArtifact": "financial-research/financial_system/valuations/DVN/DVN_Valoracion_v1_1.xlsx",
+  "status": "reviewed_needs_pm_assumptions",
+  "notInvestmentRecommendation": true,
+  "formulaIntegrity": "preliminary_pass_pending_excel_recalculation",
+  "sourceQuality": "good",
+  "assumptionQuality": "medium_needs_pm_review",
+  "keyFindings": [
+    "Workbook structure is strong: commodity segmentation, WACC, FCFF, cross-checks, reverse DCF and sensitivity tables are present.",
+    "Model output is highly sensitive to post-merger assumptions: production step-up, $1bn synergies, gas margin improvement and capex intensity.",
+    "Gordon DCF output is terminal-sensitive and should not be the headline valuation anchor for a cyclical E&P.",
+    "Scenario-weighted commodity/capex/synergy cases should be the primary PM framing."
+  ],
+  "manualSanityCheck": {
+    "computedWaccPct": 8.91,
+    "fy2026RevenueUsdBnApprox": 19.5,
+    "fy2030RevenueUsdBnApprox": 21.6,
+    "fy2026FcffUsdBnApprox": 3.7,
+    "fy2030FcffUsdBnApprox": 5.5,
+    "gordonDcfSanityPriceUsdApprox": "mid-50s depending on equity bridge and timing convention",
+    "exitEbitda5_5xSanityPriceUsdApprox": 46.3
+  },
+  "mainReviewItems": [
+    "Stress synergy realization at 50%, 75%, 100% and delayed realization.",
+    "Stress gas realized price and gas contribution margin because Coterra increases gas weighting.",
+    "Audit maintenance capex per Boe against DVN history and shale peers.",
+    "Reconcile lower forecast D&A/revenue against historical DVN DD&A/revenue.",
+    "Separate buyback authorization from intrinsic valuation unless share-count roll-forward is explicit.",
+    "Recalculate workbook in Excel/LibreOffice and save cached values for ingestion consistency."
+  ],
+  "recommendedScenarioGrid": {
+    "bear": {"oilRealizedUsdBbl": "55-58", "gasRealizedUsdMcf": "1.75-2.25", "synergiesPct": 50, "capexRevenuePct": "24-25"},
+    "base": {"oilRealizedUsdBbl": "62-67", "gasRealizedUsdMcf": "2.20-2.80", "synergiesPct": "75-100", "capexRevenuePct": "21.5-22.5"},
+    "bull": {"oilRealizedUsdBbl": "75-85", "gasRealizedUsdMcf": "3.00-4.00", "synergiesPct": "100+", "capexRevenuePct": "20-21.5"}
+  },
+  "recommendedNextAction": "Create or update DVN scenario input sheet with explicit commodity deck, synergy realization and capex intensity toggles."
+}

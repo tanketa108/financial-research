@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.0",
-  "updatedAt": "2026-05-13",
+  "updatedAt": "2026-06-03",
   "ticker": "UBER",
   "name": "Uber Technologies, Inc.",
   "type": "portfolio",
@@ -71,7 +71,38 @@
     "Does AV become margin tailwind or platform risk?"
   ],
   "recentEvents": [],
-  "researchOutputs": [],
+  "researchOutputs": [
+    {
+      "type": "dashboard",
+      "date": "2026-06-03",
+      "title": "UBER dashboard / artifact hub",
+      "path": "../companies/UBER.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "UBER-valuation-display-v1",
+      "path": "../reports/UBER/valuation/UBER-valuation-display-v1.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "Model_UBER_v3_3",
+      "path": "../assets/UBER/Model_UBER_v3_3.xlsx"
+    },
+    {
+      "type": "thesis",
+      "date": "2026-06-03",
+      "title": "uber-investment-committee-thesis-es-actualizado.rtf",
+      "path": "../assets/UBER/uber-investment-committee-thesis-es-actualizado.rtf.doc"
+    },
+    {
+      "type": "thesis",
+      "date": "2026-06-03",
+      "title": "UBER-thesis-report",
+      "path": "../reports/UBER-thesis-report.html"
+    }
+  ],
   "tasks": {
     "open": [],
     "closed": []
@@ -83,30 +114,23 @@
   "notes": "Existing control sample. Needs company thread and updated research state.",
   "coverage": {
     "deepDive": {
-      "status": "not_in_repo_or_not_linked",
-      "path": null
+      "status": "linked_or_hub",
+      "path": "docs/companies/UBER.html"
     },
     "model": {
-      "status": "exists_outside_repo_or_not_linked",
-      "path": null
+      "status": "linked",
+      "path": "docs/reports/UBER/valuation/UBER-valuation-display-v1.md"
     },
     "thesis": {
-      "status": "developed_but_not_fully_linked",
-      "path": null
+      "status": "linked_or_report_backed",
+      "path": "docs/assets/UBER/uber-investment-committee-thesis-es-actualizado.rtf.doc"
     },
     "reportingReadiness": "medium_high"
   },
-  "lastUpdated": "2026-05-22",
-  "coverageGaps": [
-    {
-      "type": "state_quality",
-      "severity": "low",
-      "summary": "Repo links to existing thesis/model artifacts are incomplete, but user clarified the thesis is comparatively well developed.",
-      "recommendedAction": "Optionally link existing thesis/model artifacts later; do not prioritize over less-developed names."
-    }
-  ],
+  "lastUpdated": "2026-06-03",
+  "coverageGaps": [],
   "nextReviewAction": {
-    "action": "Keep UBER low priority; optionally link existing thesis/model artifacts when convenient, but do not allocate near-term analytical capacity.",
+    "action": "Keep UBER low priority analytically, but use the linked full dashboard/model/thesis artifacts when reviewing the position.",
     "priority": "low",
     "owner": "Charlie",
     "trigger": "Housekeeping pass or PM requests UBER refresh",
@@ -127,6 +151,6 @@
     "includeInWatchlistReview": false,
     "lastReviewedInReport": "2026-05-22",
     "lastMaterialChange": "2026-05-22",
-    "notes": "Portfolio company; low priority by explicit user clarification."
+    "notes": "Portfolio company; full UBER dashboard/model/thesis artifacts are now linked from Company State."
   }
 }

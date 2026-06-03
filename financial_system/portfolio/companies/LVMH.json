@@ -60,11 +60,76 @@
   ],
   "researchOutputs": [
     {
-      "date": "2026-05-22",
-      "type": "deep_dive_prevaluation",
-      "version": "v1.0",
-      "path": "financial-research/financial_system/deep_dives/LVMH/LVMH-research-deep-dive-prevaluation-report.pdf",
-      "summary": "Pre-valuation Deep Dive focused on luxury segment economics, Fashion & Leather Goods, Sephora/Jewelry offset, cash generation, debt/liquidity and scenario variables."
+      "type": "dashboard",
+      "date": "2026-06-03",
+      "title": "LVMH dashboard / artifact hub",
+      "path": "../companies/LVMH.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "LVMH-research-deep-dive-prevaluation-formatted",
+      "path": "../reports/LVMH/LVMH-research-deep-dive-prevaluation-formatted.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "LVMH-research-deep-dive-prevaluation-report",
+      "path": "../reports/LVMH/LVMH-research-deep-dive-prevaluation-report.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "LVMH-research-deep-dive-prevaluation-report",
+      "path": "../reports/LVMH/LVMH-research-deep-dive-prevaluation-report.pdf"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "LVMH-research-deep-dive-prevaluation",
+      "path": "../reports/LVMH/LVMH-research-deep-dive-prevaluation.md"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "cash_generation",
+      "path": "../reports/LVMH/charts/cash_generation.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "debt_maturity_2025",
+      "path": "../reports/LVMH/charts/debt_maturity_2025.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "geography_mix_2025",
+      "path": "../reports/LVMH/charts/geography_mix_2025.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "revenue_rop_fcf",
+      "path": "../reports/LVMH/charts/revenue_rop_fcf.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "segment_margins_2025",
+      "path": "../reports/LVMH/charts/segment_margins_2025.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "segment_mix_2025",
+      "path": "../reports/LVMH/charts/segment_mix_2025.svg"
+    },
+    {
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "lvmh-source-pack-v0",
+      "path": "../reports/LVMH/lvmh-source-pack-v0.md"
     }
   ],
   "tasks": [
@@ -72,21 +137,21 @@
   ],
   "coverage": {
     "deepDive": {
-      "status": "yes",
-      "path": "financial-research/financial_system/deep_dives/LVMH/LVMH-research-deep-dive-prevaluation-report.pdf",
+      "status": "linked_or_hub",
+      "path": "docs/companies/LVMH.html",
       "date": "2026-05-22"
     },
     "model": {
-      "status": "pending_valuation_step",
-      "path": null
+      "status": "linked",
+      "path": "docs/reports/LVMH/LVMH-research-deep-dive-prevaluation-formatted.md"
     },
     "thesis": {
-      "status": "implicit_in_deep_dive",
-      "path": null
+      "status": "linked_or_report_backed",
+      "path": "docs/reports/LVMH/lvmh-source-pack-v0.md"
     },
     "reportingReadiness": "medium_high"
   },
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-06-03",
   "coverageGaps": [
     {
       "type": "model",
@@ -118,5 +183,6 @@
     "lastReviewedInReport": "2026-05-22",
     "lastMaterialChange": "2026-05-22",
     "notes": "Portfolio company with Deep Dive complete; valuation assumptions pending."
-  }
+  },
+  "updatedAt": "2026-06-03"
 }

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "0.1.0",
+  "company": "NVO",
+  "title": "NVO valuation model scaffold v0.1",
+  "date": "2026-05-26",
+  "status": "scaffold_not_fair_value",
+  "currency": "DKK",
+  "taskId": "TASK-2026-05-26-001",
+  "sources": [
+    "NVO valuation input sheet v0.1",
+    "NVO Deep Dive pre-valuation report",
+    "Novo Nordisk Q1 2026 Investor Presentation",
+    "Novo Nordisk Annual Report 2025"
+  ],
+  "historicalAnchors": {
+    "fy2025SalesDkkBn": 309.064,
+    "fy2025OperatingProfitDkkBn": 127.658,
+    "fy2025NetProfitDkkBn": 102.434,
+    "fy2025GrossMarginPct": 81.0,
+    "fy2025FcfDkkBn": 28.3,
+    "fy2026FcfGuideDkkBn": [
+      36,
+      46
+    ],
+    "fy2026CapexGuideDkkBn": 55,
+    "q1_2026AdjustedOperatingMarginPct": 46.9
+  },
+  "scenarioDefaults": {
+    "downside": {
+      "fy2026SalesGrowthCerPct": -12,
+      "salesCagr2027_2030Pct": 3,
+      "normalizedOperatingMarginPct": 39,
+      "grossMarginPct": 79,
+      "oralWegovyIncrementalityPct": 25,
+      "capexNormalization": "slow",
+      "terminalGrowthPct": 1.5,
+      "notes": "Reset persists; Lilly/pricing pressure stays severe; capex remains elevated."
+    },
+    "base": {
+      "fy2026SalesGrowthCerPct": -8,
+      "salesCagr2027_2030Pct": 7,
+      "normalizedOperatingMarginPct": 42.5,
+      "grossMarginPct": 81,
+      "oralWegovyIncrementalityPct": 50,
+      "capexNormalization": "gradual",
+      "terminalGrowthPct": 2.0,
+      "notes": "Company midpoint reset, partial growth normalization, margins recover but not to 2024 peak."
+    },
+    "upside": {
+      "fy2026SalesGrowthCerPct": -4,
+      "salesCagr2027_2030Pct": 10.5,
+      "normalizedOperatingMarginPct": 45.5,
+      "grossMarginPct": 83,
+      "oralWegovyIncrementalityPct": 70,
+      "capexNormalization": "faster",
+      "terminalGrowthPct": 2.5,
+      "notes": "Oral Wegovy expands TAM, share stabilizes, price reset mostly absorbed, capex normalizes."
+    }
+  },
+  "pmOverrideFields": [
+    "2026 guidance point within -4% to -12% CER",
+    "2027-2030 sales CAGR",
+    "normalized EBIT/operating margin",
+    "oral Wegovy incrementality/cannibalisation",
+    "Lilly share-loss pressure",
+    "capex normalization path",
+    "WACC/discount rate",
+    "terminal growth or terminal multiple",
+    "target currency and ADR/share-count treatment"
+  ],
+  "modelBlocks": [
+    "Revenue bridge: 2025 sales × 2026 reset × 2027-2030 CAGR",
+    "Operating profit: sales × normalized operating margin",
+    "FCF bridge: NOPAT + D&A - capex - working capital / or FCF margin proxy",
+    "DCF: explicit FCF 2026-2030 + terminal value discounted by PM-selected WACC",
+    "Sensitivity matrix: revenue CAGR × normalized margin; secondary capex/FCF conversion toggle"
+  ],
+  "guardrails": [
+    "Not an investment recommendation",
+    "No portfolio action inferred",
+    "Do not treat oral Wegovy as 100% incremental without PM approval",
+    "Do not normalize Q1 2026 reported OP without adjusting for one-offs",
+    "Mark Lilly/Q1 competitive extraction as unresolved before final valuation"
+  ]
+}

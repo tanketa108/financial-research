@@ -1,0 +1,929 @@
+{
+  "ticker": "UBER",
+  "name": "UBER",
+  "status": "prefilled",
+  "latest_period": {
+    "form_type": "10-Q",
+    "filing_date": "2025-11-04",
+    "report_date": "2025-09-30",
+    "fiscal_year": 2025,
+    "fiscal_period": "Q3"
+  },
+  "historical_base": {
+    "latest_revenue": 13467000000,
+    "latest_operating_income": 1113000000,
+    "latest_net_income": 6626000000,
+    "latest_diluted_eps": 3.11,
+    "latest_cash_and_equivalents": 8432000000,
+    "latest_total_debt": 10615000000,
+    "revenue_history": [
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2019,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2019-11-05",
+        "end": "2018-03-31",
+        "value": 2584000000,
+        "frame": "CY2018Q1"
+      },
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2019,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2019-11-05",
+        "end": "2018-06-30",
+        "value": 2768000000,
+        "frame": "CY2018Q2"
+      },
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2019,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2019-11-05",
+        "end": "2019-03-31",
+        "value": 3099000000,
+        "frame": "CY2019Q1"
+      },
+      {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "fy": 2019,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2019-11-05",
+        "end": "2019-06-30",
+        "value": 3166000000,
+        "frame": "CY2019Q2"
+      }
+    ],
+    "operating_income_history": [
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2025,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-05-07",
+        "end": "2024-03-31",
+        "value": 172000000,
+        "frame": null
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2025,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2025-08-06",
+        "end": "2024-06-30",
+        "value": 796000000,
+        "frame": null
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2025,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2025-11-04",
+        "end": "2024-09-30",
+        "value": 1061000000,
+        "frame": null
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-13",
+        "end": "2024-12-31",
+        "value": 2799000000,
+        "frame": "CY2024"
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2025,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-05-07",
+        "end": "2025-03-31",
+        "value": 1228000000,
+        "frame": null
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2025,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2025-08-06",
+        "end": "2025-06-30",
+        "value": 1450000000,
+        "frame": null
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2025,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2025-11-04",
+        "end": "2025-09-30",
+        "value": 1113000000,
+        "frame": null
+      },
+      {
+        "tag": "OperatingIncomeLoss",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-13",
+        "end": "2025-12-31",
+        "value": 5565000000,
+        "frame": "CY2025"
+      }
+    ],
+    "net_income_history": [
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2025,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-05-07",
+        "end": "2024-03-31",
+        "value": -654000000,
+        "frame": null
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2025,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2025-08-06",
+        "end": "2024-06-30",
+        "value": 1015000000,
+        "frame": null
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2025,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2025-11-04",
+        "end": "2024-09-30",
+        "value": 2612000000,
+        "frame": null
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-13",
+        "end": "2024-12-31",
+        "value": 9856000000,
+        "frame": null
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2025,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-05-07",
+        "end": "2025-03-31",
+        "value": 1776000000,
+        "frame": null
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2025,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2025-08-06",
+        "end": "2025-06-30",
+        "value": 1355000000,
+        "frame": null
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2025,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2025-11-04",
+        "end": "2025-09-30",
+        "value": 6626000000,
+        "frame": null
+      },
+      {
+        "tag": "NetIncomeLoss",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-13",
+        "end": "2025-12-31",
+        "value": 10053000000,
+        "frame": null
+      }
+    ],
+    "diluted_eps_history": [
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2025,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-05-07",
+        "end": "2024-03-31",
+        "value": -0.32,
+        "frame": null
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2025,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2025-08-06",
+        "end": "2024-06-30",
+        "value": 0.47,
+        "frame": null
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2025,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2025-11-04",
+        "end": "2024-09-30",
+        "value": 1.2,
+        "frame": null
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-13",
+        "end": "2024-12-31",
+        "value": 4.56,
+        "frame": "CY2024"
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2025,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-05-07",
+        "end": "2025-03-31",
+        "value": 0.83,
+        "frame": null
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2025,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2025-08-06",
+        "end": "2025-06-30",
+        "value": 0.63,
+        "frame": null
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2025,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2025-11-04",
+        "end": "2025-09-30",
+        "value": 3.11,
+        "frame": null
+      },
+      {
+        "tag": "EarningsPerShareDiluted",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-13",
+        "end": "2025-12-31",
+        "value": 4.73,
+        "frame": "CY2025"
+      }
+    ],
+    "cash_history": [
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-05-07",
+        "end": "2024-03-31",
+        "value": 5019000000,
+        "frame": "CY2024Q1I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2025-08-06",
+        "end": "2024-06-30",
+        "value": 4497000000,
+        "frame": "CY2024Q2I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2025-11-04",
+        "end": "2024-09-30",
+        "value": 6150000000,
+        "frame": "CY2024Q3I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-13",
+        "end": "2024-12-31",
+        "value": 5893000000,
+        "frame": "CY2024Q4I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-05-07",
+        "end": "2025-03-31",
+        "value": 5132000000,
+        "frame": "CY2025Q1I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2025-08-06",
+        "end": "2025-06-30",
+        "value": 6438000000,
+        "frame": "CY2025Q2I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2025-11-04",
+        "end": "2025-09-30",
+        "value": 8432000000,
+        "frame": "CY2025Q3I"
+      },
+      {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-13",
+        "end": "2025-12-31",
+        "value": 7105000000,
+        "frame": "CY2025Q4I"
+      }
+    ],
+    "debt_history": [
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2024,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2024-05-08",
+        "end": "2024-03-31",
+        "value": 9457000000,
+        "frame": "CY2024Q1I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2024,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2024-08-06",
+        "end": "2024-06-30",
+        "value": 9454000000,
+        "frame": "CY2024Q2I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2024,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2024-10-31",
+        "end": "2024-09-30",
+        "value": 10986000000,
+        "frame": "CY2024Q3I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-13",
+        "end": "2024-12-31",
+        "value": 8347000000,
+        "frame": "CY2024Q4I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2025,
+        "fp": "Q1",
+        "form": "10-Q",
+        "filed": "2025-05-07",
+        "end": "2025-03-31",
+        "value": 8350000000,
+        "frame": "CY2025Q1I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2025,
+        "fp": "Q2",
+        "form": "10-Q",
+        "filed": "2025-08-06",
+        "end": "2025-06-30",
+        "value": 9578000000,
+        "frame": "CY2025Q2I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2025,
+        "fp": "Q3",
+        "form": "10-Q",
+        "filed": "2025-11-04",
+        "end": "2025-09-30",
+        "value": 10615000000,
+        "frame": "CY2025Q3I"
+      },
+      {
+        "tag": "LongTermDebtNoncurrent",
+        "fy": 2025,
+        "fp": "FY",
+        "form": "10-K",
+        "filed": "2026-02-13",
+        "end": "2025-12-31",
+        "value": 10521000000,
+        "frame": "CY2025Q4I"
+      }
+    ],
+    "share_count_history": [],
+    "fcf_history": [],
+    "capex_history": [],
+    "latest_share_count": 2067905000
+  },
+  "thesis": {
+    "thesis_short": "Uber está consolidando un sistema operativo global de movilidad y comercio local con efectos de red, adyacencias de alto margen y una vía asset-light hacia la autonomía, lo que debería traducirse en expansión estructural de márgenes y FCF.",
+    "current_stance": "overweight / positiva con riesgo alto-especulativo",
+    "what_would_change_my_mind": "Una ruptura de la liquidez de red en Mobility, evidencia de que Delivery no sostiene mejora estructural de márgenes, una regulación laboral que destruya de forma material la economía unitaria, o una transición AV donde Uber pierda la relación con el cliente y quede desintermediada por OEMs/AV operators."
+  },
+  "segments": [
+    {
+      "name": "Mobility",
+      "importance": "motor principal de valor y rentabilidad",
+      "growth_view": "crecimiento secular apoyado por densidad de red, recuperación post-pandemia, nuevos casos de uso y expansión internacional",
+      "margin_view": "debe seguir siendo el principal contribuyente al EBITDA por pricing power, take rate resiliente y apalancamiento operativo",
+      "notes": "La pieza más importante del caso: liquidez de red, frecuencia, pricing dinámico y posición como agregador de demanda."
+    },
+    {
+      "name": "Delivery",
+      "importance": "segunda pata estratégica; relevante por cross-sell, frecuencia y soporte al ecosistema",
+      "growth_view": "crecimiento más moderado que Mobility, pero con mayor profundidad de uso dentro de la super app y soporte de Uber One",
+      "margin_view": "la clave no es solo crecer, sino demostrar que la mejora de márgenes es sostenible vía batching, densidad, publicidad y menor CAC incremental",
+      "notes": "Más valiosa como capa de engagement y monetización del ecosistema que como negocio aislado puramente transaccional."
+    },
+    {
+      "name": "Freight / Other",
+      "importance": "secundaria en valoración actual",
+      "growth_view": "más cíclica y menos predecible; no es el core de la tesis",
+      "margin_view": "debe evaluarse con prudencia; menor calidad que Mobility y Delivery",
+      "notes": "Puede aportar opcionalidad, pero no debería cargar la tesis central."
+    }
+  ],
+  "drivers": [
+    "Liquidez de red y densidad en Mobility",
+    "Cross-sell entre Mobility y Delivery",
+    "Crecimiento y retención vía Uber One",
+    "Expansión de publicidad como capa de alto margen",
+    "Apalancamiento operativo en costes de estructura",
+    "Estructura asset-light en autonomía / AV"
+  ],
+  "quality": {
+    "dupont": {
+      "net_margin": 0.492017524318705,
+      "asset_turnover": null,
+      "financial_leverage": null
+    },
+    "roic": {
+      "historical": null,
+      "expected": null,
+      "incremental": null
+    },
+    "wacc": null,
+    "eva_spread": null,
+    "input_owner": "hybrid",
+    "operating_margin": 0.08264646914680329,
+    "net_margin": 0.492017524318705,
+    "notes": [
+      "Basic margin metrics prefilled mechanically",
+      "ROIC/WACC still require deeper balance-sheet and analyst normalization work"
+    ],
+    "reported_vs_normalized_status": "guardrail_added"
+  },
+  "debt": {
+    "total_debt": 10615000000,
+    "cash": 8432000000,
+    "net_debt": 2183000000,
+    "interest_burden": {
+      "tag": "InterestExpense",
+      "value": 124000000,
+      "end": "2024-03-31",
+      "filed": "2024-05-08",
+      "form": "10-Q",
+      "fy": 2024,
+      "fp": "Q1"
+    },
+    "maturities": [],
+    "refinancing_risk": null,
+    "input_owner": "hybrid"
+  },
+  "cash_conversion": {
+    "working_capital": {
+      "receivables": {
+        "tag": "AccountsReceivableNetCurrent",
+        "value": 3827000000,
+        "end": "2025-12-31",
+        "filed": "2026-02-13",
+        "form": "10-K",
+        "fy": 2025,
+        "fp": "FY"
+      },
+      "payables": {
+        "tag": "AccountsPayableCurrent",
+        "value": 1013000000,
+        "end": "2025-12-31",
+        "filed": "2026-02-13",
+        "form": "10-K",
+        "fy": 2025,
+        "fp": "FY"
+      },
+      "inventories": null
+    },
+    "ccc": {
+      "dso": 103.72428900274745,
+      "dpo": 27.455632286329546,
+      "dio": null,
+      "ccc": 76.26865671641791
+    },
+    "profit_to_cash_bridge": {
+      "ebit_or_ebitda": null,
+      "cash_taxes": null,
+      "capex": {
+        "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "value": 336000000,
+        "end": "2025-12-31",
+        "filed": "2026-02-13",
+        "form": "10-K",
+        "fy": 2025,
+        "fp": "FY"
+      },
+      "working_capital_impact": null,
+      "fcf_conversion": null,
+      "depreciation": {
+        "tag": "DepreciationDepletionAndAmortization",
+        "value": 719000000,
+        "end": "2025-12-31",
+        "filed": "2026-02-13",
+        "form": "10-K",
+        "fy": 2025,
+        "fp": "FY"
+      }
+    },
+    "input_owner": "hybrid"
+  },
+  "capital_allocation": {
+    "buybacks": null,
+    "dividends": null,
+    "sbc": {
+      "tag": "ShareBasedCompensation",
+      "value": 1826000000,
+      "end": "2025-12-31",
+      "filed": "2026-02-13",
+      "form": "10-K",
+      "fy": 2025,
+      "fp": "FY"
+    },
+    "diluted_share_count_evolution": {
+      "tag": "CommonStockSharesOutstanding",
+      "value": 2067905000,
+      "end": "2025-12-31",
+      "filed": "2026-02-13",
+      "form": "10-K",
+      "fy": 2025,
+      "fp": "FY"
+    },
+    "m_and_a": null,
+    "notes": null,
+    "input_owner": "hybrid"
+  },
+  "comparables": {
+    "peer_set": [],
+    "notes": null,
+    "input_owner": "analyst"
+  },
+  "valuation_methods": {
+    "dcf": {
+      "assumptions": {
+        "notes": "Workbook-derived DCF-style outputs extracted heuristically; validate conceptually before treating as final.",
+        "wacc": 0.09,
+        "terminal_growth": 0.025,
+        "fcf_series_2025e_2029e": [
+          6598.986856,
+          8769.00298516,
+          11363.915156022,
+          14157.3988330632,
+          17243.5944753072
+        ],
+        "pv_fcf_series_2025e_2029e": [
+          6054.116381651376,
+          7380.694373503912,
+          8775.027552295738,
+          10029.458256446964,
+          11207.153262102896
+        ]
+      },
+      "output": 103.90790947172226,
+      "range": [
+        103.90790947172226,
+        124.65114124432701
+      ],
+      "status": "model_extracted",
+      "confidence": 0.65,
+      "source_status": "extracted_not_validated"
+    },
+    "gordon": {
+      "assumptions": {
+        "notes": "Explicit Gordon output read from workbook.",
+        "wacc": 0.09,
+        "terminal_growth": 0.025
+      },
+      "output": 103.90790947172226,
+      "range": [
+        103.90790947172226,
+        103.90790947172226
+      ],
+      "status": "model_extracted",
+      "confidence": 0.9,
+      "source_status": "extracted_not_validated"
+    },
+    "terminal_multiple": {
+      "assumptions": {
+        "notes": "Terminal/exit multiple style output read from workbook; map still heuristic.",
+        "wacc": 0.09,
+        "hybrid_formula_output": 124.65114124432701
+      },
+      "output": 126.72546442158749,
+      "range": [
+        124.65114124432701,
+        126.72546442158749
+      ],
+      "status": "model_extracted",
+      "confidence": 0.75,
+      "source_status": "extracted_not_validated"
+    },
+    "aggregate": {
+      "central_reference": 117.04528959437192,
+      "range": [
+        103.90790947172226,
+        126.72546442158749
+      ],
+      "dispersion": 22.817554949865226,
+      "notes": "Central reference is confidence-weighted across workbook-derived outputs pending analyst refinement.",
+      "source_status": "extracted_not_validated",
+      "confidence": 0.75
+    }
+  },
+  "sensitivities": {
+    "one_way": [],
+    "two_way_tables": [],
+    "input_owner": "hybrid"
+  },
+  "scenarios": [
+    {
+      "name": "Network wins / AV integrated into existing network",
+      "description": "Uber mantiene el control de la demanda y la interfaz con el cliente mientras la oferta AV se integra como supply partner dentro de su red.",
+      "business_model_implication": "Se preserva el modelo asset-light y aumenta la calidad del negocio por mayor eficiencia de red.",
+      "valuation_implication": "Escenario muy alcista: más duración del moat, mejores márgenes y múltiplo estructural superior.",
+      "key_assumptions": [
+        "Uber conserva la relación con el cliente final",
+        "Los partners AV prefieren agregarse a la red existente en vez de construir distribución propia",
+        "La economía unitaria mejora sin necesidad de capex masivo"
+      ]
+    },
+    {
+      "name": "AV ecosystem owns the customer relationship",
+      "description": "La capa AV/OEM captura la relación primaria con el cliente y Uber queda parcialmente desintermediada.",
+      "business_model_implication": "Compresión del poder de negociación y menor captura de valor económico por parte de Uber.",
+      "valuation_implication": "Escenario bajista estructural: menor duración del moat y múltiplo inferior.",
+      "key_assumptions": [
+        "Los operadores AV construyen distribución propia",
+        "La demanda deja de estar agregada por Uber",
+        "El moat de interfaz y red se erosiona"
+      ]
+    },
+    {
+      "name": "Vertical integration / asset-heavy Uber",
+      "description": "Uber necesita controlar más activos/flotas para competir en autonomía.",
+      "business_model_implication": "El negocio gana intensidad de capital y pierde parte de su calidad económica.",
+      "valuation_implication": "Escenario negativo para retornos sobre capital y para la prima de valoración.",
+      "key_assumptions": [
+        "La autonomía exige control directo de flota",
+        "Sube el capex estructural",
+        "Se deteriora la narrativa asset-light"
+      ]
+    },
+    {
+      "name": "Hybrid asset-light central case",
+      "description": "Uber integra AV selectivamente dentro de su red, manteniendo un modelo mayormente asset-light y una plataforma multifuncional.",
+      "business_model_implication": "Combina moat de demanda, monetización incremental y mejora gradual de la economía unitaria.",
+      "valuation_implication": "Escenario central razonable: expansión de márgenes y FCF con opcionalidad AV sin exigir heroic assumptions de hardware.",
+      "key_assumptions": [
+        "Mobility sigue siendo el ancla económica del grupo",
+        "Advertising y Uber One expanden margen",
+        "La autonomía se monetiza vía partnership, no vía integración pesada"
+      ]
+    }
+  ],
+  "catalysts": [
+    "Expansión de Uber Advertising y prueba de su contribución al EBITDA",
+    "Crecimiento de Uber One y mejora de frecuencia / retención",
+    "Evidencia adicional de FCF estructural y recompras sostenidas",
+    "Nuevas alianzas AV que refuercen el rol de Uber como agregador de demanda",
+    "Mayor racionalidad competitiva en movilidad y delivery"
+  ],
+  "risks": [
+    "Riesgo regulatorio laboral en EE.UU. y Europa",
+    "Presión competitiva de DoorDash en delivery y Lyft en movilidad",
+    "Que la mejora de margen en Delivery no sea tan estructural como parece",
+    "Desintermediación en un futuro AV dominado por OEMs / operadores AV",
+    "Dependencia excesiva de ganancias no operativas para el net income reportado"
+  ],
+  "qualitative_notes": {
+    "moat": "Red bilateral densa, multi-producto, super app, menor CAC por cross-sell y capa de membresía/retención con Uber One.",
+    "fragilities": "Regulación, sensibilidad competitiva en delivery, posible erosión del rol de interfaz en AV y riesgo de sobreinterpretar cifras GAAP no normalizadas.",
+    "management_quality": "La etapa Dara/Khosrowshahi destaca por disciplina de capital, foco en rentabilidad y pragmatismo estratégico frente al crecimiento a cualquier coste.",
+    "industry_structure": "Mercados locales con efectos de densidad y fuerte componente de liquidez; tienden a favorecer escala, marca y frecuencia, pero siguen expuestos a regulación y racionalidad competitiva."
+  },
+  "system_context": {
+    "thesis_monitor_decision": "review",
+    "coverage_status": "covered",
+    "extraction_quality": "validated"
+  },
+  "normalization": {
+    "reported": {
+      "revenue": 13467000000,
+      "operating_income": 1113000000,
+      "net_income": 6626000000,
+      "operating_margin": 0.08264646914680329,
+      "net_margin": 0.492017524318705
+    },
+    "operating_reference": {
+      "revenue": 13467000000,
+      "operating_income": 1113000000,
+      "operating_margin": 0.08264646914680329,
+      "net_debt": 2183000000,
+      "analyst_normalized_earnings": null,
+      "analyst_normalized_margin": null
+    },
+    "flags": [
+      "reported_net_margin_far_from_operating_margin",
+      "reported_net_income_likely_contains_non_operating_noise"
+    ],
+    "notes": [
+      "Reported metrics are kept separate from operating-reference metrics.",
+      "Net income and net margin may be noisy for valuation unless analyst-normalized.",
+      "This layer is only a guardrail, not a substitute for analyst judgment."
+    ]
+  },
+  "model_context": {
+    "source_file": "/data/.openclaw/media/inbound/Model_UBER---db0b01b2-9ad0-4a11-a33e-a0b894c1b45d.xlsx",
+    "signals_file": "/data/.openclaw/workspace/financial_system/valuations/extracted/UBER-model-signals.json",
+    "years_map": {
+      "D": "2020A",
+      "E": "2021A",
+      "F": "2022A",
+      "G": "2023A",
+      "H": "2024A",
+      "I": "2025E",
+      "J": "2026E",
+      "K": "2027E",
+      "L": "2028E",
+      "M": "2029E"
+    },
+    "extracted_model_highlights": {
+      "revenue_2025e_2029e": [
+        51894.04,
+        60716.0268,
+        69823.43082,
+        78202.2425184,
+        86022.46677024
+      ],
+      "growth_2025e_2029e": [
+        0.18,
+        0.17,
+        0.15,
+        0.12,
+        0.1
+      ],
+      "ebitda_2025e_2029e": [
+        7784.106,
+        10625.304689999999,
+        13964.686163999999,
+        17595.50456664,
+        21505.61669256
+      ],
+      "fcf_2025e_2029e": [
+        6598.986856,
+        8769.00298516,
+        11363.915156022,
+        14157.3988330632,
+        17243.5944753072
+      ],
+      "wacc": 0.09,
+      "terminal_growth": 0.025,
+      "implied_stock_price_gordon": 103.90790947172226,
+      "implied_stock_price_terminal_multiple": 126.72546442158749,
+      "hybrid_formula_output": 124.65114124432701
+    },
+    "output_signals": [
+      {
+        "name": "gordon_price",
+        "method": "gordon",
+        "value": 103.90790947172226,
+        "ref": "F63",
+        "confidence": 0.9,
+        "source_kind": "explicit_label",
+        "validated": false
+      },
+      {
+        "name": "terminal_multiple_price",
+        "method": "terminal_multiple",
+        "value": 126.72546442158749,
+        "ref": "G64",
+        "confidence": 0.75,
+        "source_kind": "explicit_label",
+        "validated": false
+      },
+      {
+        "name": "hybrid_formula_price",
+        "method": "hybrid",
+        "value": 124.65114124432701,
+        "ref": "O54",
+        "confidence": 0.6,
+        "source_kind": "heuristic_formula_block",
+        "validated": false
+      }
+    ],
+    "summary": {
+      "revenue_2025e_2029e": [
+        51894.04,
+        60716.0268,
+        69823.43082,
+        78202.2425184,
+        86022.46677024
+      ],
+      "ebitda_2025e_2029e": [
+        7784.106,
+        10625.304689999999,
+        13964.686163999999,
+        17595.50456664,
+        21505.61669256
+      ],
+      "fcf_2025e_2029e": [
+        6598.986856,
+        8769.00298516,
+        11363.915156022,
+        14157.3988330632,
+        17243.5944753072
+      ],
+      "output_signal_names": [
+        "gordon_price",
+        "terminal_multiple_price",
+        "hybrid_formula_price"
+      ]
+    },
+    "validation": {
+      "status": "extracted_not_validated",
+      "validated_by_analyst": false
+    },
+    "notes": [
+      "Outputs were extracted by the analyst-model-ingestion skill.",
+      "Workbook semantics are partially inferred; keep analyst review in the loop."
+    ]
+  },
+  "input_meta": {
+    "analyst_input_applied": true,
+    "analyst_input_source": "/data/.openclaw/workspace/financial_system/valuations/UBER-analyst-input-v1.json"
+  }
+}

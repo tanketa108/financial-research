@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+<style>text{font-family:Arial,sans-serif;font-size:12px;fill:#263238}.title{font-size:18px;font-weight:700}.axis{stroke:#90a4ae;stroke-width:1}.grid{stroke:#e3edf2;stroke-width:1}.l{fill:none;stroke-width:3}.dot{stroke:white;stroke-width:2}</style>
+<text x="380.0" y="24" text-anchor="middle" class="title">Cash generation: OCF, capex and FCF approximation (€m)</text>
+<line x1="60" y1="45.0" x2="735" y2="45.0" class="grid"/>
+<text x="52" y="49.0" text-anchor="end">2,631</text>
+<line x1="60" y1="110.0" x2="735" y2="110.0" class="grid"/>
+<text x="52" y="114.0" text-anchor="end">1,973</text>
+<line x1="60" y1="175.0" x2="735" y2="175.0" class="grid"/>
+<text x="52" y="179.0" text-anchor="end">1,315</text>
+<line x1="60" y1="240.0" x2="735" y2="240.0" class="grid"/>
+<text x="52" y="244.0" text-anchor="end">658</text>
+<line x1="60" y1="305.0" x2="735" y2="305.0" class="grid"/>
+<text x="52" y="309.0" text-anchor="end">0</text>
+<line x1="60" y1="305" x2="735" y2="305" class="axis"/>
+<text x="60.0" y="335" text-anchor="middle">2021</text>
+<text x="228.75" y="335" text-anchor="middle">2022</text>
+<text x="397.5" y="335" text-anchor="middle">2023</text>
+<text x="566.25" y="335" text-anchor="middle">2024</text>
+<text x="735.0" y="335" text-anchor="middle">2025</text>
+<polyline points="60.0,178.20592349327984 228.75,166.34677370309555 397.5,135.31533175211337 566.25,114.5618196192909 735.0,72.85714285714288" class="l" stroke="#0b5cab"/>
+<circle cx="60.0" cy="178.20592349327984" r="4" fill="#0b5cab" class="dot"/><text x="60.0" y="170.20592349327984" text-anchor="middle">1,283</text>
+<circle cx="228.75" cy="166.34677370309555" r="4" fill="#0b5cab" class="dot"/><text x="228.75" y="158.34677370309555" text-anchor="middle">1,403</text>
+<circle cx="397.5" cy="135.31533175211337" r="4" fill="#0b5cab" class="dot"/><text x="397.5" y="127.31533175211337" text-anchor="middle">1,717</text>
+<circle cx="566.25" cy="114.5618196192909" r="4" fill="#0b5cab" class="dot"/><text x="566.25" y="106.5618196192909" text-anchor="middle">1,927</text>
+<circle cx="735.0" cy="72.85714285714288" r="4" fill="#0b5cab" class="dot"/><text x="735.0" y="64.85714285714288" text-anchor="middle">2,349</text>
+<rect x="60" y="330" width="12" height="12" fill="#0b5cab"/><text x="78" y="341">OCF</text>
+<polyline points="60.0,270.21316061545946 228.75,270.6084656084656 397.5,267.2483731679134 566.25,257.36574834275984 735.0,257.06926959800523" class="l" stroke="#d97706"/>
+<circle cx="60.0" cy="270.21316061545946" r="4" fill="#d97706" class="dot"/><text x="60.0" y="262.21316061545946" text-anchor="middle">352</text>
+<circle cx="228.75" cy="270.6084656084656" r="4" fill="#d97706" class="dot"/><text x="228.75" y="262.6084656084656" text-anchor="middle">348</text>
+<circle cx="397.5" cy="267.2483731679134" r="4" fill="#d97706" class="dot"/><text x="397.5" y="259.2483731679134" text-anchor="middle">382</text>
+<circle cx="566.25" cy="257.36574834275984" r="4" fill="#d97706" class="dot"/><text x="566.25" y="249.36574834275984" text-anchor="middle">482</text>
+<circle cx="735.0" cy="257.06926959800523" r="4" fill="#d97706" class="dot"/><text x="735.0" y="249.06926959800523" text-anchor="middle">485</text>
+<rect x="270" y="330" width="12" height="12" fill="#d97706"/><text x="288" y="341">Capex/PPE purchases</text>
+<polyline points="60.0,213.09158912607188 228.75,200.6394818463784 397.5,173.06695858419997 566.25,162.29489752478258 735.0,120.78787325913764" class="l" stroke="#2e7d32"/>
+<circle cx="60.0" cy="213.09158912607188" r="4" fill="#2e7d32" class="dot"/><text x="60.0" y="205.09158912607188" text-anchor="middle">930</text>
+<circle cx="228.75" cy="200.6394818463784" r="4" fill="#2e7d32" class="dot"/><text x="228.75" y="192.6394818463784" text-anchor="middle">1,056</text>
+<circle cx="397.5" cy="173.06695858419997" r="4" fill="#2e7d32" class="dot"/><text x="397.5" y="165.06695858419997" text-anchor="middle">1,335</text>
+<circle cx="566.25" cy="162.29489752478258" r="4" fill="#2e7d32" class="dot"/><text x="566.25" y="154.29489752478258" text-anchor="middle">1,444</text>
+<circle cx="735.0" cy="120.78787325913764" r="4" fill="#2e7d32" class="dot"/><text x="735.0" y="112.78787325913764" text-anchor="middle">1,864</text>
+<rect x="480" y="330" width="12" height="12" fill="#2e7d32"/><text x="498" y="341">FCF approx.</text>
+</svg>

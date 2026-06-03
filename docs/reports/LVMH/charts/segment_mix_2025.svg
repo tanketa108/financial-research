@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="210">
+<style>text{font-family:Inter,Arial,sans-serif;font-size:12px;fill:#263238}.title{font-size:18px;font-weight:800}.white{fill:white;font-weight:700}</style>
+<text x="410.0" y="30" text-anchor="middle" class="title">FY2025 revenue mix by segment (€m)</text>
+<rect x="60" y="82" width="327.18700112614005" height="38" fill="#0b5cab"/>
+<text x="223.59350056307002" y="107" text-anchor="middle" class="white">47%</text>
+<rect x="387.18700112614005" y="82" width="158.9416758449144" height="38" fill="#1aa6b7"/>
+<text x="466.6578390485972" y="107" text-anchor="middle" class="white">23%</text>
+<rect x="546.1286769710545" y="82" width="90.83618993404036" height="38" fill="#2e7d32"/>
+<text x="591.5467719380747" y="107" text-anchor="middle" class="white">13%</text>
+<rect x="636.9648669050948" y="82" width="70.80822205997005" height="38" fill="#d97706"/>
+<text x="672.3689779350799" y="107" text-anchor="middle" class="white">10%</text>
+<rect x="707.7730889650649" y="82" width="46.41429579120621" height="38" fill="#7b61ff"/>
+<text x="730.980236860668" y="107" text-anchor="middle" class="white">7%</text>
+<rect x="754.1873847562711" y="82" width="5.812615243728885" height="38" fill="#78909c"/>
+<rect x="60" y="145" width="12" height="12" fill="#0b5cab"/><text x="78" y="156">Fashion &amp; Leather Goods: 37,770</text>
+<rect x="310" y="145" width="12" height="12" fill="#1aa6b7"/><text x="328" y="156">Selective Retailing: 18,348</text>
+<rect x="560" y="145" width="12" height="12" fill="#2e7d32"/><text x="578" y="156">Watches &amp; Jewelry: 10,486</text>
+<rect x="60" y="168" width="12" height="12" fill="#d97706"/><text x="78" y="179">Perfumes &amp; Cosmetics: 8,174</text>
+<rect x="310" y="168" width="12" height="12" fill="#7b61ff"/><text x="328" y="179">Wines &amp; Spirits: 5,358</text>
+<rect x="560" y="168" width="12" height="12" fill="#78909c"/><text x="578" y="179">Other/elims: 671</text>
+</svg>

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "ticker": "DVN",
+  "company": "Devon Energy Corporation",
+  "createdAt": "2026-05-23",
+  "status": "scenario_toggles_defined",
+  "purpose": "Define PM-ready scenario controls for DVN valuation model v1.1.",
+  "toggles": {
+    "commodityDeck": {
+      "bear": {"oilRealizedUsdBbl": [55, 58], "gasRealizedUsdMcf": [1.75, 2.25], "nglRealizedUsdBbl": [15, 18]},
+      "base": {"oilRealizedUsdBbl": [62, 67], "gasRealizedUsdMcf": [2.2, 2.8], "nglRealizedUsdBbl": [19, 21]},
+      "bull": {"oilRealizedUsdBbl": [75, 85], "gasRealizedUsdMcf": [3.0, 4.0], "nglRealizedUsdBbl": [23, 28]}
+    },
+    "synergyRealization": {
+      "bear": {"fy2026Pct": 25, "fy2027PlusPct": 50},
+      "baseConservative": {"fy2026Pct": 40, "fy2027PlusPct": 75},
+      "baseManagement": {"fy2026Pct": 40, "fy2027PlusPct": 100},
+      "bull": {"fy2026Pct": 50, "fy2027PlusPct": 120}
+    },
+    "capexIntensity": {
+      "bear": {"fy2026PctRevenue": 24.5, "terminalPctRevenue": 25.0},
+      "base": {"fy2026PctRevenue": 22.5, "terminalPctRevenue": 22.0},
+      "bull": {"fy2026PctRevenue": 21.0, "terminalPctRevenue": 20.5}
+    }
+  },
+  "scenarioWeightsNeutral": {
+    "bear": 25,
+    "baseUnderwriting": 45,
+    "managementUpside": 20,
+    "bull": 10
+  },
+  "preferredValuationHierarchy": [
+    "Scenario-weighted FCF / EV-EBITDA",
+    "FCF yield through cycle",
+    "Reverse DCF at spot",
+    "Gordon DCF as sensitivity only"
+  ],
+  "recommendedNextAction": "Implement toggles into a lightweight scenario model or a copy of the Excel workbook and produce bear/base/management/bull valuation output table."
+}

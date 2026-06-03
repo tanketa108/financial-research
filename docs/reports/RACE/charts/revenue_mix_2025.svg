@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="170" viewBox="0 0 760 170">
+<style>text{font-family:Arial,sans-serif;font-size:12px;fill:#263238}.title{font-size:18px;font-weight:700}</style>
+<text x="380.0" y="28" text-anchor="middle" class="title">2025 revenue mix</text>
+<rect x="60" y="80" width="521.0047579065211" height="35" fill="#0b5cab"/>
+<text x="320.5023789532606" y="103" text-anchor="middle" fill="white">84.0%</text>
+<rect x="581.0047579065211" y="80" width="71.14469633361321" height="35" fill="#17a2b8"/>
+<text x="616.5771060733277" y="103" text-anchor="middle" fill="white">11.5%</text>
+<rect x="652.1494542401343" y="80" width="27.85054575986566" height="35" fill="#d97706"/>
+<text x="666.0747271200671" y="103" text-anchor="middle" fill="white">4.5%</text>
+<rect x="60" y="130" width="12" height="12" fill="#0b5cab"/><text x="78" y="141">Cars &amp; spare parts: €6,005m</text>
+<rect x="310" y="130" width="12" height="12" fill="#17a2b8"/><text x="328" y="141">Sponsorship/commercial/brand: €820m</text>
+<rect x="560" y="130" width="12" height="12" fill="#d97706"/><text x="578" y="141">Other: €321m</text>
+</svg>

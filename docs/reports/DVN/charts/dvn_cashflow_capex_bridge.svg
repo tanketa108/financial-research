@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380"><style>text{font-family:Arial;font-size:13px;fill:#334155} .t{font-size:20px;font-weight:700;fill:#0f172a}</style><rect width="100%" height="100%" fill="white"/><text class="t" x="70" y="30">DVN: OCF, capex & FCF</text>
+<line x1="70" x2="735" y1="322.0" y2="322.0" stroke="#e2e8f0"/><text x="8" y="326.0">$-6.4B</text>
+<line x1="70" x2="735" y1="255.25" y2="255.25" stroke="#e2e8f0"/><text x="8" y="259.25">$-2.0B</text>
+<line x1="70" x2="735" y1="188.5" y2="188.5" stroke="#e2e8f0"/><text x="8" y="192.5">$2.4B</text>
+<line x1="70" x2="735" y1="121.75000000000001" y2="121.75000000000001" stroke="#e2e8f0"/><text x="8" y="125.75000000000001">$6.9B</text>
+<line x1="70" x2="735" y1="55.0" y2="55.0" stroke="#e2e8f0"/><text x="8" y="59.0">$11.3B</text>
+<text x="56.0" y="360">2021</text>
+<text x="222.25" y="360">2022</text>
+<text x="388.5" y="360">2023</text>
+<text x="554.75" y="360">2024</text>
+<text x="721.0" y="360">2025</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="3" points="402.5,151.35474527176692 568.75,96.29272448458002 735.0,126.40926904072245"/>
+<circle cx="402.5" cy="151.35474527176692" r="4" fill="#2563eb"/>
+<circle cx="568.75" cy="96.29272448458002" r="4" fill="#2563eb"/>
+<circle cx="735.0" cy="126.40926904072245" r="4" fill="#2563eb"/>
+<rect x="70" y="336" width="12" height="12" fill="#2563eb"/><text x="88" y="346">OCF</text>
+<polyline fill="none" stroke="#f97316" stroke-width="3" points="70.0,197.65172942579656 236.25,210.6779689896064 402.5,55.0 568.75,147.29067984324416 735.0,168.64218776622934"/>
+<circle cx="70.0" cy="197.65172942579656" r="4" fill="#f97316"/>
+<circle cx="236.25" cy="210.6779689896064" r="4" fill="#f97316"/>
+<circle cx="402.5" cy="55.0" r="4" fill="#f97316"/>
+<circle cx="568.75" cy="147.29067984324416" r="4" fill="#f97316"/>
+<circle cx="735.0" cy="168.64218776622934" r="4" fill="#f97316"/>
+<rect x="250" y="336" width="12" height="12" fill="#f97316"/><text x="268" y="346">Capex</text>
+<polyline fill="none" stroke="#16a34a" stroke-width="3" points="402.5,322.0 568.75,174.64729936956894 735.0,183.4123360027262"/>
+<circle cx="402.5" cy="322.0" r="4" fill="#16a34a"/>
+<circle cx="568.75" cy="174.64729936956894" r="4" fill="#16a34a"/>
+<circle cx="735.0" cy="183.4123360027262" r="4" fill="#16a34a"/>
+<rect x="430" y="336" width="12" height="12" fill="#16a34a"/><text x="448" y="346">FCF</text>
+</svg>

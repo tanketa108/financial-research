@@ -1,0 +1,36 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='820' height='420' viewBox='0 0 820 420'>
+<rect width='100%' height='100%' fill='white'/>
+<text x='410.0' y='26' text-anchor='middle' font-family='Arial' font-size='20' font-weight='700'>NFLX 5Y revenue / operating income / FCF ($bn)</text>
+<line x1='70' y1='45' x2='70' y2='350' stroke='#111'/><line x1='70' y1='350' x2='790' y2='350' stroke='#111'/>
+<text x='70.0' y='378' text-anchor='middle' font-family='Arial' font-size='13'>2021</text>
+<text x='250.0' y='378' text-anchor='middle' font-family='Arial' font-size='13'>2022</text>
+<text x='430.0' y='378' text-anchor='middle' font-family='Arial' font-size='13'>2023</text>
+<text x='610.0' y='378' text-anchor='middle' font-family='Arial' font-size='13'>2024</text>
+<text x='790.0' y='378' text-anchor='middle' font-family='Arial' font-size='13'>2025</text>
+<line x1='70' y1='350.0' x2='790' y2='350.0' stroke='#e5e7eb'/><text x='62' y='354.0' text-anchor='end' font-family='Arial' font-size='12'>-0</text>
+<line x1='70' y1='273.75' x2='790' y2='273.75' stroke='#e5e7eb'/><text x='62' y='277.75' text-anchor='end' font-family='Arial' font-size='12'>13</text>
+<line x1='70' y1='197.50000000000003' x2='790' y2='197.50000000000003' stroke='#e5e7eb'/><text x='62' y='201.50000000000003' text-anchor='end' font-family='Arial' font-size='12'>26</text>
+<line x1='70' y1='121.24999999999999' x2='790' y2='121.24999999999999' stroke='#e5e7eb'/><text x='62' y='125.24999999999999' text-anchor='end' font-family='Arial' font-size='12'>39</text>
+<line x1='70' y1='45.0' x2='790' y2='45.0' stroke='#e5e7eb'/><text x='62' y='49.0' text-anchor='end' font-family='Arial' font-size='12'>52</text>
+<polyline points='70.0,175.3460914201578 250.0,164.11624909175896 430.0,151.77981646092667 610.0,120.87725764482184 790.0,84.68180129750085' fill='none' stroke='#2563eb' stroke-width='3'/>
+<circle cx='70.0' cy='175.3460914201578' r='4' fill='#2563eb'><title>Revenue 2021: 29.7</title></circle>
+<circle cx='250.0' cy='164.11624909175896' r='4' fill='#2563eb'><title>Revenue 2022: 31.6</title></circle>
+<circle cx='430.0' cy='151.77981646092667' r='4' fill='#2563eb'><title>Revenue 2023: 33.7</title></circle>
+<circle cx='610.0' cy='120.87725764482184' r='4' fill='#2563eb'><title>Revenue 2024: 39.0</title></circle>
+<circle cx='790.0' cy='84.68180129750085' r='4' fill='#2563eb'><title>Revenue 2025: 45.2</title></circle>
+<rect x='70' y='395' width='14' height='14' fill='#2563eb'/><text x='90' y='407' font-family='Arial' font-size='13'>Revenue</text>
+<polyline points='70.0,312.9555722566322 250.0,316.2460682882068 430.0,308.5116461214629 610.0,288.2300122186613 790.0,271.1978895214182' fill='none' stroke='#16a34a' stroke-width='3'/>
+<circle cx='70.0' cy='312.9555722566322' r='4' fill='#16a34a'><title>Operating income 2021: 6.2</title></circle>
+<circle cx='250.0' cy='316.2460682882068' r='4' fill='#16a34a'><title>Operating income 2022: 5.6</title></circle>
+<circle cx='430.0' cy='308.5116461214629' r='4' fill='#16a34a'><title>Operating income 2023: 7.0</title></circle>
+<circle cx='610.0' cy='288.2300122186613' r='4' fill='#16a34a'><title>Operating income 2024: 10.4</title></circle>
+<circle cx='790.0' cy='271.1978895214182' r='4' fill='#16a34a'><title>Operating income 2025: 13.3</title></circle>
+<rect x='240' y='395' width='14' height='14' fill='#16a34a'/><text x='260' y='407' font-family='Arial' font-size='13'>Operating income</text>
+<polyline points='70.0,350.0 250.0,339.74793852084133 430.0,308.6755854255271 610.0,308.69900532610774 790.0,293.8332234325704' fill='none' stroke='#dc2626' stroke-width='3'/>
+<circle cx='70.0' cy='350.0' r='4' fill='#dc2626'><title>FCF 2021: -0.1</title></circle>
+<circle cx='250.0' cy='339.74793852084133' r='4' fill='#dc2626'><title>FCF 2022: 1.6</title></circle>
+<circle cx='430.0' cy='308.6755854255271' r='4' fill='#dc2626'><title>FCF 2023: 6.9</title></circle>
+<circle cx='610.0' cy='308.69900532610774' r='4' fill='#dc2626'><title>FCF 2024: 6.9</title></circle>
+<circle cx='790.0' cy='293.8332234325704' r='4' fill='#dc2626'><title>FCF 2025: 9.5</title></circle>
+<rect x='410' y='395' width='14' height='14' fill='#dc2626'/><text x='430' y='407' font-family='Arial' font-size='13'>FCF</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="210">
+<style>text{font-family:Inter,Arial,sans-serif;font-size:12px;fill:#263238}.title{font-size:18px;font-weight:800}.white{fill:white;font-weight:700}</style>
+<text x="410.0" y="30" text-anchor="middle" class="title">FY2025 revenue by geography (% of sales)</text>
+<rect x="60" y="82" width="182.0" height="38" fill="#0b5cab"/>
+<text x="151.0" y="107" text-anchor="middle" class="white">26%</text>
+<rect x="242.0" y="82" width="182.0" height="38" fill="#1aa6b7"/>
+<text x="333.0" y="107" text-anchor="middle" class="white">26%</text>
+<rect x="424.0" y="82" width="126.0" height="38" fill="#2e7d32"/>
+<text x="487.0" y="107" text-anchor="middle" class="white">18%</text>
+<rect x="550.0" y="82" width="98.0" height="38" fill="#d97706"/>
+<text x="599.0" y="107" text-anchor="middle" class="white">14%</text>
+<rect x="648.0" y="82" width="56.0" height="38" fill="#7b61ff"/>
+<text x="676.0" y="107" text-anchor="middle" class="white">8%</text>
+<rect x="704.0" y="82" width="56.0" height="38" fill="#78909c"/>
+<text x="732.0" y="107" text-anchor="middle" class="white">8%</text>
+<rect x="60" y="145" width="12" height="12" fill="#0b5cab"/><text x="78" y="156">US: 26</text>
+<rect x="310" y="145" width="12" height="12" fill="#1aa6b7"/><text x="328" y="156">Asia ex-Japan: 26</text>
+<rect x="560" y="145" width="12" height="12" fill="#2e7d32"/><text x="578" y="156">Europe ex-France: 18</text>
+<rect x="60" y="168" width="12" height="12" fill="#d97706"/><text x="78" y="179">Other markets: 14</text>
+<rect x="310" y="168" width="12" height="12" fill="#7b61ff"/><text x="328" y="179">France: 8</text>
+<rect x="560" y="168" width="12" height="12" fill="#78909c"/><text x="578" y="179">Japan: 8</text>
+</svg>

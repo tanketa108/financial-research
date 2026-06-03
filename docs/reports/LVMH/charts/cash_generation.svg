@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="380" viewBox="0 0 820 380">
+<style>text{font-family:Inter,Arial,sans-serif;font-size:12px;fill:#263238}.title{font-size:18px;font-weight:800}.axis{stroke:#90a4ae}.grid{stroke:#e6eef5}.line{fill:none;stroke-width:3}.note{font-size:11px;fill:#607d8b}</style>
+<text x="410.0" y="28" text-anchor="middle" class="title">Cash generation: OCF, operating investments and operating FCF</text>
+<line x1="70" y1="48.0" x2="795" y2="48.0" class="grid"/>
+<text x="62" y="52.0" text-anchor="end">21,195</text>
+<line x1="70" y1="116.0" x2="795" y2="116.0" class="grid"/>
+<text x="62" y="120.0" text-anchor="end">15,896</text>
+<line x1="70" y1="184.0" x2="795" y2="184.0" class="grid"/>
+<text x="62" y="188.0" text-anchor="end">10,597</text>
+<line x1="70" y1="252.0" x2="795" y2="252.0" class="grid"/>
+<text x="62" y="256.0" text-anchor="end">5,299</text>
+<line x1="70" y1="320.0" x2="795" y2="320.0" class="grid"/>
+<text x="62" y="324.0" text-anchor="end">0</text>
+<line x1="70" y1="320" x2="795" y2="320" class="axis"/>
+<text x="70.0" y="352" text-anchor="middle">2021</text>
+<text x="251.25" y="352" text-anchor="middle">2022</text>
+<text x="432.5" y="352" text-anchor="middle">2023</text>
+<text x="613.75" y="352" text-anchor="middle">2024</text>
+<text x="795.0" y="352" text-anchor="middle">2025</text>
+<polyline points="70.0,80.68484464172482 251.25,91.14397439381588 432.5,83.86750007548994 613.75,77.14285714285717 795.0,77.78452154482594" class="line" stroke="#0b5cab"/>
+<circle cx="70.0" cy="80.68484464172482" r="4" fill="#0b5cab" stroke="white" stroke-width="2"/><text x="70.0" y="72.68484464172482" text-anchor="middle">18,648</text>
+<circle cx="251.25" cy="91.14397439381588" r="4" fill="#0b5cab" stroke="white" stroke-width="2"/><text x="251.25" y="83.14397439381588" text-anchor="middle">17,833</text>
+<circle cx="432.5" cy="83.86750007548994" r="4" fill="#0b5cab" stroke="white" stroke-width="2"/><text x="432.5" y="75.86750007548994" text-anchor="middle">18,400</text>
+<circle cx="613.75" cy="77.14285714285717" r="4" fill="#0b5cab" stroke="white" stroke-width="2"/><text x="613.75" y="69.14285714285717" text-anchor="middle">18,924</text>
+<circle cx="795.0" cy="77.78452154482594" r="4" fill="#0b5cab" stroke="white" stroke-width="2"/><text x="795.0" y="69.78452154482594" text-anchor="middle">18,874</text>
+<rect x="70" y="342" width="12" height="12" fill="#0b5cab"/><text x="88" y="353">OCF</text>
+<polyline points="70.0,285.81212066310354 251.25,256.2313917323429 432.5,224.03267204154966 613.75,249.01908385421382 795.0,261.3903735241719" class="line" stroke="#d97706"/>
+<circle cx="70.0" cy="285.81212066310354" r="4" fill="#d97706" stroke="white" stroke-width="2"/><text x="70.0" y="277.81212066310354" text-anchor="middle">2,664</text>
+<circle cx="251.25" cy="256.2313917323429" r="4" fill="#d97706" stroke="white" stroke-width="2"/><text x="251.25" y="248.2313917323429" text-anchor="middle">4,969</text>
+<circle cx="432.5" cy="224.03267204154966" r="4" fill="#d97706" stroke="white" stroke-width="2"/><text x="432.5" y="216.03267204154966" text-anchor="middle">7,478</text>
+<circle cx="613.75" cy="249.01908385421382" r="4" fill="#d97706" stroke="white" stroke-width="2"/><text x="613.75" y="241.01908385421382" text-anchor="middle">5,531</text>
+<circle cx="795.0" cy="261.3903735241719" r="4" fill="#d97706" stroke="white" stroke-width="2"/><text x="795.0" y="253.39037352417188" text-anchor="middle">4,567</text>
+<rect x="280" y="342" width="12" height="12" fill="#d97706"/><text x="298" y="353">Operating investments</text>
+<polyline points="70.0,146.3527795392095 251.25,190.21695805779513 432.5,215.99903372890057 613.75,185.532807923423 795.0,174.56034664975692" class="line" stroke="#2e7d32"/>
+<circle cx="70.0" cy="146.3527795392095" r="4" fill="#2e7d32" stroke="white" stroke-width="2"/><text x="70.0" y="138.3527795392095" text-anchor="middle">13,531</text>
+<circle cx="251.25" cy="190.21695805779513" r="4" fill="#2e7d32" stroke="white" stroke-width="2"/><text x="251.25" y="182.21695805779513" text-anchor="middle">10,113</text>
+<circle cx="432.5" cy="215.99903372890057" r="4" fill="#2e7d32" stroke="white" stroke-width="2"/><text x="432.5" y="207.99903372890057" text-anchor="middle">8,104</text>
+<circle cx="613.75" cy="185.532807923423" r="4" fill="#2e7d32" stroke="white" stroke-width="2"/><text x="613.75" y="177.532807923423" text-anchor="middle">10,478</text>
+<circle cx="795.0" cy="174.56034664975692" r="4" fill="#2e7d32" stroke="white" stroke-width="2"/><text x="795.0" y="166.56034664975692" text-anchor="middle">11,333</text>
+<rect x="490" y="342" width="12" height="12" fill="#2e7d32"/><text x="508" y="353">Operating FCF</text>
+<text x="795" y="372" text-anchor="end" class="note">€m</text></svg>

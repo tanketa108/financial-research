@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="350">
+<style>text{font-family:Inter,Arial,sans-serif;font-size:12px;fill:#263238}.title{font-size:18px;font-weight:800}.grid{stroke:#e6eef5}.bar{fill:#0b5cab}</style>
+<text x="410.0" y="30" text-anchor="middle" class="title">FY2025 recurring operating margin by segment (%)</text>
+<line x1="70" y1="50.0" x2="795" y2="50.0" class="grid"/>
+<text x="62" y="54.0" text-anchor="end">41</text>
+<line x1="70" y1="108.75" x2="795" y2="108.75" class="grid"/>
+<text x="62" y="112.75" text-anchor="end">31</text>
+<line x1="70" y1="167.5" x2="795" y2="167.5" class="grid"/>
+<text x="62" y="171.5" text-anchor="end">21</text>
+<line x1="70" y1="226.25" x2="795" y2="226.25" class="grid"/>
+<text x="62" y="230.25" text-anchor="end">10</text>
+<line x1="70" y1="285.0" x2="795" y2="285.0" class="grid"/>
+<text x="62" y="289.0" text-anchor="end">0</text>
+<rect x="97.55" y="176.88861985472153" width="89.9" height="108.11138014527847" class="bar"/>
+<text x="142.5" y="169.88861985472153" text-anchor="middle">19</text><text x="142.5" y="316" text-anchor="middle">Wines &amp; Spirits</text>
+<rect x="242.55" y="85.84745762711863" width="89.9" height="199.15254237288138" class="bar"/>
+<text x="287.5" y="78.84745762711863" text-anchor="middle">35</text><text x="287.5" y="316" text-anchor="middle">Fashion &amp; Leather Goods</text>
+<rect x="387.55" y="234.35835351089588" width="89.9" height="50.64164648910412" class="bar"/>
+<text x="432.5" y="227.35835351089588" text-anchor="middle">9</text><text x="432.5" y="316" text-anchor="middle">Perfumes &amp; Cosmetics</text>
+<rect x="532.55" y="203.06295399515736" width="89.9" height="81.93704600484264" class="bar"/>
+<text x="577.5" y="196.06295399515736" text-anchor="middle">14</text><text x="577.5" y="316" text-anchor="middle">Watches &amp; Jewelry</text>
+<rect x="677.55" y="229.80629539951573" width="89.9" height="55.19370460048427" class="bar"/>
+<text x="722.5" y="222.80629539951573" text-anchor="middle">10</text><text x="722.5" y="316" text-anchor="middle">Selective Retailing</text>
+</svg>

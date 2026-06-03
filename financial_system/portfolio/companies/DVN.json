@@ -1,10 +1,10 @@
 {
   "schemaVersion": "0.1.0",
-  "updatedAt": "2026-05-22",
+  "updatedAt": "2026-06-03",
   "ticker": "DVN",
   "name": "Devon Energy Corporation",
   "type": "portfolio",
-  "status": "research_pending",
+  "status": "research_active",
   "priority": "high",
   "identifiers": {
     "cik": "0001090012",
@@ -19,9 +19,9 @@
   "thesisState": {
     "status": "preliminary_report_completed",
     "owner": "user",
-    "lastReviewedAt": "2026-05-22",
+    "lastReviewedAt": "2026-05-23",
     "conviction": "unknown",
-    "summary": "DVN preliminary report completed. Main issue: assess combined Devon/Coterra through-cycle FCF and capital returns under conservative commodity assumptions before considering a full Deep Dive.",
+    "summary": "DVN scenario output table completed. Conservative weighted reference is below spot under current weights; DVN remains reviewable but not automatically compelling unless PM underwrites higher commodity/synergy confidence, adjusts weights, or waits for a better entry price.",
     "whatWouldChangeOurMind": [],
     "portfolioManagerDecision": null
   },
@@ -92,64 +92,150 @@
   ],
   "researchOutputs": [
     {
-      "date": "2026-05-15",
-      "type": "preliminary_report",
-      "version": "v0",
-      "path": "financial-research/financial_system/preliminary_reports/DVN/DVN-preliminary-report-v0.md",
-      "summary": "Preliminary DVN brief focused on Devon/Coterra combined-company setup, cyclicality, FCF durability, capital returns, leverage and open model questions."
+      "type": "dashboard",
+      "date": "2026-06-03",
+      "title": "DVN dashboard / artifact hub",
+      "path": "../companies/DVN.html"
     },
     {
-      "date": "2026-05-22",
-      "type": "valuation_inputs",
-      "version": "v1.1",
-      "path": "financial-research/docs/models/DVN/DVN_Valoracion_v1_1.xlsx",
-      "sourcePath": "financial-research/financial_system/valuations/DVN/DVN_Valoracion_v1_1.xlsx",
-      "summary": "User-provided DVN Excel valuation model v1.1 added to the dashboard as the active valuation artifact. Sheets: Resumen, Hipotesis, Historico, Modelo, DuPont_WC, Reverse_DCF, Conclusiones, Fuentes.",
-      "title": "DVN valuation model v1.1"
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "DVN-informe-preliminar-v0",
+      "path": "../reports/DVN/DVN-informe-preliminar-v0.html"
+    },
+    {
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "DVN-informe-preliminar-v0",
+      "path": "../reports/DVN/DVN-informe-preliminar-v0.md"
+    },
+    {
+      "type": "report_pdf",
+      "date": "2026-06-03",
+      "title": "DVN-informe-preliminar-v0",
+      "path": "../reports/DVN/DVN-informe-preliminar-v0.pdf"
+    },
+    {
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "DVN-preliminary-report-v0",
+      "path": "../reports/DVN/DVN-preliminary-report-v0.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "DVN-research-prevaluation-v0.2-formatted",
+      "path": "../reports/DVN/DVN-research-prevaluation-v0.2-formatted.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "DVN-research-prevaluation-v0.2-report",
+      "path": "../reports/DVN/DVN-research-prevaluation-v0.2-report.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "DVN-research-prevaluation-v0.2-report",
+      "path": "../reports/DVN/DVN-research-prevaluation-v0.2-report.pdf"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "dvn_5y_revenue_opincome_fcf",
+      "path": "../reports/DVN/charts/dvn_5y_revenue_opincome_fcf.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "dvn_capex_fcf_conversion",
+      "path": "../reports/DVN/charts/dvn_capex_fcf_conversion.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "dvn_cash_debt",
+      "path": "../reports/DVN/charts/dvn_cash_debt.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "dvn_cashflow_capex_bridge",
+      "path": "../reports/DVN/charts/dvn_cashflow_capex_bridge.svg"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "DVN-model-review-v0.1",
+      "path": "../reports/DVN/valuation/DVN-model-review-v0.1.md"
+    },
+    {
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "DVN-scenario-output-table-v0.1",
+      "path": "../reports/DVN/valuation/DVN-scenario-output-table-v0.1.md"
+    },
+    {
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "DVN-scenario-toggle-sheet-v0.1",
+      "path": "../reports/DVN/valuation/DVN-scenario-toggle-sheet-v0.1.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "DVN-valuation-display-v1",
+      "path": "../reports/DVN/valuation/DVN-valuation-display-v1.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "DVN_Valoracion_v1_1",
+      "path": "../models/DVN/DVN_Valoracion_v1_1.xlsx"
     }
   ],
   "tasks": {
-    "open": [
+    "open": [],
+    "closed": [
       "TASK-2026-05-15-002"
-    ],
-    "closed": []
+    ]
   },
   "sources": [
     "SEC EDGAR",
     "Devon Energy Investor Relations"
   ],
-  "notes": "Energy/cyclicality requires sector-specific monitoring.",
+  "notes": "DVN Deep Dive and model review completed; remaining work is PM-selected scenario toggles/recalculation for commodity deck, synergies and capex intensity.",
   "coverage": {
     "deepDive": {
-      "status": "yes",
-      "path": "financial-research/financial_system/deep_dives/DVN/DVN-research-prevaluation-v0.2-report.pdf",
+      "status": "linked_or_hub",
+      "path": "docs/companies/DVN.html",
       "date": "2026-05-22"
     },
     "model": {
-      "status": "yes_needs_review",
-      "path": "financial-research/docs/models/DVN/DVN_Valoracion_v1_1.xlsx",
-      "date": "2026-05-22"
+      "status": "linked",
+      "path": "docs/reports/DVN/DVN-research-prevaluation-v0.2-formatted.md",
+      "date": "2026-05-23"
     },
     "thesis": {
-      "status": "implicit_in_preliminary_and_model",
-      "path": null
+      "status": "linked_or_report_backed",
+      "path": "docs/reports/DVN/DVN-informe-preliminar-v0.html"
     },
-    "reportingReadiness": "medium"
+    "reportingReadiness": "high"
   },
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-06-03",
   "coverageGaps": [
     {
-      "type": "model",
-      "severity": "high",
-      "summary": "User valuation model v1.1 exists but needs formula/assumption/sensitivity review before full reporting confidence.",
-      "recommendedAction": "Review model assumptions, formulas, commodity sensitivity, FCF durability, capital returns and leverage."
+      "type": "model_reconciliation",
+      "severity": "low",
+      "summary": "Scenario table is complete, but should be reconciled against a recalculated Excel workbook before portfolio action.",
+      "recommendedAction": "If using for portfolio decision, recalculate Excel/cached workbook and optionally add buyback share-count roll-forward."
     }
   ],
   "nextReviewAction": {
-    "action": "Review DVN valuation model v1.1: formulas, assumptions, commodity sensitivity, FCF durability, capital returns, leverage and merger execution.",
-    "priority": "high",
-    "owner": "Charlie",
-    "trigger": "User model uploaded and incorporated",
+    "action": "PM review of DVN scenario output: decide whether conservative base/weighted reference is sufficient, whether to adjust commodity/synergy weights, or whether to wait for better entry/updated post-merger data.",
+    "priority": "medium",
+    "owner": "Portfolio Manager",
+    "trigger": "DVN scenario output table v0.1 completed",
     "due": null,
     "status": "open"
   },
@@ -166,7 +252,7 @@
     "includeInPortfolioReview": true,
     "includeInWatchlistReview": false,
     "lastReviewedInReport": "2026-05-22",
-    "lastMaterialChange": "2026-05-22",
-    "notes": "High-priority portfolio company; model exists but needs review."
+    "lastMaterialChange": "2026-05-23",
+    "notes": "DVN model review, scenario toggles and lightweight scenario output table complete; remaining work is PM review and optional Excel reconciliation/buyback modeling."
   }
 }

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+<rect width="100%" height="100%" fill="#fbfdff"/><text x="380.0" y="26" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#18324a">Cash generation: OCF vs capex vs FCF (US$ mm)</text>
+<line x1="70" y1="305" x2="735" y2="305" stroke="#8aa6bf"/><line x1="70" y1="45" x2="70" y2="305" stroke="#8aa6bf"/>
+<text x="136.5" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#466">2021</text>
+<rect x="86.625" y="141.32294863027184" width="24.9375" height="163.67705136972816" fill="#1b9e77" rx="3"/><text x="99.09375" y="137.32294863027184" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">8791</text>
+<text x="269.5" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#466">2022</text>
+<rect x="219.625" y="98.46268560523328" width="24.9375" height="206.53731439476672" fill="#1b9e77" rx="3"/><text x="232.09375" y="94.46268560523328" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">11093</text>
+<rect x="252.875" y="219.22361782956006" width="24.9375" height="85.77638217043994" fill="#d95f02" rx="3"/><text x="265.34375" y="215.22361782956006" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">4607</text>
+<text x="402.5" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#466">2023</text>
+<rect x="352.625" y="93.86386502869786" width="24.9375" height="211.13613497130214" fill="#1b9e77" rx="3"/><text x="365.09375" y="89.86386502869786" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">11340</text>
+<rect x="385.875" y="192.524392296152" width="24.9375" height="112.475607703848" fill="#d95f02" rx="3"/><text x="398.34375" y="188.524392296152" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">6041</text>
+<rect x="419.125" y="209.8956457289761" width="24.9375" height="95.10435427102392" fill="#7570b3" rx="3"/><text x="431.59375" y="205.8956457289761" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">5108</text>
+<text x="535.5" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#466">2024</text>
+<rect x="485.625" y="78.91304347826085" width="24.9375" height="226.08695652173915" fill="#1b9e77" rx="3"/><text x="498.09375" y="74.91304347826085" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">12143</text>
+<rect x="518.875" y="189.07993154044735" width="24.9375" height="115.92006845955265" fill="#d95f02" rx="3"/><text x="531.34375" y="185.07993154044735" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">6226</text>
+<rect x="552.125" y="205.07340067098954" width="24.9375" height="99.92659932901046" fill="#7570b3" rx="3"/><text x="564.59375" y="201.07340067098954" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">5367</text>
+<text x="668.5" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#466">2025</text>
+<rect x="618.625" y="117.9937090254181" width="24.9375" height="187.0062909745819" fill="#1b9e77" rx="3"/><text x="631.09375" y="113.9937090254181" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">10044</text>
+<rect x="651.875" y="187.81385947889103" width="24.9375" height="117.18614052110897" fill="#d95f02" rx="3"/><text x="664.34375" y="183.81385947889103" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">6294</text>
+<rect x="685.125" y="218.18097024945484" width="24.9375" height="86.81902975054514" fill="#7570b3" rx="3"/><text x="697.59375" y="214.18097024945484" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">4663</text>
+<rect x="70" y="342" width="10" height="10" fill="#1b9e77"/><text x="84" y="352" font-family="Arial" font-size="12" fill="#18324a">OCF</text>
+<rect x="250" y="342" width="10" height="10" fill="#d95f02"/><text x="264" y="352" font-family="Arial" font-size="12" fill="#18324a">Capex</text>
+<rect x="430" y="342" width="10" height="10" fill="#7570b3"/><text x="444" y="352" font-family="Arial" font-size="12" fill="#18324a">FCF</text>
+</svg>

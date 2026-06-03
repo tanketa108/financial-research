@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+<style>text{font-family:Arial,sans-serif;font-size:12px;fill:#263238}.title{font-size:18px;font-weight:700}.axis{stroke:#90a4ae;stroke-width:1}.grid{stroke:#e3edf2;stroke-width:1}.l{fill:none;stroke-width:3}.dot{stroke:white;stroke-width:2}</style>
+<text x="380.0" y="24" text-anchor="middle" class="title">Controlled volume: shipments (cars)</text>
+<line x1="60" y1="45.0" x2="735" y2="45.0" class="grid"/>
+<text x="52" y="49.0" text-anchor="end">15,402</text>
+<line x1="60" y1="110.0" x2="735" y2="110.0" class="grid"/>
+<text x="52" y="114.0" text-anchor="end">11,552</text>
+<line x1="60" y1="175.0" x2="735" y2="175.0" class="grid"/>
+<text x="52" y="179.0" text-anchor="end">7,701</text>
+<line x1="60" y1="240.0" x2="735" y2="240.0" class="grid"/>
+<text x="52" y="244.0" text-anchor="end">3,851</text>
+<line x1="60" y1="305.0" x2="735" y2="305.0" class="grid"/>
+<text x="52" y="309.0" text-anchor="end">0</text>
+<line x1="60" y1="305" x2="735" y2="305" class="axis"/>
+<text x="60.0" y="335" text-anchor="middle">2021</text>
+<text x="228.75" y="335" text-anchor="middle">2022</text>
+<text x="397.5" y="335" text-anchor="middle">2023</text>
+<text x="566.25" y="335" text-anchor="middle">2024</text>
+<text x="735.0" y="335" text-anchor="middle">2025</text>
+<polyline points="60.0,116.69622080944073 228.75,81.8207741211668 397.5,74.35952173190395 566.25,72.85714285714288 735.0,74.74777694672986" class="l" stroke="#0b5cab"/>
+<circle cx="60.0" cy="116.69622080944073" r="4" fill="#0b5cab" class="dot"/><text x="60.0" y="108.69622080944073" text-anchor="middle">11,155</text>
+<circle cx="228.75" cy="81.8207741211668" r="4" fill="#0b5cab" class="dot"/><text x="228.75" y="73.8207741211668" text-anchor="middle">13,221</text>
+<circle cx="397.5" cy="74.35952173190395" r="4" fill="#0b5cab" class="dot"/><text x="397.5" y="66.35952173190395" text-anchor="middle">13,663</text>
+<circle cx="566.25" cy="72.85714285714288" r="4" fill="#0b5cab" class="dot"/><text x="566.25" y="64.85714285714288" text-anchor="middle">13,752</text>
+<circle cx="735.0" cy="74.74777694672986" r="4" fill="#0b5cab" class="dot"/><text x="735.0" y="66.74777694672986" text-anchor="middle">13,640</text>
+<rect x="60" y="330" width="12" height="12" fill="#0b5cab"/><text x="78" y="341">Shipments</text>
+</svg>

@@ -27,6 +27,13 @@ def pill(x):
     return f'<span class="pill pill-{esc(cls)}">{esc(txt)}</span>'
 
 
+def link(path, label=None):
+    if not path:
+        return '[missing]'
+    label = label or path
+    return f'<a href="{esc(path)}">{esc(label)}</a>'
+
+
 def read_json(path: Path, default):
     if not path.exists():
         return default
@@ -138,7 +145,7 @@ def render_company_state_page(state, tasks_by_id):
         for e in recent
     ) or '<div class="muted small">No recent events recorded.</div>'
     outputs_html = ''.join(
-        f'<div class="portfolio-queue-item">{pill(o.get("type"))}<strong>{esc(o.get("date"))} · {esc(o.get("title") or o.get("version"))}</strong><span>{esc(o.get("path"))}</span></div>'
+        f'<div class="portfolio-queue-item">{pill(o.get("type"))}<strong>{esc(o.get("date"))} · {esc(o.get("title") or o.get("version"))}</strong><span>{link(o.get("path"), "Open artifact")}</span></div>'
         for o in outputs
     ) or '<div class="muted small">No research outputs recorded.</div>'
     linked_task_html = ''.join(
@@ -196,6 +203,19 @@ def md_preview(path: Path, max_lines=12):
     return '\n'.join(lines)
 
 
+def latest_portfolio_review_links(reports):
+    review_reports = [p for p in reports if 'portfolio-review' in p.name and 'digest' not in p.name]
+    digest_reports = [p for p in reports if 'portfolio-review-digest' in p.name]
+    latest_review = review_reports[-1] if review_reports else None
+    latest_digest = digest_reports[-1] if digest_reports else None
+    links = []
+    if latest_review:
+        links.append(report_link(str(latest_review), latest_review.stem))
+    if latest_digest:
+        links.append(report_link(str(latest_digest), latest_digest.stem))
+    return ''.join(links) or '<span class="muted small">No Portfolio Review found.</span>', latest_digest
+
+
 def main():
     registry, pipeline, company_states, radars, reports, outputs, system_health = load_portfolio_os()
     companies = registry.get('companies', [])
@@ -223,13 +243,8 @@ def main():
     total_gaps = sum(len((states_for_registry[c.get('ticker')].get('coverageGaps') or [])) for c in companies)
     high_next = [c for c in companies if (states_for_registry[c.get('ticker')].get('nextReviewAction') or {}).get('priority') == 'high']
 
-    report_full = REPORTS / '2026-05-22-portfolio-review-v0.2.md'
-    report_digest = REPORTS / '2026-05-22-portfolio-review-digest-v0.2.md'
-    latest_report_links = ''.join([
-        report_link(str(report_full), 'Portfolio Review v0.2'),
-        report_link(str(report_digest), 'Digest v0.2'),
-    ])
-    digest_preview = '<br>'.join(esc(x) for x in md_preview(report_digest, 9).splitlines())
+    latest_report_links, report_digest = latest_portfolio_review_links(reports)
+    digest_preview = '<br>'.join(esc(x) for x in md_preview(report_digest, 9).splitlines()) if report_digest else '[missing digest]'
 
     def company_sort(c):
         n = states_for_registry[c.get('ticker')].get('nextReviewAction') or {}
@@ -239,13 +254,18 @@ def main():
 
     company_cards = ''.join(
         f'''
-<a class="portfolio-company-card" href="portfolio_companies/{esc(c.get('ticker'))}.html">
+<a class="portfolio-company-card" href="{('companies/' + esc(c.get('ticker')) + '.html') if (ROOT / 'docs' / 'companies' / (str(c.get('ticker')) + '.html')).exists() else ('portfolio_companies/' + esc(c.get('ticker')) + '.html')}">
   <div class="portfolio-card-top"><strong>{esc(c.get('ticker'))}</strong>{pill(c.get('status'))}</div>
   <div class="muted small">{esc(c.get('name'))}</div>
   <p>{esc(c.get('notes'))}</p>
-  <div class="portfolio-metrics"><span>Type <b>{esc(c.get('type'))}</b></span><span>Priority <b>{esc(c.get('priority'))}</b></span><span>Readiness <b>{esc((states_for_registry[c.get('ticker')].get('coverage') or {}).get('reportingReadiness'))}</b></span><span>Gaps <b>{len(states_for_registry[c.get('ticker')].get('coverageGaps') or [])}</b></span></div>
+  <div class="portfolio-metrics"><span>Type <b>{esc(c.get('type'))}</b></span><span>Priority <b>{esc(c.get('priority'))}</b></span><span>Position <b>{esc(((states_for_registry[c.get('ticker')].get('portfolioPosition') or {}).get('status')))}</b></span><span>Readiness <b>{esc((states_for_registry[c.get('ticker')].get('coverage') or {}).get('reportingReadiness'))}</b></span><span>Gaps <b>{len(states_for_registry[c.get('ticker')].get('coverageGaps') or [])}</b></span><span>Last review <b>{esc(((states_for_registry[c.get('ticker')].get('reporting') or {}).get('lastReviewedInReport')))}</b></span></div>
   <div class="small muted">Next: {esc((states_for_registry[c.get('ticker')].get('nextReviewAction') or {}).get('action'))}</div>
 </a>'''
+        for c in sorted(companies, key=company_sort)
+    )
+
+    reporting_rows = ''.join(
+        f'''<tr><td><strong>{esc(c.get('ticker'))}</strong><div class="muted small">{esc(c.get('name'))}</div></td><td>{pill(c.get('type'))}</td><td>{pill(((states_for_registry[c.get('ticker')].get('portfolioPosition') or {}).get('status')))}</td><td>{pill((states_for_registry[c.get('ticker')].get('coverage') or {}).get('reportingReadiness'))}</td><td class="small">{esc(((states_for_registry[c.get('ticker')].get('reporting') or {}).get('lastReviewedInReport')))}</td><td class="small">{esc(((states_for_registry[c.get('ticker')].get('reporting') or {}).get('notes')))}</td></tr>'''
         for c in sorted(companies, key=company_sort)
     )
 
@@ -261,7 +281,12 @@ def main():
         for g in (states_for_registry[c.get('ticker')].get('coverageGaps') or [])
     ) or '<div class="muted small">No coverage gaps recorded.</div>'
 
+    change_reports_dir = ROOT / 'financial_system/portfolio/change-reports'
+    change_reports = sorted([p for p in change_reports_dir.glob('*.md') if p.name != 'README.md']) if change_reports_dir.exists() else []
     recent_radar_html = ''.join(f'<li><span class="mono">{esc(p.name)}</span></li>' for p in radars[-5:]) or '<li>[none]</li>'
+    change_report_html = ''.join(f'<li><span class="mono">{esc(p.name)}</span></li>' for p in change_reports[-5:]) or '<li>[none yet]</li>'
+    recent_radar_queue = ''.join(f'<div class="portfolio-queue-item"><strong>{esc(p.stem)}</strong><span>{esc(p.name)}</span></div>' for p in radars[-5:]) or '<div class="muted small">No radar runs recorded.</div>'
+    change_report_queue = ''.join(f'<div class="portfolio-queue-item"><strong>{esc(p.stem)}</strong><span>{esc(p.name)}</span></div>' for p in change_reports[-5:]) or '<div class="muted small">No material change reports yet.</div>'
     status_html = ''.join(f'<li>{pill(k)} {v}</li>' for k, v in sorted(by_status.items()))
     priority_html = ''.join(f'<li>{pill(k)} {v}</li>' for k, v in sorted(by_priority.items()))
     readiness_html = ''.join(f'<li>{pill(k)} {v}</li>' for k, v in sorted(readiness.items()))
@@ -284,6 +309,7 @@ def main():
   <div class="card"><div class="muted small">System health</div><div class="kpi">{esc(str(system_health.get('overallStatus', 'missing')).upper())}</div></div>
 </div>
 <div class="card section"><h2>Latest Portfolio Review</h2><div class="download-chip-row">{latest_report_links}</div><p class="small muted">{digest_preview}</p></div>
+<div class="section card"><h2>Reporting Readiness</h2><table><thead><tr><th>Company</th><th>Type</th><th>Position</th><th>Readiness</th><th>Last review</th><th>Reporting note</th></tr></thead><tbody>{reporting_rows}</tbody></table></div>
 <div class="snapshot-grid section">
   <section class="card snapshot-panel"><h2>Readiness mix</h2><ul class="list small">{readiness_html}</ul></section>
   <section class="card snapshot-panel"><h2>Company status</h2><ul class="list small">{status_html}</ul></section>
@@ -291,6 +317,7 @@ def main():
   <section class="card snapshot-panel"><h2>Daily Radar runs</h2><ul class="list small">{recent_radar_html}</ul></section>
 </div>
 <div class="section card"><h2>Next Review Actions</h2><table><thead><tr><th>Company</th><th>Priority</th><th>Action</th><th>Owner</th></tr></thead><tbody>{next_rows}</tbody></table></div>
+<div class="snapshot-grid section"><section class="card snapshot-panel"><h2>Latest Radar</h2><div class="portfolio-queue-list">{recent_radar_queue}</div></section><section class="card snapshot-panel"><h2>Change Reports</h2><div class="portfolio-queue-list">{change_report_queue}</div></section><section class="card snapshot-panel"><h2>News flow</h2><p class="small muted">Radar = detección; Change Report = interpretación material; Portfolio Review = consolidación PM.</p><ol class="list small"><li>Event detected</li><li>Materiality classified</li><li>Task/state updated</li><li>Change Report if material</li><li>Review absorbs delta</li></ol></section></div>
 <div class="card section"><h2>Coverage Gaps</h2><div class="portfolio-queue-list">{gaps_html}</div></div>
 <div class="portfolio-card-grid section">{company_cards}</div>
 <div class="section card"><h2>Open Task Pipeline</h2><table><thead><tr><th>ID</th><th>Company</th><th>Type</th><th>Priority</th><th>Status</th><th>Reason</th><th>Next action</th></tr></thead><tbody>{task_rows(open_tasks)}</tbody></table></div>

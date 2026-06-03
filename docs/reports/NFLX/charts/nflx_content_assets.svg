@@ -1,0 +1,17 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='820' height='420' viewBox='0 0 820 420'><rect width='100%' height='100%' fill='white'/><text x='410.0' y='26' text-anchor='middle' font-family='Arial' font-size='20' font-weight='700'>Content additions vs amortization ($bn)</text>
+<line x1='70' y1='45' x2='70' y2='350' stroke='#111'/><line x1='70' y1='350' x2='790' y2='350' stroke='#111'/>
+<line x1='70' y1='350.0' x2='790' y2='350.0' stroke='#e5e7eb'/><text x='62' y='354.0' text-anchor='end' font-family='Arial' font-size='12'>0</text>
+<line x1='70' y1='273.75' x2='790' y2='273.75' stroke='#e5e7eb'/><text x='62' y='277.75' text-anchor='end' font-family='Arial' font-size='12'>5</text>
+<line x1='70' y1='197.5' x2='790' y2='197.5' stroke='#e5e7eb'/><text x='62' y='201.5' text-anchor='end' font-family='Arial' font-size='12'>10</text>
+<line x1='70' y1='121.25' x2='790' y2='121.25' stroke='#e5e7eb'/><text x='62' y='125.25' text-anchor='end' font-family='Arial' font-size='12'>15</text>
+<line x1='70' y1='45.0' x2='790' y2='45.0' stroke='#e5e7eb'/><text x='62' y='49.0' text-anchor='end' font-family='Arial' font-size='12'>20</text>
+<rect x='130.0' y='155.24043119693005' width='28' height='194.75956880306995' fill='#2563eb'><title>12.6</title></rect>
+<rect x='164.0' y='129.76888902451736' width='28' height='220.23111097548264' fill='#16a34a'><title>14.2</title></rect>
+<text x='155.0' y='378' text-anchor='middle' font-family='Arial' font-size='13'>2023</text>
+<rect x='370.0' y='98.3250303256864' width='28' height='251.67496967431362' fill='#2563eb'><title>16.2</title></rect>
+<rect x='404.0' y='112.62756496817391' width='28' height='237.3724350318261' fill='#16a34a'><title>15.3</title></rect>
+<text x='395.0' y='378' text-anchor='middle' font-family='Arial' font-size='13'>2024</text>
+<rect x='610.0' y='84.78260869565213' width='28' height='265.21739130434787' fill='#2563eb'><title>17.1</title></rect>
+<rect x='644.0' y='95.25355325495698' width='28' height='254.74644674504302' fill='#16a34a'><title>16.4</title></rect>
+<text x='635.0' y='378' text-anchor='middle' font-family='Arial' font-size='13'>2025</text>
+<rect x='70' y='395' width='14' height='14' fill='#2563eb'/><text x='90' y='407' font-family='Arial' font-size='13'>Additions</text><rect x='200' y='395' width='14' height='14' fill='#16a34a'/><text x='220' y='407' font-family='Arial' font-size='13'>Amortization</text></svg>

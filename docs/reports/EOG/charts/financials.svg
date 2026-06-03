@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+<rect width="100%" height="100%" fill="#fbfdff"/><text x="380.0" y="26" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#18324a">EOG: revenue, operating income and FCF (US$ mm)</text>
+<line x1="70" y1="305" x2="735" y2="305" stroke="#8aa6bf"/><line x1="70" y1="45" x2="70" y2="305" stroke="#8aa6bf"/>
+<text x="136.5" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#466">2021</text>
+<rect x="86.625" y="141.0161449117477" width="24.9375" height="163.9838550882523" fill="#67a9cf" rx="3"/><text x="99.09375" y="137.0161449117477" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">18642</text>
+<rect x="119.875" y="251.32391997915911" width="24.9375" height="53.67608002084088" fill="#2166ac" rx="3"/><text x="132.34375" y="247.32391997915911" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">6102</text>
+<text x="269.5" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#466">2022</text>
+<rect x="219.625" y="78.91304347826087" width="24.9375" height="226.08695652173913" fill="#67a9cf" rx="3"/><text x="232.09375" y="74.91304347826087" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">25702</text>
+<rect x="252.875" y="217.33434718326777" width="24.9375" height="87.66565281673225" fill="#2166ac" rx="3"/><text x="265.34375" y="213.33434718326777" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">9966</text>
+<text x="402.5" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#466">2023</text>
+<rect x="352.625" y="92.24849698720791" width="24.9375" height="212.75150301279209" fill="#67a9cf" rx="3"/><text x="365.09375" y="88.24849698720791" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">24186</text>
+<rect x="385.875" y="220.52746698785072" width="24.9375" height="84.47253301214928" fill="#2166ac" rx="3"/><text x="398.34375" y="216.52746698785072" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">9603</text>
+<rect x="419.125" y="260.0676144302761" width="24.9375" height="44.93238556972389" fill="#b2abd2" rx="3"/><text x="431.59375" y="256.0676144302761" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">5108</text>
+<text x="535.5" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#466">2024</text>
+<rect x="485.625" y="96.54117595314861" width="24.9375" height="208.4588240468514" fill="#67a9cf" rx="3"/><text x="498.09375" y="92.54117595314861" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">23698</text>
+<rect x="518.875" y="233.90690286325207" width="24.9375" height="71.09309713674794" fill="#2166ac" rx="3"/><text x="531.34375" y="229.90690286325207" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">8082</text>
+<rect x="552.125" y="257.7893278479428" width="24.9375" height="47.21067215205719" fill="#b2abd2" rx="3"/><text x="564.59375" y="253.7893278479428" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">5367</text>
+<text x="668.5" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#466">2025</text>
+<rect x="618.625" y="105.91821648120768" width="24.9375" height="199.08178351879232" fill="#67a9cf" rx="3"/><text x="631.09375" y="101.91821648120768" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">22632</text>
+<rect x="651.875" y="248.83451803784513" width="24.9375" height="56.165481962154864" fill="#2166ac" rx="3"/><text x="664.34375" y="244.83451803784513" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">6385</text>
+<rect x="685.125" y="263.98204504470976" width="24.9375" height="41.017954955290236" fill="#b2abd2" rx="3"/><text x="697.59375" y="259.98204504470976" text-anchor="middle" font-family="Arial" font-size="10" fill="#18324a">4663</text>
+<rect x="70" y="342" width="10" height="10" fill="#67a9cf"/><text x="84" y="352" font-family="Arial" font-size="12" fill="#18324a">Revenue</text>
+<rect x="250" y="342" width="10" height="10" fill="#2166ac"/><text x="264" y="352" font-family="Arial" font-size="12" fill="#18324a">Operating income</text>
+<rect x="430" y="342" width="10" height="10" fill="#b2abd2"/><text x="444" y="352" font-family="Arial" font-size="12" fill="#18324a">FCF</text>
+</svg>

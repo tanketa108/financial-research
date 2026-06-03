@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.0",
-  "updatedAt": "2026-05-15",
+  "updatedAt": "2026-06-03",
   "ticker": "AMZN",
   "name": "Amazon.com, Inc.",
   "type": "watchlist",
@@ -91,11 +91,16 @@
   ],
   "researchOutputs": [
     {
-      "date": "2026-05-15",
-      "type": "preliminary_report",
-      "version": "v0",
-      "path": "financial-research/financial_system/preliminary_reports/AMZN/AMZN-preliminary-report-v0.md",
-      "summary": "Preliminary AMZN brief focused on AWS/AI economics, advertising, retail/logistics, capex intensity, FCF conversion and scenario questions."
+      "type": "dashboard",
+      "date": "2026-06-03",
+      "title": "AMZN dashboard / artifact hub",
+      "path": "../companies/AMZN.html"
+    },
+    {
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "AMZN-preliminary-report-v0",
+      "path": "../reports/AMZN/AMZN-preliminary-report-v0.md"
     }
   ],
   "tasks": {
@@ -111,8 +116,8 @@
   "notes": "Next recommended step: source pack / Deep Dive with segment-level financial extraction and FCF bridge.",
   "coverage": {
     "deepDive": {
-      "status": "no_preliminary_only",
-      "path": "financial-research/financial_system/preliminary_reports/AMZN/AMZN-preliminary-report-v0.md",
+      "status": "linked_or_hub",
+      "path": "docs/companies/AMZN.html",
       "date": "2026-05-15"
     },
     "model": {
@@ -120,12 +125,12 @@
       "path": null
     },
     "thesis": {
-      "status": "preliminary",
-      "path": null
+      "status": "linked_or_report_backed",
+      "path": "docs/reports/AMZN/AMZN-preliminary-report-v0.md"
     },
     "reportingReadiness": "medium_low"
   },
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-06-03",
   "coverageGaps": [
     {
       "type": "deep_dive",

@@ -1,10 +1,10 @@
 {
   "schemaVersion": "0.1.0",
-  "updatedAt": "2026-05-17",
+  "updatedAt": "2026-06-03",
   "ticker": "NVO",
   "name": "Novo Nordisk A/S",
   "type": "portfolio",
-  "status": "research_pending",
+  "status": "research_active",
   "priority": "high",
   "identifiers": {
     "cik": null,
@@ -19,9 +19,9 @@
   "thesisState": {
     "status": "under_review",
     "owner": "user",
-    "lastReviewedAt": "2026-05-17",
+    "lastReviewedAt": "2026-05-23",
     "conviction": "unknown",
-    "summary": "Novo Nordisk is in research-pending status after a growth/price reset. Initial read: the company remains a GLP-1 leader with strong obesity/diabetes assets, but 2026 guidance embeds material pricing/competition pressure and lower US realised prices.",
+    "summary": "Novo Nordisk remains a high-priority portfolio research case after the 2026 pricing/competition reset. Deep Dive and valuation input scaffold are complete; the key unresolved decision is whether PM assumptions support a full valuation model.",
     "whatWouldChangeOurMind": [
       "Evidence that US realised price pressure is worse/better than current guidance implies.",
       "Oral Wegovy uptake, persistence and channel mix differ materially from assumptions.",
@@ -113,42 +113,77 @@
   ],
   "researchOutputs": [
     {
-      "date": "2026-05-16",
-      "type": "pipeline_initial_analysis",
-      "path": "Discord thread 1505293006905937953",
-      "summary": "Initial NVO pipeline analysis posted to portfolio thread; task remains open pending deeper Deep Dive / valuation setup."
+      "type": "dashboard",
+      "date": "2026-06-03",
+      "title": "NVO dashboard / artifact hub",
+      "path": "../companies/NVO.html"
     },
     {
-      "date": "2026-05-16",
-      "type": "source_pack",
-      "path": "financial-research/financial_system/deep_dives/NVO/NVO-source-pack-2026-05-16.md",
-      "summary": "Source pack created for NVO Deep Dive, covering FY2025 anchors, 2026 reset, oral Wegovy, margin/FCF pressure and Novo vs Lilly questions."
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NVO-deep-dive-prevaluation-v0",
+      "path": "../reports/NVO/NVO-deep-dive-prevaluation-v0.md"
     },
     {
-      "date": "2026-05-16",
-      "type": "deep_dive_working_memo",
-      "path": "financial-research/financial_system/deep_dives/NVO/NVO-deep-dive-prevaluation-v0.md",
-      "summary": "Pre-valuation working memo created; final PDF still requires full Q1 2026 primary extraction, Lilly primary comparison, historical tables and charts."
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NVO-research-deep-dive-prevaluation-report",
+      "path": "../reports/NVO/NVO-research-deep-dive-prevaluation-report.html"
     },
     {
-      "date": "2026-05-16",
-      "type": "deep_dive_prevaluation_pdf",
-      "path": "financial-research/financial_system/deep_dives/NVO/NVO-research-deep-dive-prevaluation-report.pdf",
-      "summary": "Formatted pre-valuation PDF generated with source pack, Lilly comparison, charts and valuation checklist. Limitation: Q1 2026 Novo PDF primary extraction remains partial; Q1-specific figures are treated cautiously."
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NVO-research-deep-dive-prevaluation-report",
+      "path": "../reports/NVO/NVO-research-deep-dive-prevaluation-report.pdf"
     },
     {
-      "date": "2026-05-17",
-      "type": "q1_2026_primary_extraction",
-      "path": "financial-research/financial_system/portfolio/daily-radar/2026-05-17-nvo-follow-up.md",
-      "summary": "Primary extraction of Q1 2026 investor presentation added: sales/OP, guidance raise, oral Wegovy traction, FCF/CAPEX and modelling implications."
+      "type": "report",
+      "date": "2026-06-03",
+      "title": "NVO-source-pack-2026-05-16",
+      "path": "../reports/NVO/NVO-source-pack-2026-05-16.md"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "lilly-q1-products",
+      "path": "../reports/NVO/charts/lilly-q1-products.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "nvo-2026-guidance-reset",
+      "path": "../reports/NVO/charts/nvo-2026-guidance-reset.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "nvo-financial-anchors",
+      "path": "../reports/NVO/charts/nvo-financial-anchors.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "nvo-segment-sales-2025",
+      "path": "../reports/NVO/charts/nvo-segment-sales-2025.svg"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NVO-valuation-inputs-v0.1",
+      "path": "../reports/NVO/valuation/NVO-valuation-inputs-v0.1.md"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "NVO-valuation-model-scaffold-v0.1",
+      "path": "../reports/NVO/valuation/NVO-valuation-model-scaffold-v0.1.md"
     }
   ],
   "tasks": {
-    "open": [
-      "TASK-2026-05-17-001"
-    ],
+    "open": [],
     "closed": [
-      "TASK-2026-05-13-001"
+      "TASK-2026-05-13-001",
+      "TASK-2026-05-17-001"
     ]
   },
   "sources": [
@@ -156,38 +191,39 @@
     "https://annualreport.novonordisk.com/2025/strategic-aspirations/financial-performance.html",
     "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=915255"
   ],
-  "notes": "NVO Deep Dive task completed as a pre-valuation pack; current open work is valuation setup/model inputs after Q1 2026 primary extraction.",
+  "notes": "NVO Deep Dive and valuation input sheet completed; next step is optional PM-selected valuation model / DCF sensitivity.",
   "coverage": {
     "deepDive": {
-      "status": "yes",
-      "path": "financial-research/financial_system/deep_dives/NVO/NVO-research-deep-dive-prevaluation-report.pdf",
+      "status": "linked_or_hub",
+      "path": "docs/companies/NVO.html",
       "date": "2026-05-17"
     },
     "model": {
-      "status": "open_task",
-      "path": null,
-      "taskId": "TASK-2026-05-17-001"
+      "status": "linked",
+      "path": "docs/reports/NVO/NVO-deep-dive-prevaluation-v0.md",
+      "date": "2026-05-26",
+      "taskId": "TASK-2026-05-26-001"
     },
     "thesis": {
-      "status": "implicit_in_deep_dive",
-      "path": null
+      "status": "linked_or_report_backed",
+      "path": "docs/reports/NVO/NVO-source-pack-2026-05-16.md"
     },
-    "reportingReadiness": "medium"
+    "reportingReadiness": "medium_high"
   },
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-06-03",
   "coverageGaps": [
     {
-      "type": "model",
-      "severity": "high",
-      "summary": "Open task exists for valuation/model inputs after Deep Dive.",
-      "recommendedAction": "Complete TASK-2026-05-17-001 with source-backed base/downside/upside assumptions."
+      "type": "valuation_model",
+      "severity": "medium",
+      "summary": "Valuation inputs are complete, but PM-selected point estimates and a live valuation/DCF sensitivity model are still pending.",
+      "recommendedAction": "If selected, build NVO valuation model using the v0.1 input sheet and PM choices for 2026 midpoint, oral Wegovy incrementality, Lilly share pressure, margins and capex normalization."
     }
   ],
   "nextReviewAction": {
-    "action": "Complete NVO valuation/model input sheet: normalized 2027-2030 revenue/margin, US pricing, oral Wegovy, CAPEX/FCF and scenarios.",
-    "priority": "high",
-    "owner": "Charlie",
-    "trigger": "Open task TASK-2026-05-17-001",
+    "action": "PM to select NVO point estimates/WACC/terminal method and decide whether to convert scaffold into a live valuation model.",
+    "priority": "medium",
+    "owner": "Portfolio Manager",
+    "trigger": "NVO valuation model scaffold v0.1 completed",
     "due": null,
     "status": "open"
   },
@@ -204,7 +240,9 @@
     "includeInPortfolioReview": true,
     "includeInWatchlistReview": false,
     "lastReviewedInReport": "2026-05-22",
-    "lastMaterialChange": "2026-05-17",
-    "notes": "High-priority portfolio company with explicit open model-input task."
-  }
+    "lastMaterialChange": "2026-05-23",
+    "notes": "Deep Dive and valuation input sheet complete; remaining gap is optional live model/DCF sensitivity after PM point-estimate selection."
+  },
+  "lastUpdate": "2026-05-26",
+  "activeTaskId": null
 }

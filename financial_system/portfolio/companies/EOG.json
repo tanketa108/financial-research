@@ -60,11 +60,46 @@
   ],
   "researchOutputs": [
     {
-      "date": "2026-05-18",
-      "type": "deep_dive_prevaluation",
-      "version": "v1.0",
-      "path": "financial-research/financial_system/deep_dives/EOG/EOG-research-deep-dive-prevaluation-report.pdf",
-      "summary": "Pre-valuation Deep Dive focused on shale economics, production/guidance, commodity sensitivity, Encino/Utica, cash flow, balance sheet and scenario variables."
+      "type": "dashboard",
+      "date": "2026-06-03",
+      "title": "EOG dashboard / artifact hub",
+      "path": "../companies/EOG.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "EOG-research-deep-dive-prevaluation-report",
+      "path": "../reports/EOG/EOG-research-deep-dive-prevaluation-report.html"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "EOG-research-deep-dive-prevaluation-report",
+      "path": "../reports/EOG/EOG-research-deep-dive-prevaluation-report.pdf"
+    },
+    {
+      "type": "model",
+      "date": "2026-06-03",
+      "title": "EOG-research-deep-dive-prevaluation",
+      "path": "../reports/EOG/EOG-research-deep-dive-prevaluation.md"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "cash_bridge",
+      "path": "../reports/EOG/charts/cash_bridge.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "financials",
+      "path": "../reports/EOG/charts/financials.svg"
+    },
+    {
+      "type": "chart",
+      "date": "2026-06-03",
+      "title": "production",
+      "path": "../reports/EOG/charts/production.svg"
     }
   ],
   "tasks": [
@@ -72,13 +107,13 @@
   ],
   "coverage": {
     "deepDive": {
-      "status": "yes",
-      "path": "financial-research/financial_system/deep_dives/EOG/EOG-research-deep-dive-prevaluation-report.pdf",
+      "status": "linked_or_hub",
+      "path": "docs/companies/EOG.html",
       "date": "2026-05-18"
     },
     "model": {
-      "status": "pending_valuation_step",
-      "path": null
+      "status": "linked",
+      "path": "docs/reports/EOG/EOG-research-deep-dive-prevaluation-report.html"
     },
     "thesis": {
       "status": "implicit_in_deep_dive",
@@ -86,7 +121,7 @@
     },
     "reportingReadiness": "medium_high"
   },
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-06-03",
   "coverageGaps": [
     {
       "type": "model",
@@ -118,5 +153,6 @@
     "lastReviewedInReport": "2026-05-22",
     "lastMaterialChange": "2026-05-18",
     "notes": "Portfolio company with Deep Dive complete; commodity sensitivity is the key next layer."
-  }
+  },
+  "updatedAt": "2026-06-03"
 }
