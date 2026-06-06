@@ -1,7 +1,7 @@
 {
   "version": "0.1",
   "source": "fred_public_csv",
-  "fetchedAt": "2026-06-03T22:48:30.532854+00:00",
+  "fetchedAt": "2026-06-06T15:48:52.429198+00:00",
   "series": {
     "GDPC1": {
       "seriesId": "GDPC1",
@@ -41,6 +41,50 @@
         "onePeriodPct": 0.40284341177654337,
         "yoyPct": 2.566844783531308,
         "windowPct": 2.566844783531308,
+        "windowDirection": "rising",
+        "yearAgoDate": "2025-01-01",
+        "windowStartDate": "2025-01-01",
+        "windowEndDate": "2026-01-01"
+      }
+    },
+    "GDP": {
+      "seriesId": "GDP",
+      "seriesName": "Gross Domestic Product",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDP&cosd=2025-01-01",
+      "units": "bn USD",
+      "calc": "qoq_yoy",
+      "latest": {
+        "observationDate": "2026-01-01",
+        "value": 31819.464
+      },
+      "trend": {
+        "historyWindowRecords": 5,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-01-01",
+            "value": 31819.464
+          },
+          {
+            "observationDate": "2025-10-01",
+            "value": 31422.526
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": 31098.027
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": 30485.729
+          },
+          {
+            "observationDate": "2025-01-01",
+            "value": 30042.113
+          }
+        ],
+        "onePeriodChange": 396.9379999999983,
+        "onePeriodPct": 1.2632275330124676,
+        "yoyPct": 5.916198371266357,
+        "windowPct": 5.916198371266357,
         "windowDirection": "rising",
         "yearAgoDate": "2025-01-01",
         "windowStartDate": "2025-01-01",
@@ -702,11 +746,96 @@
         "windowStartDate": "2025-01-01",
         "windowEndDate": "2026-04-01"
       }
+    },
+    "BOPGSTB": {
+      "seriesId": "BOPGSTB",
+      "seriesName": "Trade Balance: Goods and Services",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BOPGSTB&cosd=2025-01-01",
+      "units": "USD millions",
+      "calc": "level_change",
+      "latest": {
+        "observationDate": "2026-03-01",
+        "value": -60307.0
+      },
+      "trend": {
+        "historyWindowRecords": 15,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-03-01",
+            "value": -60307.0
+          },
+          {
+            "observationDate": "2026-02-01",
+            "value": -57777.0
+          },
+          {
+            "observationDate": "2026-01-01",
+            "value": -54677.0
+          },
+          {
+            "observationDate": "2025-12-01",
+            "value": -72900.0
+          },
+          {
+            "observationDate": "2025-11-01",
+            "value": -56026.0
+          },
+          {
+            "observationDate": "2025-10-01",
+            "value": -31102.0
+          },
+          {
+            "observationDate": "2025-09-01",
+            "value": -49168.0
+          },
+          {
+            "observationDate": "2025-08-01",
+            "value": -56011.0
+          },
+          {
+            "observationDate": "2025-07-01",
+            "value": -74233.0
+          },
+          {
+            "observationDate": "2025-06-01",
+            "value": -57637.0
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": -70564.0
+          },
+          {
+            "observationDate": "2025-04-01",
+            "value": -60084.0
+          },
+          {
+            "observationDate": "2025-03-01",
+            "value": -135856.0
+          },
+          {
+            "observationDate": "2025-02-01",
+            "value": -119780.0
+          },
+          {
+            "observationDate": "2025-01-01",
+            "value": -128331.0
+          }
+        ],
+        "onePeriodChange": -2530.0,
+        "onePeriodPct": 4.37890510064558,
+        "yoyPct": -55.609616064067836,
+        "windowPct": -53.006678043496905,
+        "windowDirection": "falling",
+        "yearAgoDate": "2025-03-01",
+        "windowStartDate": "2025-01-01",
+        "windowEndDate": "2026-03-01"
+      }
     }
   },
   "summary": {
     "realGdpQoQPct": 0.40284341177654337,
     "realGdpYoYPct": 2.566844783531308,
+    "nominalGdpQoQPct": 1.2632275330124676,
     "realPceQoQPct": 0.34879829662004536,
     "retailSalesMoMPct": 0.4708746784270579,
     "realRetailSalesMoMPct": -0.14599436189941528,
@@ -714,7 +843,8 @@
     "housingStartsMoMPct": -2.786994027869938,
     "permitsMoMPct": 4.402054292002933,
     "durableGoodsMoMPct": 8.018159976285943,
-    "coreCapexOrdersMoMPct": -0.9712351133307706
+    "coreCapexOrdersMoMPct": -0.9712351133307706,
+    "tradeBalanceLatestUsdMn": -60307.0
   },
   "caveats": [
     "FRED public CSV provides revised series; no release-vintage, consensus, surprise or component-table claims are made.",

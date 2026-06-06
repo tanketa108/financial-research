@@ -1,7 +1,7 @@
 {
   "version": "0.1",
   "source": "fred_public_csv",
-  "fetchedAt": "2026-06-03T22:48:11.844032+00:00",
+  "fetchedAt": "2026-06-06T15:48:43.774797+00:00",
   "series": {
     "FEDFUNDS": {
       "seriesId": "FEDFUNDS",
@@ -91,6 +91,506 @@
         "windowEndDate": "2026-05-01"
       }
     },
+    "DGS3MO": {
+      "seriesId": "DGS3MO",
+      "seriesName": "Market Yield on U.S. Treasury Securities at 3-Month Constant Maturity",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS3MO&cosd=2025-01-01",
+      "units": "percent",
+      "frequency": "daily",
+      "latest": {
+        "observationDate": "2026-06-04",
+        "value": 3.78
+      },
+      "trend": {
+        "historyWindowRecords": 120,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-04",
+            "value": 3.78
+          },
+          {
+            "observationDate": "2026-06-03",
+            "value": 3.78
+          },
+          {
+            "observationDate": "2026-06-02",
+            "value": 3.77
+          },
+          {
+            "observationDate": "2026-06-01",
+            "value": 3.78
+          },
+          {
+            "observationDate": "2026-05-29",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-05-28",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-05-27",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-05-26",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-05-22",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-05-21",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-05-20",
+            "value": 3.65
+          },
+          {
+            "observationDate": "2026-05-19",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2026-05-18",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-05-15",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-05-14",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-05-13",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-05-12",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-05-11",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-05-08",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-05-07",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-05-06",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-05-05",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-05-04",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-05-01",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-04-30",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-04-29",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-04-28",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-04-27",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-04-24",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-04-23",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-04-22",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-04-21",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-04-20",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-04-17",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-04-16",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-04-15",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-04-14",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-04-13",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-04-10",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-04-09",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-04-08",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-04-07",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-04-06",
+            "value": 3.72
+          },
+          {
+            "observationDate": "2026-04-03",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-04-02",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-04-01",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-03-31",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-03-30",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-03-27",
+            "value": 3.73
+          },
+          {
+            "observationDate": "2026-03-26",
+            "value": 3.73
+          },
+          {
+            "observationDate": "2026-03-25",
+            "value": 3.73
+          },
+          {
+            "observationDate": "2026-03-24",
+            "value": 3.74
+          },
+          {
+            "observationDate": "2026-03-23",
+            "value": 3.74
+          },
+          {
+            "observationDate": "2026-03-20",
+            "value": 3.74
+          },
+          {
+            "observationDate": "2026-03-19",
+            "value": 3.73
+          },
+          {
+            "observationDate": "2026-03-18",
+            "value": 3.73
+          },
+          {
+            "observationDate": "2026-03-17",
+            "value": 3.72
+          },
+          {
+            "observationDate": "2026-03-16",
+            "value": 3.72
+          },
+          {
+            "observationDate": "2026-03-13",
+            "value": 3.72
+          },
+          {
+            "observationDate": "2026-03-12",
+            "value": 3.72
+          },
+          {
+            "observationDate": "2026-03-11",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-03-10",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-03-09",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-03-06",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-03-05",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-03-04",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-03-03",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-03-02",
+            "value": 3.72
+          },
+          {
+            "observationDate": "2026-02-27",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2026-02-26",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-02-25",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-02-24",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-02-23",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-02-20",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-02-19",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-02-18",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-02-17",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-02-13",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-02-12",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-02-11",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-02-10",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-02-09",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-02-06",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-02-05",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2026-02-04",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-02-03",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-02-02",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2026-01-30",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2026-01-29",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2026-01-28",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-01-27",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2026-01-26",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2026-01-23",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-01-22",
+            "value": 3.71
+          },
+          {
+            "observationDate": "2026-01-21",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-01-20",
+            "value": 3.7
+          },
+          {
+            "observationDate": "2026-01-16",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2026-01-15",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2026-01-14",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2026-01-13",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2026-01-12",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2026-01-09",
+            "value": 3.62
+          },
+          {
+            "observationDate": "2026-01-08",
+            "value": 3.62
+          },
+          {
+            "observationDate": "2026-01-07",
+            "value": 3.62
+          },
+          {
+            "observationDate": "2026-01-06",
+            "value": 3.63
+          },
+          {
+            "observationDate": "2026-01-05",
+            "value": 3.64
+          },
+          {
+            "observationDate": "2026-01-02",
+            "value": 3.65
+          },
+          {
+            "observationDate": "2025-12-31",
+            "value": 3.67
+          },
+          {
+            "observationDate": "2025-12-30",
+            "value": 3.65
+          },
+          {
+            "observationDate": "2025-12-29",
+            "value": 3.68
+          },
+          {
+            "observationDate": "2025-12-26",
+            "value": 3.64
+          },
+          {
+            "observationDate": "2025-12-24",
+            "value": 3.69
+          },
+          {
+            "observationDate": "2025-12-23",
+            "value": 3.65
+          },
+          {
+            "observationDate": "2025-12-22",
+            "value": 3.64
+          },
+          {
+            "observationDate": "2025-12-19",
+            "value": 3.62
+          },
+          {
+            "observationDate": "2025-12-18",
+            "value": 3.62
+          },
+          {
+            "observationDate": "2025-12-17",
+            "value": 3.64
+          },
+          {
+            "observationDate": "2025-12-16",
+            "value": 3.64
+          },
+          {
+            "observationDate": "2025-12-15",
+            "value": 3.65
+          },
+          {
+            "observationDate": "2025-12-12",
+            "value": 3.63
+          }
+        ],
+        "onePeriodChange": 0.0,
+        "windowChange": 0.1499999999999999,
+        "windowStartDate": "2025-12-12",
+        "windowEndDate": "2026-06-04"
+      }
+    },
     "DGS2": {
       "seriesId": "DGS2",
       "seriesName": "Market Yield on U.S. Treasury Securities at 2-Year Constant Maturity",
@@ -98,12 +598,20 @@
       "units": "percent",
       "frequency": "daily",
       "latest": {
-        "observationDate": "2026-06-02",
+        "observationDate": "2026-06-04",
         "value": 4.05
       },
       "trend": {
         "historyWindowRecords": 120,
         "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-04",
+            "value": 4.05
+          },
+          {
+            "observationDate": "2026-06-03",
+            "value": 4.08
+          },
           {
             "observationDate": "2026-06-02",
             "value": 4.05
@@ -575,20 +1083,12 @@
           {
             "observationDate": "2025-12-12",
             "value": 3.52
-          },
-          {
-            "observationDate": "2025-12-11",
-            "value": 3.52
-          },
-          {
-            "observationDate": "2025-12-10",
-            "value": 3.54
           }
         ],
-        "onePeriodChange": 0.0,
-        "windowChange": 0.5099999999999998,
-        "windowStartDate": "2025-12-10",
-        "windowEndDate": "2026-06-02"
+        "onePeriodChange": -0.03000000000000025,
+        "windowChange": 0.5299999999999998,
+        "windowStartDate": "2025-12-12",
+        "windowEndDate": "2026-06-04"
       }
     },
     "DGS10": {
@@ -598,12 +1098,20 @@
       "units": "percent",
       "frequency": "daily",
       "latest": {
-        "observationDate": "2026-06-02",
-        "value": 4.46
+        "observationDate": "2026-06-04",
+        "value": 4.47
       },
       "trend": {
         "historyWindowRecords": 120,
         "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-04",
+            "value": 4.47
+          },
+          {
+            "observationDate": "2026-06-03",
+            "value": 4.49
+          },
           {
             "observationDate": "2026-06-02",
             "value": 4.46
@@ -1075,20 +1583,12 @@
           {
             "observationDate": "2025-12-12",
             "value": 4.19
-          },
-          {
-            "observationDate": "2025-12-11",
-            "value": 4.14
-          },
-          {
-            "observationDate": "2025-12-10",
-            "value": 4.13
           }
         ],
-        "onePeriodChange": -0.009999999999999787,
-        "windowChange": 0.33000000000000007,
-        "windowStartDate": "2025-12-10",
-        "windowEndDate": "2026-06-02"
+        "onePeriodChange": -0.020000000000000462,
+        "windowChange": 0.27999999999999936,
+        "windowStartDate": "2025-12-12",
+        "windowEndDate": "2026-06-04"
       }
     },
     "DGS30": {
@@ -1098,12 +1598,20 @@
       "units": "percent",
       "frequency": "daily",
       "latest": {
-        "observationDate": "2026-06-02",
+        "observationDate": "2026-06-04",
         "value": 4.97
       },
       "trend": {
         "historyWindowRecords": 120,
         "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-04",
+            "value": 4.97
+          },
+          {
+            "observationDate": "2026-06-03",
+            "value": 4.99
+          },
           {
             "observationDate": "2026-06-02",
             "value": 4.97
@@ -1575,20 +2083,332 @@
           {
             "observationDate": "2025-12-12",
             "value": 4.85
-          },
-          {
-            "observationDate": "2025-12-11",
-            "value": 4.79
-          },
-          {
-            "observationDate": "2025-12-10",
-            "value": 4.78
           }
         ],
         "onePeriodChange": -0.020000000000000462,
-        "windowChange": 0.1899999999999995,
-        "windowStartDate": "2025-12-10",
-        "windowEndDate": "2026-06-02"
+        "windowChange": 0.1200000000000001,
+        "windowStartDate": "2025-12-12",
+        "windowEndDate": "2026-06-04"
+      }
+    },
+    "MORTGAGE30US": {
+      "seriesId": "MORTGAGE30US",
+      "seriesName": "30-Year Fixed Rate Mortgage Average in the United States",
+      "sourceUrl": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MORTGAGE30US&cosd=2025-01-01",
+      "units": "percent",
+      "frequency": "weekly",
+      "latest": {
+        "observationDate": "2026-06-04",
+        "value": 6.48
+      },
+      "trend": {
+        "historyWindowRecords": 75,
+        "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-04",
+            "value": 6.48
+          },
+          {
+            "observationDate": "2026-05-28",
+            "value": 6.53
+          },
+          {
+            "observationDate": "2026-05-21",
+            "value": 6.51
+          },
+          {
+            "observationDate": "2026-05-14",
+            "value": 6.36
+          },
+          {
+            "observationDate": "2026-05-07",
+            "value": 6.37
+          },
+          {
+            "observationDate": "2026-04-30",
+            "value": 6.3
+          },
+          {
+            "observationDate": "2026-04-23",
+            "value": 6.23
+          },
+          {
+            "observationDate": "2026-04-16",
+            "value": 6.3
+          },
+          {
+            "observationDate": "2026-04-09",
+            "value": 6.37
+          },
+          {
+            "observationDate": "2026-04-02",
+            "value": 6.46
+          },
+          {
+            "observationDate": "2026-03-26",
+            "value": 6.38
+          },
+          {
+            "observationDate": "2026-03-19",
+            "value": 6.22
+          },
+          {
+            "observationDate": "2026-03-12",
+            "value": 6.11
+          },
+          {
+            "observationDate": "2026-03-05",
+            "value": 6.0
+          },
+          {
+            "observationDate": "2026-02-26",
+            "value": 5.98
+          },
+          {
+            "observationDate": "2026-02-19",
+            "value": 6.01
+          },
+          {
+            "observationDate": "2026-02-12",
+            "value": 6.09
+          },
+          {
+            "observationDate": "2026-02-05",
+            "value": 6.11
+          },
+          {
+            "observationDate": "2026-01-29",
+            "value": 6.1
+          },
+          {
+            "observationDate": "2026-01-22",
+            "value": 6.09
+          },
+          {
+            "observationDate": "2026-01-15",
+            "value": 6.06
+          },
+          {
+            "observationDate": "2026-01-08",
+            "value": 6.16
+          },
+          {
+            "observationDate": "2025-12-31",
+            "value": 6.15
+          },
+          {
+            "observationDate": "2025-12-24",
+            "value": 6.18
+          },
+          {
+            "observationDate": "2025-12-18",
+            "value": 6.21
+          },
+          {
+            "observationDate": "2025-12-11",
+            "value": 6.22
+          },
+          {
+            "observationDate": "2025-12-04",
+            "value": 6.19
+          },
+          {
+            "observationDate": "2025-11-26",
+            "value": 6.23
+          },
+          {
+            "observationDate": "2025-11-20",
+            "value": 6.26
+          },
+          {
+            "observationDate": "2025-11-13",
+            "value": 6.24
+          },
+          {
+            "observationDate": "2025-11-06",
+            "value": 6.22
+          },
+          {
+            "observationDate": "2025-10-30",
+            "value": 6.17
+          },
+          {
+            "observationDate": "2025-10-23",
+            "value": 6.19
+          },
+          {
+            "observationDate": "2025-10-16",
+            "value": 6.27
+          },
+          {
+            "observationDate": "2025-10-09",
+            "value": 6.3
+          },
+          {
+            "observationDate": "2025-10-02",
+            "value": 6.34
+          },
+          {
+            "observationDate": "2025-09-25",
+            "value": 6.3
+          },
+          {
+            "observationDate": "2025-09-18",
+            "value": 6.26
+          },
+          {
+            "observationDate": "2025-09-11",
+            "value": 6.35
+          },
+          {
+            "observationDate": "2025-09-04",
+            "value": 6.5
+          },
+          {
+            "observationDate": "2025-08-28",
+            "value": 6.56
+          },
+          {
+            "observationDate": "2025-08-21",
+            "value": 6.58
+          },
+          {
+            "observationDate": "2025-08-14",
+            "value": 6.58
+          },
+          {
+            "observationDate": "2025-08-07",
+            "value": 6.63
+          },
+          {
+            "observationDate": "2025-07-31",
+            "value": 6.72
+          },
+          {
+            "observationDate": "2025-07-24",
+            "value": 6.74
+          },
+          {
+            "observationDate": "2025-07-17",
+            "value": 6.75
+          },
+          {
+            "observationDate": "2025-07-10",
+            "value": 6.72
+          },
+          {
+            "observationDate": "2025-07-03",
+            "value": 6.67
+          },
+          {
+            "observationDate": "2025-06-26",
+            "value": 6.77
+          },
+          {
+            "observationDate": "2025-06-18",
+            "value": 6.81
+          },
+          {
+            "observationDate": "2025-06-12",
+            "value": 6.84
+          },
+          {
+            "observationDate": "2025-06-05",
+            "value": 6.85
+          },
+          {
+            "observationDate": "2025-05-29",
+            "value": 6.89
+          },
+          {
+            "observationDate": "2025-05-22",
+            "value": 6.86
+          },
+          {
+            "observationDate": "2025-05-15",
+            "value": 6.81
+          },
+          {
+            "observationDate": "2025-05-08",
+            "value": 6.76
+          },
+          {
+            "observationDate": "2025-05-01",
+            "value": 6.76
+          },
+          {
+            "observationDate": "2025-04-24",
+            "value": 6.81
+          },
+          {
+            "observationDate": "2025-04-17",
+            "value": 6.83
+          },
+          {
+            "observationDate": "2025-04-10",
+            "value": 6.62
+          },
+          {
+            "observationDate": "2025-04-03",
+            "value": 6.64
+          },
+          {
+            "observationDate": "2025-03-27",
+            "value": 6.65
+          },
+          {
+            "observationDate": "2025-03-20",
+            "value": 6.67
+          },
+          {
+            "observationDate": "2025-03-13",
+            "value": 6.65
+          },
+          {
+            "observationDate": "2025-03-06",
+            "value": 6.63
+          },
+          {
+            "observationDate": "2025-02-27",
+            "value": 6.76
+          },
+          {
+            "observationDate": "2025-02-20",
+            "value": 6.85
+          },
+          {
+            "observationDate": "2025-02-13",
+            "value": 6.87
+          },
+          {
+            "observationDate": "2025-02-06",
+            "value": 6.89
+          },
+          {
+            "observationDate": "2025-01-30",
+            "value": 6.95
+          },
+          {
+            "observationDate": "2025-01-23",
+            "value": 6.96
+          },
+          {
+            "observationDate": "2025-01-16",
+            "value": 7.04
+          },
+          {
+            "observationDate": "2025-01-09",
+            "value": 6.93
+          },
+          {
+            "observationDate": "2025-01-02",
+            "value": 6.91
+          }
+        ],
+        "onePeriodChange": -0.04999999999999982,
+        "windowChange": -0.4299999999999997,
+        "windowStartDate": "2025-01-02",
+        "windowEndDate": "2026-06-04"
       }
     },
     "T10Y2Y": {
@@ -1598,12 +2418,24 @@
       "units": "percentage points",
       "frequency": "daily",
       "latest": {
-        "observationDate": "2026-06-02",
-        "value": 0.41
+        "observationDate": "2026-06-05",
+        "value": 0.38
       },
       "trend": {
         "historyWindowRecords": 120,
         "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-05",
+            "value": 0.38
+          },
+          {
+            "observationDate": "2026-06-04",
+            "value": 0.42
+          },
+          {
+            "observationDate": "2026-06-03",
+            "value": 0.41
+          },
           {
             "observationDate": "2026-06-02",
             "value": 0.41
@@ -2071,24 +2903,12 @@
           {
             "observationDate": "2025-12-15",
             "value": 0.67
-          },
-          {
-            "observationDate": "2025-12-12",
-            "value": 0.67
-          },
-          {
-            "observationDate": "2025-12-11",
-            "value": 0.62
-          },
-          {
-            "observationDate": "2025-12-10",
-            "value": 0.59
           }
         ],
-        "onePeriodChange": -0.010000000000000009,
-        "windowChange": -0.18,
-        "windowStartDate": "2025-12-10",
-        "windowEndDate": "2026-06-02"
+        "onePeriodChange": -0.03999999999999998,
+        "windowChange": -0.29000000000000004,
+        "windowStartDate": "2025-12-15",
+        "windowEndDate": "2026-06-05"
       }
     },
     "T10Y3M": {
@@ -2098,12 +2918,24 @@
       "units": "percentage points",
       "frequency": "daily",
       "latest": {
-        "observationDate": "2026-06-02",
-        "value": 0.69
+        "observationDate": "2026-06-05",
+        "value": 0.77
       },
       "trend": {
         "historyWindowRecords": 120,
         "historyLatestFirst": [
+          {
+            "observationDate": "2026-06-05",
+            "value": 0.77
+          },
+          {
+            "observationDate": "2026-06-04",
+            "value": 0.69
+          },
+          {
+            "observationDate": "2026-06-03",
+            "value": 0.71
+          },
           {
             "observationDate": "2026-06-02",
             "value": 0.69
@@ -2571,31 +3403,23 @@
           {
             "observationDate": "2025-12-15",
             "value": 0.53
-          },
-          {
-            "observationDate": "2025-12-12",
-            "value": 0.56
-          },
-          {
-            "observationDate": "2025-12-11",
-            "value": 0.48
-          },
-          {
-            "observationDate": "2025-12-10",
-            "value": 0.44
           }
         ],
-        "onePeriodChange": 0.0,
-        "windowChange": 0.24999999999999994,
-        "windowStartDate": "2025-12-10",
-        "windowEndDate": "2026-06-02"
+        "onePeriodChange": 0.08000000000000007,
+        "windowChange": 0.24,
+        "windowStartDate": "2025-12-15",
+        "windowEndDate": "2026-06-05"
       }
     }
   },
   "summary": {
+    "latest3mPct": 3.78,
     "latest2yPct": 4.05,
-    "latest10yPct": 4.46,
-    "latest10y2ySpreadPctPts": 0.41,
+    "latest10yPct": 4.47,
+    "latest30yPct": 4.97,
+    "latestMortgage30yPct": 6.48,
+    "latest10y2ySpreadPctPts": 0.38,
+    "latest10y3mSpreadPctPts": 0.77,
     "curveShape10y2y": "positive/upward sloping",
     "twoYearTrend": "rising",
     "tenYearTrend": "rising",

@@ -20,6 +20,7 @@ HISTORY_WINDOW = 36
 
 SERIES = {
     "GDPC1": {"name": "Real Gross Domestic Product", "units": "bn chained 2017 USD", "calc": "qoq_yoy"},
+    "GDP": {"name": "Gross Domestic Product", "units": "bn USD", "calc": "qoq_yoy"},
     "PCECC96": {"name": "Real Personal Consumption Expenditures", "units": "bn chained 2017 USD", "calc": "qoq_yoy"},
     "RSXFS": {"name": "Advance Retail Sales", "units": "USD millions", "calc": "mom_yoy"},
     "RRSFS": {"name": "Advance Real Retail and Food Services Sales", "units": "USD millions", "calc": "mom_yoy"},
@@ -28,6 +29,7 @@ SERIES = {
     "PERMIT": {"name": "New Privately-Owned Housing Units Authorized by Building Permits", "units": "thousands SAAR", "calc": "mom_yoy"},
     "DGORDER": {"name": "Manufacturers' New Orders: Durable Goods", "units": "USD millions", "calc": "mom_yoy"},
     "NEWORDER": {"name": "Manufacturers' New Orders: Nondefense Capital Goods Excluding Aircraft", "units": "USD millions", "calc": "mom_yoy"},
+    "BOPGSTB": {"name": "Trade Balance: Goods and Services", "units": "USD millions", "calc": "level_change"},
 }
 
 
@@ -115,6 +117,7 @@ def build_state() -> dict[str, Any]:
     summary={
         "realGdpQoQPct": series["GDPC1"]["trend"]["onePeriodPct"],
         "realGdpYoYPct": series["GDPC1"]["trend"]["yoyPct"],
+        "nominalGdpQoQPct": series["GDP"]["trend"]["onePeriodPct"],
         "realPceQoQPct": series["PCECC96"]["trend"]["onePeriodPct"],
         "retailSalesMoMPct": series["RSXFS"]["trend"]["onePeriodPct"],
         "realRetailSalesMoMPct": series["RRSFS"]["trend"]["onePeriodPct"],
@@ -123,6 +126,7 @@ def build_state() -> dict[str, Any]:
         "permitsMoMPct": series["PERMIT"]["trend"]["onePeriodPct"],
         "durableGoodsMoMPct": series["DGORDER"]["trend"]["onePeriodPct"],
         "coreCapexOrdersMoMPct": series["NEWORDER"]["trend"]["onePeriodPct"],
+        "tradeBalanceLatestUsdMn": series["BOPGSTB"]["latest"]["value"],
     }
     return {
         "version":"0.1",

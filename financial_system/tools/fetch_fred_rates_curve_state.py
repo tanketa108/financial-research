@@ -28,6 +28,11 @@ SERIES = {
         "units": "percent",
         "frequency": "monthly",
     },
+    "DGS3MO": {
+        "name": "Market Yield on U.S. Treasury Securities at 3-Month Constant Maturity",
+        "units": "percent",
+        "frequency": "daily",
+    },
     "DGS2": {
         "name": "Market Yield on U.S. Treasury Securities at 2-Year Constant Maturity",
         "units": "percent",
@@ -42,6 +47,11 @@ SERIES = {
         "name": "Market Yield on U.S. Treasury Securities at 30-Year Constant Maturity",
         "units": "percent",
         "frequency": "daily",
+    },
+    "MORTGAGE30US": {
+        "name": "30-Year Fixed Rate Mortgage Average in the United States",
+        "units": "percent",
+        "frequency": "weekly",
     },
     "T10Y2Y": {
         "name": "10-Year Treasury Constant Maturity Minus 2-Year Treasury Constant Maturity",
@@ -142,9 +152,13 @@ def build_state() -> dict[str, Any]:
         "fetchedAt": datetime.now(timezone.utc).isoformat(),
         "series": series,
         "summary": {
+            "latest3mPct": series["DGS3MO"]["latest"]["value"],
             "latest2yPct": dgs2,
             "latest10yPct": dgs10,
+            "latest30yPct": series["DGS30"]["latest"]["value"],
+            "latestMortgage30yPct": series["MORTGAGE30US"]["latest"]["value"],
             "latest10y2ySpreadPctPts": t10y2y,
+            "latest10y3mSpreadPctPts": series["T10Y3M"]["latest"]["value"],
             "curveShape10y2y": curve_shape,
             "twoYearTrend": two_year_trend,
             "tenYearTrend": ten_year_trend,

@@ -43,18 +43,63 @@ STATE_FILES = {
     "TGA": DATA / "tga-state.json",
     "RRP": DATA / "nyfed-rrp-state.json",
     "Reserve balances": DATA / "fed-reserve-balances-state.json",
+    "Liquidity / markets": DATA / "fred-liquidity-markets-state.json",
 }
 
 BLOCKS = {
     "Dashboard": [],
-    "Rates": ["FEDFUNDS", "DGS2", "DGS10", "DGS30", "T10Y2Y", "T10Y3M"],
+    "Rates": ["FEDFUNDS", "DGS3MO", "DGS2", "DGS10", "DGS30", "MORTGAGE30US", "T10Y2Y", "T10Y3M"],
     "Inflation": ["CPIAUCSL", "CPILFESL", "PCEPI", "PCEPILFE"],
     "Labor": ["PAYEMS", "UNRATE", "CIVPART", "CES0500000003", "ICSA", "JTSJOL"],
-    "Growth": ["GDPC1", "PCECC96", "RSXFS", "RRSFS", "INDPRO", "HOUST", "PERMIT", "DGORDER", "NEWORDER"],
+    "Growth": ["GDPC1", "GDP", "PCECC96", "RSXFS", "RRSFS", "INDPRO", "HOUST", "PERMIT", "DGORDER", "NEWORDER", "BOPGSTB"],
     "Liquidity": [],
+    "Markets": ["M2SL", "PSAVERT", "SP500", "VIXCLS"],
     "Calendar": [],
     "Report": [],
     "Raw state": [],
+}
+
+SERIES_CHART_DEFAULTS = {
+    # Rates and spreads read best in original percentage / percentage-point units.
+    "FEDFUNDS": {"years": 3, "scale": "Level"},
+    "DGS3MO": {"years": 3, "scale": "Level"},
+    "DGS2": {"years": 3, "scale": "Level"},
+    "DGS10": {"years": 3, "scale": "Level"},
+    "DGS30": {"years": 3, "scale": "Level"},
+    "MORTGAGE30US": {"years": 3, "scale": "Level"},
+    "T10Y2Y": {"years": 3, "scale": "Level"},
+    "T10Y3M": {"years": 3, "scale": "Level"},
+    # Index/level macro aggregates compare better when normalized by default.
+    "CPIAUCSL": {"years": 5, "scale": "Indexed = 100"},
+    "CPILFESL": {"years": 5, "scale": "Indexed = 100"},
+    "PCEPI": {"years": 5, "scale": "Indexed = 100"},
+    "PCEPILFE": {"years": 5, "scale": "Indexed = 100"},
+    "PAYEMS": {"years": 5, "scale": "Indexed = 100"},
+    "CES0500000003": {"years": 5, "scale": "Indexed = 100"},
+    "GDPC1": {"years": 10, "scale": "Indexed = 100"},
+    "GDP": {"years": 10, "scale": "Indexed = 100"},
+    "PCECC96": {"years": 10, "scale": "Indexed = 100"},
+    "RSXFS": {"years": 5, "scale": "Indexed = 100"},
+    "RRSFS": {"years": 5, "scale": "Indexed = 100"},
+    "INDPRO": {"years": 5, "scale": "Indexed = 100"},
+    "DGORDER": {"years": 5, "scale": "Indexed = 100"},
+    "NEWORDER": {"years": 5, "scale": "Indexed = 100"},
+    "BOPGSTB": {"years": 5, "scale": "Level"},
+    # Rates/point-in-time labor/housing indicators are more interpretable in levels.
+    "UNRATE": {"years": 5, "scale": "Level"},
+    "CIVPART": {"years": 5, "scale": "Level"},
+    "ICSA": {"years": 3, "scale": "Level"},
+    "JTSJOL": {"years": 5, "scale": "Level"},
+    "HOUST": {"years": 5, "scale": "Level"},
+    "PERMIT": {"years": 5, "scale": "Level"},
+    # Liquidity charts: show levels, but keep recent windows to avoid visual compression.
+    "TGA opening balance": {"years": 1, "scale": "Level"},
+    "RRP accepted amount": {"years": 1, "scale": "Level"},
+    "Reserve balances": {"years": 3, "scale": "Level"},
+    "M2SL": {"years": 5, "scale": "Indexed = 100"},
+    "PSAVERT": {"years": 5, "scale": "Level"},
+    "SP500": {"years": 3, "scale": "Indexed = 100"},
+    "VIXCLS": {"years": 3, "scale": "Level"},
 }
 
 
@@ -89,6 +134,8 @@ def series_item(block: str, sid: str) -> dict[str, Any]:
         return (load_json(STATE_FILES["Inflation + labor"]).get("series") or {}).get(sid, {})
     if block == "Growth":
         return (load_json(STATE_FILES["Growth / activity"]).get("series") or {}).get(sid, {})
+    if block == "Markets":
+        return (load_json(STATE_FILES["Liquidity / markets"]).get("series") or {}).get(sid, {})
     return {}
 
 
@@ -117,6 +164,75 @@ def to_df(points: list[dict[str, Any]]):
     return df.set_index("date")
 
 
+def filter_window(df, years: int | None):
+    """Return a recent window so long historical series do not flatten charts."""
+    if pd is None or df is None or df.empty or years is None:
+        return df
+    cutoff = df.index.max() - pd.DateOffset(years=years)
+    return df[df.index >= cutoff]
+
+
+def indexed_df(df):
+    """Index a series to 100 at the first visible observation."""
+    if pd is None or df is None or df.empty:
+        return df
+    first = df["value"].dropna().iloc[0]
+    if first == 0:
+        return df
+    out = df.copy()
+    out["value"] = out["value"] / first * 100
+    return out
+
+
+def chart_controls_key(name: str) -> str:
+    return name.lower().replace(" ", "-").replace("/", "-")
+
+
+def chart_df(df, *, key: str, default_years: int | None = 5, default_scale: str = "Level"):
+    """Apply per-chart scale/window controls and return display dataframe."""
+    if pd is None or df is None or df.empty:
+        return df, "level"
+    col1, col2 = st.columns([0.45, 0.55])
+    with col1:
+        window_label = st.selectbox(
+            "Window",
+            ["1Y", "3Y", "5Y", "10Y", "Max"],
+            index={1: 0, 3: 1, 5: 2, 10: 3, None: 4}.get(default_years, 2),
+            key=f"window-{key}",
+        )
+    with col2:
+        view = st.radio(
+            "Scale",
+            ["Level", "Indexed = 100"],
+            index=0 if default_scale == "Level" else 1,
+            horizontal=True,
+            key=f"scale-{key}",
+        )
+    years = None if window_label == "Max" else int(window_label.rstrip("Y"))
+    shown = filter_window(df, years)
+    mode = "indexed" if view == "Indexed = 100" else "level"
+    if mode == "indexed":
+        shown = indexed_df(shown)
+    return shown, mode
+
+
+def render_line_chart(
+    df,
+    *,
+    key: str,
+    height: int = 360,
+    default_years: int | None = 5,
+    default_scale: str = "Level",
+) -> None:
+    shown, mode = chart_df(df, key=key, default_years=default_years, default_scale=default_scale)
+    if shown is None or shown.empty:
+        st.info("No chart data")
+        return
+    st.line_chart(shown, height=height, use_container_width=True)
+    if mode == "indexed":
+        st.caption("Indexed view: first visible observation = 100. Use Level for source units.")
+
+
 def inject_style() -> None:
     st.markdown(
         """
@@ -127,7 +243,14 @@ def inject_style() -> None:
         [data-testid="stSidebar"] {background: #f4f7fb;}
         div[data-testid="stMetric"] {background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 14px 16px; box-shadow: 0 1px 2px rgba(15,23,42,0.04);}
         .macro-card {background: #ffffff; border: 1px solid #e5e7eb; border-radius: 18px; padding: 18px; margin: 8px 0 18px 0;}
+        .snapshot-version {display: inline-flex; align-items: center; gap: 6px; background: #0f172a; color: #e0f2fe; border: 1px solid #38bdf8; border-radius: 999px; padding: 5px 10px; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.03em; text-transform: uppercase; margin: 0.1rem 0 0.55rem 0;}
+        .snapshot-grid {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0.6rem 0 1rem 0;}
+        .snapshot-card {background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 58%, #0369a1 100%); border: 1px solid #38bdf8; border-radius: 18px; padding: 16px 18px; box-shadow: 0 10px 24px rgba(15,23,42,0.18);}
+        .snapshot-label {color: #bae6fd; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.055em; text-transform: uppercase; margin-bottom: 0.3rem;}
+        .snapshot-value {color: #ffffff; font-size: 1.82rem; font-weight: 900; line-height: 1.05; text-shadow: 0 1px 2px rgba(0,0,0,0.28);}
+        .snapshot-note {color: #dbeafe; font-size: 0.80rem; font-weight: 650; margin-top: 0.35rem;}
         .small-muted {color: #64748b; font-size: 0.88rem;}
+        @media (max-width: 900px) {.snapshot-grid {grid-template-columns: repeat(2, minmax(0, 1fr));}}
         </style>
         """,
         unsafe_allow_html=True,
@@ -155,22 +278,34 @@ def render_snapshot() -> None:
     tga = load_json(STATE_FILES["TGA"])
     rrp = load_json(STATE_FILES["RRP"])
     reserves = load_json(STATE_FILES["Reserve balances"])
-
-    st.subheader("Macro regime snapshot")
-    cols = st.columns(4)
-    cols[0].metric("10Y Treasury", pct(rates.get("latest10yPct")))
-    cols[1].metric("10Y-2Y", pct(rates.get("latest10y2ySpreadPctPts")))
-    cols[2].metric("Core PCE YoY", pct(infl.get("corePceYoyPct")))
-    cols[3].metric("Unemployment", pct(infl.get("unemploymentRatePct")))
-
-    cols = st.columns(4)
-    cols[0].metric("Real GDP QoQ", pct(growth.get("realGdpQoQPct")))
-    cols[1].metric("Payroll Δ", f"{fmt(infl.get('payrollsOneMonthChangeK'), 'k', 0)}")
-    cols[2].metric("TGA", fmt(((tga.get("tgaOpeningBalance") or {}).get("openTodayBalanceUsdMn")), "mn", 0))
-    cols[3].metric("RRP", fmt(((rrp.get("latest") or {}).get("totalAcceptedUsdBn")), "bn", 3))
+    liquidity_markets = load_json(STATE_FILES["Liquidity / markets"]).get("summary", {})
 
     latest_reserves = (reserves.get("latest") or {}).get("reserveBalancesUsdMn")
-    st.metric("Reserve balances", fmt(latest_reserves, "mn", 0))
+    snapshot = [
+        ("10Y Treasury", pct(rates.get("latest10yPct")), "rates"),
+        ("10Y–2Y curve", pct(rates.get("latest10y2ySpreadPctPts")), "spread"),
+        ("Core PCE YoY", pct(infl.get("corePceYoyPct")), "inflation"),
+        ("Unemployment", pct(infl.get("unemploymentRatePct")), "labor"),
+        ("Real GDP QoQ", pct(growth.get("realGdpQoQPct")), "growth"),
+        ("Payroll Δ", f"{fmt(infl.get('payrollsOneMonthChangeK'), 'k', 0)}", "latest month"),
+        ("TGA", fmt(((tga.get("tgaOpeningBalance") or {}).get("openTodayBalanceUsdMn")), "mn", 0), "Treasury cash"),
+        ("RRP", fmt(((rrp.get("latest") or {}).get("totalAcceptedUsdBn")), "bn", 3), "NY Fed"),
+        ("Reserve balances", fmt(latest_reserves, "mn", 0), "Fed H.4.1"),
+        ("M2 YoY", pct(liquidity_markets.get("m2YoyPct")), "money stock"),
+        ("VIX", fmt(liquidity_markets.get("vixLatest"), "", 1), "risk context"),
+    ]
+
+    st.subheader("Macro regime snapshot")
+    st.markdown("<div class='snapshot-version'>Snapshot UX v2 · high contrast</div>", unsafe_allow_html=True)
+    st.markdown(
+        "<div class='snapshot-grid'>"
+        + "".join(
+            f"<div class='snapshot-card'><div class='snapshot-label'>{label}</div><div class='snapshot-value'>{value}</div><div class='snapshot-note'>{note}</div></div>"
+            for label, value, note in snapshot
+        )
+        + "</div>",
+        unsafe_allow_html=True,
+    )
     st.markdown(
         "<div class='macro-card'><b>Read:</b> growth still expanding, labor resilient, inflation still above target context, rates falling with a positive but flattening curve, and liquidity mixed. <b>Actionability:</b> monitor-only.</div>",
         unsafe_allow_html=True,
@@ -205,7 +340,14 @@ def render_series_explorer(block: str) -> None:
         st.markdown(f"### {selected} — {item.get('seriesName', selected)}")
         df = to_df(points)
         if df is not None:
-            st.line_chart(df, height=360)
+            defaults = SERIES_CHART_DEFAULTS.get(selected, {"years": 5, "scale": "Level"})
+            render_line_chart(
+                df,
+                key=chart_controls_key(f"{block}-{selected}"),
+                height=360,
+                default_years=defaults["years"],
+                default_scale=defaults["scale"],
+            )
             st.dataframe(df.sort_index(ascending=False), use_container_width=True, height=260)
         else:
             st.dataframe(points, use_container_width=True)
@@ -217,14 +359,31 @@ def render_dashboard() -> None:
     render_snapshot()
     st.subheader("Key series")
     cols = st.columns(2)
-    quick = [("Rates", "DGS10"), ("Rates", "T10Y2Y"), ("Inflation", "PCEPILFE"), ("Labor", "UNRATE"), ("Growth", "GDPC1"), ("Growth", "INDPRO")]
+    quick = [
+        ("Rates", "DGS10"),
+        ("Rates", "T10Y2Y"),
+        ("Rates", "MORTGAGE30US"),
+        ("Inflation", "PCEPILFE"),
+        ("Labor", "UNRATE"),
+        ("Labor", "ICSA"),
+        ("Growth", "GDPC1"),
+        ("Growth", "INDPRO"),
+        ("Markets", "M2SL"),
+        ("Markets", "VIXCLS"),
+    ]
     for i, (block, sid) in enumerate(quick):
         item = series_item(block, sid)
         with cols[i % 2]:
             st.markdown(f"**{sid} — {item.get('seriesName', sid)}**")
             df = to_df(series_points(item))
             if df is not None:
-                st.line_chart(df, height=180)
+                defaults = SERIES_CHART_DEFAULTS.get(sid, {"years": 5, "scale": "Level"})
+                shown = filter_window(df, defaults["years"])
+                if defaults["scale"] == "Indexed = 100":
+                    shown = indexed_df(shown)
+                st.line_chart(shown, height=180, use_container_width=True)
+                if defaults["scale"] == "Indexed = 100":
+                    st.caption("Indexed = 100")
             else:
                 st.info("No data")
 
@@ -291,7 +450,14 @@ def render_liquidity() -> None:
             st.markdown(f"### {title}")
             df = to_df(series_points(item))
             if df is not None:
-                st.line_chart(df, height=360)
+                defaults = SERIES_CHART_DEFAULTS.get(title, {"years": 3, "scale": "Level"})
+                render_line_chart(
+                    df,
+                    key=chart_controls_key(title),
+                    height=360,
+                    default_years=defaults["years"],
+                    default_scale=defaults["scale"],
+                )
                 st.dataframe(df.sort_index(ascending=False), use_container_width=True, height=260)
             st.caption(units)
             st.json({"latest": item.get("latest"), "trend": item.get("trend") or item.get("tgaTrend")}, expanded=False)
@@ -317,8 +483,16 @@ def main() -> None:
     st.set_page_config(page_title="Macro Monitor", layout="wide")
     inject_style()
     with st.sidebar:
-        st.markdown("### Choose")
-        page = st.selectbox("", list(BLOCKS.keys()), label_visibility="collapsed")
+        st.markdown("### Macro Monitor")
+        page = st.selectbox("Section", list(BLOCKS.keys()), label_visibility="collapsed")
+        st.divider()
+        st.markdown("**Series map**")
+        for block, ids in BLOCKS.items():
+            if ids:
+                st.caption(f"{block}: {len(ids)} series")
+        st.divider()
+        st.markdown("**Scope**")
+        st.caption("US macro spine: FRED + Treasury + NY Fed. Market series are context, not thesis signals.")
         st.divider()
         st.caption("Last data refresh")
         st.code(state_timestamp())
@@ -333,7 +507,7 @@ def main() -> None:
 
     if page == "Dashboard":
         render_dashboard()
-    elif page in {"Rates", "Inflation", "Labor", "Growth"}:
+    elif page in {"Rates", "Inflation", "Labor", "Growth", "Markets"}:
         render_series_explorer(page)
     elif page == "Liquidity":
         render_liquidity()
