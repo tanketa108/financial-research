@@ -335,20 +335,34 @@ def inject_style() -> None:
     st.markdown(
         """
         <style>
-        .main .block-container {padding-top: 2.2rem; max-width: 1180px;}
-        h1 {font-size: 3.1rem !important; line-height: 1.05; margin-bottom: 0.4rem;}
+        :root {--terminal-bg:#07111f; --terminal-panel:#0f1b2d; --terminal-line:#24364f; --terminal-cyan:#38bdf8; --terminal-text:#dbeafe;}
+        .stApp {background: linear-gradient(180deg, #f8fafc 0%, #eef3f8 100%);}
+        .main .block-container {padding-top: 1.1rem; max-width: 1480px;}
+        h1 {font-size: 2.35rem !important; line-height: 1.05; margin-bottom: 0.2rem;}
         h2, h3 {letter-spacing: -0.02em;}
-        [data-testid="stSidebar"] {background: #f4f7fb;}
+        [data-testid="stSidebar"] {background: #07111f; border-right: 1px solid #1f3350;}
+        [data-testid="stSidebar"] * {color: #dbeafe !important;}
+        [data-testid="stSidebar"] .stSelectbox, [data-testid="stSidebar"] .stRadio {background: transparent;}
+        [data-testid="stSidebar"] div[data-baseweb="select"] > div {background: #0f1b2d; border-color: #2b4263; color: #e0f2fe;}
+        [data-testid="stSidebar"] hr {border-color: #24364f;}
         div[data-testid="stMetric"] {background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 14px 16px; box-shadow: 0 1px 2px rgba(15,23,42,0.04);}
-        .macro-card {background: #ffffff; border: 1px solid #e5e7eb; border-radius: 18px; padding: 18px; margin: 8px 0 18px 0;}
+        .fincept-topbar {background: linear-gradient(90deg, #07111f 0%, #0f1b2d 55%, #13294b 100%); border: 1px solid #24364f; border-radius: 18px; padding: 14px 18px; margin-bottom: 14px; box-shadow: 0 14px 34px rgba(15,23,42,0.16);}
+        .fincept-row {display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+        .fincept-brand {color:#ffffff; font-weight:900; letter-spacing:.04em; font-size:1.02rem; text-transform:uppercase;}
+        .fincept-sub {color:#93c5fd; font-size:.82rem; margin-top:2px;}
+        .fincept-pills {display:flex; gap:8px; flex-wrap:wrap;}
+        .fincept-pill {border:1px solid #31547b; border-radius:999px; padding:6px 10px; color:#c7d2fe; background:rgba(15,27,45,.75); font-size:.76rem; font-weight:750; text-transform:uppercase; letter-spacing:.035em;}
+        .fincept-pill.hot {color:#07111f; background:#38bdf8; border-color:#7dd3fc;}
+        .fincept-shell-note {background:#0f1b2d; color:#dbeafe; border:1px solid #24364f; border-radius:14px; padding:10px 12px; font-size:.82rem; margin-bottom:14px;}
+        .macro-card {background: #ffffff; border: 1px solid #d7e0ea; border-radius: 16px; padding: 16px; margin: 8px 0 18px 0; box-shadow: 0 1px 3px rgba(15,23,42,0.05);}
         .snapshot-version {display: inline-flex; align-items: center; gap: 6px; background: #0f172a; color: #e0f2fe; border: 1px solid #38bdf8; border-radius: 999px; padding: 5px 10px; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.03em; text-transform: uppercase; margin: 0.1rem 0 0.55rem 0;}
-        .snapshot-grid {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0.6rem 0 1rem 0;}
-        .snapshot-card {background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 58%, #0369a1 100%); border: 1px solid #38bdf8; border-radius: 18px; padding: 16px 18px; box-shadow: 0 10px 24px rgba(15,23,42,0.18);}
+        .snapshot-grid {display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 0.6rem 0 1rem 0;}
+        .snapshot-card {background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 58%, #0369a1 100%); border: 1px solid #38bdf8; border-radius: 14px; padding: 13px 14px; box-shadow: 0 10px 24px rgba(15,23,42,0.18);}
         .snapshot-label {color: #bae6fd; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.055em; text-transform: uppercase; margin-bottom: 0.3rem;}
-        .snapshot-value {color: #ffffff; font-size: 1.82rem; font-weight: 900; line-height: 1.05; text-shadow: 0 1px 2px rgba(0,0,0,0.28);}
+        .snapshot-value {color: #ffffff; font-size: 1.45rem; font-weight: 900; line-height: 1.05; text-shadow: 0 1px 2px rgba(0,0,0,0.28);}
         .snapshot-note {color: #dbeafe; font-size: 0.80rem; font-weight: 650; margin-top: 0.35rem;}
         .small-muted {color: #64748b; font-size: 0.88rem;}
-        @media (max-width: 900px) {.snapshot-grid {grid-template-columns: repeat(2, minmax(0, 1fr));}}
+        @media (max-width: 1100px) {.snapshot-grid {grid-template-columns: repeat(2, minmax(0, 1fr));}}
         </style>
         """,
         unsafe_allow_html=True,
@@ -364,9 +378,27 @@ def state_timestamp() -> str:
     return max(timestamps) if timestamps else "n/a"
 
 
-def render_header(title: str = "Macro Monitor") -> None:
-    st.title(title)
-    st.caption("Market-style macro dashboard: report + long history series + event calendar. Data source: generated JSON state files.")
+def render_terminal_header(active_page: str) -> None:
+    st.markdown(
+        f"""
+        <div class="fincept-topbar">
+          <div class="fincept-row">
+            <div>
+              <div class="fincept-brand">FINCEPT-STYLE MACRO TERMINAL</div>
+              <div class="fincept-sub">US macro monitor · official-source JSON states · report-ready workspace</div>
+            </div>
+            <div class="fincept-pills">
+              <span class="fincept-pill hot">{active_page}</span>
+              <span class="fincept-pill">Snapshot locked</span>
+              <span class="fincept-pill">FRED</span>
+              <span class="fincept-pill">Treasury</span>
+              <span class="fincept-pill">NY Fed</span>
+            </div>
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 def render_snapshot() -> None:
@@ -649,13 +681,18 @@ def main() -> None:
     st.set_page_config(page_title="Macro Monitor", layout="wide")
     inject_style()
     with st.sidebar:
-        st.markdown("### Macro Monitor")
-        page = st.selectbox("Section", list(BLOCKS.keys()), label_visibility="collapsed")
+        st.markdown("### FINCEPT")
+        st.caption("Macro terminal shell")
+        page = st.radio("Module", list(BLOCKS.keys()), index=0, label_visibility="collapsed")
+        st.divider()
+        st.markdown("**Workspace presets**")
+        for name in SERIES_PRESETS:
+            st.caption(f"▸ {name}")
         st.divider()
         st.markdown("**Series map**")
         for block, ids in BLOCKS.items():
             if ids:
-                st.caption(f"{block}: {len(ids)} series")
+                st.caption(f"{block.upper()} · {len(ids)} series")
         st.divider()
         st.markdown("**Scope**")
         st.caption("US macro spine: FRED + Treasury + NY Fed. Market series are context, not thesis signals.")
@@ -664,8 +701,7 @@ def main() -> None:
         st.code(state_timestamp())
         st.caption("Source of truth: JSON states + Markdown report")
 
-    render_header("Market Information App")
-    st.markdown("## Macro Monitor")
+    render_terminal_header(page)
 
     missing = [name for name, path in STATE_FILES.items() if not path.exists()]
     if missing:
