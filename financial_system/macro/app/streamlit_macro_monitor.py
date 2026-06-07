@@ -443,13 +443,13 @@ def render_snapshot() -> None:
     )
 
 
-def render_series_explorer(block: str) -> None:
+def render_series_explorer(block: str, global_window: str | None = None, global_scale: str | None = None, global_rows: int | None = None, global_mode: str | None = None) -> None:
     st.subheader(block)
     family_map = SERIES_FAMILIES.get(block, {"All": BLOCKS[block]})
     family_names = list(family_map.keys())
     family = st.segmented_control("Family", family_names, default=family_names[0], key=f"family-{block}")
     ids = family_map[family]
-    view = st.segmented_control(
+    view = global_mode or st.segmented_control(
         "Display mode",
         ["Single series", "Compare normalized", "Small multiples"],
         default="Single series",
@@ -467,10 +467,10 @@ def render_series_explorer(block: str) -> None:
         )
         c1, c2 = st.columns([0.28, 0.72])
         with c1:
-            window_label = st.selectbox("Window", ["1Y", "3Y", "5Y", "10Y", "Max"], index=2, key=f"compare-window-{block}")
+            window_label = global_window or st.selectbox("Window", ["1Y", "3Y", "5Y", "10Y", "Max"], index=2, key=f"compare-window-{block}")
         with c2:
             default_scale = "Indexed = 100" if view == "Compare normalized" else "Level"
-            scale = st.radio(
+            scale = global_scale or st.radio(
                 "Scale",
                 ["Level", "Indexed = 100", "% change from start"],
                 index=["Level", "Indexed = 100", "% change from start"].index(default_scale),
@@ -521,16 +521,16 @@ def render_series_explorer(block: str) -> None:
                 default_years=defaults["years"],
                 default_scale=defaults["scale"],
             )
-            st.dataframe(df.sort_index(ascending=False), use_container_width=True, height=260)
+            st.dataframe(df.sort_index(ascending=False).head(global_rows or 250), use_container_width=True, height=260)
         else:
             st.dataframe(points, use_container_width=True)
         with st.expander("Metadata / raw latest + trend"):
             st.json({"latest": item.get("latest"), "trend": item.get("trend"), "sourceUrl": item.get("sourceUrl")}, expanded=False)
 
 
-def render_dashboard() -> None:
+def render_dashboard(global_window: str = "5Y", global_scale: str = "Indexed = 100", global_mode: str | None = None) -> None:
     render_snapshot()
-    st.subheader("Key series workspace")
+    st.subheader("Portfolio-style macro workspace")
     quick_default = [
         ("Rates", "DGS10"),
         ("Rates", "T10Y2Y"),
@@ -554,17 +554,18 @@ def render_dashboard() -> None:
             format_func=lambda pair: display_name(pair[0], pair[1]),
             key="dashboard-key-series",
         )
-        layout = st.segmented_control(
+        layout = global_mode or st.segmented_control(
             "Layout",
             ["Grid", "Normalized overlay", "Small multiples"],
             default="Grid",
             key="dashboard-layout",
         )
     if layout in {"Normalized overlay", "Small multiples"}:
-        data = long_compare_df(selected_quick, years=5, scale="Indexed = 100")
+        years = None if global_window == "Max" else int(global_window.rstrip("Y"))
+        data = long_compare_df(selected_quick, years=years, scale=global_scale)
         render_altair_compare(
             data,
-            title="Dashboard key series — indexed to first visible observation",
+            title=f"Dashboard key series — {global_scale}",
             height=150 if layout == "Small multiples" else 460,
             independent_y=layout == "Small multiples",
         )
@@ -585,6 +586,20 @@ def render_dashboard() -> None:
                     st.caption("Indexed = 100")
             else:
                 st.info("No data")
+
+
+def render_multi_window_workspace(window_label: str, scale: str, rows: int, mode: str) -> None:
+    render_snapshot()
+    st.subheader("Macro data windows")
+    st.caption("Main project-style structure: module windows, dense series coverage, sidebar display controls, tables limited by selected row count.")
+    tabs = st.tabs(["Rates", "Inflation", "Labor", "Growth", "Liquidity", "Markets"])
+    for tab, block in zip(tabs, ["Rates", "Inflation", "Labor", "Growth", "Liquidity", "Markets"]):
+        with tab:
+            if block == "Liquidity":
+                render_liquidity()
+            else:
+                local_mode = "Small multiples" if mode == "Separated windows" else "Compare normalized"
+                render_series_explorer(block, global_window=window_label, global_scale=scale, global_rows=rows, global_mode=local_mode)
 
 
 def calendar_rows() -> list[dict[str, Any]]:
@@ -685,7 +700,11 @@ def main() -> None:
         st.markdown("### FINCEPT")
         st.caption("Macro terminal shell")
         st.code(APP_VERSION)
-        page = st.radio("Module", list(BLOCKS.keys()), index=0, label_visibility="collapsed")
+        page = st.selectbox("Choose", ["Portfolio", "Dashboard", "Rates", "Inflation", "Labor", "Growth", "Liquidity", "Markets", "Calendar", "Report", "Raw state"], index=0)
+        window_label = st.selectbox("Data window", ["1Y", "3Y", "5Y", "10Y", "Max"], index=2)
+        scale = st.selectbox("Display scale", ["Level", "Indexed = 100", "% change from start"], index=1)
+        rows = st.slider("Rows shown in tables", min_value=25, max_value=500, value=150, step=25)
+        chart_mode = st.selectbox("Chart layout", ["Separated windows", "Overlay"], index=0)
         st.divider()
         st.markdown("**Workspace presets**")
         for name in SERIES_PRESETS:
@@ -709,10 +728,14 @@ def main() -> None:
     if missing:
         st.warning(f"Missing state files: {', '.join(missing)}")
 
-    if page == "Dashboard":
-        render_dashboard()
+    if page == "Portfolio":
+        render_multi_window_workspace(window_label, scale, rows, chart_mode)
+    elif page == "Dashboard":
+        layout = "Small multiples" if chart_mode == "Separated windows" else "Normalized overlay"
+        render_dashboard(global_window=window_label, global_scale=scale, global_mode=layout)
     elif page in {"Rates", "Inflation", "Labor", "Growth", "Markets"}:
-        render_series_explorer(page)
+        mode = "Small multiples" if chart_mode == "Separated windows" else "Compare normalized"
+        render_series_explorer(page, global_window=window_label, global_scale=scale, global_rows=rows, global_mode=mode)
     elif page == "Liquidity":
         render_liquidity()
     elif page == "Calendar":
