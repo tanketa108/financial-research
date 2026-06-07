@@ -28,6 +28,11 @@ try:
 except ModuleNotFoundError:
     pd = None
 
+try:
+    import altair as alt
+except ModuleNotFoundError:
+    alt = None
+
 ROOT = Path(__file__).resolve().parents[3]
 MACRO = ROOT / "financial_system" / "macro"
 DATA = MACRO / "data"
@@ -57,6 +62,29 @@ BLOCKS = {
     "Calendar": [],
     "Report": [],
     "Raw state": [],
+}
+
+SIDEBAR_BLOCKS = ["Rates", "Inflation", "Labor", "Growth", "Liquidity", "Markets"]
+
+SERIES_PRESETS = {
+    "Rates curve": [("Rates", "DGS3MO"), ("Rates", "DGS2"), ("Rates", "DGS10"), ("Rates", "DGS30"), ("Rates", "T10Y2Y"), ("Rates", "T10Y3M")],
+    "Inflation pulse": [("Inflation", "CPIAUCSL"), ("Inflation", "CPILFESL"), ("Inflation", "PCEPI"), ("Inflation", "PCEPILFE")],
+    "Labor cooling": [("Labor", "PAYEMS"), ("Labor", "UNRATE"), ("Labor", "CIVPART"), ("Labor", "ICSA"), ("Labor", "JTSJOL")],
+    "Growth activity": [("Growth", "GDPC1"), ("Growth", "PCECC96"), ("Growth", "RSXFS"), ("Growth", "INDPRO"), ("Growth", "HOUST"), ("Growth", "PERMIT")],
+    "Liquidity drain": [("Markets", "M2SL"), ("Markets", "SP500"), ("Markets", "VIXCLS")],
+}
+
+SERIES_FAMILIES = {
+    "Rates": {
+        "Policy / front-end": ["FEDFUNDS", "DGS3MO", "DGS2"],
+        "Long end": ["DGS10", "DGS30", "MORTGAGE30US"],
+        "Curve spreads": ["T10Y2Y", "T10Y3M"],
+        "All": BLOCKS["Rates"],
+    },
+    "Inflation": {"CPI": ["CPIAUCSL", "CPILFESL"], "PCE": ["PCEPI", "PCEPILFE"], "All": BLOCKS["Inflation"]},
+    "Labor": {"Employment": ["PAYEMS", "CES0500000003"], "Slack": ["UNRATE", "CIVPART"], "Forward / claims": ["ICSA", "JTSJOL"], "All": BLOCKS["Labor"]},
+    "Growth": {"GDP / consumption": ["GDPC1", "GDP", "PCECC96"], "Retail / industrial": ["RSXFS", "RRSFS", "INDPRO"], "Housing / orders / trade": ["HOUST", "PERMIT", "DGORDER", "NEWORDER", "BOPGSTB"], "All": BLOCKS["Growth"]},
+    "Markets": {"Money / savings": ["M2SL", "PSAVERT"], "Risk assets": ["SP500", "VIXCLS"], "All": BLOCKS["Markets"]},
 }
 
 SERIES_CHART_DEFAULTS = {
@@ -164,6 +192,18 @@ def to_df(points: list[dict[str, Any]]):
     return df.set_index("date")
 
 
+def series_df(block: str, sid: str):
+    return to_df(series_points(series_item(block, sid)))
+
+
+def display_name(block: str, sid: str) -> str:
+    if block == "Liquidity":
+        return sid
+    item = series_item(block, sid)
+    name = item.get("seriesName") or sid
+    return f"{sid} — {name}"
+
+
 def filter_window(df, years: int | None):
     """Return a recent window so long historical series do not flatten charts."""
     if pd is None or df is None or df.empty or years is None:
@@ -182,6 +222,42 @@ def indexed_df(df):
     out = df.copy()
     out["value"] = out["value"] / first * 100
     return out
+
+
+def pct_change_df(df):
+    if pd is None or df is None or df.empty:
+        return df
+    out = df.copy()
+    first = out["value"].dropna().iloc[0]
+    if first == 0:
+        return out
+    out["value"] = (out["value"] / first - 1) * 100
+    return out
+
+
+def apply_scale(df, scale: str):
+    if scale == "Indexed = 100":
+        return indexed_df(df)
+    if scale == "% change from start":
+        return pct_change_df(df)
+    return df
+
+
+def long_compare_df(items: list[tuple[str, str]], years: int | None, scale: str):
+    if pd is None:
+        return None
+    frames = []
+    for block, sid in items:
+        df = series_df(block, sid)
+        if df is None or df.empty:
+            continue
+        shown = apply_scale(filter_window(df, years), scale)
+        shown = shown.reset_index()
+        shown["series"] = display_name(block, sid)
+        frames.append(shown[["date", "series", "value"]])
+    if not frames:
+        return None
+    return pd.concat(frames, ignore_index=True)
 
 
 def chart_controls_key(name: str) -> str:
@@ -203,16 +279,15 @@ def chart_df(df, *, key: str, default_years: int | None = 5, default_scale: str 
     with col2:
         view = st.radio(
             "Scale",
-            ["Level", "Indexed = 100"],
+            ["Level", "Indexed = 100", "% change from start"],
             index=0 if default_scale == "Level" else 1,
             horizontal=True,
             key=f"scale-{key}",
         )
     years = None if window_label == "Max" else int(window_label.rstrip("Y"))
     shown = filter_window(df, years)
-    mode = "indexed" if view == "Indexed = 100" else "level"
-    if mode == "indexed":
-        shown = indexed_df(shown)
+    shown = apply_scale(shown, view)
+    mode = view
     return shown, mode
 
 
@@ -229,8 +304,31 @@ def render_line_chart(
         st.info("No chart data")
         return
     st.line_chart(shown, height=height, use_container_width=True)
-    if mode == "indexed":
+    if mode == "Indexed = 100":
         st.caption("Indexed view: first visible observation = 100. Use Level for source units.")
+    elif mode == "% change from start":
+        st.caption("% change view: change since first visible observation. Use Level for source units.")
+
+
+def render_altair_compare(data, *, title: str, height: int, independent_y: bool = False) -> None:
+    if data is None or data.empty:
+        st.info("No chart data")
+        return
+    if alt is None:
+        pivot = data.pivot(index="date", columns="series", values="value")
+        st.line_chart(pivot, height=height, use_container_width=True)
+        return
+    base = alt.Chart(data).mark_line().encode(
+        x=alt.X("date:T", title=None),
+        y=alt.Y("value:Q", title=None),
+        color=alt.Color("series:N", legend=alt.Legend(orient="bottom", title=None)),
+        tooltip=[alt.Tooltip("date:T"), alt.Tooltip("series:N"), alt.Tooltip("value:Q", format=",.2f")],
+    ).properties(height=height, title=title)
+    if independent_y:
+        chart = base.facet(row=alt.Row("series:N", title=None, header=alt.Header(labelLimit=380))).resolve_scale(y="independent")
+        st.altair_chart(chart, use_container_width=True)
+    else:
+        st.altair_chart(base.interactive(), use_container_width=True)
 
 
 def inject_style() -> None:
@@ -314,7 +412,49 @@ def render_snapshot() -> None:
 
 def render_series_explorer(block: str) -> None:
     st.subheader(block)
-    ids = BLOCKS[block]
+    family_map = SERIES_FAMILIES.get(block, {"All": BLOCKS[block]})
+    family_names = list(family_map.keys())
+    family = st.segmented_control("Family", family_names, default=family_names[0], key=f"family-{block}")
+    ids = family_map[family]
+    view = st.segmented_control(
+        "Display mode",
+        ["Single series", "Compare normalized", "Small multiples"],
+        default="Single series",
+        key=f"display-{block}",
+    )
+
+    if view in {"Compare normalized", "Small multiples"}:
+        default_pick = ids[: min(4, len(ids))]
+        selected_ids = st.multiselect(
+            "Series",
+            ids,
+            default=default_pick,
+            format_func=lambda sid: display_name(block, sid),
+            key=f"compare-series-{block}",
+        )
+        c1, c2 = st.columns([0.28, 0.72])
+        with c1:
+            window_label = st.selectbox("Window", ["1Y", "3Y", "5Y", "10Y", "Max"], index=2, key=f"compare-window-{block}")
+        with c2:
+            default_scale = "Indexed = 100" if view == "Compare normalized" else "Level"
+            scale = st.radio(
+                "Scale",
+                ["Level", "Indexed = 100", "% change from start"],
+                index=["Level", "Indexed = 100", "% change from start"].index(default_scale),
+                horizontal=True,
+                key=f"compare-scale-{block}",
+            )
+        years = None if window_label == "Max" else int(window_label.rstrip("Y"))
+        items = [(block, sid) for sid in selected_ids]
+        data = long_compare_df(items, years, scale)
+        if view == "Small multiples":
+            render_altair_compare(data, title=f"{block} — separated y-axes", height=150, independent_y=True)
+            st.caption("Small multiples use independent y-axes, so low-amplitude series no longer disappear next to large-level series.")
+        else:
+            render_altair_compare(data, title=f"{block} — normalized comparison", height=430, independent_y=False)
+            st.caption("Normalized comparison is best for shape/cycle comparison. Use Single series for source-unit inspection.")
+        return
+
     left, right = st.columns([0.28, 0.72])
     with left:
         selected = st.selectbox("Series", ids, index=0, key=f"series-{block}")
@@ -357,9 +497,8 @@ def render_series_explorer(block: str) -> None:
 
 def render_dashboard() -> None:
     render_snapshot()
-    st.subheader("Key series")
-    cols = st.columns(2)
-    quick = [
+    st.subheader("Key series workspace")
+    quick_default = [
         ("Rates", "DGS10"),
         ("Rates", "T10Y2Y"),
         ("Rates", "MORTGAGE30US"),
@@ -371,7 +510,34 @@ def render_dashboard() -> None:
         ("Markets", "M2SL"),
         ("Markets", "VIXCLS"),
     ]
-    for i, (block, sid) in enumerate(quick):
+    series_universe = [(block, sid) for block in ["Rates", "Inflation", "Labor", "Growth", "Markets"] for sid in BLOCKS[block]]
+    with st.expander("Dashboard display controls", expanded=True):
+        preset_name = st.selectbox("Preset", ["Custom"] + list(SERIES_PRESETS.keys()), index=0, key="dashboard-preset")
+        preset_default = quick_default if preset_name == "Custom" else SERIES_PRESETS[preset_name]
+        selected_quick = st.multiselect(
+            "Series shown on dashboard",
+            series_universe,
+            default=[pair for pair in preset_default if pair in series_universe],
+            format_func=lambda pair: display_name(pair[0], pair[1]),
+            key="dashboard-key-series",
+        )
+        layout = st.segmented_control(
+            "Layout",
+            ["Grid", "Normalized overlay", "Small multiples"],
+            default="Grid",
+            key="dashboard-layout",
+        )
+    if layout in {"Normalized overlay", "Small multiples"}:
+        data = long_compare_df(selected_quick, years=5, scale="Indexed = 100")
+        render_altair_compare(
+            data,
+            title="Dashboard key series — indexed to first visible observation",
+            height=150 if layout == "Small multiples" else 460,
+            independent_y=layout == "Small multiples",
+        )
+        return
+    cols = st.columns(2)
+    for i, (block, sid) in enumerate(selected_quick):
         item = series_item(block, sid)
         with cols[i % 2]:
             st.markdown(f"**{sid} — {item.get('seriesName', sid)}**")
