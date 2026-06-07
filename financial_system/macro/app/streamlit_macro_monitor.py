@@ -40,6 +40,7 @@ REPORTS = MACRO / "reports"
 CHARTS = MACRO / "charts"
 EVENTS = MACRO / "macro-release-events.json"
 REGISTRY = MACRO / "macro-release-calendar-registry.json"
+APP_VERSION = "Macro Terminal v0.4 · Fincept shell · 2026-06-07"
 
 STATE_FILES = {
     "Rates / curve": DATA / "fred-rates-curve-state.json",
@@ -384,7 +385,7 @@ def render_terminal_header(active_page: str) -> None:
         <div class="fincept-topbar">
           <div class="fincept-row">
             <div>
-              <div class="fincept-brand">FINCEPT-STYLE MACRO TERMINAL</div>
+              <div class="fincept-brand">FINCEPT-STYLE MACRO TERMINAL · v0.4</div>
               <div class="fincept-sub">US macro monitor · official-source JSON states · report-ready workspace</div>
             </div>
             <div class="fincept-pills">
@@ -683,6 +684,7 @@ def main() -> None:
     with st.sidebar:
         st.markdown("### FINCEPT")
         st.caption("Macro terminal shell")
+        st.code(APP_VERSION)
         page = st.radio("Module", list(BLOCKS.keys()), index=0, label_visibility="collapsed")
         st.divider()
         st.markdown("**Workspace presets**")
